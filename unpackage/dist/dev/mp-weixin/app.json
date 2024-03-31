@@ -1,0 +1,19 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/index_cy/index_cy",
+    "pages/Lucky-Draw/Lucky-Draw "
+  ],
+  "subPackages": [],
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "uni-app",
+    "navigationBarBackgroundColor": "#F8F8F8",
+    "backgroundColor": "#F8F8F8"
+  },
+  "__usePrivacyCheck__": true,
+  "permission": {
+    "nickname": true
+  },
+  "usingComponents": {}
+}

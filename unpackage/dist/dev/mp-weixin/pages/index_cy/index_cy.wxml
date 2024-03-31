@@ -1,0 +1,1 @@
+<view><canvas style="width:200px;height:200px;margin:30px auto;" id="qrcode" canvas-id="qrcode"></canvas></view>

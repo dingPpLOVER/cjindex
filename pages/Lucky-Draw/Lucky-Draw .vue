@@ -12,8 +12,9 @@
 			<!-- <div :class="lamptf" v-for="item in lamparr" class="lamptf"></div> -->
 			<!-- </div> -->
 			<div class="zptext">
+				<!-- <view :style="{ color: isActive ? 'red' : 'blue' }"> -->
 				<view class="zpsin " :class="item.class" v-for="(item,index) in jptext" :key="index"
-					:style="{'color':intcol !== index}" style="color: #000000;">{{item.name}}</view>
+					:style="{'color':intcol == index?'#ff0000':'#000000' }" >{{item.name}}</view>
 				<!-- "{'md_page_':selectedTab === index}" -->
 				<!-- <div class="zpsin" style=""></div>
 				<div class="zpsin" style=""></div>
@@ -35,18 +36,18 @@
 			return {
 				lamparr: [],
 				jptext: classjson,
-				intcol: 0,
+				intcol: -1,
 				intervalTime: 2000, // 间隔时间（毫秒）
 				times: 0, //转动跑格子次数
 				timer: 0, //转动定时
-				cycle: 30, //转动基本次数，既至少需要转动多少次在进入抽奖环节
+				cycle: 100, //转动基本次数，既至少需要转动多少次在进入抽奖环节
 				speed: 40, //初始转动速度
 				prize: 0, //中奖位置，接口返回
-				synumber: 3, //剩余次数
+				synumber: 10, //剩余次数
 				prize_data: { //中奖信息
 					id: Number, //奖品ID
 					name: '', //奖品名称
-				}
+				},
 				
 			}
 		},
@@ -60,6 +61,8 @@
 				this.lamparr = arr
 			},
 			move() { //点击开始抽奖
+				var id = Math.floor(Math.random()*7) 
+				console.log(id)
 				if (this.synumber == 0) {
 					uni.showModal({
 						title: '今日抽奖次数已用完,明天再来吧'
@@ -72,7 +75,7 @@
 					this.synumber-- //抽奖次数减一
 					this.speed = 40 //每次抽奖速度初始化为200
 					this.prize_data = 1 ; //已经拿到中奖信息，页面展示，等抽奖结束后，将弹窗弹出
-					this.prize = 1;//中奖位置赋值，跑马灯最终停留位置，这里实际位置需要-1
+					this.prize = id;//中奖位置赋值，跑马灯最终停留位置，这里实际位置需要-1
 					this.startroll();//执行抽奖
 				}
 			},
@@ -84,7 +87,7 @@
 					intcol = 0
 				}
 				this.intcol = intcol
-				console.log(this.intcol)
+				// console.log(this.intcol)
 			},
 			startroll() {
 				this.times++ //转动次数
@@ -107,6 +110,7 @@
 		},
 		mounted() {
 			this.horselamp()
+			
 		}
 	}
 </script>

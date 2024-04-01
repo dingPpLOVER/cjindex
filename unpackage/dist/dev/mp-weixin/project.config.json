@@ -18,12 +18,12 @@
     }
   },
   "compileType": "miniprogram",
-  "libVersion": "3.3.5",
+  "libVersion": "3.3.4",
   "appid": "wx3d48fef6d64f5eb6",
   "projectname": "cj-index",
   "condition": {},
   "editorSetting": {
-    "tabIndent": "auto",
+    "tabIndent": "insertSpaces",
     "tabSize": 2
   }
 }

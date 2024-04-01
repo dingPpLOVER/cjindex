@@ -1,8 +1,8 @@
 {
   "pages": [
-    "pages/index/index",
+    "pages/Lucky-Draw/Lucky-Draw ",
     "pages/index_cy/index_cy",
-    "pages/Lucky-Draw/Lucky-Draw "
+    "pages/index/index"
   ],
   "subPackages": [],
   "window": {

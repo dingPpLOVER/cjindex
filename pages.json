@@ -1,8 +1,16 @@
 {
 	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		
 		{
 			
 			"path": "pages/Lucky-Draw/Lucky-Draw ",
+			"style": {
+				"navigationBarTitleText": "uni-app"
+			}
+		},
+		{
+			
+			"path": "pages/log_pos/log_pos",
 			"style": {
 				"navigationBarTitleText": "uni-app"
 			}

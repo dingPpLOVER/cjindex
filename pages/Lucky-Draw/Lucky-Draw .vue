@@ -5,27 +5,32 @@
 			<span>2024年4月1日</span>-<span>2024年4月11日</span>
 		</div>
 		<div class="scrollpage">
-			<div>徐*抽到500元现金抵用券</div>
+			<div>恭喜徐*完成集字</div>
 		</div>
 		<div class="bot">
-			<!-- <div class="horselamp"> -->
-			<!-- <div :class="lamptf" v-for="item in lamparr" class="lamptf"></div> -->
-			<!-- </div> -->
+			<div class="horselamp">
+				<div class="lamptf" :class="item" v-for="(item,index) in lamparr" :key="index" :style="{'background-color':lamindex==index ?'#55ffff':''}"></div>
+			</div>
 			<div class="zptext">
 				<!-- <view :style="{ color: isActive ? 'red' : 'blue' }"> -->
 				<view class="zpsin " :class="item.class" v-for="(item,index) in jptext" :key="index"
-					:style="{'color':intcol == index?'#ff0000':'#000000' }" >{{item.name}}</view>
-				<!-- "{'md_page_':selectedTab === index}" -->
-				<!-- <div class="zpsin" style=""></div>
-				<div class="zpsin" style=""></div>
-				<div class="zpsin" style="" ></div>
-				<div class="zpsin" style=""></div>
-				<div class="zpsin" style=""></div>
-				<div class="zpsin" style=""></div>
-				<div class="zpsin" style=""></div> -->
-				<div class="zpbut" @click="move">开始抽奖</div>
+					:style="{'background-color':intcol == index?'#ff3758':'#ffffff' }" >{{item.name}}</view>
+				<div class="zpbut" @click="move">
+					<div class="zpbut_" >开始抽奖</div>
+				</div>
+			</div>
+			<div class="sydiv">可用抽奖次数 {{synumber}} 次</div>
+		</div>
+		<div class="com_pro_text">我的集字</div>
+		<div class="com_pro">
+			<div class="com_prosin" v-for="(item,index) in havetextarr_" :key="index"> 
+				<div class="com_prosincon" :style="{'color':item.number>0?'#ca8000':'#eee8cd'}">
+					<div class="com_prospan" :style="{'display':item.number>0?'noraml':'none'}">{{item.number>0 ?item.number: ''}}</div>
+					{{item.name}}
+				</div>
 			</div>
 		</div>
+		<div class="pos" @click="tologpos">成为商户</div>
 	</div>
 </template>
 
@@ -34,21 +39,23 @@
 	export default {
 		data() {
 			return {
-				lamparr: [],
+				lamparr:[] ,
+				lamindex:0,
 				jptext: classjson,
 				intcol: -1,
 				intervalTime: 2000, // 间隔时间（毫秒）
 				times: 0, //转动跑格子次数
 				timer: 0, //转动定时
-				cycle: 100, //转动基本次数，既至少需要转动多少次在进入抽奖环节
-				speed: 40, //初始转动速度
+				cycle: 50, //转动基本次数，既至少需要转动多少次在进入抽奖环节
+				speed: 10, //初始转动速度
 				prize: 0, //中奖位置，接口返回
-				synumber: 10, //剩余次数
+				synumber: 20, //剩余次数
 				prize_data: { //中奖信息
 					id: Number, //奖品ID
 					name: '', //奖品名称
 				},
-				
+				havetextarr:['大',"吉"],
+				havetextarr_:[],
 			}
 		},
 		methods: {
@@ -61,7 +68,7 @@
 				this.lamparr = arr
 			},
 			move() { //点击开始抽奖
-				var id = Math.floor(Math.random()*7) 
+				var id = Math.floor(Math.random()*7) //抽奖结果（0-7）随机
 				console.log(id)
 				if (this.synumber == 0) {
 					uni.showModal({
@@ -69,7 +76,7 @@
 					})
 				} else if (this.times != 0) {
 					uni.showModal({
-						tilte: '正在抽奖中，请勿重复点击'
+						title: '抽奖中，请勿重复点击'
 					})
 				} else {
 					this.synumber-- //抽奖次数减一
@@ -99,17 +106,64 @@
 				if (this.times > this.cycle - 20 && this.prize === this.intcol) {
 					clearTimeout(this.timer) //清除转动定时器
 					this.times = 0 //转动跑格子次数初始化为0， 可以开始下次抽奖
+					uni.showModal({
+						title: '恭喜你抽中了 "'+classjson[this.intcol].name +'"'
+					})
+					this.havetextarr.push(classjson[this.intcol].name)
+					this.havee()
+					
 				} else {
 					if (this.times > 60) {
 						this.speed += 20 //抽奖即将结束，放慢转动速度
 					}
 					this.timer = setTimeout(this.startroll, this.speed); //开始转动
 				}
+			},
+			lampscroll(){
+				var lamindex = this.lamindex
+				lamindex ++ 
+				if(lamindex >11){
+					lamindex = 0
+				}
+				this.lamindex = lamindex
+			},
+			havee(){
+				var havetextarr = this.havetextarr
+				var jptext = this.jptext
+				var havetext = []
+				for(var i = 0 ; i < jptext.length; i++ ){
+					var arr = 0
+					var obj = {}
+					var name = ''
+					for(var j = 0 ; j < havetextarr.length ; j ++ ){
+						if(jptext[i].name == havetextarr[j]){
+							arr ++ 
+							name = jptext[i].name
+						}
+						else{
+							name = jptext[i].name
+						}
+					}
+					obj["name"] = name
+					obj["number"] = arr
+					havetext.push(obj)
+				}
+				console.log(havetext)
+				this.havetextarr_ = havetext
+				
+			},
+			tologpos(){
+				uni.navigateTo({
+					url:'/pages/log_pos/log_pos'
+				})
 			}
-
 		},
 		mounted() {
 			this.horselamp()
+			this.lamparr = ["lamptf","lamptf1","lamptf2","lamptf3","lamptf4","lamptf5","lamptf6","lamptf7","lamptf8","lamptf9","lamptf10","lamptf11"]
+			clearInterval(int)
+			const int = setInterval(this.lampscroll,200)
+			this.havee()
 			
 		}
 	}

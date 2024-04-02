@@ -1,5 +1,9 @@
 <template>
 	<div id="box">
+		<div class="nickname">
+			<div class="wel">欢迎用户</div>
+			<input type="nickname" class="inp" v-model="nickvalue" @click="onInput"/>
+		</div>
 		<div class="actname">集字抽奖送福利</div>
 		<div class="timese">
 			<span>2024年4月1日</span>-<span>2024年4月11日</span>
@@ -56,6 +60,7 @@
 				},
 				havetextarr:['大',"吉"],
 				havetextarr_:[],
+				nickvalue:''
 			}
 		},
 		methods: {
@@ -156,7 +161,10 @@
 				uni.navigateTo({
 					url:'/pages/log_pos/log_pos'
 				})
-			}
+			},
+			onInput(e){
+				this.nickvalue = e.detail.value
+			},
 		},
 		mounted() {
 			this.horselamp()
@@ -164,7 +172,19 @@
 			clearInterval(int)
 			const int = setInterval(this.lampscroll,200)
 			this.havee()
-			
+			console.log(this.nickvalue.length)
+			var nicklength = this.nickvalue.length
+			if(nicklength <= 0){
+				wx.requirePrivacyAuthorize({
+					success: res => {
+						console.log('用户同意了隐私协议 或 无需用户同意隐私协议')
+						this.nickvalue = '登录'
+					},
+					fail: res => {
+						console.log('用户拒绝了隐私协议')
+					}
+				})
+			}
 		}
 	}
 </script>

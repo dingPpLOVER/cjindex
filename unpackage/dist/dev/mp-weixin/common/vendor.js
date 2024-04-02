@@ -9466,9 +9466,9 @@ internalMixin(Vue);
 
 /***/ }),
 /* 26 */
-/*!*****************************!*\
-  !*** D:/cjindex/pages.json ***!
-  \*****************************/
+/*!*********************************!*\
+  !*** D:/项目/cj-index/pages.json ***!
+  \*********************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
@@ -9612,9 +9612,9 @@ function normalizeComponent (
 
 /***/ }),
 /* 33 */
-/*!*******************************************!*\
-  !*** D:/cjindex/uni.promisify.adaptor.js ***!
-  \*******************************************/
+/*!***********************************************!*\
+  !*** D:/项目/cj-index/uni.promisify.adaptor.js ***!
+  \***********************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -9641,9 +9641,9 @@ uni.addInterceptor({
 /* 38 */,
 /* 39 */,
 /* 40 */
-/*!******************************************!*\
-  !*** D:/cjindex/static/json/jptext.json ***!
-  \******************************************/
+/*!**********************************************!*\
+  !*** D:/项目/cj-index/static/json/jptext.json ***!
+  \**********************************************/
 /*! exports provided: 0, 1, 2, 3, 4, 5, 6, 7, default */
 /***/ (function(module) {
 
@@ -9658,15 +9658,21 @@ module.exports = JSON.parse("[{\"name\":\"龙\",\"class\":\"zpsin\"},{\"name\":\
 /* 46 */,
 /* 47 */,
 /* 48 */,
-/* 49 */
-/*!****************************************************!*\
-  !*** D:/cjindex/node_modules/uqrcodejs/uqrcode.js ***!
-  \****************************************************/
+/* 49 */,
+/* 50 */,
+/* 51 */,
+/* 52 */,
+/* 53 */,
+/* 54 */,
+/* 55 */
+/*!********************************************************!*\
+  !*** D:/项目/cj-index/node_modules/uqrcodejs/uqrcode.js ***!
+  \********************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-/* WEBPACK VAR INJECTION */(function(global) {var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_RESULT__;var _regeneratorRuntime = __webpack_require__(/*! @babel/runtime/regenerator */ 50);
-var _asyncToGenerator = __webpack_require__(/*! @babel/runtime/helpers/asyncToGenerator */ 52);
+/* WEBPACK VAR INJECTION */(function(global) {var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_RESULT__;var _regeneratorRuntime = __webpack_require__(/*! @babel/runtime/regenerator */ 56);
+var _asyncToGenerator = __webpack_require__(/*! @babel/runtime/helpers/asyncToGenerator */ 58);
 var _defineProperty = __webpack_require__(/*! @babel/runtime/helpers/defineProperty */ 11);
 var _typeof = __webpack_require__(/*! @babel/runtime/helpers/typeof */ 13);
 function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); enumerableOnly && (symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; })), keys.push.apply(keys, symbols); } return keys; }
@@ -10900,10 +10906,10 @@ function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { va
     o && o(b, this, !0);
   }, b;
 });
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../../../HBuilderX/HBuilderX/plugins/uniapp-cli/node_modules/webpack/buildin/global.js */ 3)))
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../../../../Hbuilder/HBuilderX/plugins/uniapp-cli/node_modules/webpack/buildin/global.js */ 3)))
 
 /***/ }),
-/* 50 */
+/* 56 */
 /*!************************************************************************************************!*\
   !*** ./node_modules/@dcloudio/vue-cli-plugin-uni/packages/@babel/runtime/regenerator/index.js ***!
   \************************************************************************************************/
@@ -10912,11 +10918,11 @@ function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { va
 
 // TODO(Babel 8): Remove this file.
 
-var runtime = __webpack_require__(/*! @babel/runtime/helpers/regeneratorRuntime */ 51)();
+var runtime = __webpack_require__(/*! @babel/runtime/helpers/regeneratorRuntime */ 57)();
 module.exports = runtime;
 
 /***/ }),
-/* 51 */
+/* 57 */
 /*!*******************************************************************!*\
   !*** ./node_modules/@babel/runtime/helpers/regeneratorRuntime.js ***!
   \*******************************************************************/
@@ -11237,7 +11243,7 @@ function _regeneratorRuntime() {
 module.exports = _regeneratorRuntime, module.exports.__esModule = true, module.exports["default"] = module.exports;
 
 /***/ }),
-/* 52 */
+/* 58 */
 /*!*****************************************************************!*\
   !*** ./node_modules/@babel/runtime/helpers/asyncToGenerator.js ***!
   \*****************************************************************/

@@ -257,3 +257,22 @@
 	color: #ffffff;
 	font-size: 12px;
 }
+
+
+
+.inp{
+	width: 50px;
+	height: 25px;
+	display: inline-block;
+	vertical-align: top;
+	text-align: center;
+	color:#00ffff ;
+	margin-left: 15px;
+}
+.wel{
+	display: inline-block;
+	vertical-align: top;
+}
+.nickname{
+	line-height: 25px;
+}

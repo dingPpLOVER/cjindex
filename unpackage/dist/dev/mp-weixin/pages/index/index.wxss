@@ -1,6 +1,7 @@
 
 .box {
-	background: url('https://raw.githubusercontent.com/dingPpLOVER/image/master/cj/logincj.png');
+	/* background: url('https://raw.githubusercontent.com/dingPpLOVER/image/master/cj/logincj.png'); */
+	background: url(https://232r34t825.zicp.fun/ftpData/tmp/dp/cj/cj/logincj.png);
 	height: 100%;
 	width: 100%;
 	position: absolute;

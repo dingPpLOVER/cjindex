@@ -1,0 +1,60 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+#app{
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	background: url(https://232r34t825.zicp.fun/ftpData/tmp/dp/cj/cj/logposbj.png) no-repeat center;
+	background-size: 100%;
+	font-size: 13px;
+}
+.box{
+	height: 330px;
+	width: 80%;
+	margin: auto;
+	background-color: #ffffff22;
+	margin-top: 30%;
+	border-radius: 5px;
+	box-shadow: 0 0 8px #cccccc;
+	color: #ffffff;
+}
+.titletext{
+	line-height: 30px;
+	margin-left: 10%;
+	font-size: 14px;
+	font-weight: bold;
+}
+.inpsin{
+	background-color: #cccccc22;
+	width: 80%;
+	height: 30px;
+	margin: auto;
+	border-radius: 5px;
+	margin-top: 8px;
+}
+.icon{
+	height: 16px;
+	width: 16px;
+	margin-top: 6px;
+	margin-left: 6px;
+}
+.inpclass{
+	margin-top: -22px;
+	padding-left: 30px;
+	color: #ffffff;
+}
+/deep/.plac{
+	color: #cbcbcb;
+}
+.but{
+	height: 30px;
+	width: 80%;
+	line-height: 30px;
+	margin: auto;
+	margin-top: 10px;
+	font-size: 13px;
+	color: #ffffff;
+	background-color: #8a8a8a;
+}

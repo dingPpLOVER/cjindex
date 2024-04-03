@@ -1,9 +1,11 @@
 {
   "pages": [
+    "pages/index/index",
     "pages/Lucky-Draw/Lucky-Draw ",
     "pages/log_pos/log_pos",
-    "pages/index_cy/index_cy",
-    "pages/index/index"
+    "pages/actend_alert/actend_alert",
+    "pages/posindex/posindex",
+    "pages/index_cy/index_cy"
   ],
   "subPackages": [],
   "window": {

@@ -1,0 +1,10 @@
+
+#app{
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	background: url(https://232r34t825.zicp.fun/ftpData/tmp/dp/cj/cj/cjbj.png) no-repeat center;
+	background-size: 100% 100%;
+	font-size: 13px;
+}
+

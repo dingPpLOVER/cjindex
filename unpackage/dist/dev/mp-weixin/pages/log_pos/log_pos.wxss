@@ -1,0 +1,57 @@
+#app.data-v-e1b10e8c{
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	background: url(https://232r34t825.zicp.fun/ftpData/tmp/dp/cj/cj/logposbj.png) no-repeat center;
+	background-size: 100%;
+	font-size: 13px;
+}
+.box.data-v-e1b10e8c{
+	height: 330px;
+	width: 80%;
+	margin: auto;
+	background-color: #ffffff22;
+	margin-top: 30%;
+	border-radius: 5px;
+	box-shadow: 0 0 8px #cccccc;
+	color: #ffffff;
+}
+.titletext.data-v-e1b10e8c{
+	line-height: 30px;
+	margin-left: 10%;
+	font-size: 14px;
+	font-weight: bold;
+}
+.inpsin.data-v-e1b10e8c{
+	background-color: #cccccc22;
+	width: 80%;
+	height: 30px;
+	margin: auto;
+	border-radius: 5px;
+	margin-top: 8px;
+}
+.icon.data-v-e1b10e8c{
+	height: 16px;
+	width: 16px;
+	margin-top: 6px;
+	margin-left: 6px;
+}
+.inpclass.data-v-e1b10e8c{
+	margin-top: -22px;
+	padding-left: 30px;
+	color: #ffffff;
+}
+.data-v-e1b10e8c .plac{
+	color: #cbcbcb;
+}
+.but.data-v-e1b10e8c{
+	height: 30px;
+	width: 80%;
+	line-height: 30px;
+	margin: auto;
+	margin-top: 10px;
+	font-size: 13px;
+	color: #ffffff;
+	background-color: #8a8a8a;
+}
+

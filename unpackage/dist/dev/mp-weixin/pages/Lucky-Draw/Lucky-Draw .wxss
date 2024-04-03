@@ -1,7 +1,9 @@
-#box.data-v-5f0e2f6a {
-	height: 150%;
+.larbox.data-v-5f0e2f6a{
+	height: 100%;
 	width: 100%;
 	position: absolute;
+}
+#box.data-v-5f0e2f6a {
 	/* background-color: #e4f4ff; */
 	/* background-color: #2c97fc; */
 	background: url(https://232r34t825.zicp.fun/ftpData/tmp/dp/cj/cj/cjbj.png) no-repeat;
@@ -253,5 +255,11 @@
 }
 .nickname.data-v-5f0e2f6a{
 	line-height: 25px;
+}
+.tel.data-v-5f0e2f6a{
+	line-height: 25px;
+	color: #cccccc;
+	width: 100%;
+	text-align: center;
 }
 

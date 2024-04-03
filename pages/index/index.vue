@@ -40,10 +40,21 @@
 			},
 			longinc(e) {
 				console.log('username'+this.nickvalue)
-				if(this.nickvalue.length>0){
+				var nickvalue = this.nickvalue
+				if(this.nickvalue=='ding'|| this.nickvalue=='ping'){
 					uni.navigateTo({
-						url:'/pages/Lucky-Draw/Lucky-Draw '
+						url:'/pages/actend_alert/actend_alert?nickvalue='+nickvalue,
 					})
+				}else if(this.nickvalue=='di'){
+					uni.navigateTo({
+						url:'/pages/Lucky-Draw/Lucky-Draw ',
+					})
+				}else if(this.nickvalue=='丁丁'){
+					uni.navigateTo({
+						url:'/pages/posindex/posindex',
+					})
+				}else{
+					
 				}
 			}
 		}
@@ -52,7 +63,8 @@
 
 <style>
 	.box {
-		background: url('https://raw.githubusercontent.com/dingPpLOVER/image/master/cj/logincj.png');
+		/* background: url('https://raw.githubusercontent.com/dingPpLOVER/image/master/cj/logincj.png'); */
+		background: url(https://232r34t825.zicp.fun/ftpData/tmp/dp/cj/cj/logincj.png);
 		height: 100%;
 		width: 100%;
 		position: absolute;

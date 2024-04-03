@@ -1,40 +1,43 @@
 <template>
-	<div id="box">
-		<div class="nickname">
-			<div class="wel">欢迎用户</div>
-			<input type="nickname" class="inp" v-model="nickvalue" @click="onInput"/>
-		</div>
-		<div class="actname">集字抽奖送福利</div>
-		<div class="timese">
-			<span>2024年4月1日</span>-<span>2024年4月11日</span>
-		</div>
-		<div class="scrollpage">
-			<div>恭喜徐*完成集字</div>
-		</div>
-		<div class="bot">
-			<div class="horselamp">
-				<div class="lamptf" :class="item" v-for="(item,index) in lamparr" :key="index" :style="{'background-color':lamindex==index ?'#55ffff':''}"></div>
+	<div class="larbox">
+		<div id="box">
+			<div class="nickname">
+				<div class="wel">欢迎用户</div>
+				<input type="nickname" class="inp" v-model="nickvalue" @blur="onInput"/>
 			</div>
-			<div class="zptext">
-				<!-- <view :style="{ color: isActive ? 'red' : 'blue' }"> -->
-				<view class="zpsin " :class="item.class" v-for="(item,index) in jptext" :key="index"
-					:style="{'background-color':intcol == index?'#ff3758':'#ffffff' }" >{{item.name}}</view>
-				<div class="zpbut" @click="move">
-					<div class="zpbut_" >开始抽奖</div>
+			<div class="actname">集字抽奖送福利</div>
+			<div class="timese">
+				<span>2024年4月1日</span>-<span>2024年4月11日</span>
+			</div>
+			<div class="scrollpage">
+				<div>恭喜徐*完成集字</div>
+			</div>
+			<div class="bot">
+				<div class="horselamp">
+					<div class="lamptf" :class="item" v-for="(item,index) in lamparr" :key="index" :style="{'background-color':lamindex==index ?'#55ffff':''}"></div>
+				</div>
+				<div class="zptext">
+					<!-- <view :style="{ color: isActive ? 'red' : 'blue' }"> -->
+					<view class="zpsin " :class="item.class" v-for="(item,index) in jptext" :key="index"
+						:style="{'background-color':intcol == index?'#ff3758':'#ffffff' }" >{{item.name}}</view>
+					<div class="zpbut" @click="move">
+						<div class="zpbut_" >开始抽奖</div>
+					</div>
+				</div>
+				<div class="sydiv">可用抽奖次数 {{synumber}} 次</div>
+			</div>
+			<div class="com_pro_text">我的集字</div>
+			<div class="com_pro">
+				<div class="com_prosin" v-for="(item,index) in havetextarr_" :key="index"> 
+					<div class="com_prosincon" :style="{'color':item.number>0?'#ca8000':'#eee8cd'}">
+						<div class="com_prospan" :style="{'display':item.number>0?'noraml':'none'}">{{item.number>0 ?item.number: ''}}</div>
+						{{item.name}}
+					</div>
 				</div>
 			</div>
-			<div class="sydiv">可用抽奖次数 {{synumber}} 次</div>
+			<div class="pos" @click="tologpos">成为商户</div>
+			<div class="tel">商家电话：15266666666</div>
 		</div>
-		<div class="com_pro_text">我的集字</div>
-		<div class="com_pro">
-			<div class="com_prosin" v-for="(item,index) in havetextarr_" :key="index"> 
-				<div class="com_prosincon" :style="{'color':item.number>0?'#ca8000':'#eee8cd'}">
-					<div class="com_prospan" :style="{'display':item.number>0?'noraml':'none'}">{{item.number>0 ?item.number: ''}}</div>
-					{{item.name}}
-				</div>
-			</div>
-		</div>
-		<div class="pos" @click="tologpos">成为商户</div>
 	</div>
 </template>
 
@@ -158,12 +161,17 @@
 				
 			},
 			tologpos(){
+				var nickvalue = this.nickvalue
+				// console.log(nickvalue)
 				uni.navigateTo({
-					url:'/pages/log_pos/log_pos'
+					url:'/pages/log_pos/log_pos?nickvalue='+nickvalue
 				})
+				
 			},
 			onInput(e){
+				console.log(e.detail.value)
 				this.nickvalue = e.detail.value
+				
 			},
 		},
 		mounted() {

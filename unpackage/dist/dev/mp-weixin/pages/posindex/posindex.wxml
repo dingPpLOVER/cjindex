@@ -1,1 +1,1 @@
-<view class="_div"></view>
+<view id="box" class="_div data-v-5e4b1774"><view class="introduce _div data-v-5e4b1774"><text class="inttext data-v-5e4b1774">尊敬的商户</text><text class="intvalue data-v-5e4b1774">{{nickvalue+" 你好！"}}</text></view><view class="start_act _div data-v-5e4b1774"></view><view class="act_detail _div data-v-5e4b1774" style="{{'height:'+(act_detail+'px')+';'}}"><view class="act_text _div data-v-5e4b1774">活动详情</view><view class="act_list _div data-v-5e4b1774"></view></view></view>

@@ -51,7 +51,7 @@
 					})
 				}else if(this.nickvalue=='丁丁'){
 					uni.navigateTo({
-						url:'/pages/posindex/posindex',
+						url:'/pages/posindex/posindex?nickvalue='+nickvalue,
 					})
 				}else{
 					

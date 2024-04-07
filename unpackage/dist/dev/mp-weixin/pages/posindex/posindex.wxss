@@ -1,0 +1,52 @@
+#box.data-v-5e4b1774{
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	background: url(https://232r34t825.zicp.fun/ftpData/tmp/dp/cj/cj/posindexbj2.png) no-repeat;
+	background-size: 100% 100%;
+	font-size: 14px;
+}
+.inttext.data-v-5e4b1774{
+	margin-left: 8px;
+}
+.introduce.data-v-5e4b1774{
+	line-height: 30px;
+	color: #ccbdff;
+}
+.intvalue.data-v-5e4b1774{
+	margin: 0 5px;
+}
+.start_act.data-v-5e4b1774{
+	height: 80px;
+	width: 200px;
+	background: url(https://232r34t825.zicp.fun/ftpData/tmp/dp/cj/cj/fqhd.png) no-repeat;
+	background-size: 100% 100%;
+	margin: auto;
+}
+.act_detail.data-v-5e4b1774{
+	width: 90%;
+	margin: auto;
+	margin-top: 15px;
+	text-align: center;
+	color: #ffffff;
+}
+.act_text.data-v-5e4b1774{
+	height: 40px;
+	width: 40%;
+	margin: auto;
+	background: linear-gradient(130deg ,#ffffff,#5994de,#ffffff);
+	border-radius: 8px;
+	line-height: 40px;
+	font-weight: bold;
+	font-size: 15px;
+}
+.act_list.data-v-5e4b1774{
+	margin: auto;
+	width: 80%;
+	height: 300px;
+	background-color: #fff9e944;
+	min-height: 80px;
+	margin-top: 10px;
+	border-radius: 3px;
+}
+

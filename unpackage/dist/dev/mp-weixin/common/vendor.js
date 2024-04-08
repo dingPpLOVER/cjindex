@@ -1557,7 +1557,7 @@ function initData(vueOptions, context) {
     try {
       data = data.call(context); // 支持 Vue.prototype 上挂的数据
     } catch (e) {
-      if (Object({"NODE_ENV":"development","VUE_APP_DARK_MODE":"false","VUE_APP_NAME":"cj-index","VUE_APP_PLATFORM":"mp-weixin","BASE_URL":"/"}).VUE_APP_DEBUG) {
+      if (Object({"VUE_APP_DARK_MODE":"false","VUE_APP_NAME":"cj-index","VUE_APP_PLATFORM":"mp-weixin","NODE_ENV":"development","BASE_URL":"/"}).VUE_APP_DEBUG) {
         console.warn('根据 Vue 的 data 函数初始化小程序 data 失败，请尽量确保 data 函数中不访问 vm 对象，否则可能影响首次数据渲染速度。', data);
       }
     }
@@ -8923,7 +8923,7 @@ function type(obj) {
 
 function flushCallbacks$1(vm) {
     if (vm.__next_tick_callbacks && vm.__next_tick_callbacks.length) {
-        if (Object({"NODE_ENV":"development","VUE_APP_DARK_MODE":"false","VUE_APP_NAME":"cj-index","VUE_APP_PLATFORM":"mp-weixin","BASE_URL":"/"}).VUE_APP_DEBUG) {
+        if (Object({"VUE_APP_DARK_MODE":"false","VUE_APP_NAME":"cj-index","VUE_APP_PLATFORM":"mp-weixin","NODE_ENV":"development","BASE_URL":"/"}).VUE_APP_DEBUG) {
             var mpInstance = vm.$scope;
             console.log('[' + (+new Date) + '][' + (mpInstance.is || mpInstance.route) + '][' + vm._uid +
                 ']:flushCallbacks[' + vm.__next_tick_callbacks.length + ']');
@@ -8944,14 +8944,14 @@ function nextTick$1(vm, cb) {
     //1.nextTick 之前 已 setData 且 setData 还未回调完成
     //2.nextTick 之前存在 render watcher
     if (!vm.__next_tick_pending && !hasRenderWatcher(vm)) {
-        if(Object({"NODE_ENV":"development","VUE_APP_DARK_MODE":"false","VUE_APP_NAME":"cj-index","VUE_APP_PLATFORM":"mp-weixin","BASE_URL":"/"}).VUE_APP_DEBUG){
+        if(Object({"VUE_APP_DARK_MODE":"false","VUE_APP_NAME":"cj-index","VUE_APP_PLATFORM":"mp-weixin","NODE_ENV":"development","BASE_URL":"/"}).VUE_APP_DEBUG){
             var mpInstance = vm.$scope;
             console.log('[' + (+new Date) + '][' + (mpInstance.is || mpInstance.route) + '][' + vm._uid +
                 ']:nextVueTick');
         }
         return nextTick(cb, vm)
     }else{
-        if(Object({"NODE_ENV":"development","VUE_APP_DARK_MODE":"false","VUE_APP_NAME":"cj-index","VUE_APP_PLATFORM":"mp-weixin","BASE_URL":"/"}).VUE_APP_DEBUG){
+        if(Object({"VUE_APP_DARK_MODE":"false","VUE_APP_NAME":"cj-index","VUE_APP_PLATFORM":"mp-weixin","NODE_ENV":"development","BASE_URL":"/"}).VUE_APP_DEBUG){
             var mpInstance$1 = vm.$scope;
             console.log('[' + (+new Date) + '][' + (mpInstance$1.is || mpInstance$1.route) + '][' + vm._uid +
                 ']:nextMPTick');
@@ -9047,7 +9047,7 @@ var patch = function(oldVnode, vnode) {
     });
     var diffData = this.$shouldDiffData === false ? data : diff(data, mpData);
     if (Object.keys(diffData).length) {
-      if (Object({"NODE_ENV":"development","VUE_APP_DARK_MODE":"false","VUE_APP_NAME":"cj-index","VUE_APP_PLATFORM":"mp-weixin","BASE_URL":"/"}).VUE_APP_DEBUG) {
+      if (Object({"VUE_APP_DARK_MODE":"false","VUE_APP_NAME":"cj-index","VUE_APP_PLATFORM":"mp-weixin","NODE_ENV":"development","BASE_URL":"/"}).VUE_APP_DEBUG) {
         console.log('[' + (+new Date) + '][' + (mpInstance.is || mpInstance.route) + '][' + this._uid +
           ']差量更新',
           JSON.stringify(diffData));
@@ -9707,15 +9707,17 @@ function onsubmit(event) {
 /* 77 */,
 /* 78 */,
 /* 79 */,
-/* 80 */
+/* 80 */,
+/* 81 */,
+/* 82 */
 /*!****************************************************!*\
   !*** D:/cjindex/node_modules/uqrcodejs/uqrcode.js ***!
   \****************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-/* WEBPACK VAR INJECTION */(function(global) {var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_RESULT__;var _regeneratorRuntime = __webpack_require__(/*! @babel/runtime/regenerator */ 81);
-var _asyncToGenerator = __webpack_require__(/*! @babel/runtime/helpers/asyncToGenerator */ 83);
+/* WEBPACK VAR INJECTION */(function(global) {var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_RESULT__;var _regeneratorRuntime = __webpack_require__(/*! @babel/runtime/regenerator */ 83);
+var _asyncToGenerator = __webpack_require__(/*! @babel/runtime/helpers/asyncToGenerator */ 85);
 var _defineProperty = __webpack_require__(/*! @babel/runtime/helpers/defineProperty */ 11);
 var _typeof = __webpack_require__(/*! @babel/runtime/helpers/typeof */ 13);
 function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); enumerableOnly && (symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; })), keys.push.apply(keys, symbols); } return keys; }
@@ -10952,7 +10954,7 @@ function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { va
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../../../HBuilderX/HBuilderX/plugins/uniapp-cli/node_modules/webpack/buildin/global.js */ 3)))
 
 /***/ }),
-/* 81 */
+/* 83 */
 /*!************************************************************************************************!*\
   !*** ./node_modules/@dcloudio/vue-cli-plugin-uni/packages/@babel/runtime/regenerator/index.js ***!
   \************************************************************************************************/
@@ -10961,11 +10963,11 @@ function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { va
 
 // TODO(Babel 8): Remove this file.
 
-var runtime = __webpack_require__(/*! @babel/runtime/helpers/regeneratorRuntime */ 82)();
+var runtime = __webpack_require__(/*! @babel/runtime/helpers/regeneratorRuntime */ 84)();
 module.exports = runtime;
 
 /***/ }),
-/* 82 */
+/* 84 */
 /*!*******************************************************************!*\
   !*** ./node_modules/@babel/runtime/helpers/regeneratorRuntime.js ***!
   \*******************************************************************/
@@ -11286,7 +11288,7 @@ function _regeneratorRuntime() {
 module.exports = _regeneratorRuntime, module.exports.__esModule = true, module.exports["default"] = module.exports;
 
 /***/ }),
-/* 83 */
+/* 85 */
 /*!*****************************************************************!*\
   !*** ./node_modules/@babel/runtime/helpers/asyncToGenerator.js ***!
   \*****************************************************************/
@@ -11324,6 +11326,21 @@ function _asyncToGenerator(fn) {
   };
 }
 module.exports = _asyncToGenerator, module.exports.__esModule = true, module.exports["default"] = module.exports;
+
+/***/ }),
+/* 86 */,
+/* 87 */,
+/* 88 */,
+/* 89 */,
+/* 90 */,
+/* 91 */
+/*!********************************************!*\
+  !*** D:/cjindex/static/json/posindex.json ***!
+  \********************************************/
+/*! exports provided: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, default */
+/***/ (function(module) {
+
+module.exports = JSON.parse("[{\"number\":\"1\",\"name\":\"豪佳香\",\"awards\":\"现金红包666元\"},{\"number\":\"2\",\"name\":\"楚山孤\",\"awards\":\"现金红包667元\"},{\"number\":\"3\",\"name\":\"月亮\",\"awards\":\"现金红包668元\"},{\"number\":\"4\",\"name\":\"茶茶\",\"awards\":\"现金红包669元\"},{\"number\":\"5\",\"name\":\"大桔\",\"awards\":\"现金红包670元\"},{\"number\":\"6\",\"name\":\"一条酸菜鱼\",\"awards\":\"现金红包671元\"},{\"number\":\"7\",\"name\":\"你好\",\"awards\":\"现金红包672元\"},{\"number\":\"8\",\"name\":\"外号em\",\"awards\":\"现金红包673元\"},{\"number\":\"9\",\"name\":\"kkk\",\"awards\":\"现金红包674元\"},{\"number\":\"10\",\"name\":\",,,\",\"awards\":\"现金红包675元\"},{\"number\":\"11\",\"name\":\"好香\",\"awards\":\"现金红包676元\"},{\"number\":\"12\",\"name\":\"豪佳香\",\"awards\":\"现金红包677元\"},{\"number\":\"13\",\"name\":\"楚山孤\",\"awards\":\"现金红包678元\"},{\"number\":\"14\",\"name\":\"月亮\",\"awards\":\"现金红包679元\"},{\"number\":\"15\",\"name\":\"茶茶\",\"awards\":\"现金红包680元\"},{\"number\":\"16\",\"name\":\"大桔\",\"awards\":\"现金红包681元\"},{\"number\":\"17\",\"name\":\"一条酸菜鱼\",\"awards\":\"现金红包682元\"},{\"number\":\"18\",\"name\":\"你好\",\"awards\":\"现金红包683元\"}]");
 
 /***/ })
 ]]);

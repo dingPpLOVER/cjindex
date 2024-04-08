@@ -6,17 +6,35 @@
 		<div class="start_act"></div>
 		<div class="act_detail" :style="{height:act_detail+'px'}">
 			<div class="act_text">活动详情</div>
-			<div class="act_list"></div>
+			<div class="act_list" :style="{height:act_detail-50+'px'}" >
+				<div v-if="jsonlist.length>0">
+					<div class="titpage">
+						<div class="titsin">序号</div>
+						<div class="titsin">用户名称</div>
+						<div class="titsin1">奖品</div>
+					</div>
+					<div class="act_listta" :style="{height:act_detail-80+'px'}">
+						<div class="titpage_" v-for="(item,index) in jsonlist" :key="index">
+							<div class="titsin_">{{item.number}}</div>
+							<div class="titsin_">{{item.name}}</div>
+							<div class="titsin1_">{{item.awards}}</div>
+						</div>
+					</div>
+					
+				</div>
+			</div>
 		</div>
 	</div>
 </template>
 
 <script>
+	import jsonlistarr from '@/static/json/posindex.json'
 	export default {
 		data() {
 			return {
 				nickvalue: '',
-				act_detail: ''
+				act_detail: '',
+				jsonlist:jsonlistarr
 			}
 		},
 		methods: {
@@ -35,6 +53,7 @@
 		},
 		mounted() {
 			this.getDivHeight()
+			console.log(this.jsonlist)
 		},
 		onLoad(option) {
 			this.nickvalue = option.nickvalue

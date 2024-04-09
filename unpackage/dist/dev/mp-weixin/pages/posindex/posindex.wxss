@@ -34,11 +34,12 @@
 	height: 40px;
 	width: 40%;
 	margin: auto;
-	background: linear-gradient(130deg ,#ffffff,#5994de,#ffffff);
+	background: linear-gradient(130deg ,#87b5ff,#5994de,#87b5ff);
 	border-radius: 8px;
 	line-height: 40px;
 	font-weight: bold;
 	font-size: 15px;
+	box-shadow:4px 4px 4px #6099e3;
 }
 .act_list.data-v-5e4b1774{
 	margin: auto;
@@ -46,7 +47,7 @@
 	background-color: #fff9e944;
 	min-height: 80px;
 	margin-top: 10px;
-	border-radius: 3px;
+	border-radius: 5px;
 }
 .titpage.data-v-5e4b1774{
 	height: 30px;
@@ -67,13 +68,15 @@
 .titpage_.data-v-5e4b1774{
 	height: 25px;
 	width: 100%;
+	line-height: 25px;
 	display: flex;
 	flex-direction: row;
-	border-bottom: 1px solid #dbdafe;
+	border-bottom: 1px solid #dbdafe55;
 	font-size: 12px;
 }
 .act_listta.data-v-5e4b1774{
 	overflow: scroll;
 	width: 100%;
+	color: #fdfdfd;
 }
 

@@ -1,0 +1,73 @@
+.box{
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	background: url(https://232r34t825.zicp.fun/ftpData/tmp/dp/cj/cj/setbj1.png) no-repeat;
+	background-size: 100% 100%;
+	font-size: 13px;
+}
+.box_s{
+	height: 100%;
+	width: 100%;
+	padding-bottom: 8px;
+	overflow: scroll;
+}
+.title{
+	width: 90%;
+	margin: auto;
+	margin-top: 10px;
+}
+.titlet{
+	width: 70vw;
+	margin: auto;
+}
+.content{
+	width: 90%;
+	margin:5px auto;
+	border-radius: 5px;
+	background-color: #ffffff;
+	padding-bottom: 8px;
+}
+.fontc{
+	margin: auto;
+	height: 80vw;
+	width: 80vw;
+	/* background-color: #ffffff; */
+	border-radius: 8px;
+}
+.fontcsin{
+	display: inline-block;
+	vertical-align: top;
+	height: 20vw;
+	width: 20vw;
+	background: url(https://232r34t825.zicp.fun/ftpData/tmp/dp/cj/cj/fontk.png) no-repeat;
+	background-size: 100% 100%;
+	margin-left: 5vw;
+	margin-top: 5vw;
+	font-weight: bold;
+}
+.setfontinp{
+	text-align: center;
+	line-height: 20vw;
+	height: 20vw;
+	width: 20vw;
+	
+}
+.inputdiv{
+	height: 40px;
+	width: 80%;
+	margin: auto;
+	background: url(https://232r34t825.zicp.fun/ftpData/tmp/dp/cj/cj/inputk.png) no-repeat;
+	background-size: 100% 100%;
+	margin-top: 10px;
+}
+.setinput{
+	height: 100%;
+	width: 85%;
+	padding-left: 30px;
+}
+.btn{
+	width: 80%;
+	margin: auto;
+	margin-top: 15px;
+}

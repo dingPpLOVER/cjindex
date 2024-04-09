@@ -3,7 +3,7 @@
 		<div class="introduce">
 			<text class="inttext">尊敬的商户</text><text class="intvalue">{{nickvalue}} 你好！</text>
 		</div>
-		<div class="start_act"></div>
+		<div class="start_act" @click="toset"></div>
 		<div class="act_detail" :style="{height:act_detail+'px'}">
 			<div class="act_text">活动详情</div>
 			<div class="act_list" :style="{height:act_detail-50+'px'}" >
@@ -49,6 +49,12 @@
 						this.act_detail = data.height - 150
 					}
 				}).exec(); // 执行选择器查询
+			},
+			toset(){
+				console.log(111)
+				uni.navigateTo({
+					url:'/pages/set/set'
+				})
 			}
 		},
 		mounted() {

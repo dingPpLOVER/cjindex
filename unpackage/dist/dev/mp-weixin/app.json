@@ -1,5 +1,6 @@
 {
   "pages": [
+    "pages/set/set",
     "pages/index/index",
     "pages/Lucky-Draw/Lucky-Draw ",
     "pages/log_pos/log_pos",

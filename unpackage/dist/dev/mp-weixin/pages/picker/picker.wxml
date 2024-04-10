@@ -1,0 +1,1 @@
+<u-picker bind:input="__e" vue-id="f120e080-1" mode="time" params="{{params}}" value="{{show}}" data-event-opts="{{[['^input',[['__set_model',['','show','$event',[]]]]]]}}" bind:__l="__l" vue-slots="{{['default']}}">{{time}}</u-picker>

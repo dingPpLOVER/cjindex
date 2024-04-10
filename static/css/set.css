@@ -70,4 +70,8 @@
 	width: 80%;
 	margin: auto;
 	margin-top: 15px;
+	height: 35px;
+	line-height: 35px;
+	font-size: 15px;
+	background: linear-gradient(to right ,#bcf0e1,#d9eee5,#bcf0e1);
 }

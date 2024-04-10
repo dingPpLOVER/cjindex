@@ -1,5 +1,6 @@
 {
   "pages": [
+    "pages/picker/picker",
     "pages/set/set",
     "pages/index/index",
     "pages/Lucky-Draw/Lucky-Draw ",

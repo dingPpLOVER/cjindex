@@ -1,7 +1,18 @@
 {
+	"easycom": {
+		"autoscan": true,
+		"^u-(.*)": "uview-ui/components/u-$1/u-$1.vue"
+	},
 	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
 		{
-		
+
+			"path": "pages/picker/picker",
+			"style": {
+				"navigationBarTitleText": "时间选择器"
+			}
+		},
+		{
+
 			"path": "pages/set/set",
 			"style": {
 				"navigationBarTitleText": "发起抽奖"
@@ -21,7 +32,7 @@
 			}
 		},
 		{
-		
+
 			"path": "pages/log_pos/log_pos",
 			"style": {
 				"navigationBarTitleText": "uni-app"
@@ -45,7 +56,6 @@
 				"navigationBarTitleText": "uni-app"
 			}
 		}
-		
 	],
 	"globalStyle": {
 		"navigationBarTextStyle": "black",
@@ -54,4 +64,5 @@
 		"backgroundColor": "#F8F8F8"
 	},
 	"uniIdRouter": {}
+
 }

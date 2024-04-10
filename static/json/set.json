@@ -1,24 +1,32 @@
 [{
-	"sty":5
+	"sty":5,
+	"val":"font1"
 },
 {
-	"sty":5
+	"sty":5,
+	"val":"font2"
 },
 {
-	"sty":5
+	"sty":5,
+	"val":"font3"
 },
 {
-	"sty":5
+	"sty":5,
+	"val":"font4"
 },
 {
-	"sty":30
+	"sty":30,
+	"val":"font5"
 },
 {
-	"sty":5
+	"sty":5,
+	"val":"font6"
 },
 {
-	"sty":5
+	"sty":5,
+	"val":"font7"
 },
 {
-	"sty":5
+	"sty":5,
+	"val":"font8"
 }]

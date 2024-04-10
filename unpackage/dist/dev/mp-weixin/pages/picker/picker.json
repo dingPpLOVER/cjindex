@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "时间选择器",
+  "usingComponents": {
+    "u-picker": "/node-modules/uview-ui/components/u-picker/u-picker"
+  }
+}

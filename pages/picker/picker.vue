@@ -1,32 +1,17 @@
 <template>
-	<u-picker mode="time" v-model="show" :params="params">{{time}}</u-picker>
+	<view>
+		<u-calendar v-model="show" :mode="mode"></u-calendar>
+		<u-button @click="show = true">打开</u-button>
+	</view>
 </template>
+
 <script>
 	export default {
 		data() {
 			return {
-				params: {
-					year: true,
-					month: true,
-					day: true,
-					hour: true,
-					minute: true,
-					second: true
-				},
-				show: true,
-				time:'2024-04-10'
-			}
-		},
-
-		methods: {
-			onConfirm(value) {
-				// 用户确认选择的时间
-				console.log('选择的时间:', value);
+				show: false,
+				mode: 'date'
 			}
 		}
-
 	}
 </script>
-<style>
-
-</style>

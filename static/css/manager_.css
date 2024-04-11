@@ -1,0 +1,111 @@
+.box{
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	font-size: 13px;
+	background-color: #ffffff;
+}
+.viewtop{
+	height: 100px;
+	width: 100%;
+	background: linear-gradient(to bottom,#e2e8f3,#c0d3f3,#9fbdf3);
+}
+.scrollpage{
+	height: 30px;
+	width: 100%;
+	line-height: 30px;
+	margin-top: 70px;
+	position: absolute;
+}
+
+
+
+.sc{
+	height: 100%;
+	width: 100%;
+	color: #000000;
+	text-align: center;
+}
+.scrsintop_{
+	width: 33.33%;
+	display: inline-block;
+	vertical-align: top;
+	font-weight: bold;
+	background-color: #ffffff;
+	border-radius: 8px 8px 0 0;
+}
+.scrsintop{
+	width: 33.33%;
+	color: #616161;
+	display: inline-block;
+	vertical-align: top;
+}
+.sinswiper{
+	width: 100%;
+}
+.switsin{
+	height: 150px;
+	width: 100%;
+	margin-top: 10px;
+	background-color: #ffffff;
+}
+.titlename{
+	height: 35px;
+	line-height: 35px;
+	width: 100%;
+	border-top: 1px solid #cccccc66;
+	border-bottom: 1px solid #cccccc66;
+}
+.titlename_{
+	height: 35px;
+	line-height: 35px;
+	width: 100%;
+	border-top: 1px solid #cccccc66;
+	display: flex;
+	flex-direction: row;
+}
+.tboot{
+	flex: 1;
+	text-align: center;
+}
+.tbootline{
+	height: 25px;
+	margin-top: 8px;
+	border-left: 1px solid #cccccc66;
+}
+.waitname{
+	font-size: 15px;
+	margin-left: 10px;
+}
+.waittext{
+	color: #ff0000;
+	margin-right: 8px;
+	float: right;
+}
+.waittext_{
+	color: #78c0e3;
+	margin-right: 8px;
+	float: right;
+}
+.switsincon{
+	width: 100%;
+	height: 70px;
+	display: flex;
+	flex-direction: row;
+}
+.swimg{
+	height: 50px;
+	width: 50px;
+	border-radius: 5px;
+	margin: 10px;
+}
+.swiurl{
+	flex: 1;
+	margin-top: 15px;
+	font-size: 14px;
+}
+.switex{
+	color: #616161;
+	font-size: 13px;
+	margin-left: 5px;
+}

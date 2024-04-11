@@ -9480,7 +9480,9 @@ internalMixin(Vue);
 /* 29 */,
 /* 30 */,
 /* 31 */,
-/* 32 */
+/* 32 */,
+/* 33 */,
+/* 34 */
 /*!**********************************************************************************************************!*\
   !*** ./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib/runtime/componentNormalizer.js ***!
   \**********************************************************************************************************/
@@ -9611,7 +9613,7 @@ function normalizeComponent (
 
 
 /***/ }),
-/* 33 */
+/* 35 */
 /*!*************************************************!*\
   !*** D:/cjindex/node_modules/uview-ui/index.js ***!
   \*************************************************/
@@ -9627,20 +9629,20 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = void 0;
 var _defineProperty2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/defineProperty */ 11));
-var _mixin = _interopRequireDefault(__webpack_require__(/*! ./libs/mixin/mixin.js */ 34));
-var _mpMixin = _interopRequireDefault(__webpack_require__(/*! ./libs/mixin/mpMixin.js */ 35));
-var _luchRequest = _interopRequireDefault(__webpack_require__(/*! ./libs/luch-request */ 36));
-var _route = _interopRequireDefault(__webpack_require__(/*! ./libs/util/route.js */ 54));
-var _colorGradient = _interopRequireDefault(__webpack_require__(/*! ./libs/function/colorGradient.js */ 58));
-var _test = _interopRequireDefault(__webpack_require__(/*! ./libs/function/test.js */ 59));
-var _debounce = _interopRequireDefault(__webpack_require__(/*! ./libs/function/debounce.js */ 60));
-var _throttle = _interopRequireDefault(__webpack_require__(/*! ./libs/function/throttle.js */ 61));
-var _index = _interopRequireDefault(__webpack_require__(/*! ./libs/function/index.js */ 62));
-var _config = _interopRequireDefault(__webpack_require__(/*! ./libs/config/config.js */ 65));
-var _props = _interopRequireDefault(__webpack_require__(/*! ./libs/config/props.js */ 66));
-var _zIndex = _interopRequireDefault(__webpack_require__(/*! ./libs/config/zIndex.js */ 156));
-var _color = _interopRequireDefault(__webpack_require__(/*! ./libs/config/color.js */ 114));
-var _platform = _interopRequireDefault(__webpack_require__(/*! ./libs/function/platform */ 157));
+var _mixin = _interopRequireDefault(__webpack_require__(/*! ./libs/mixin/mixin.js */ 36));
+var _mpMixin = _interopRequireDefault(__webpack_require__(/*! ./libs/mixin/mpMixin.js */ 37));
+var _luchRequest = _interopRequireDefault(__webpack_require__(/*! ./libs/luch-request */ 38));
+var _route = _interopRequireDefault(__webpack_require__(/*! ./libs/util/route.js */ 56));
+var _colorGradient = _interopRequireDefault(__webpack_require__(/*! ./libs/function/colorGradient.js */ 60));
+var _test = _interopRequireDefault(__webpack_require__(/*! ./libs/function/test.js */ 61));
+var _debounce = _interopRequireDefault(__webpack_require__(/*! ./libs/function/debounce.js */ 62));
+var _throttle = _interopRequireDefault(__webpack_require__(/*! ./libs/function/throttle.js */ 63));
+var _index = _interopRequireDefault(__webpack_require__(/*! ./libs/function/index.js */ 64));
+var _config = _interopRequireDefault(__webpack_require__(/*! ./libs/config/config.js */ 67));
+var _props = _interopRequireDefault(__webpack_require__(/*! ./libs/config/props.js */ 68));
+var _zIndex = _interopRequireDefault(__webpack_require__(/*! ./libs/config/zIndex.js */ 158));
+var _color = _interopRequireDefault(__webpack_require__(/*! ./libs/config/color.js */ 116));
+var _platform = _interopRequireDefault(__webpack_require__(/*! ./libs/function/platform */ 159));
 function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); enumerableOnly && (symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; })), keys.push.apply(keys, symbols); } return keys; }
 function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = null != arguments[i] ? arguments[i] : {}; i % 2 ? ownKeys(Object(source), !0).forEach(function (key) { (0, _defineProperty2.default)(target, key, source[key]); }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)) : ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } return target; }
 // 看到此报错，是因为没有配置vue.config.js的【transpileDependencies】，详见：https://www.uviewui.com/components/npmSetting.html#_5-cli模式额外配置
@@ -9700,7 +9702,7 @@ exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 2)["default"]))
 
 /***/ }),
-/* 34 */
+/* 36 */
 /*!************************************************************!*\
   !*** D:/cjindex/node_modules/uview-ui/libs/mixin/mixin.js ***!
   \************************************************************/
@@ -9868,7 +9870,7 @@ exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 2)["default"]))
 
 /***/ }),
-/* 35 */
+/* 37 */
 /*!**************************************************************!*\
   !*** D:/cjindex/node_modules/uview-ui/libs/mixin/mpMixin.js ***!
   \**************************************************************/
@@ -9891,7 +9893,7 @@ var _default = {
 exports.default = _default;
 
 /***/ }),
-/* 36 */
+/* 38 */
 /*!*******************************************************************!*\
   !*** D:/cjindex/node_modules/uview-ui/libs/luch-request/index.js ***!
   \*******************************************************************/
@@ -9906,12 +9908,12 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 exports.default = void 0;
-var _Request = _interopRequireDefault(__webpack_require__(/*! ./core/Request */ 37));
+var _Request = _interopRequireDefault(__webpack_require__(/*! ./core/Request */ 39));
 var _default = _Request.default;
 exports.default = _default;
 
 /***/ }),
-/* 37 */
+/* 39 */
 /*!**************************************************************************!*\
   !*** D:/cjindex/node_modules/uview-ui/libs/luch-request/core/Request.js ***!
   \**************************************************************************/
@@ -9929,12 +9931,12 @@ exports.default = void 0;
 var _defineProperty2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/defineProperty */ 11));
 var _classCallCheck2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/classCallCheck */ 23));
 var _createClass2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/createClass */ 24));
-var _dispatchRequest = _interopRequireDefault(__webpack_require__(/*! ./dispatchRequest */ 38));
-var _InterceptorManager = _interopRequireDefault(__webpack_require__(/*! ./InterceptorManager */ 46));
-var _mergeConfig = _interopRequireDefault(__webpack_require__(/*! ./mergeConfig */ 47));
-var _defaults = _interopRequireDefault(__webpack_require__(/*! ./defaults */ 48));
-var _utils = __webpack_require__(/*! ../utils */ 41);
-var _clone = _interopRequireDefault(__webpack_require__(/*! ../utils/clone */ 49));
+var _dispatchRequest = _interopRequireDefault(__webpack_require__(/*! ./dispatchRequest */ 40));
+var _InterceptorManager = _interopRequireDefault(__webpack_require__(/*! ./InterceptorManager */ 48));
+var _mergeConfig = _interopRequireDefault(__webpack_require__(/*! ./mergeConfig */ 49));
+var _defaults = _interopRequireDefault(__webpack_require__(/*! ./defaults */ 50));
+var _utils = __webpack_require__(/*! ../utils */ 43);
+var _clone = _interopRequireDefault(__webpack_require__(/*! ../utils/clone */ 51));
 function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); enumerableOnly && (symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; })), keys.push.apply(keys, symbols); } return keys; }
 function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = null != arguments[i] ? arguments[i] : {}; i % 2 ? ownKeys(Object(source), !0).forEach(function (key) { (0, _defineProperty2.default)(target, key, source[key]); }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)) : ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } return target; }
 var Request = /*#__PURE__*/function () {
@@ -10117,7 +10119,7 @@ var Request = /*#__PURE__*/function () {
 exports.default = Request;
 
 /***/ }),
-/* 38 */
+/* 40 */
 /*!**********************************************************************************!*\
   !*** D:/cjindex/node_modules/uview-ui/libs/luch-request/core/dispatchRequest.js ***!
   \**********************************************************************************/
@@ -10132,14 +10134,14 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 exports.default = void 0;
-var _index = _interopRequireDefault(__webpack_require__(/*! ../adapters/index */ 39));
+var _index = _interopRequireDefault(__webpack_require__(/*! ../adapters/index */ 41));
 var _default = function _default(config) {
   return (0, _index.default)(config);
 };
 exports.default = _default;
 
 /***/ }),
-/* 39 */
+/* 41 */
 /*!****************************************************************************!*\
   !*** D:/cjindex/node_modules/uview-ui/libs/luch-request/adapters/index.js ***!
   \****************************************************************************/
@@ -10155,10 +10157,10 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = void 0;
 var _defineProperty2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/defineProperty */ 11));
-var _buildURL = _interopRequireDefault(__webpack_require__(/*! ../helpers/buildURL */ 40));
-var _buildFullPath = _interopRequireDefault(__webpack_require__(/*! ../core/buildFullPath */ 42));
-var _settle = _interopRequireDefault(__webpack_require__(/*! ../core/settle */ 45));
-var _utils = __webpack_require__(/*! ../utils */ 41);
+var _buildURL = _interopRequireDefault(__webpack_require__(/*! ../helpers/buildURL */ 42));
+var _buildFullPath = _interopRequireDefault(__webpack_require__(/*! ../core/buildFullPath */ 44));
+var _settle = _interopRequireDefault(__webpack_require__(/*! ../core/settle */ 47));
+var _utils = __webpack_require__(/*! ../utils */ 43);
 function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); enumerableOnly && (symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; })), keys.push.apply(keys, symbols); } return keys; }
 function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = null != arguments[i] ? arguments[i] : {}; i % 2 ? ownKeys(Object(source), !0).forEach(function (key) { (0, _defineProperty2.default)(target, key, source[key]); }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)) : ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } return target; }
 /**
@@ -10220,7 +10222,7 @@ exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 2)["default"]))
 
 /***/ }),
-/* 40 */
+/* 42 */
 /*!******************************************************************************!*\
   !*** D:/cjindex/node_modules/uview-ui/libs/luch-request/helpers/buildURL.js ***!
   \******************************************************************************/
@@ -10235,7 +10237,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 exports.default = buildURL;
-var utils = _interopRequireWildcard(__webpack_require__(/*! ../utils */ 41));
+var utils = _interopRequireWildcard(__webpack_require__(/*! ../utils */ 43));
 function _getRequireWildcardCache(nodeInterop) { if (typeof WeakMap !== "function") return null; var cacheBabelInterop = new WeakMap(); var cacheNodeInterop = new WeakMap(); return (_getRequireWildcardCache = function _getRequireWildcardCache(nodeInterop) { return nodeInterop ? cacheNodeInterop : cacheBabelInterop; })(nodeInterop); }
 function _interopRequireWildcard(obj, nodeInterop) { if (!nodeInterop && obj && obj.__esModule) { return obj; } if (obj === null || _typeof(obj) !== "object" && typeof obj !== "function") { return { default: obj }; } var cache = _getRequireWildcardCache(nodeInterop); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (key !== "default" && Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
 function encode(val) {
@@ -10290,7 +10292,7 @@ function buildURL(url, params) {
 }
 
 /***/ }),
-/* 41 */
+/* 43 */
 /*!*******************************************************************!*\
   !*** D:/cjindex/node_modules/uview-ui/libs/luch-request/utils.js ***!
   \*******************************************************************/
@@ -10443,7 +10445,7 @@ function isUndefined(val) {
 }
 
 /***/ }),
-/* 42 */
+/* 44 */
 /*!********************************************************************************!*\
   !*** D:/cjindex/node_modules/uview-ui/libs/luch-request/core/buildFullPath.js ***!
   \********************************************************************************/
@@ -10458,8 +10460,8 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 exports.default = buildFullPath;
-var _isAbsoluteURL = _interopRequireDefault(__webpack_require__(/*! ../helpers/isAbsoluteURL */ 43));
-var _combineURLs = _interopRequireDefault(__webpack_require__(/*! ../helpers/combineURLs */ 44));
+var _isAbsoluteURL = _interopRequireDefault(__webpack_require__(/*! ../helpers/isAbsoluteURL */ 45));
+var _combineURLs = _interopRequireDefault(__webpack_require__(/*! ../helpers/combineURLs */ 46));
 /**
  * Creates a new URL by combining the baseURL with the requestedURL,
  * only when the requestedURL is not already an absolute URL.
@@ -10477,7 +10479,7 @@ function buildFullPath(baseURL, requestedURL) {
 }
 
 /***/ }),
-/* 43 */
+/* 45 */
 /*!***********************************************************************************!*\
   !*** D:/cjindex/node_modules/uview-ui/libs/luch-request/helpers/isAbsoluteURL.js ***!
   \***********************************************************************************/
@@ -10505,7 +10507,7 @@ function isAbsoluteURL(url) {
 }
 
 /***/ }),
-/* 44 */
+/* 46 */
 /*!*********************************************************************************!*\
   !*** D:/cjindex/node_modules/uview-ui/libs/luch-request/helpers/combineURLs.js ***!
   \*********************************************************************************/
@@ -10531,7 +10533,7 @@ function combineURLs(baseURL, relativeURL) {
 }
 
 /***/ }),
-/* 45 */
+/* 47 */
 /*!*************************************************************************!*\
   !*** D:/cjindex/node_modules/uview-ui/libs/luch-request/core/settle.js ***!
   \*************************************************************************/
@@ -10563,7 +10565,7 @@ function settle(resolve, reject, response) {
 }
 
 /***/ }),
-/* 46 */
+/* 48 */
 /*!*************************************************************************************!*\
   !*** D:/cjindex/node_modules/uview-ui/libs/luch-request/core/InterceptorManager.js ***!
   \*************************************************************************************/
@@ -10627,7 +10629,7 @@ var _default = InterceptorManager;
 exports.default = _default;
 
 /***/ }),
-/* 47 */
+/* 49 */
 /*!******************************************************************************!*\
   !*** D:/cjindex/node_modules/uview-ui/libs/luch-request/core/mergeConfig.js ***!
   \******************************************************************************/
@@ -10643,7 +10645,7 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = void 0;
 var _defineProperty2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/defineProperty */ 11));
-var _utils = __webpack_require__(/*! ../utils */ 41);
+var _utils = __webpack_require__(/*! ../utils */ 43);
 function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); enumerableOnly && (symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; })), keys.push.apply(keys, symbols); } return keys; }
 function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = null != arguments[i] ? arguments[i] : {}; i % 2 ? ownKeys(Object(source), !0).forEach(function (key) { (0, _defineProperty2.default)(target, key, source[key]); }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)) : ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } return target; }
 /**
@@ -10703,7 +10705,7 @@ var _default = function _default(globalsConfig) {
 exports.default = _default;
 
 /***/ }),
-/* 48 */
+/* 50 */
 /*!***************************************************************************!*\
   !*** D:/cjindex/node_modules/uview-ui/libs/luch-request/core/defaults.js ***!
   \***************************************************************************/
@@ -10735,7 +10737,7 @@ var _default = {
 exports.default = _default;
 
 /***/ }),
-/* 49 */
+/* 51 */
 /*!*************************************************************************!*\
   !*** D:/cjindex/node_modules/uview-ui/libs/luch-request/utils/clone.js ***!
   \*************************************************************************/
@@ -10984,10 +10986,10 @@ var clone = function () {
 }();
 var _default = clone;
 exports.default = _default;
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../../../../../../HBuilderX/HBuilderX/plugins/uniapp-cli/node_modules/buffer/index.js */ 50).Buffer))
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../../../../../../HBuilderX/HBuilderX/plugins/uniapp-cli/node_modules/buffer/index.js */ 52).Buffer))
 
 /***/ }),
-/* 50 */
+/* 52 */
 /*!**************************************!*\
   !*** ./node_modules/buffer/index.js ***!
   \**************************************/
@@ -11005,9 +11007,9 @@ exports.default = _default;
 
 
 
-var base64 = __webpack_require__(/*! base64-js */ 51)
-var ieee754 = __webpack_require__(/*! ieee754 */ 52)
-var isArray = __webpack_require__(/*! isarray */ 53)
+var base64 = __webpack_require__(/*! base64-js */ 53)
+var ieee754 = __webpack_require__(/*! ieee754 */ 54)
+var isArray = __webpack_require__(/*! isarray */ 55)
 
 exports.Buffer = Buffer
 exports.SlowBuffer = SlowBuffer
@@ -12788,7 +12790,7 @@ function isnan (val) {
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../webpack/buildin/global.js */ 3)))
 
 /***/ }),
-/* 51 */
+/* 53 */
 /*!*****************************************!*\
   !*** ./node_modules/base64-js/index.js ***!
   \*****************************************/
@@ -12949,7 +12951,7 @@ function fromByteArray (uint8) {
 
 
 /***/ }),
-/* 52 */
+/* 54 */
 /*!***************************************!*\
   !*** ./node_modules/ieee754/index.js ***!
   \***************************************/
@@ -13044,7 +13046,7 @@ exports.write = function (buffer, value, offset, isLE, mLen, nBytes) {
 
 
 /***/ }),
-/* 53 */
+/* 55 */
 /*!***************************************!*\
   !*** ./node_modules/isarray/index.js ***!
   \***************************************/
@@ -13059,7 +13061,7 @@ module.exports = Array.isArray || function (arr) {
 
 
 /***/ }),
-/* 54 */
+/* 56 */
 /*!***********************************************************!*\
   !*** D:/cjindex/node_modules/uview-ui/libs/util/route.js ***!
   \***********************************************************/
@@ -13074,8 +13076,8 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 exports.default = void 0;
-var _regenerator = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/regenerator */ 55));
-var _asyncToGenerator2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/asyncToGenerator */ 57));
+var _regenerator = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/regenerator */ 57));
+var _asyncToGenerator2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/asyncToGenerator */ 59));
 var _classCallCheck2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/classCallCheck */ 23));
 var _createClass2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/createClass */ 24));
 /**
@@ -13247,7 +13249,7 @@ exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 2)["default"]))
 
 /***/ }),
-/* 55 */
+/* 57 */
 /*!************************************************************************************************!*\
   !*** ./node_modules/@dcloudio/vue-cli-plugin-uni/packages/@babel/runtime/regenerator/index.js ***!
   \************************************************************************************************/
@@ -13256,11 +13258,11 @@ exports.default = _default;
 
 // TODO(Babel 8): Remove this file.
 
-var runtime = __webpack_require__(/*! @babel/runtime/helpers/regeneratorRuntime */ 56)();
+var runtime = __webpack_require__(/*! @babel/runtime/helpers/regeneratorRuntime */ 58)();
 module.exports = runtime;
 
 /***/ }),
-/* 56 */
+/* 58 */
 /*!*******************************************************************!*\
   !*** ./node_modules/@babel/runtime/helpers/regeneratorRuntime.js ***!
   \*******************************************************************/
@@ -13581,7 +13583,7 @@ function _regeneratorRuntime() {
 module.exports = _regeneratorRuntime, module.exports.__esModule = true, module.exports["default"] = module.exports;
 
 /***/ }),
-/* 57 */
+/* 59 */
 /*!*****************************************************************!*\
   !*** ./node_modules/@babel/runtime/helpers/asyncToGenerator.js ***!
   \*****************************************************************/
@@ -13621,7 +13623,7 @@ function _asyncToGenerator(fn) {
 module.exports = _asyncToGenerator, module.exports.__esModule = true, module.exports["default"] = module.exports;
 
 /***/ }),
-/* 58 */
+/* 60 */
 /*!***********************************************************************!*\
   !*** D:/cjindex/node_modules/uview-ui/libs/function/colorGradient.js ***!
   \***********************************************************************/
@@ -13776,7 +13778,7 @@ var _default = {
 exports.default = _default;
 
 /***/ }),
-/* 59 */
+/* 61 */
 /*!**************************************************************!*\
   !*** D:/cjindex/node_modules/uview-ui/libs/function/test.js ***!
   \**************************************************************/
@@ -14081,7 +14083,7 @@ var _default = {
 exports.default = _default;
 
 /***/ }),
-/* 60 */
+/* 62 */
 /*!******************************************************************!*\
   !*** D:/cjindex/node_modules/uview-ui/libs/function/debounce.js ***!
   \******************************************************************/
@@ -14128,7 +14130,7 @@ var _default = debounce;
 exports.default = _default;
 
 /***/ }),
-/* 61 */
+/* 63 */
 /*!******************************************************************!*\
   !*** D:/cjindex/node_modules/uview-ui/libs/function/throttle.js ***!
   \******************************************************************/
@@ -14177,7 +14179,7 @@ var _default = throttle;
 exports.default = _default;
 
 /***/ }),
-/* 62 */
+/* 64 */
 /*!***************************************************************!*\
   !*** D:/cjindex/node_modules/uview-ui/libs/function/index.js ***!
   \***************************************************************/
@@ -14194,8 +14196,8 @@ Object.defineProperty(exports, "__esModule", {
 exports.default = void 0;
 var _slicedToArray2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/slicedToArray */ 5));
 var _typeof2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/typeof */ 13));
-var _test = _interopRequireDefault(__webpack_require__(/*! ./test.js */ 59));
-var _digit = __webpack_require__(/*! ./digit.js */ 63);
+var _test = _interopRequireDefault(__webpack_require__(/*! ./test.js */ 61));
+var _digit = __webpack_require__(/*! ./digit.js */ 65);
 /**
  * @description 如果value小于min，取min；如果value大于max，取max
  * @param {number} min
@@ -14978,7 +14980,7 @@ exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 2)["default"]))
 
 /***/ }),
-/* 63 */
+/* 65 */
 /*!***************************************************************!*\
   !*** D:/cjindex/node_modules/uview-ui/libs/function/digit.js ***!
   \***************************************************************/
@@ -14999,7 +15001,7 @@ exports.minus = minus;
 exports.plus = plus;
 exports.round = round;
 exports.times = times;
-var _toArray2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/toArray */ 64));
+var _toArray2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/toArray */ 66));
 var _boundaryCheckingState = true; // 是否进行越界检查的全局开关
 
 /**
@@ -15180,7 +15182,7 @@ var _default = {
 exports.default = _default;
 
 /***/ }),
-/* 64 */
+/* 66 */
 /*!********************************************************!*\
   !*** ./node_modules/@babel/runtime/helpers/toArray.js ***!
   \********************************************************/
@@ -15197,7 +15199,7 @@ function _toArray(arr) {
 module.exports = _toArray, module.exports.__esModule = true, module.exports["default"] = module.exports;
 
 /***/ }),
-/* 65 */
+/* 67 */
 /*!**************************************************************!*\
   !*** D:/cjindex/node_modules/uview-ui/libs/config/config.js ***!
   \**************************************************************/
@@ -15241,7 +15243,7 @@ var _default = {
 exports.default = _default;
 
 /***/ }),
-/* 66 */
+/* 68 */
 /*!*************************************************************!*\
   !*** D:/cjindex/node_modules/uview-ui/libs/config/props.js ***!
   \*************************************************************/
@@ -15257,95 +15259,95 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = void 0;
 var _defineProperty2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/defineProperty */ 11));
-var _config = _interopRequireDefault(__webpack_require__(/*! ./config */ 65));
-var _actionSheet = _interopRequireDefault(__webpack_require__(/*! ./props/actionSheet.js */ 67));
-var _album = _interopRequireDefault(__webpack_require__(/*! ./props/album.js */ 68));
-var _alert = _interopRequireDefault(__webpack_require__(/*! ./props/alert.js */ 69));
-var _avatar = _interopRequireDefault(__webpack_require__(/*! ./props/avatar */ 70));
-var _avatarGroup = _interopRequireDefault(__webpack_require__(/*! ./props/avatarGroup */ 71));
-var _backtop = _interopRequireDefault(__webpack_require__(/*! ./props/backtop */ 72));
-var _badge = _interopRequireDefault(__webpack_require__(/*! ./props/badge */ 73));
-var _button = _interopRequireDefault(__webpack_require__(/*! ./props/button */ 74));
-var _calendar = _interopRequireDefault(__webpack_require__(/*! ./props/calendar */ 75));
-var _carKeyboard = _interopRequireDefault(__webpack_require__(/*! ./props/carKeyboard */ 76));
-var _cell = _interopRequireDefault(__webpack_require__(/*! ./props/cell */ 77));
-var _cellGroup = _interopRequireDefault(__webpack_require__(/*! ./props/cellGroup */ 78));
-var _checkbox = _interopRequireDefault(__webpack_require__(/*! ./props/checkbox */ 79));
-var _checkboxGroup = _interopRequireDefault(__webpack_require__(/*! ./props/checkboxGroup */ 80));
-var _circleProgress = _interopRequireDefault(__webpack_require__(/*! ./props/circleProgress */ 81));
-var _code = _interopRequireDefault(__webpack_require__(/*! ./props/code */ 82));
-var _codeInput = _interopRequireDefault(__webpack_require__(/*! ./props/codeInput */ 83));
-var _col = _interopRequireDefault(__webpack_require__(/*! ./props/col */ 84));
-var _collapse = _interopRequireDefault(__webpack_require__(/*! ./props/collapse */ 85));
-var _collapseItem = _interopRequireDefault(__webpack_require__(/*! ./props/collapseItem */ 86));
-var _columnNotice = _interopRequireDefault(__webpack_require__(/*! ./props/columnNotice */ 87));
-var _countDown = _interopRequireDefault(__webpack_require__(/*! ./props/countDown */ 88));
-var _countTo = _interopRequireDefault(__webpack_require__(/*! ./props/countTo */ 89));
-var _datetimePicker = _interopRequireDefault(__webpack_require__(/*! ./props/datetimePicker */ 90));
-var _divider = _interopRequireDefault(__webpack_require__(/*! ./props/divider */ 91));
-var _empty = _interopRequireDefault(__webpack_require__(/*! ./props/empty */ 92));
-var _form = _interopRequireDefault(__webpack_require__(/*! ./props/form */ 93));
-var _formItem = _interopRequireDefault(__webpack_require__(/*! ./props/formItem */ 94));
-var _gap = _interopRequireDefault(__webpack_require__(/*! ./props/gap */ 95));
-var _grid = _interopRequireDefault(__webpack_require__(/*! ./props/grid */ 96));
-var _gridItem = _interopRequireDefault(__webpack_require__(/*! ./props/gridItem */ 97));
-var _icon = _interopRequireDefault(__webpack_require__(/*! ./props/icon */ 98));
-var _image = _interopRequireDefault(__webpack_require__(/*! ./props/image */ 99));
-var _indexAnchor = _interopRequireDefault(__webpack_require__(/*! ./props/indexAnchor */ 100));
-var _indexList = _interopRequireDefault(__webpack_require__(/*! ./props/indexList */ 101));
-var _input = _interopRequireDefault(__webpack_require__(/*! ./props/input */ 102));
-var _keyboard = _interopRequireDefault(__webpack_require__(/*! ./props/keyboard */ 103));
-var _line = _interopRequireDefault(__webpack_require__(/*! ./props/line */ 104));
-var _lineProgress = _interopRequireDefault(__webpack_require__(/*! ./props/lineProgress */ 105));
-var _link = _interopRequireDefault(__webpack_require__(/*! ./props/link */ 106));
-var _list = _interopRequireDefault(__webpack_require__(/*! ./props/list */ 107));
-var _listItem = _interopRequireDefault(__webpack_require__(/*! ./props/listItem */ 108));
-var _loadingIcon = _interopRequireDefault(__webpack_require__(/*! ./props/loadingIcon */ 109));
-var _loadingPage = _interopRequireDefault(__webpack_require__(/*! ./props/loadingPage */ 110));
-var _loadmore = _interopRequireDefault(__webpack_require__(/*! ./props/loadmore */ 111));
-var _modal = _interopRequireDefault(__webpack_require__(/*! ./props/modal */ 112));
-var _navbar = _interopRequireDefault(__webpack_require__(/*! ./props/navbar */ 113));
-var _noNetwork = _interopRequireDefault(__webpack_require__(/*! ./props/noNetwork */ 115));
-var _noticeBar = _interopRequireDefault(__webpack_require__(/*! ./props/noticeBar */ 116));
-var _notify = _interopRequireDefault(__webpack_require__(/*! ./props/notify */ 117));
-var _numberBox = _interopRequireDefault(__webpack_require__(/*! ./props/numberBox */ 118));
-var _numberKeyboard = _interopRequireDefault(__webpack_require__(/*! ./props/numberKeyboard */ 119));
-var _overlay = _interopRequireDefault(__webpack_require__(/*! ./props/overlay */ 120));
-var _parse = _interopRequireDefault(__webpack_require__(/*! ./props/parse */ 121));
-var _picker = _interopRequireDefault(__webpack_require__(/*! ./props/picker */ 122));
-var _popup = _interopRequireDefault(__webpack_require__(/*! ./props/popup */ 123));
-var _radio = _interopRequireDefault(__webpack_require__(/*! ./props/radio */ 124));
-var _radioGroup = _interopRequireDefault(__webpack_require__(/*! ./props/radioGroup */ 125));
-var _rate = _interopRequireDefault(__webpack_require__(/*! ./props/rate */ 126));
-var _readMore = _interopRequireDefault(__webpack_require__(/*! ./props/readMore */ 127));
-var _row = _interopRequireDefault(__webpack_require__(/*! ./props/row */ 128));
-var _rowNotice = _interopRequireDefault(__webpack_require__(/*! ./props/rowNotice */ 129));
-var _scrollList = _interopRequireDefault(__webpack_require__(/*! ./props/scrollList */ 130));
-var _search = _interopRequireDefault(__webpack_require__(/*! ./props/search */ 131));
-var _section = _interopRequireDefault(__webpack_require__(/*! ./props/section */ 132));
-var _skeleton = _interopRequireDefault(__webpack_require__(/*! ./props/skeleton */ 133));
-var _slider = _interopRequireDefault(__webpack_require__(/*! ./props/slider */ 134));
-var _statusBar = _interopRequireDefault(__webpack_require__(/*! ./props/statusBar */ 135));
-var _steps = _interopRequireDefault(__webpack_require__(/*! ./props/steps */ 136));
-var _stepsItem = _interopRequireDefault(__webpack_require__(/*! ./props/stepsItem */ 137));
-var _sticky = _interopRequireDefault(__webpack_require__(/*! ./props/sticky */ 138));
-var _subsection = _interopRequireDefault(__webpack_require__(/*! ./props/subsection */ 139));
-var _swipeAction = _interopRequireDefault(__webpack_require__(/*! ./props/swipeAction */ 140));
-var _swipeActionItem = _interopRequireDefault(__webpack_require__(/*! ./props/swipeActionItem */ 141));
-var _swiper = _interopRequireDefault(__webpack_require__(/*! ./props/swiper */ 142));
-var _swipterIndicator = _interopRequireDefault(__webpack_require__(/*! ./props/swipterIndicator */ 143));
-var _switch2 = _interopRequireDefault(__webpack_require__(/*! ./props/switch */ 144));
-var _tabbar = _interopRequireDefault(__webpack_require__(/*! ./props/tabbar */ 145));
-var _tabbarItem = _interopRequireDefault(__webpack_require__(/*! ./props/tabbarItem */ 146));
-var _tabs = _interopRequireDefault(__webpack_require__(/*! ./props/tabs */ 147));
-var _tag = _interopRequireDefault(__webpack_require__(/*! ./props/tag */ 148));
-var _text = _interopRequireDefault(__webpack_require__(/*! ./props/text */ 149));
-var _textarea = _interopRequireDefault(__webpack_require__(/*! ./props/textarea */ 150));
-var _toast = _interopRequireDefault(__webpack_require__(/*! ./props/toast */ 151));
-var _toolbar = _interopRequireDefault(__webpack_require__(/*! ./props/toolbar */ 152));
-var _tooltip = _interopRequireDefault(__webpack_require__(/*! ./props/tooltip */ 153));
-var _transition = _interopRequireDefault(__webpack_require__(/*! ./props/transition */ 154));
-var _upload = _interopRequireDefault(__webpack_require__(/*! ./props/upload */ 155));
+var _config = _interopRequireDefault(__webpack_require__(/*! ./config */ 67));
+var _actionSheet = _interopRequireDefault(__webpack_require__(/*! ./props/actionSheet.js */ 69));
+var _album = _interopRequireDefault(__webpack_require__(/*! ./props/album.js */ 70));
+var _alert = _interopRequireDefault(__webpack_require__(/*! ./props/alert.js */ 71));
+var _avatar = _interopRequireDefault(__webpack_require__(/*! ./props/avatar */ 72));
+var _avatarGroup = _interopRequireDefault(__webpack_require__(/*! ./props/avatarGroup */ 73));
+var _backtop = _interopRequireDefault(__webpack_require__(/*! ./props/backtop */ 74));
+var _badge = _interopRequireDefault(__webpack_require__(/*! ./props/badge */ 75));
+var _button = _interopRequireDefault(__webpack_require__(/*! ./props/button */ 76));
+var _calendar = _interopRequireDefault(__webpack_require__(/*! ./props/calendar */ 77));
+var _carKeyboard = _interopRequireDefault(__webpack_require__(/*! ./props/carKeyboard */ 78));
+var _cell = _interopRequireDefault(__webpack_require__(/*! ./props/cell */ 79));
+var _cellGroup = _interopRequireDefault(__webpack_require__(/*! ./props/cellGroup */ 80));
+var _checkbox = _interopRequireDefault(__webpack_require__(/*! ./props/checkbox */ 81));
+var _checkboxGroup = _interopRequireDefault(__webpack_require__(/*! ./props/checkboxGroup */ 82));
+var _circleProgress = _interopRequireDefault(__webpack_require__(/*! ./props/circleProgress */ 83));
+var _code = _interopRequireDefault(__webpack_require__(/*! ./props/code */ 84));
+var _codeInput = _interopRequireDefault(__webpack_require__(/*! ./props/codeInput */ 85));
+var _col = _interopRequireDefault(__webpack_require__(/*! ./props/col */ 86));
+var _collapse = _interopRequireDefault(__webpack_require__(/*! ./props/collapse */ 87));
+var _collapseItem = _interopRequireDefault(__webpack_require__(/*! ./props/collapseItem */ 88));
+var _columnNotice = _interopRequireDefault(__webpack_require__(/*! ./props/columnNotice */ 89));
+var _countDown = _interopRequireDefault(__webpack_require__(/*! ./props/countDown */ 90));
+var _countTo = _interopRequireDefault(__webpack_require__(/*! ./props/countTo */ 91));
+var _datetimePicker = _interopRequireDefault(__webpack_require__(/*! ./props/datetimePicker */ 92));
+var _divider = _interopRequireDefault(__webpack_require__(/*! ./props/divider */ 93));
+var _empty = _interopRequireDefault(__webpack_require__(/*! ./props/empty */ 94));
+var _form = _interopRequireDefault(__webpack_require__(/*! ./props/form */ 95));
+var _formItem = _interopRequireDefault(__webpack_require__(/*! ./props/formItem */ 96));
+var _gap = _interopRequireDefault(__webpack_require__(/*! ./props/gap */ 97));
+var _grid = _interopRequireDefault(__webpack_require__(/*! ./props/grid */ 98));
+var _gridItem = _interopRequireDefault(__webpack_require__(/*! ./props/gridItem */ 99));
+var _icon = _interopRequireDefault(__webpack_require__(/*! ./props/icon */ 100));
+var _image = _interopRequireDefault(__webpack_require__(/*! ./props/image */ 101));
+var _indexAnchor = _interopRequireDefault(__webpack_require__(/*! ./props/indexAnchor */ 102));
+var _indexList = _interopRequireDefault(__webpack_require__(/*! ./props/indexList */ 103));
+var _input = _interopRequireDefault(__webpack_require__(/*! ./props/input */ 104));
+var _keyboard = _interopRequireDefault(__webpack_require__(/*! ./props/keyboard */ 105));
+var _line = _interopRequireDefault(__webpack_require__(/*! ./props/line */ 106));
+var _lineProgress = _interopRequireDefault(__webpack_require__(/*! ./props/lineProgress */ 107));
+var _link = _interopRequireDefault(__webpack_require__(/*! ./props/link */ 108));
+var _list = _interopRequireDefault(__webpack_require__(/*! ./props/list */ 109));
+var _listItem = _interopRequireDefault(__webpack_require__(/*! ./props/listItem */ 110));
+var _loadingIcon = _interopRequireDefault(__webpack_require__(/*! ./props/loadingIcon */ 111));
+var _loadingPage = _interopRequireDefault(__webpack_require__(/*! ./props/loadingPage */ 112));
+var _loadmore = _interopRequireDefault(__webpack_require__(/*! ./props/loadmore */ 113));
+var _modal = _interopRequireDefault(__webpack_require__(/*! ./props/modal */ 114));
+var _navbar = _interopRequireDefault(__webpack_require__(/*! ./props/navbar */ 115));
+var _noNetwork = _interopRequireDefault(__webpack_require__(/*! ./props/noNetwork */ 117));
+var _noticeBar = _interopRequireDefault(__webpack_require__(/*! ./props/noticeBar */ 118));
+var _notify = _interopRequireDefault(__webpack_require__(/*! ./props/notify */ 119));
+var _numberBox = _interopRequireDefault(__webpack_require__(/*! ./props/numberBox */ 120));
+var _numberKeyboard = _interopRequireDefault(__webpack_require__(/*! ./props/numberKeyboard */ 121));
+var _overlay = _interopRequireDefault(__webpack_require__(/*! ./props/overlay */ 122));
+var _parse = _interopRequireDefault(__webpack_require__(/*! ./props/parse */ 123));
+var _picker = _interopRequireDefault(__webpack_require__(/*! ./props/picker */ 124));
+var _popup = _interopRequireDefault(__webpack_require__(/*! ./props/popup */ 125));
+var _radio = _interopRequireDefault(__webpack_require__(/*! ./props/radio */ 126));
+var _radioGroup = _interopRequireDefault(__webpack_require__(/*! ./props/radioGroup */ 127));
+var _rate = _interopRequireDefault(__webpack_require__(/*! ./props/rate */ 128));
+var _readMore = _interopRequireDefault(__webpack_require__(/*! ./props/readMore */ 129));
+var _row = _interopRequireDefault(__webpack_require__(/*! ./props/row */ 130));
+var _rowNotice = _interopRequireDefault(__webpack_require__(/*! ./props/rowNotice */ 131));
+var _scrollList = _interopRequireDefault(__webpack_require__(/*! ./props/scrollList */ 132));
+var _search = _interopRequireDefault(__webpack_require__(/*! ./props/search */ 133));
+var _section = _interopRequireDefault(__webpack_require__(/*! ./props/section */ 134));
+var _skeleton = _interopRequireDefault(__webpack_require__(/*! ./props/skeleton */ 135));
+var _slider = _interopRequireDefault(__webpack_require__(/*! ./props/slider */ 136));
+var _statusBar = _interopRequireDefault(__webpack_require__(/*! ./props/statusBar */ 137));
+var _steps = _interopRequireDefault(__webpack_require__(/*! ./props/steps */ 138));
+var _stepsItem = _interopRequireDefault(__webpack_require__(/*! ./props/stepsItem */ 139));
+var _sticky = _interopRequireDefault(__webpack_require__(/*! ./props/sticky */ 140));
+var _subsection = _interopRequireDefault(__webpack_require__(/*! ./props/subsection */ 141));
+var _swipeAction = _interopRequireDefault(__webpack_require__(/*! ./props/swipeAction */ 142));
+var _swipeActionItem = _interopRequireDefault(__webpack_require__(/*! ./props/swipeActionItem */ 143));
+var _swiper = _interopRequireDefault(__webpack_require__(/*! ./props/swiper */ 144));
+var _swipterIndicator = _interopRequireDefault(__webpack_require__(/*! ./props/swipterIndicator */ 145));
+var _switch2 = _interopRequireDefault(__webpack_require__(/*! ./props/switch */ 146));
+var _tabbar = _interopRequireDefault(__webpack_require__(/*! ./props/tabbar */ 147));
+var _tabbarItem = _interopRequireDefault(__webpack_require__(/*! ./props/tabbarItem */ 148));
+var _tabs = _interopRequireDefault(__webpack_require__(/*! ./props/tabs */ 149));
+var _tag = _interopRequireDefault(__webpack_require__(/*! ./props/tag */ 150));
+var _text = _interopRequireDefault(__webpack_require__(/*! ./props/text */ 151));
+var _textarea = _interopRequireDefault(__webpack_require__(/*! ./props/textarea */ 152));
+var _toast = _interopRequireDefault(__webpack_require__(/*! ./props/toast */ 153));
+var _toolbar = _interopRequireDefault(__webpack_require__(/*! ./props/toolbar */ 154));
+var _tooltip = _interopRequireDefault(__webpack_require__(/*! ./props/tooltip */ 155));
+var _transition = _interopRequireDefault(__webpack_require__(/*! ./props/transition */ 156));
+var _upload = _interopRequireDefault(__webpack_require__(/*! ./props/upload */ 157));
 function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); enumerableOnly && (symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; })), keys.push.apply(keys, symbols); } return keys; }
 function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = null != arguments[i] ? arguments[i] : {}; i % 2 ? ownKeys(Object(source), !0).forEach(function (key) { (0, _defineProperty2.default)(target, key, source[key]); }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)) : ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } return target; }
 var color = _config.default.color;
@@ -15353,7 +15355,7 @@ var _default = _objectSpread(_objectSpread(_objectSpread(_objectSpread(_objectSp
 exports.default = _default;
 
 /***/ }),
-/* 67 */
+/* 69 */
 /*!*************************************************************************!*\
   !*** D:/cjindex/node_modules/uview-ui/libs/config/props/actionSheet.js ***!
   \*************************************************************************/
@@ -15397,7 +15399,7 @@ var _default = {
 exports.default = _default;
 
 /***/ }),
-/* 68 */
+/* 70 */
 /*!*******************************************************************!*\
   !*** D:/cjindex/node_modules/uview-ui/libs/config/props/album.js ***!
   \*******************************************************************/
@@ -15441,7 +15443,7 @@ var _default = {
 exports.default = _default;
 
 /***/ }),
-/* 69 */
+/* 71 */
 /*!*******************************************************************!*\
   !*** D:/cjindex/node_modules/uview-ui/libs/config/props/alert.js ***!
   \*******************************************************************/
@@ -15480,7 +15482,7 @@ var _default = {
 exports.default = _default;
 
 /***/ }),
-/* 70 */
+/* 72 */
 /*!********************************************************************!*\
   !*** D:/cjindex/node_modules/uview-ui/libs/config/props/avatar.js ***!
   \********************************************************************/
@@ -15525,7 +15527,7 @@ var _default = {
 exports.default = _default;
 
 /***/ }),
-/* 71 */
+/* 73 */
 /*!*************************************************************************!*\
   !*** D:/cjindex/node_modules/uview-ui/libs/config/props/avatarGroup.js ***!
   \*************************************************************************/
@@ -15567,7 +15569,7 @@ var _default = {
 exports.default = _default;
 
 /***/ }),
-/* 72 */
+/* 74 */
 /*!*********************************************************************!*\
   !*** D:/cjindex/node_modules/uview-ui/libs/config/props/backtop.js ***!
   \*********************************************************************/
@@ -15613,7 +15615,7 @@ var _default = {
 exports.default = _default;
 
 /***/ }),
-/* 73 */
+/* 75 */
 /*!*******************************************************************!*\
   !*** D:/cjindex/node_modules/uview-ui/libs/config/props/badge.js ***!
   \*******************************************************************/
@@ -15659,7 +15661,7 @@ var _default = {
 exports.default = _default;
 
 /***/ }),
-/* 74 */
+/* 76 */
 /*!********************************************************************!*\
   !*** D:/cjindex/node_modules/uview-ui/libs/config/props/button.js ***!
   \********************************************************************/
@@ -15718,7 +15720,7 @@ var _default = {
 exports.default = _default;
 
 /***/ }),
-/* 75 */
+/* 77 */
 /*!**********************************************************************!*\
   !*** D:/cjindex/node_modules/uview-ui/libs/config/props/calendar.js ***!
   \**********************************************************************/
@@ -15781,7 +15783,7 @@ var _default = {
 exports.default = _default;
 
 /***/ }),
-/* 76 */
+/* 78 */
 /*!*************************************************************************!*\
   !*** D:/cjindex/node_modules/uview-ui/libs/config/props/carKeyboard.js ***!
   \*************************************************************************/
@@ -15813,7 +15815,7 @@ var _default = {
 exports.default = _default;
 
 /***/ }),
-/* 77 */
+/* 79 */
 /*!******************************************************************!*\
   !*** D:/cjindex/node_modules/uview-ui/libs/config/props/cell.js ***!
   \******************************************************************/
@@ -15865,7 +15867,7 @@ var _default = {
 exports.default = _default;
 
 /***/ }),
-/* 78 */
+/* 80 */
 /*!***********************************************************************!*\
   !*** D:/cjindex/node_modules/uview-ui/libs/config/props/cellGroup.js ***!
   \***********************************************************************/
@@ -15899,7 +15901,7 @@ var _default = {
 exports.default = _default;
 
 /***/ }),
-/* 79 */
+/* 81 */
 /*!**********************************************************************!*\
   !*** D:/cjindex/node_modules/uview-ui/libs/config/props/checkbox.js ***!
   \**********************************************************************/
@@ -15943,7 +15945,7 @@ var _default = {
 exports.default = _default;
 
 /***/ }),
-/* 80 */
+/* 82 */
 /*!***************************************************************************!*\
   !*** D:/cjindex/node_modules/uview-ui/libs/config/props/checkboxGroup.js ***!
   \***************************************************************************/
@@ -15991,7 +15993,7 @@ var _default = {
 exports.default = _default;
 
 /***/ }),
-/* 81 */
+/* 83 */
 /*!****************************************************************************!*\
   !*** D:/cjindex/node_modules/uview-ui/libs/config/props/circleProgress.js ***!
   \****************************************************************************/
@@ -16023,7 +16025,7 @@ var _default = {
 exports.default = _default;
 
 /***/ }),
-/* 82 */
+/* 84 */
 /*!******************************************************************!*\
   !*** D:/cjindex/node_modules/uview-ui/libs/config/props/code.js ***!
   \******************************************************************/
@@ -16060,7 +16062,7 @@ var _default = {
 exports.default = _default;
 
 /***/ }),
-/* 83 */
+/* 85 */
 /*!***********************************************************************!*\
   !*** D:/cjindex/node_modules/uview-ui/libs/config/props/codeInput.js ***!
   \***********************************************************************/
@@ -16106,7 +16108,7 @@ var _default = {
 exports.default = _default;
 
 /***/ }),
-/* 84 */
+/* 86 */
 /*!*****************************************************************!*\
   !*** D:/cjindex/node_modules/uview-ui/libs/config/props/col.js ***!
   \*****************************************************************/
@@ -16142,7 +16144,7 @@ var _default = {
 exports.default = _default;
 
 /***/ }),
-/* 85 */
+/* 87 */
 /*!**********************************************************************!*\
   !*** D:/cjindex/node_modules/uview-ui/libs/config/props/collapse.js ***!
   \**********************************************************************/
@@ -16176,7 +16178,7 @@ var _default = {
 exports.default = _default;
 
 /***/ }),
-/* 86 */
+/* 88 */
 /*!**************************************************************************!*\
   !*** D:/cjindex/node_modules/uview-ui/libs/config/props/collapseItem.js ***!
   \**************************************************************************/
@@ -16218,7 +16220,7 @@ var _default = {
 exports.default = _default;
 
 /***/ }),
-/* 87 */
+/* 89 */
 /*!**************************************************************************!*\
   !*** D:/cjindex/node_modules/uview-ui/libs/config/props/columnNotice.js ***!
   \**************************************************************************/
@@ -16259,7 +16261,7 @@ var _default = {
 exports.default = _default;
 
 /***/ }),
-/* 88 */
+/* 90 */
 /*!***********************************************************************!*\
   !*** D:/cjindex/node_modules/uview-ui/libs/config/props/countDown.js ***!
   \***********************************************************************/
@@ -16294,7 +16296,7 @@ var _default = {
 exports.default = _default;
 
 /***/ }),
-/* 89 */
+/* 91 */
 /*!*********************************************************************!*\
   !*** D:/cjindex/node_modules/uview-ui/libs/config/props/countTo.js ***!
   \*********************************************************************/
@@ -16336,7 +16338,7 @@ var _default = {
 exports.default = _default;
 
 /***/ }),
-/* 90 */
+/* 92 */
 /*!****************************************************************************!*\
   !*** D:/cjindex/node_modules/uview-ui/libs/config/props/datetimePicker.js ***!
   \****************************************************************************/
@@ -16391,7 +16393,7 @@ var _default = {
 exports.default = _default;
 
 /***/ }),
-/* 91 */
+/* 93 */
 /*!*********************************************************************!*\
   !*** D:/cjindex/node_modules/uview-ui/libs/config/props/divider.js ***!
   \*********************************************************************/
@@ -16430,7 +16432,7 @@ var _default = {
 exports.default = _default;
 
 /***/ }),
-/* 92 */
+/* 94 */
 /*!*******************************************************************!*\
   !*** D:/cjindex/node_modules/uview-ui/libs/config/props/empty.js ***!
   \*******************************************************************/
@@ -16472,7 +16474,7 @@ var _default = {
 exports.default = _default;
 
 /***/ }),
-/* 93 */
+/* 95 */
 /*!******************************************************************!*\
   !*** D:/cjindex/node_modules/uview-ui/libs/config/props/form.js ***!
   \******************************************************************/
@@ -16517,7 +16519,7 @@ var _default = {
 exports.default = _default;
 
 /***/ }),
-/* 94 */
+/* 96 */
 /*!**********************************************************************!*\
   !*** D:/cjindex/node_modules/uview-ui/libs/config/props/formItem.js ***!
   \**********************************************************************/
@@ -16557,7 +16559,7 @@ var _default = {
 exports.default = _default;
 
 /***/ }),
-/* 95 */
+/* 97 */
 /*!*****************************************************************!*\
   !*** D:/cjindex/node_modules/uview-ui/libs/config/props/gap.js ***!
   \*****************************************************************/
@@ -16593,7 +16595,7 @@ var _default = {
 exports.default = _default;
 
 /***/ }),
-/* 96 */
+/* 98 */
 /*!******************************************************************!*\
   !*** D:/cjindex/node_modules/uview-ui/libs/config/props/grid.js ***!
   \******************************************************************/
@@ -16627,7 +16629,7 @@ var _default = {
 exports.default = _default;
 
 /***/ }),
-/* 97 */
+/* 99 */
 /*!**********************************************************************!*\
   !*** D:/cjindex/node_modules/uview-ui/libs/config/props/gridItem.js ***!
   \**********************************************************************/
@@ -16660,7 +16662,7 @@ var _default = {
 exports.default = _default;
 
 /***/ }),
-/* 98 */
+/* 100 */
 /*!******************************************************************!*\
   !*** D:/cjindex/node_modules/uview-ui/libs/config/props/icon.js ***!
   \******************************************************************/
@@ -16675,7 +16677,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 exports.default = void 0;
-var _config = _interopRequireDefault(__webpack_require__(/*! ../config */ 65));
+var _config = _interopRequireDefault(__webpack_require__(/*! ../config */ 67));
 /*
  * @Author       : LQ
  * @Description  :
@@ -16712,7 +16714,7 @@ var _default = {
 exports.default = _default;
 
 /***/ }),
-/* 99 */
+/* 101 */
 /*!*******************************************************************!*\
   !*** D:/cjindex/node_modules/uview-ui/libs/config/props/image.js ***!
   \*******************************************************************/
@@ -16759,7 +16761,7 @@ var _default = {
 exports.default = _default;
 
 /***/ }),
-/* 100 */
+/* 102 */
 /*!*************************************************************************!*\
   !*** D:/cjindex/node_modules/uview-ui/libs/config/props/indexAnchor.js ***!
   \*************************************************************************/
@@ -16795,7 +16797,7 @@ var _default = {
 exports.default = _default;
 
 /***/ }),
-/* 101 */
+/* 103 */
 /*!***********************************************************************!*\
   !*** D:/cjindex/node_modules/uview-ui/libs/config/props/indexList.js ***!
   \***********************************************************************/
@@ -16833,7 +16835,7 @@ var _default = {
 exports.default = _default;
 
 /***/ }),
-/* 102 */
+/* 104 */
 /*!*******************************************************************!*\
   !*** D:/cjindex/node_modules/uview-ui/libs/config/props/input.js ***!
   \*******************************************************************/
@@ -16898,7 +16900,7 @@ var _default = {
 exports.default = _default;
 
 /***/ }),
-/* 103 */
+/* 105 */
 /*!**********************************************************************!*\
   !*** D:/cjindex/node_modules/uview-ui/libs/config/props/keyboard.js ***!
   \**********************************************************************/
@@ -16945,7 +16947,7 @@ var _default = {
 exports.default = _default;
 
 /***/ }),
-/* 104 */
+/* 106 */
 /*!******************************************************************!*\
   !*** D:/cjindex/node_modules/uview-ui/libs/config/props/line.js ***!
   \******************************************************************/
@@ -16982,7 +16984,7 @@ var _default = {
 exports.default = _default;
 
 /***/ }),
-/* 105 */
+/* 107 */
 /*!**************************************************************************!*\
   !*** D:/cjindex/node_modules/uview-ui/libs/config/props/lineProgress.js ***!
   \**************************************************************************/
@@ -17018,7 +17020,7 @@ var _default = {
 exports.default = _default;
 
 /***/ }),
-/* 106 */
+/* 108 */
 /*!******************************************************************!*\
   !*** D:/cjindex/node_modules/uview-ui/libs/config/props/link.js ***!
   \******************************************************************/
@@ -17033,7 +17035,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 exports.default = void 0;
-var _config = _interopRequireDefault(__webpack_require__(/*! ../config */ 65));
+var _config = _interopRequireDefault(__webpack_require__(/*! ../config */ 67));
 /*
  * @Author       : LQ
  * @Description  :
@@ -17060,7 +17062,7 @@ var _default = {
 exports.default = _default;
 
 /***/ }),
-/* 107 */
+/* 109 */
 /*!******************************************************************!*\
   !*** D:/cjindex/node_modules/uview-ui/libs/config/props/list.js ***!
   \******************************************************************/
@@ -17105,7 +17107,7 @@ var _default = {
 exports.default = _default;
 
 /***/ }),
-/* 108 */
+/* 110 */
 /*!**********************************************************************!*\
   !*** D:/cjindex/node_modules/uview-ui/libs/config/props/listItem.js ***!
   \**********************************************************************/
@@ -17137,7 +17139,7 @@ var _default = {
 exports.default = _default;
 
 /***/ }),
-/* 109 */
+/* 111 */
 /*!*************************************************************************!*\
   !*** D:/cjindex/node_modules/uview-ui/libs/config/props/loadingIcon.js ***!
   \*************************************************************************/
@@ -17152,7 +17154,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 exports.default = void 0;
-var _config = _interopRequireDefault(__webpack_require__(/*! ../config */ 65));
+var _config = _interopRequireDefault(__webpack_require__(/*! ../config */ 67));
 /*
  * @Author       : LQ
  * @Description  :
@@ -17183,7 +17185,7 @@ var _default = {
 exports.default = _default;
 
 /***/ }),
-/* 110 */
+/* 112 */
 /*!*************************************************************************!*\
   !*** D:/cjindex/node_modules/uview-ui/libs/config/props/loadingPage.js ***!
   \*************************************************************************/
@@ -17223,7 +17225,7 @@ var _default = {
 exports.default = _default;
 
 /***/ }),
-/* 111 */
+/* 113 */
 /*!**********************************************************************!*\
   !*** D:/cjindex/node_modules/uview-ui/libs/config/props/loadmore.js ***!
   \**********************************************************************/
@@ -17272,7 +17274,7 @@ var _default = {
 exports.default = _default;
 
 /***/ }),
-/* 112 */
+/* 114 */
 /*!*******************************************************************!*\
   !*** D:/cjindex/node_modules/uview-ui/libs/config/props/modal.js ***!
   \*******************************************************************/
@@ -17320,7 +17322,7 @@ var _default = {
 exports.default = _default;
 
 /***/ }),
-/* 113 */
+/* 115 */
 /*!********************************************************************!*\
   !*** D:/cjindex/node_modules/uview-ui/libs/config/props/navbar.js ***!
   \********************************************************************/
@@ -17335,7 +17337,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 exports.default = void 0;
-var _color = _interopRequireDefault(__webpack_require__(/*! ../color */ 114));
+var _color = _interopRequireDefault(__webpack_require__(/*! ../color */ 116));
 /*
  * @Author       : LQ
  * @Description  :
@@ -17369,7 +17371,7 @@ var _default = {
 exports.default = _default;
 
 /***/ }),
-/* 114 */
+/* 116 */
 /*!*************************************************************!*\
   !*** D:/cjindex/node_modules/uview-ui/libs/config/color.js ***!
   \*************************************************************/
@@ -17402,7 +17404,7 @@ var _default = color;
 exports.default = _default;
 
 /***/ }),
-/* 115 */
+/* 117 */
 /*!***********************************************************************!*\
   !*** D:/cjindex/node_modules/uview-ui/libs/config/props/noNetwork.js ***!
   \***********************************************************************/
@@ -17436,7 +17438,7 @@ var _default = {
 exports.default = _default;
 
 /***/ }),
-/* 116 */
+/* 118 */
 /*!***********************************************************************!*\
   !*** D:/cjindex/node_modules/uview-ui/libs/config/props/noticeBar.js ***!
   \***********************************************************************/
@@ -17482,7 +17484,7 @@ var _default = {
 exports.default = _default;
 
 /***/ }),
-/* 117 */
+/* 119 */
 /*!********************************************************************!*\
   !*** D:/cjindex/node_modules/uview-ui/libs/config/props/notify.js ***!
   \********************************************************************/
@@ -17521,7 +17523,7 @@ var _default = {
 exports.default = _default;
 
 /***/ }),
-/* 118 */
+/* 120 */
 /*!***********************************************************************!*\
   !*** D:/cjindex/node_modules/uview-ui/libs/config/props/numberBox.js ***!
   \***********************************************************************/
@@ -17573,7 +17575,7 @@ var _default = {
 exports.default = _default;
 
 /***/ }),
-/* 119 */
+/* 121 */
 /*!****************************************************************************!*\
   !*** D:/cjindex/node_modules/uview-ui/libs/config/props/numberKeyboard.js ***!
   \****************************************************************************/
@@ -17607,7 +17609,7 @@ var _default = {
 exports.default = _default;
 
 /***/ }),
-/* 120 */
+/* 122 */
 /*!*********************************************************************!*\
   !*** D:/cjindex/node_modules/uview-ui/libs/config/props/overlay.js ***!
   \*********************************************************************/
@@ -17642,7 +17644,7 @@ var _default = {
 exports.default = _default;
 
 /***/ }),
-/* 121 */
+/* 123 */
 /*!*******************************************************************!*\
   !*** D:/cjindex/node_modules/uview-ui/libs/config/props/parse.js ***!
   \*******************************************************************/
@@ -17681,7 +17683,7 @@ var _default = {
 exports.default = _default;
 
 /***/ }),
-/* 122 */
+/* 124 */
 /*!********************************************************************!*\
   !*** D:/cjindex/node_modules/uview-ui/libs/config/props/picker.js ***!
   \********************************************************************/
@@ -17731,7 +17733,7 @@ var _default = {
 exports.default = _default;
 
 /***/ }),
-/* 123 */
+/* 125 */
 /*!*******************************************************************!*\
   !*** D:/cjindex/node_modules/uview-ui/libs/config/props/popup.js ***!
   \*******************************************************************/
@@ -17777,7 +17779,7 @@ var _default = {
 exports.default = _default;
 
 /***/ }),
-/* 124 */
+/* 126 */
 /*!*******************************************************************!*\
   !*** D:/cjindex/node_modules/uview-ui/libs/config/props/radio.js ***!
   \*******************************************************************/
@@ -17821,7 +17823,7 @@ var _default = {
 exports.default = _default;
 
 /***/ }),
-/* 125 */
+/* 127 */
 /*!************************************************************************!*\
   !*** D:/cjindex/node_modules/uview-ui/libs/config/props/radioGroup.js ***!
   \************************************************************************/
@@ -17868,7 +17870,7 @@ var _default = {
 exports.default = _default;
 
 /***/ }),
-/* 126 */
+/* 128 */
 /*!******************************************************************!*\
   !*** D:/cjindex/node_modules/uview-ui/libs/config/props/rate.js ***!
   \******************************************************************/
@@ -17911,7 +17913,7 @@ var _default = {
 exports.default = _default;
 
 /***/ }),
-/* 127 */
+/* 129 */
 /*!**********************************************************************!*\
   !*** D:/cjindex/node_modules/uview-ui/libs/config/props/readMore.js ***!
   \**********************************************************************/
@@ -17950,7 +17952,7 @@ var _default = {
 exports.default = _default;
 
 /***/ }),
-/* 128 */
+/* 130 */
 /*!*****************************************************************!*\
   !*** D:/cjindex/node_modules/uview-ui/libs/config/props/row.js ***!
   \*****************************************************************/
@@ -17984,7 +17986,7 @@ var _default = {
 exports.default = _default;
 
 /***/ }),
-/* 129 */
+/* 131 */
 /*!***********************************************************************!*\
   !*** D:/cjindex/node_modules/uview-ui/libs/config/props/rowNotice.js ***!
   \***********************************************************************/
@@ -18022,7 +18024,7 @@ var _default = {
 exports.default = _default;
 
 /***/ }),
-/* 130 */
+/* 132 */
 /*!************************************************************************!*\
   !*** D:/cjindex/node_modules/uview-ui/libs/config/props/scrollList.js ***!
   \************************************************************************/
@@ -18059,7 +18061,7 @@ var _default = {
 exports.default = _default;
 
 /***/ }),
-/* 131 */
+/* 133 */
 /*!********************************************************************!*\
   !*** D:/cjindex/node_modules/uview-ui/libs/config/props/search.js ***!
   \********************************************************************/
@@ -18117,7 +18119,7 @@ var _default = {
 exports.default = _default;
 
 /***/ }),
-/* 132 */
+/* 134 */
 /*!*********************************************************************!*\
   !*** D:/cjindex/node_modules/uview-ui/libs/config/props/section.js ***!
   \*********************************************************************/
@@ -18158,7 +18160,7 @@ var _default = {
 exports.default = _default;
 
 /***/ }),
-/* 133 */
+/* 135 */
 /*!**********************************************************************!*\
   !*** D:/cjindex/node_modules/uview-ui/libs/config/props/skeleton.js ***!
   \**********************************************************************/
@@ -18200,7 +18202,7 @@ var _default = {
 exports.default = _default;
 
 /***/ }),
-/* 134 */
+/* 136 */
 /*!********************************************************************!*\
   !*** D:/cjindex/node_modules/uview-ui/libs/config/props/slider.js ***!
   \********************************************************************/
@@ -18242,7 +18244,7 @@ var _default = {
 exports.default = _default;
 
 /***/ }),
-/* 135 */
+/* 137 */
 /*!***********************************************************************!*\
   !*** D:/cjindex/node_modules/uview-ui/libs/config/props/statusBar.js ***!
   \***********************************************************************/
@@ -18274,7 +18276,7 @@ var _default = {
 exports.default = _default;
 
 /***/ }),
-/* 136 */
+/* 138 */
 /*!*******************************************************************!*\
   !*** D:/cjindex/node_modules/uview-ui/libs/config/props/steps.js ***!
   \*******************************************************************/
@@ -18312,7 +18314,7 @@ var _default = {
 exports.default = _default;
 
 /***/ }),
-/* 137 */
+/* 139 */
 /*!***********************************************************************!*\
   !*** D:/cjindex/node_modules/uview-ui/libs/config/props/stepsItem.js ***!
   \***********************************************************************/
@@ -18347,7 +18349,7 @@ var _default = {
 exports.default = _default;
 
 /***/ }),
-/* 138 */
+/* 140 */
 /*!********************************************************************!*\
   !*** D:/cjindex/node_modules/uview-ui/libs/config/props/sticky.js ***!
   \********************************************************************/
@@ -18384,7 +18386,7 @@ var _default = {
 exports.default = _default;
 
 /***/ }),
-/* 139 */
+/* 141 */
 /*!************************************************************************!*\
   !*** D:/cjindex/node_modules/uview-ui/libs/config/props/subsection.js ***!
   \************************************************************************/
@@ -18424,7 +18426,7 @@ var _default = {
 exports.default = _default;
 
 /***/ }),
-/* 140 */
+/* 142 */
 /*!*************************************************************************!*\
   !*** D:/cjindex/node_modules/uview-ui/libs/config/props/swipeAction.js ***!
   \*************************************************************************/
@@ -18456,7 +18458,7 @@ var _default = {
 exports.default = _default;
 
 /***/ }),
-/* 141 */
+/* 143 */
 /*!*****************************************************************************!*\
   !*** D:/cjindex/node_modules/uview-ui/libs/config/props/swipeActionItem.js ***!
   \*****************************************************************************/
@@ -18494,7 +18496,7 @@ var _default = {
 exports.default = _default;
 
 /***/ }),
-/* 142 */
+/* 144 */
 /*!********************************************************************!*\
   !*** D:/cjindex/node_modules/uview-ui/libs/config/props/swiper.js ***!
   \********************************************************************/
@@ -18551,7 +18553,7 @@ var _default = {
 exports.default = _default;
 
 /***/ }),
-/* 143 */
+/* 145 */
 /*!******************************************************************************!*\
   !*** D:/cjindex/node_modules/uview-ui/libs/config/props/swipterIndicator.js ***!
   \******************************************************************************/
@@ -18587,7 +18589,7 @@ var _default = {
 exports.default = _default;
 
 /***/ }),
-/* 144 */
+/* 146 */
 /*!********************************************************************!*\
   !*** D:/cjindex/node_modules/uview-ui/libs/config/props/switch.js ***!
   \********************************************************************/
@@ -18628,7 +18630,7 @@ var _default = {
 exports.default = _default;
 
 /***/ }),
-/* 145 */
+/* 147 */
 /*!********************************************************************!*\
   !*** D:/cjindex/node_modules/uview-ui/libs/config/props/tabbar.js ***!
   \********************************************************************/
@@ -18667,7 +18669,7 @@ var _default = {
 exports.default = _default;
 
 /***/ }),
-/* 146 */
+/* 148 */
 /*!************************************************************************!*\
   !*** D:/cjindex/node_modules/uview-ui/libs/config/props/tabbarItem.js ***!
   \************************************************************************/
@@ -18704,7 +18706,7 @@ var _default = {
 exports.default = _default;
 
 /***/ }),
-/* 147 */
+/* 149 */
 /*!******************************************************************!*\
   !*** D:/cjindex/node_modules/uview-ui/libs/config/props/tabs.js ***!
   \******************************************************************/
@@ -18761,7 +18763,7 @@ var _default = {
 exports.default = _default;
 
 /***/ }),
-/* 148 */
+/* 150 */
 /*!*****************************************************************!*\
   !*** D:/cjindex/node_modules/uview-ui/libs/config/props/tag.js ***!
   \*****************************************************************/
@@ -18807,7 +18809,7 @@ var _default = {
 exports.default = _default;
 
 /***/ }),
-/* 149 */
+/* 151 */
 /*!******************************************************************!*\
   !*** D:/cjindex/node_modules/uview-ui/libs/config/props/text.js ***!
   \******************************************************************/
@@ -18863,7 +18865,7 @@ var _default = {
 exports.default = _default;
 
 /***/ }),
-/* 150 */
+/* 152 */
 /*!**********************************************************************!*\
   !*** D:/cjindex/node_modules/uview-ui/libs/config/props/textarea.js ***!
   \**********************************************************************/
@@ -18916,7 +18918,7 @@ var _default = {
 exports.default = _default;
 
 /***/ }),
-/* 151 */
+/* 153 */
 /*!*******************************************************************!*\
   !*** D:/cjindex/node_modules/uview-ui/libs/config/props/toast.js ***!
   \*******************************************************************/
@@ -18962,7 +18964,7 @@ var _default = {
 exports.default = _default;
 
 /***/ }),
-/* 152 */
+/* 154 */
 /*!*********************************************************************!*\
   !*** D:/cjindex/node_modules/uview-ui/libs/config/props/toolbar.js ***!
   \*********************************************************************/
@@ -18999,7 +19001,7 @@ var _default = {
 exports.default = _default;
 
 /***/ }),
-/* 153 */
+/* 155 */
 /*!*********************************************************************!*\
   !*** D:/cjindex/node_modules/uview-ui/libs/config/props/tooltip.js ***!
   \*********************************************************************/
@@ -19043,7 +19045,7 @@ var _default = {
 exports.default = _default;
 
 /***/ }),
-/* 154 */
+/* 156 */
 /*!************************************************************************!*\
   !*** D:/cjindex/node_modules/uview-ui/libs/config/props/transition.js ***!
   \************************************************************************/
@@ -19078,7 +19080,7 @@ var _default = {
 exports.default = _default;
 
 /***/ }),
-/* 155 */
+/* 157 */
 /*!********************************************************************!*\
   !*** D:/cjindex/node_modules/uview-ui/libs/config/props/upload.js ***!
   \********************************************************************/
@@ -19137,7 +19139,7 @@ var _default = {
 exports.default = _default;
 
 /***/ }),
-/* 156 */
+/* 158 */
 /*!**************************************************************!*\
   !*** D:/cjindex/node_modules/uview-ui/libs/config/zIndex.js ***!
   \**************************************************************/
@@ -19173,7 +19175,7 @@ var _default = {
 exports.default = _default;
 
 /***/ }),
-/* 157 */
+/* 159 */
 /*!******************************************************************!*\
   !*** D:/cjindex/node_modules/uview-ui/libs/function/platform.js ***!
   \******************************************************************/
@@ -19203,7 +19205,7 @@ var _default = platform;
 exports.default = _default;
 
 /***/ }),
-/* 158 */
+/* 160 */
 /*!*******************************************!*\
   !*** D:/cjindex/uni.promisify.adaptor.js ***!
   \*******************************************/
@@ -19226,8 +19228,6 @@ uni.addInterceptor({
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 2)["default"]))
 
 /***/ }),
-/* 159 */,
-/* 160 */,
 /* 161 */,
 /* 162 */,
 /* 163 */,
@@ -19238,16 +19238,7 @@ uni.addInterceptor({
 /* 168 */,
 /* 169 */,
 /* 170 */,
-/* 171 */
-/*!***************************************!*\
-  !*** D:/cjindex/static/json/set.json ***!
-  \***************************************/
-/*! exports provided: 0, 1, 2, 3, 4, 5, 6, 7, default */
-/***/ (function(module) {
-
-module.exports = JSON.parse("[{\"sty\":5,\"val\":\"font1\"},{\"sty\":5,\"val\":\"font2\"},{\"sty\":5,\"val\":\"font3\"},{\"sty\":5,\"val\":\"font4\"},{\"sty\":30,\"val\":\"font5\"},{\"sty\":5,\"val\":\"font6\"},{\"sty\":5,\"val\":\"font7\"},{\"sty\":5,\"val\":\"font8\"}]");
-
-/***/ }),
+/* 171 */,
 /* 172 */,
 /* 173 */,
 /* 174 */,
@@ -19260,11 +19251,31 @@ module.exports = JSON.parse("[{\"sty\":5,\"val\":\"font1\"},{\"sty\":5,\"val\":\
 /* 181 */,
 /* 182 */,
 /* 183 */,
-/* 184 */,
+/* 184 */
+/*!***************************************!*\
+  !*** D:/cjindex/static/json/set.json ***!
+  \***************************************/
+/*! exports provided: 0, 1, 2, 3, 4, 5, 6, 7, default */
+/***/ (function(module) {
+
+module.exports = JSON.parse("[{\"sty\":5,\"val\":\"font1\"},{\"sty\":5,\"val\":\"font2\"},{\"sty\":5,\"val\":\"font3\"},{\"sty\":5,\"val\":\"font4\"},{\"sty\":30,\"val\":\"font5\"},{\"sty\":5,\"val\":\"font6\"},{\"sty\":5,\"val\":\"font7\"},{\"sty\":5,\"val\":\"font8\"}]");
+
+/***/ }),
 /* 185 */,
 /* 186 */,
 /* 187 */,
-/* 188 */
+/* 188 */,
+/* 189 */,
+/* 190 */,
+/* 191 */,
+/* 192 */,
+/* 193 */,
+/* 194 */,
+/* 195 */,
+/* 196 */,
+/* 197 */,
+/* 198 */,
+/* 199 */
 /*!******************************************!*\
   !*** D:/cjindex/static/json/jptext.json ***!
   \******************************************/
@@ -19274,15 +19285,15 @@ module.exports = JSON.parse("[{\"sty\":5,\"val\":\"font1\"},{\"sty\":5,\"val\":\
 module.exports = JSON.parse("[{\"name\":\"龙\",\"class\":\"zpsin\"},{\"name\":\"年\",\"class\":\"zpsin2\"},{\"name\":\"大\",\"class\":\"zpsin3\"},{\"name\":\"吉\",\"class\":\"zpsin4\"},{\"name\":\"抬\",\"class\":\"zpsin5\"},{\"name\":\"头\",\"class\":\"zpsin6\"},{\"name\":\"见\",\"class\":\"zpsin7\"},{\"name\":\"喜\",\"class\":\"zpsin8\"}]");
 
 /***/ }),
-/* 189 */,
-/* 190 */,
-/* 191 */,
-/* 192 */,
-/* 193 */,
-/* 194 */,
-/* 195 */,
-/* 196 */,
-/* 197 */
+/* 200 */,
+/* 201 */,
+/* 202 */,
+/* 203 */,
+/* 204 */,
+/* 205 */,
+/* 206 */,
+/* 207 */,
+/* 208 */
 /*!***************************************!*\
   !*** D:/cjindex/static/js/log_pos.js ***!
   \***************************************/
@@ -19301,23 +19312,31 @@ function onsubmit(event) {
 }
 
 /***/ }),
-/* 198 */,
-/* 199 */,
-/* 200 */,
-/* 201 */,
-/* 202 */,
-/* 203 */,
-/* 204 */,
-/* 205 */,
-/* 206 */,
-/* 207 */,
-/* 208 */,
 /* 209 */,
 /* 210 */,
 /* 211 */,
 /* 212 */,
 /* 213 */,
-/* 214 */
+/* 214 */,
+/* 215 */,
+/* 216 */,
+/* 217 */,
+/* 218 */,
+/* 219 */,
+/* 220 */,
+/* 221 */,
+/* 222 */,
+/* 223 */,
+/* 224 */,
+/* 225 */,
+/* 226 */,
+/* 227 */,
+/* 228 */,
+/* 229 */,
+/* 230 */,
+/* 231 */,
+/* 232 */,
+/* 233 */
 /*!********************************************!*\
   !*** D:/cjindex/static/json/posindex.json ***!
   \********************************************/
@@ -19327,23 +19346,23 @@ function onsubmit(event) {
 module.exports = JSON.parse("[{\"number\":\"1\",\"name\":\"豪佳香\",\"awards\":\"现金红包666元\"},{\"number\":\"2\",\"name\":\"楚山孤\",\"awards\":\"现金红包667元\"},{\"number\":\"3\",\"name\":\"月亮\",\"awards\":\"现金红包668元\"},{\"number\":\"4\",\"name\":\"茶茶\",\"awards\":\"现金红包669元\"},{\"number\":\"5\",\"name\":\"大桔\",\"awards\":\"现金红包670元\"},{\"number\":\"6\",\"name\":\"一条酸菜鱼\",\"awards\":\"现金红包671元\"},{\"number\":\"7\",\"name\":\"你好\",\"awards\":\"现金红包672元\"},{\"number\":\"8\",\"name\":\"外号em\",\"awards\":\"现金红包673元\"},{\"number\":\"9\",\"name\":\"kkk\",\"awards\":\"现金红包674元\"},{\"number\":\"10\",\"name\":\",,,\",\"awards\":\"现金红包675元\"},{\"number\":\"11\",\"name\":\"好香\",\"awards\":\"现金红包676元\"},{\"number\":\"12\",\"name\":\"豪佳香\",\"awards\":\"现金红包677元\"},{\"number\":\"13\",\"name\":\"楚山孤\",\"awards\":\"现金红包678元\"},{\"number\":\"14\",\"name\":\"月亮\",\"awards\":\"现金红包679元\"},{\"number\":\"15\",\"name\":\"茶茶\",\"awards\":\"现金红包680元\"},{\"number\":\"16\",\"name\":\"大桔\",\"awards\":\"现金红包681元\"},{\"number\":\"17\",\"name\":\"一条酸菜鱼\",\"awards\":\"现金红包682元\"},{\"number\":\"18\",\"name\":\"你好\",\"awards\":\"现金红包683元\"}]");
 
 /***/ }),
-/* 215 */,
-/* 216 */,
-/* 217 */,
-/* 218 */,
-/* 219 */,
-/* 220 */,
-/* 221 */,
-/* 222 */,
-/* 223 */
+/* 234 */,
+/* 235 */,
+/* 236 */,
+/* 237 */,
+/* 238 */,
+/* 239 */,
+/* 240 */,
+/* 241 */,
+/* 242 */
 /*!****************************************************!*\
   !*** D:/cjindex/node_modules/uqrcodejs/uqrcode.js ***!
   \****************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-/* WEBPACK VAR INJECTION */(function(global) {var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_RESULT__;var _regeneratorRuntime = __webpack_require__(/*! @babel/runtime/regenerator */ 55);
-var _asyncToGenerator = __webpack_require__(/*! @babel/runtime/helpers/asyncToGenerator */ 57);
+/* WEBPACK VAR INJECTION */(function(global) {var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_RESULT__;var _regeneratorRuntime = __webpack_require__(/*! @babel/runtime/regenerator */ 57);
+var _asyncToGenerator = __webpack_require__(/*! @babel/runtime/helpers/asyncToGenerator */ 59);
 var _defineProperty = __webpack_require__(/*! @babel/runtime/helpers/defineProperty */ 11);
 var _typeof = __webpack_require__(/*! @babel/runtime/helpers/typeof */ 13);
 function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); enumerableOnly && (symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; })), keys.push.apply(keys, symbols); } return keys; }
@@ -20580,12 +20599,12 @@ function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { va
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../../../HBuilderX/HBuilderX/plugins/uniapp-cli/node_modules/webpack/buildin/global.js */ 3)))
 
 /***/ }),
-/* 224 */,
-/* 225 */,
-/* 226 */,
-/* 227 */,
-/* 228 */,
-/* 229 */
+/* 243 */,
+/* 244 */,
+/* 245 */,
+/* 246 */,
+/* 247 */,
+/* 248 */
 /*!*********************************************************************!*\
   !*** D:/cjindex/node_modules/uview-ui/components/u-picker/props.js ***!
   \*********************************************************************/
@@ -20682,14 +20701,1367 @@ exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 2)["default"]))
 
 /***/ }),
-/* 230 */,
-/* 231 */,
-/* 232 */,
-/* 233 */,
-/* 234 */,
-/* 235 */,
-/* 236 */,
-/* 237 */
+/* 249 */,
+/* 250 */,
+/* 251 */,
+/* 252 */,
+/* 253 */,
+/* 254 */,
+/* 255 */,
+/* 256 */
+/*!***********************************************************************!*\
+  !*** D:/cjindex/node_modules/uview-ui/components/u-calendar/props.js ***!
+  \***********************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+/* WEBPACK VAR INJECTION */(function(uni) {
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+var _default = {
+  props: {
+    // 日历顶部标题
+    title: {
+      type: String,
+      default: uni.$u.props.calendar.title
+    },
+    // 是否显示标题
+    showTitle: {
+      type: Boolean,
+      default: uni.$u.props.calendar.showTitle
+    },
+    // 是否显示副标题
+    showSubtitle: {
+      type: Boolean,
+      default: uni.$u.props.calendar.showSubtitle
+    },
+    // 日期类型选择，single-选择单个日期，multiple-可以选择多个日期，range-选择日期范围
+    mode: {
+      type: String,
+      default: uni.$u.props.calendar.mode
+    },
+    // mode=range时，第一个日期底部的提示文字
+    startText: {
+      type: String,
+      default: uni.$u.props.calendar.startText
+    },
+    // mode=range时，最后一个日期底部的提示文字
+    endText: {
+      type: String,
+      default: uni.$u.props.calendar.endText
+    },
+    // 自定义列表
+    customList: {
+      type: Array,
+      default: uni.$u.props.calendar.customList
+    },
+    // 主题色，对底部按钮和选中日期有效
+    color: {
+      type: String,
+      default: uni.$u.props.calendar.color
+    },
+    // 最小的可选日期
+    minDate: {
+      type: [String, Number],
+      default: uni.$u.props.calendar.minDate
+    },
+    // 最大可选日期
+    maxDate: {
+      type: [String, Number],
+      default: uni.$u.props.calendar.maxDate
+    },
+    // 默认选中的日期，mode为multiple或range是必须为数组格式
+    defaultDate: {
+      type: [Array, String, Date, null],
+      default: uni.$u.props.calendar.defaultDate
+    },
+    // mode=multiple时，最多可选多少个日期
+    maxCount: {
+      type: [String, Number],
+      default: uni.$u.props.calendar.maxCount
+    },
+    // 日期行高
+    rowHeight: {
+      type: [String, Number],
+      default: uni.$u.props.calendar.rowHeight
+    },
+    // 日期格式化函数
+    formatter: {
+      type: [Function, null],
+      default: uni.$u.props.calendar.formatter
+    },
+    // 是否显示农历
+    showLunar: {
+      type: Boolean,
+      default: uni.$u.props.calendar.showLunar
+    },
+    // 是否显示月份背景色
+    showMark: {
+      type: Boolean,
+      default: uni.$u.props.calendar.showMark
+    },
+    // 确定按钮的文字
+    confirmText: {
+      type: String,
+      default: uni.$u.props.calendar.confirmText
+    },
+    // 确认按钮处于禁用状态时的文字
+    confirmDisabledText: {
+      type: String,
+      default: uni.$u.props.calendar.confirmDisabledText
+    },
+    // 是否显示日历弹窗
+    show: {
+      type: Boolean,
+      default: uni.$u.props.calendar.show
+    },
+    // 是否允许点击遮罩关闭日历
+    closeOnClickOverlay: {
+      type: Boolean,
+      default: uni.$u.props.calendar.closeOnClickOverlay
+    },
+    // 是否为只读状态，只读状态下禁止选择日期
+    readonly: {
+      type: Boolean,
+      default: uni.$u.props.calendar.readonly
+    },
+    // 	是否展示确认按钮
+    showConfirm: {
+      type: Boolean,
+      default: uni.$u.props.calendar.showConfirm
+    },
+    // 日期区间最多可选天数，默认无限制，mode = range时有效
+    maxRange: {
+      type: [Number, String],
+      default: uni.$u.props.calendar.maxRange
+    },
+    // 范围选择超过最多可选天数时的提示文案，mode = range时有效
+    rangePrompt: {
+      type: String,
+      default: uni.$u.props.calendar.rangePrompt
+    },
+    // 范围选择超过最多可选天数时，是否展示提示文案，mode = range时有效
+    showRangePrompt: {
+      type: Boolean,
+      default: uni.$u.props.calendar.showRangePrompt
+    },
+    // 是否允许日期范围的起止时间为同一天，mode = range时有效
+    allowSameDay: {
+      type: Boolean,
+      default: uni.$u.props.calendar.allowSameDay
+    },
+    // 圆角值
+    round: {
+      type: [Boolean, String, Number],
+      default: uni.$u.props.calendar.round
+    },
+    // 最多展示月份数量
+    monthNum: {
+      type: [Number, String],
+      default: 3
+    }
+  }
+};
+exports.default = _default;
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 2)["default"]))
+
+/***/ }),
+/* 257 */
+/*!**********************************************************************!*\
+  !*** D:/cjindex/node_modules/uview-ui/components/u-calendar/util.js ***!
+  \**********************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var _interopRequireDefault = __webpack_require__(/*! @babel/runtime/helpers/interopRequireDefault */ 4);
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+var _defineProperty2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/defineProperty */ 11));
+var _toConsumableArray2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/toConsumableArray */ 18));
+function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); enumerableOnly && (symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; })), keys.push.apply(keys, symbols); } return keys; }
+function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = null != arguments[i] ? arguments[i] : {}; i % 2 ? ownKeys(Object(source), !0).forEach(function (key) { (0, _defineProperty2.default)(target, key, source[key]); }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)) : ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } return target; }
+var _default = {
+  methods: {
+    // 设置月份数据
+    setMonth: function setMonth() {
+      var _this = this;
+      // 月初是周几
+      var day = dayjs(this.date).date(1).day();
+      var start = day == 0 ? 6 : day - 1;
+
+      // 本月天数
+      var days = dayjs(this.date).endOf('month').format('D');
+
+      // 上个月天数
+      var prevDays = dayjs(this.date).endOf('month').subtract(1, 'month').format('D');
+
+      // 日期数据
+      var arr = [];
+      // 清空表格
+      this.month = [];
+
+      // 添加上月数据
+      arr.push.apply(arr, (0, _toConsumableArray2.default)(new Array(start).fill(1).map(function (e, i) {
+        var day = prevDays - start + i + 1;
+        return {
+          value: day,
+          disabled: true,
+          date: dayjs(_this.date).subtract(1, 'month').date(day).format('YYYY-MM-DD')
+        };
+      })));
+
+      // 添加本月数据
+      arr.push.apply(arr, (0, _toConsumableArray2.default)(new Array(days - 0).fill(1).map(function (e, i) {
+        var day = i + 1;
+        return {
+          value: day,
+          date: dayjs(_this.date).date(day).format('YYYY-MM-DD')
+        };
+      })));
+
+      // 添加下个月
+      arr.push.apply(arr, (0, _toConsumableArray2.default)(new Array(42 - days - start).fill(1).map(function (e, i) {
+        var day = i + 1;
+        return {
+          value: day,
+          disabled: true,
+          date: dayjs(_this.date).add(1, 'month').date(day).format('YYYY-MM-DD')
+        };
+      })));
+
+      // 分割数组
+      var _loop = function _loop(n) {
+        _this.month.push(arr.slice(n, n + 7).map(function (e, i) {
+          e.index = i + n;
+
+          // 自定义信息
+          var custom = _this.customList.find(function (c) {
+            return c.date == e.date;
+          });
+
+          // 农历
+          if (_this.lunar) {
+            var _this$getLunar = _this.getLunar(e.date),
+              IDayCn = _this$getLunar.IDayCn,
+              IMonthCn = _this$getLunar.IMonthCn;
+            e.lunar = IDayCn == '初一' ? IMonthCn : IDayCn;
+          }
+          return _objectSpread(_objectSpread({}, e), custom);
+        }));
+      };
+      for (var n = 0; n < arr.length; n += 7) {
+        _loop(n);
+      }
+    }
+  }
+};
+exports.default = _default;
+
+/***/ }),
+/* 258 */
+/*!***********************************************************!*\
+  !*** D:/cjindex/node_modules/uview-ui/libs/util/dayjs.js ***!
+  \***********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_RESULT__;var _typeof = __webpack_require__(/*! @babel/runtime/helpers/typeof */ 13);
+!function (t, e) {
+  ( false ? undefined : _typeof(exports)) === 'object' && typeof module !== 'undefined' ? module.exports = e() :  true ? !(__WEBPACK_AMD_DEFINE_FACTORY__ = (e),
+				__WEBPACK_AMD_DEFINE_RESULT__ = (typeof __WEBPACK_AMD_DEFINE_FACTORY__ === 'function' ?
+				(__WEBPACK_AMD_DEFINE_FACTORY__.call(exports, __webpack_require__, exports, module)) :
+				__WEBPACK_AMD_DEFINE_FACTORY__),
+				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__)) : undefined;
+}(this, function () {
+  'use strict';
+
+  var t = 'millisecond';
+  var e = 'second';
+  var n = 'minute';
+  var r = 'hour';
+  var i = 'day';
+  var s = 'week';
+  var u = 'month';
+  var a = 'quarter';
+  var o = 'year';
+  var f = 'date';
+  var h = /^(\d{4})[-/]?(\d{1,2})?[-/]?(\d{0,2})[^0-9]*(\d{1,2})?:?(\d{1,2})?:?(\d{1,2})?.?(\d+)?$/;
+  var c = /\[([^\]]+)]|Y{1,4}|M{1,4}|D{1,2}|d{1,4}|H{1,2}|h{1,2}|a|A|m{1,2}|s{1,2}|Z{1,2}|SSS/g;
+  var d = {
+    name: 'en',
+    weekdays: 'Sunday_Monday_Tuesday_Wednesday_Thursday_Friday_Saturday'.split('_'),
+    months: 'January_February_March_April_May_June_July_August_September_October_November_December'.split('_')
+  };
+  var $ = function $(t, e, n) {
+    var r = String(t);
+    return !r || r.length >= e ? t : "".concat(Array(e + 1 - r.length).join(n)).concat(t);
+  };
+  var l = {
+    s: $,
+    z: function z(t) {
+      var e = -t.utcOffset();
+      var n = Math.abs(e);
+      var r = Math.floor(n / 60);
+      var i = n % 60;
+      return "".concat((e <= 0 ? '+' : '-') + $(r, 2, '0'), ":").concat($(i, 2, '0'));
+    },
+    m: function t(e, n) {
+      if (e.date() < n.date()) return -t(n, e);
+      var r = 12 * (n.year() - e.year()) + (n.month() - e.month());
+      var i = e.clone().add(r, u);
+      var s = n - i < 0;
+      var a = e.clone().add(r + (s ? -1 : 1), u);
+      return +(-(r + (n - i) / (s ? i - a : a - i)) || 0);
+    },
+    a: function a(t) {
+      return t < 0 ? Math.ceil(t) || 0 : Math.floor(t);
+    },
+    p: function p(h) {
+      return {
+        M: u,
+        y: o,
+        w: s,
+        d: i,
+        D: f,
+        h: r,
+        m: n,
+        s: e,
+        ms: t,
+        Q: a
+      }[h] || String(h || '').toLowerCase().replace(/s$/, '');
+    },
+    u: function u(t) {
+      return void 0 === t;
+    }
+  };
+  var y = 'en';
+  var M = {};
+  M[y] = d;
+  var m = function m(t) {
+    return t instanceof S;
+  };
+  var D = function D(t, e, n) {
+    var r;
+    if (!t) return y;
+    if (typeof t === 'string') M[t] && (r = t), e && (M[t] = e, r = t);else {
+      var _i = t.name;
+      M[_i] = t, r = _i;
+    }
+    return !n && r && (y = r), r || !n && y;
+  };
+  var v = function v(t, e) {
+    if (m(t)) return t.clone();
+    var n = _typeof(e) === 'object' ? e : {};
+    return n.date = t, n.args = arguments, new S(n);
+  };
+  var g = l;
+  g.l = D, g.i = m, g.w = function (t, e) {
+    return v(t, {
+      locale: e.$L,
+      utc: e.$u,
+      x: e.$x,
+      $offset: e.$offset
+    });
+  };
+  var S = function () {
+    function d(t) {
+      this.$L = D(t.locale, null, !0), this.parse(t);
+    }
+    var $ = d.prototype;
+    return $.parse = function (t) {
+      this.$d = function (t) {
+        var e = t.date;
+        var n = t.utc;
+        if (e === null) return new Date(NaN);
+        if (g.u(e)) return new Date();
+        if (e instanceof Date) return new Date(e);
+        if (typeof e === 'string' && !/Z$/i.test(e)) {
+          var _r = e.match(h);
+          if (_r) {
+            var _i2 = _r[2] - 1 || 0;
+            var _s = (_r[7] || '0').substring(0, 3);
+            return n ? new Date(Date.UTC(_r[1], _i2, _r[3] || 1, _r[4] || 0, _r[5] || 0, _r[6] || 0, _s)) : new Date(_r[1], _i2, _r[3] || 1, _r[4] || 0, _r[5] || 0, _r[6] || 0, _s);
+          }
+        }
+        return new Date(e);
+      }(t), this.$x = t.x || {}, this.init();
+    }, $.init = function () {
+      var t = this.$d;
+      this.$y = t.getFullYear(), this.$M = t.getMonth(), this.$D = t.getDate(), this.$W = t.getDay(), this.$H = t.getHours(), this.$m = t.getMinutes(), this.$s = t.getSeconds(), this.$ms = t.getMilliseconds();
+    }, $.$utils = function () {
+      return g;
+    }, $.isValid = function () {
+      return !(this.$d.toString() === 'Invalid Date');
+    }, $.isSame = function (t, e) {
+      var n = v(t);
+      return this.startOf(e) <= n && n <= this.endOf(e);
+    }, $.isAfter = function (t, e) {
+      return v(t) < this.startOf(e);
+    }, $.isBefore = function (t, e) {
+      return this.endOf(e) < v(t);
+    }, $.$g = function (t, e, n) {
+      return g.u(t) ? this[e] : this.set(n, t);
+    }, $.unix = function () {
+      return Math.floor(this.valueOf() / 1e3);
+    }, $.valueOf = function () {
+      return this.$d.getTime();
+    }, $.startOf = function (t, a) {
+      var h = this;
+      var c = !!g.u(a) || a;
+      var d = g.p(t);
+      var $ = function $(t, e) {
+        var n = g.w(h.$u ? Date.UTC(h.$y, e, t) : new Date(h.$y, e, t), h);
+        return c ? n : n.endOf(i);
+      };
+      var l = function l(t, e) {
+        return g.w(h.toDate()[t].apply(h.toDate('s'), (c ? [0, 0, 0, 0] : [23, 59, 59, 999]).slice(e)), h);
+      };
+      var y = this.$W;
+      var M = this.$M;
+      var m = this.$D;
+      var D = "set".concat(this.$u ? 'UTC' : '');
+      switch (d) {
+        case o:
+          return c ? $(1, 0) : $(31, 11);
+        case u:
+          return c ? $(1, M) : $(0, M + 1);
+        case s:
+          var v = this.$locale().weekStart || 0;
+          var S = (y < v ? y + 7 : y) - v;
+          return $(c ? m - S : m + (6 - S), M);
+        case i:
+        case f:
+          return l("".concat(D, "Hours"), 0);
+        case r:
+          return l("".concat(D, "Minutes"), 1);
+        case n:
+          return l("".concat(D, "Seconds"), 2);
+        case e:
+          return l("".concat(D, "Milliseconds"), 3);
+        default:
+          return this.clone();
+      }
+    }, $.endOf = function (t) {
+      return this.startOf(t, !1);
+    }, $.$set = function (s, a) {
+      var h;
+      var c = g.p(s);
+      var d = "set".concat(this.$u ? 'UTC' : '');
+      var $ = (h = {}, h[i] = "".concat(d, "Date"), h[f] = "".concat(d, "Date"), h[u] = "".concat(d, "Month"), h[o] = "".concat(d, "FullYear"), h[r] = "".concat(d, "Hours"), h[n] = "".concat(d, "Minutes"), h[e] = "".concat(d, "Seconds"), h[t] = "".concat(d, "Milliseconds"), h)[c];
+      var l = c === i ? this.$D + (a - this.$W) : a;
+      if (c === u || c === o) {
+        var _y = this.clone().set(f, 1);
+        _y.$d[$](l), _y.init(), this.$d = _y.set(f, Math.min(this.$D, _y.daysInMonth())).$d;
+      } else $ && this.$d[$](l);
+      return this.init(), this;
+    }, $.set = function (t, e) {
+      return this.clone().$set(t, e);
+    }, $.get = function (t) {
+      return this[g.p(t)]();
+    }, $.add = function (t, a) {
+      var f;
+      var h = this;
+      t = Number(t);
+      var c = g.p(a);
+      var d = function d(e) {
+        var n = v(h);
+        return g.w(n.date(n.date() + Math.round(e * t)), h);
+      };
+      if (c === u) return this.set(u, this.$M + t);
+      if (c === o) return this.set(o, this.$y + t);
+      if (c === i) return d(1);
+      if (c === s) return d(7);
+      var $ = (f = {}, f[n] = 6e4, f[r] = 36e5, f[e] = 1e3, f)[c] || 1;
+      var l = this.$d.getTime() + t * $;
+      return g.w(l, this);
+    }, $.subtract = function (t, e) {
+      return this.add(-1 * t, e);
+    }, $.format = function (t) {
+      var e = this;
+      if (!this.isValid()) return 'Invalid Date';
+      var n = t || 'YYYY-MM-DDTHH:mm:ssZ';
+      var r = g.z(this);
+      var i = this.$locale();
+      var s = this.$H;
+      var u = this.$m;
+      var a = this.$M;
+      var o = i.weekdays;
+      var f = i.months;
+      var h = function h(t, r, i, s) {
+        return t && (t[r] || t(e, n)) || i[r].substr(0, s);
+      };
+      var d = function d(t) {
+        return g.s(s % 12 || 12, t, '0');
+      };
+      var $ = i.meridiem || function (t, e, n) {
+        var r = t < 12 ? 'AM' : 'PM';
+        return n ? r.toLowerCase() : r;
+      };
+      var l = {
+        YY: String(this.$y).slice(-2),
+        YYYY: this.$y,
+        M: a + 1,
+        MM: g.s(a + 1, 2, '0'),
+        MMM: h(i.monthsShort, a, f, 3),
+        MMMM: h(f, a),
+        D: this.$D,
+        DD: g.s(this.$D, 2, '0'),
+        d: String(this.$W),
+        dd: h(i.weekdaysMin, this.$W, o, 2),
+        ddd: h(i.weekdaysShort, this.$W, o, 3),
+        dddd: o[this.$W],
+        H: String(s),
+        HH: g.s(s, 2, '0'),
+        h: d(1),
+        hh: d(2),
+        a: $(s, u, !0),
+        A: $(s, u, !1),
+        m: String(u),
+        mm: g.s(u, 2, '0'),
+        s: String(this.$s),
+        ss: g.s(this.$s, 2, '0'),
+        SSS: g.s(this.$ms, 3, '0'),
+        Z: r
+      };
+      return n.replace(c, function (t, e) {
+        return e || l[t] || r.replace(':', '');
+      });
+    }, $.utcOffset = function () {
+      return 15 * -Math.round(this.$d.getTimezoneOffset() / 15);
+    }, $.diff = function (t, f, h) {
+      var c;
+      var d = g.p(f);
+      var $ = v(t);
+      var l = 6e4 * ($.utcOffset() - this.utcOffset());
+      var y = this - $;
+      var M = g.m(this, $);
+      return M = (c = {}, c[o] = M / 12, c[u] = M, c[a] = M / 3, c[s] = (y - l) / 6048e5, c[i] = (y - l) / 864e5, c[r] = y / 36e5, c[n] = y / 6e4, c[e] = y / 1e3, c)[d] || y, h ? M : g.a(M);
+    }, $.daysInMonth = function () {
+      return this.endOf(u).$D;
+    }, $.$locale = function () {
+      return M[this.$L];
+    }, $.locale = function (t, e) {
+      if (!t) return this.$L;
+      var n = this.clone();
+      var r = D(t, e, !0);
+      return r && (n.$L = r), n;
+    }, $.clone = function () {
+      return g.w(this.$d, this);
+    }, $.toDate = function () {
+      return new Date(this.valueOf());
+    }, $.toJSON = function () {
+      return this.isValid() ? this.toISOString() : null;
+    }, $.toISOString = function () {
+      return this.$d.toISOString();
+    }, $.toString = function () {
+      return this.$d.toUTCString();
+    }, d;
+  }();
+  var p = S.prototype;
+  return v.prototype = p, [['$ms', t], ['$s', e], ['$m', n], ['$H', r], ['$W', i], ['$M', u], ['$y', o], ['$D', f]].forEach(function (t) {
+    p[t[1]] = function (e) {
+      return this.$g(e, t[0], t[1]);
+    };
+  }), v.extend = function (t, e) {
+    return t.$i || (t(e, S, v), t.$i = !0), v;
+  }, v.locale = D, v.isDayjs = m, v.unix = function (t) {
+    return v(1e3 * t);
+  }, v.en = M[y], v.Ls = M, v.p = {}, v;
+});
+
+/***/ }),
+/* 259 */
+/*!**************************************************************!*\
+  !*** D:/cjindex/node_modules/uview-ui/libs/util/calendar.js ***!
+  \**************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+/**
+* @1900-2100区间内的公历、农历互转
+* @charset UTF-8
+* @github  https://github.com/jjonline/calendar.js
+* @Author  Jea杨(JJonline@JJonline.Cn)
+* @Time    2014-7-21
+* @Time    2016-8-13 Fixed 2033hex、Attribution Annals
+* @Time    2016-9-25 Fixed lunar LeapMonth Param Bug
+* @Time    2017-7-24 Fixed use getTerm Func Param Error.use solar year,NOT lunar year
+* @Version 1.0.3
+* @公历转农历：calendar.solar2lunar(1987,11,01); //[you can ignore params of prefix 0]
+* @农历转公历：calendar.lunar2solar(1987,09,10); //[you can ignore params of prefix 0]
+*/
+/* eslint-disable */
+var calendar = {
+  /**
+      * 农历1900-2100的润大小信息表
+      * @Array Of Property
+      * @return Hex
+      */
+  lunarInfo: [0x04bd8, 0x04ae0, 0x0a570, 0x054d5, 0x0d260, 0x0d950, 0x16554, 0x056a0, 0x09ad0, 0x055d2,
+  // 1900-1909
+  0x04ae0, 0x0a5b6, 0x0a4d0, 0x0d250, 0x1d255, 0x0b540, 0x0d6a0, 0x0ada2, 0x095b0, 0x14977,
+  // 1910-1919
+  0x04970, 0x0a4b0, 0x0b4b5, 0x06a50, 0x06d40, 0x1ab54, 0x02b60, 0x09570, 0x052f2, 0x04970,
+  // 1920-1929
+  0x06566, 0x0d4a0, 0x0ea50, 0x06e95, 0x05ad0, 0x02b60, 0x186e3, 0x092e0, 0x1c8d7, 0x0c950,
+  // 1930-1939
+  0x0d4a0, 0x1d8a6, 0x0b550, 0x056a0, 0x1a5b4, 0x025d0, 0x092d0, 0x0d2b2, 0x0a950, 0x0b557,
+  // 1940-1949
+  0x06ca0, 0x0b550, 0x15355, 0x04da0, 0x0a5b0, 0x14573, 0x052b0, 0x0a9a8, 0x0e950, 0x06aa0,
+  // 1950-1959
+  0x0aea6, 0x0ab50, 0x04b60, 0x0aae4, 0x0a570, 0x05260, 0x0f263, 0x0d950, 0x05b57, 0x056a0,
+  // 1960-1969
+  0x096d0, 0x04dd5, 0x04ad0, 0x0a4d0, 0x0d4d4, 0x0d250, 0x0d558, 0x0b540, 0x0b6a0, 0x195a6,
+  // 1970-1979
+  0x095b0, 0x049b0, 0x0a974, 0x0a4b0, 0x0b27a, 0x06a50, 0x06d40, 0x0af46, 0x0ab60, 0x09570,
+  // 1980-1989
+  0x04af5, 0x04970, 0x064b0, 0x074a3, 0x0ea50, 0x06b58, 0x05ac0, 0x0ab60, 0x096d5, 0x092e0,
+  // 1990-1999
+  0x0c960, 0x0d954, 0x0d4a0, 0x0da50, 0x07552, 0x056a0, 0x0abb7, 0x025d0, 0x092d0, 0x0cab5,
+  // 2000-2009
+  0x0a950, 0x0b4a0, 0x0baa4, 0x0ad50, 0x055d9, 0x04ba0, 0x0a5b0, 0x15176, 0x052b0, 0x0a930,
+  // 2010-2019
+  0x07954, 0x06aa0, 0x0ad50, 0x05b52, 0x04b60, 0x0a6e6, 0x0a4e0, 0x0d260, 0x0ea65, 0x0d530,
+  // 2020-2029
+  0x05aa0, 0x076a3, 0x096d0, 0x04afb, 0x04ad0, 0x0a4d0, 0x1d0b6, 0x0d250, 0x0d520, 0x0dd45,
+  // 2030-2039
+  0x0b5a0, 0x056d0, 0x055b2, 0x049b0, 0x0a577, 0x0a4b0, 0x0aa50, 0x1b255, 0x06d20, 0x0ada0,
+  // 2040-2049
+  /** Add By JJonline@JJonline.Cn**/
+  0x14b63, 0x09370, 0x049f8, 0x04970, 0x064b0, 0x168a6, 0x0ea50, 0x06b20, 0x1a6c4, 0x0aae0,
+  // 2050-2059
+  0x0a2e0, 0x0d2e3, 0x0c960, 0x0d557, 0x0d4a0, 0x0da50, 0x05d55, 0x056a0, 0x0a6d0, 0x055d4,
+  // 2060-2069
+  0x052d0, 0x0a9b8, 0x0a950, 0x0b4a0, 0x0b6a6, 0x0ad50, 0x055a0, 0x0aba4, 0x0a5b0, 0x052b0,
+  // 2070-2079
+  0x0b273, 0x06930, 0x07337, 0x06aa0, 0x0ad50, 0x14b55, 0x04b60, 0x0a570, 0x054e4, 0x0d160,
+  // 2080-2089
+  0x0e968, 0x0d520, 0x0daa0, 0x16aa6, 0x056d0, 0x04ae0, 0x0a9d4, 0x0a2d0, 0x0d150, 0x0f252,
+  // 2090-2099
+  0x0d520],
+  // 2100
+
+  /**
+      * 公历每个月份的天数普通表
+      * @Array Of Property
+      * @return Number
+      */
+  solarMonth: [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31],
+  /**
+      * 天干地支之天干速查表
+      * @Array Of Property trans["甲","乙","丙","丁","戊","己","庚","辛","壬","癸"]
+      * @return Cn string
+      */
+  Gan: ["\u7532", "\u4E59", "\u4E19", "\u4E01", "\u620A", "\u5DF1", "\u5E9A", "\u8F9B", "\u58EC", "\u7678"],
+  /**
+      * 天干地支之地支速查表
+      * @Array Of Property
+      * @trans["子","丑","寅","卯","辰","巳","午","未","申","酉","戌","亥"]
+      * @return Cn string
+      */
+  Zhi: ["\u5B50", "\u4E11", "\u5BC5", "\u536F", "\u8FB0", "\u5DF3", "\u5348", "\u672A", "\u7533", "\u9149", "\u620C", "\u4EA5"],
+  /**
+      * 天干地支之地支速查表<=>生肖
+      * @Array Of Property
+      * @trans["鼠","牛","虎","兔","龙","蛇","马","羊","猴","鸡","狗","猪"]
+      * @return Cn string
+      */
+  Animals: ["\u9F20", "\u725B", "\u864E", "\u5154", "\u9F99", "\u86C7", "\u9A6C", "\u7F8A", "\u7334", "\u9E21", "\u72D7", "\u732A"],
+  /**
+      * 24节气速查表
+      * @Array Of Property
+      * @trans["小寒","大寒","立春","雨水","惊蛰","春分","清明","谷雨","立夏","小满","芒种","夏至","小暑","大暑","立秋","处暑","白露","秋分","寒露","霜降","立冬","小雪","大雪","冬至"]
+      * @return Cn string
+      */
+  solarTerm: ["\u5C0F\u5BD2", "\u5927\u5BD2", "\u7ACB\u6625", "\u96E8\u6C34", "\u60CA\u86F0", "\u6625\u5206", "\u6E05\u660E", "\u8C37\u96E8", "\u7ACB\u590F", "\u5C0F\u6EE1", "\u8292\u79CD", "\u590F\u81F3", "\u5C0F\u6691", "\u5927\u6691", "\u7ACB\u79CB", "\u5904\u6691", "\u767D\u9732", "\u79CB\u5206", "\u5BD2\u9732", "\u971C\u964D", "\u7ACB\u51AC", "\u5C0F\u96EA", "\u5927\u96EA", "\u51AC\u81F3"],
+  /**
+      * 1900-2100各年的24节气日期速查表
+      * @Array Of Property
+      * @return 0x string For splice
+      */
+  sTermInfo: ['9778397bd097c36b0b6fc9274c91aa', '97b6b97bd19801ec9210c965cc920e', '97bcf97c3598082c95f8c965cc920f', '97bd0b06bdb0722c965ce1cfcc920f', 'b027097bd097c36b0b6fc9274c91aa', '97b6b97bd19801ec9210c965cc920e', '97bcf97c359801ec95f8c965cc920f', '97bd0b06bdb0722c965ce1cfcc920f', 'b027097bd097c36b0b6fc9274c91aa', '97b6b97bd19801ec9210c965cc920e', '97bcf97c359801ec95f8c965cc920f', '97bd0b06bdb0722c965ce1cfcc920f', 'b027097bd097c36b0b6fc9274c91aa', '9778397bd19801ec9210c965cc920e', '97b6b97bd19801ec95f8c965cc920f', '97bd09801d98082c95f8e1cfcc920f', '97bd097bd097c36b0b6fc9210c8dc2', '9778397bd197c36c9210c9274c91aa', '97b6b97bd19801ec95f8c965cc920e', '97bd09801d98082c95f8e1cfcc920f', '97bd097bd097c36b0b6fc9210c8dc2', '9778397bd097c36c9210c9274c91aa', '97b6b97bd19801ec95f8c965cc920e', '97bcf97c3598082c95f8e1cfcc920f', '97bd097bd097c36b0b6fc9210c8dc2', '9778397bd097c36c9210c9274c91aa', '97b6b97bd19801ec9210c965cc920e', '97bcf97c3598082c95f8c965cc920f', '97bd097bd097c35b0b6fc920fb0722', '9778397bd097c36b0b6fc9274c91aa', '97b6b97bd19801ec9210c965cc920e', '97bcf97c3598082c95f8c965cc920f', '97bd097bd097c35b0b6fc920fb0722', '9778397bd097c36b0b6fc9274c91aa', '97b6b97bd19801ec9210c965cc920e', '97bcf97c359801ec95f8c965cc920f', '97bd097bd097c35b0b6fc920fb0722', '9778397bd097c36b0b6fc9274c91aa', '97b6b97bd19801ec9210c965cc920e', '97bcf97c359801ec95f8c965cc920f', '97bd097bd097c35b0b6fc920fb0722', '9778397bd097c36b0b6fc9274c91aa', '97b6b97bd19801ec9210c965cc920e', '97bcf97c359801ec95f8c965cc920f', '97bd097bd07f595b0b6fc920fb0722', '9778397bd097c36b0b6fc9210c8dc2', '9778397bd19801ec9210c9274c920e', '97b6b97bd19801ec95f8c965cc920f', '97bd07f5307f595b0b0bc920fb0722', '7f0e397bd097c36b0b6fc9210c8dc2', '9778397bd097c36c9210c9274c920e', '97b6b97bd19801ec95f8c965cc920f', '97bd07f5307f595b0b0bc920fb0722', '7f0e397bd097c36b0b6fc9210c8dc2', '9778397bd097c36c9210c9274c91aa', '97b6b97bd19801ec9210c965cc920e', '97bd07f1487f595b0b0bc920fb0722', '7f0e397bd097c36b0b6fc9210c8dc2', '9778397bd097c36b0b6fc9274c91aa', '97b6b97bd19801ec9210c965cc920e', '97bcf7f1487f595b0b0bb0b6fb0722', '7f0e397bd097c35b0b6fc920fb0722', '9778397bd097c36b0b6fc9274c91aa', '97b6b97bd19801ec9210c965cc920e', '97bcf7f1487f595b0b0bb0b6fb0722', '7f0e397bd097c35b0b6fc920fb0722', '9778397bd097c36b0b6fc9274c91aa', '97b6b97bd19801ec9210c965cc920e', '97bcf7f1487f531b0b0bb0b6fb0722', '7f0e397bd097c35b0b6fc920fb0722', '9778397bd097c36b0b6fc9274c91aa', '97b6b97bd19801ec9210c965cc920e', '97bcf7f1487f531b0b0bb0b6fb0722', '7f0e397bd07f595b0b6fc920fb0722', '9778397bd097c36b0b6fc9274c91aa', '97b6b97bd19801ec9210c9274c920e', '97bcf7f0e47f531b0b0bb0b6fb0722', '7f0e397bd07f595b0b0bc920fb0722', '9778397bd097c36b0b6fc9210c91aa', '97b6b97bd197c36c9210c9274c920e', '97bcf7f0e47f531b0b0bb0b6fb0722', '7f0e397bd07f595b0b0bc920fb0722', '9778397bd097c36b0b6fc9210c8dc2', '9778397bd097c36c9210c9274c920e', '97b6b7f0e47f531b0723b0b6fb0722', '7f0e37f5307f595b0b0bc920fb0722', '7f0e397bd097c36b0b6fc9210c8dc2', '9778397bd097c36b0b70c9274c91aa', '97b6b7f0e47f531b0723b0b6fb0721', '7f0e37f1487f595b0b0bb0b6fb0722', '7f0e397bd097c35b0b6fc9210c8dc2', '9778397bd097c36b0b6fc9274c91aa', '97b6b7f0e47f531b0723b0b6fb0721', '7f0e27f1487f595b0b0bb0b6fb0722', '7f0e397bd097c35b0b6fc920fb0722', '9778397bd097c36b0b6fc9274c91aa', '97b6b7f0e47f531b0723b0b6fb0721', '7f0e27f1487f531b0b0bb0b6fb0722', '7f0e397bd097c35b0b6fc920fb0722', '9778397bd097c36b0b6fc9274c91aa', '97b6b7f0e47f531b0723b0b6fb0721', '7f0e27f1487f531b0b0bb0b6fb0722', '7f0e397bd097c35b0b6fc920fb0722', '9778397bd097c36b0b6fc9274c91aa', '97b6b7f0e47f531b0723b0b6fb0721', '7f0e27f1487f531b0b0bb0b6fb0722', '7f0e397bd07f595b0b0bc920fb0722', '9778397bd097c36b0b6fc9274c91aa', '97b6b7f0e47f531b0723b0787b0721', '7f0e27f0e47f531b0b0bb0b6fb0722', '7f0e397bd07f595b0b0bc920fb0722', '9778397bd097c36b0b6fc9210c91aa', '97b6b7f0e47f149b0723b0787b0721', '7f0e27f0e47f531b0723b0b6fb0722', '7f0e397bd07f595b0b0bc920fb0722', '9778397bd097c36b0b6fc9210c8dc2', '977837f0e37f149b0723b0787b0721', '7f07e7f0e47f531b0723b0b6fb0722', '7f0e37f5307f595b0b0bc920fb0722', '7f0e397bd097c35b0b6fc9210c8dc2', '977837f0e37f14998082b0787b0721', '7f07e7f0e47f531b0723b0b6fb0721', '7f0e37f1487f595b0b0bb0b6fb0722', '7f0e397bd097c35b0b6fc9210c8dc2', '977837f0e37f14998082b0787b06bd', '7f07e7f0e47f531b0723b0b6fb0721', '7f0e27f1487f531b0b0bb0b6fb0722', '7f0e397bd097c35b0b6fc920fb0722', '977837f0e37f14998082b0787b06bd', '7f07e7f0e47f531b0723b0b6fb0721', '7f0e27f1487f531b0b0bb0b6fb0722', '7f0e397bd097c35b0b6fc920fb0722', '977837f0e37f14998082b0787b06bd', '7f07e7f0e47f531b0723b0b6fb0721', '7f0e27f1487f531b0b0bb0b6fb0722', '7f0e397bd07f595b0b0bc920fb0722', '977837f0e37f14998082b0787b06bd', '7f07e7f0e47f531b0723b0b6fb0721', '7f0e27f1487f531b0b0bb0b6fb0722', '7f0e397bd07f595b0b0bc920fb0722', '977837f0e37f14998082b0787b06bd', '7f07e7f0e47f149b0723b0787b0721', '7f0e27f0e47f531b0b0bb0b6fb0722', '7f0e397bd07f595b0b0bc920fb0722', '977837f0e37f14998082b0723b06bd', '7f07e7f0e37f149b0723b0787b0721', '7f0e27f0e47f531b0723b0b6fb0722', '7f0e397bd07f595b0b0bc920fb0722', '977837f0e37f14898082b0723b02d5', '7ec967f0e37f14998082b0787b0721', '7f07e7f0e47f531b0723b0b6fb0722', '7f0e37f1487f595b0b0bb0b6fb0722', '7f0e37f0e37f14898082b0723b02d5', '7ec967f0e37f14998082b0787b0721', '7f07e7f0e47f531b0723b0b6fb0722', '7f0e37f1487f531b0b0bb0b6fb0722', '7f0e37f0e37f14898082b0723b02d5', '7ec967f0e37f14998082b0787b06bd', '7f07e7f0e47f531b0723b0b6fb0721', '7f0e37f1487f531b0b0bb0b6fb0722', '7f0e37f0e37f14898082b072297c35', '7ec967f0e37f14998082b0787b06bd', '7f07e7f0e47f531b0723b0b6fb0721', '7f0e27f1487f531b0b0bb0b6fb0722', '7f0e37f0e37f14898082b072297c35', '7ec967f0e37f14998082b0787b06bd', '7f07e7f0e47f531b0723b0b6fb0721', '7f0e27f1487f531b0b0bb0b6fb0722', '7f0e37f0e366aa89801eb072297c35', '7ec967f0e37f14998082b0787b06bd', '7f07e7f0e47f149b0723b0787b0721', '7f0e27f1487f531b0b0bb0b6fb0722', '7f0e37f0e366aa89801eb072297c35', '7ec967f0e37f14998082b0723b06bd', '7f07e7f0e47f149b0723b0787b0721', '7f0e27f0e47f531b0723b0b6fb0722', '7f0e37f0e366aa89801eb072297c35', '7ec967f0e37f14998082b0723b06bd', '7f07e7f0e37f14998083b0787b0721', '7f0e27f0e47f531b0723b0b6fb0722', '7f0e37f0e366aa89801eb072297c35', '7ec967f0e37f14898082b0723b02d5', '7f07e7f0e37f14998082b0787b0721', '7f07e7f0e47f531b0723b0b6fb0722', '7f0e36665b66aa89801e9808297c35', '665f67f0e37f14898082b0723b02d5', '7ec967f0e37f14998082b0787b0721', '7f07e7f0e47f531b0723b0b6fb0722', '7f0e36665b66a449801e9808297c35', '665f67f0e37f14898082b0723b02d5', '7ec967f0e37f14998082b0787b06bd', '7f07e7f0e47f531b0723b0b6fb0721', '7f0e36665b66a449801e9808297c35', '665f67f0e37f14898082b072297c35', '7ec967f0e37f14998082b0787b06bd', '7f07e7f0e47f531b0723b0b6fb0721', '7f0e26665b66a449801e9808297c35', '665f67f0e37f1489801eb072297c35', '7ec967f0e37f14998082b0787b06bd', '7f07e7f0e47f531b0723b0b6fb0721', '7f0e27f1487f531b0b0bb0b6fb0722'],
+  /**
+      * 数字转中文速查表
+      * @Array Of Property
+      * @trans ['日','一','二','三','四','五','六','七','八','九','十']
+      * @return Cn string
+      */
+  nStr1: ["\u65E5", "\u4E00", "\u4E8C", "\u4E09", "\u56DB", "\u4E94", "\u516D", "\u4E03", "\u516B", "\u4E5D", "\u5341"],
+  /**
+      * 日期转农历称呼速查表
+      * @Array Of Property
+      * @trans ['初','十','廿','卅']
+      * @return Cn string
+      */
+  nStr2: ["\u521D", "\u5341", "\u5EFF", "\u5345"],
+  /**
+      * 月份转农历称呼速查表
+      * @Array Of Property
+      * @trans ['正','一','二','三','四','五','六','七','八','九','十','冬','腊']
+      * @return Cn string
+      */
+  nStr3: ["\u6B63", "\u4E8C", "\u4E09", "\u56DB", "\u4E94", "\u516D", "\u4E03", "\u516B", "\u4E5D", "\u5341", "\u51AC", "\u814A"],
+  /**
+      * 返回农历y年一整年的总天数
+      * @param lunar Year
+      * @return Number
+      * @eg:var count = calendar.lYearDays(1987) ;//count=387
+      */
+  lYearDays: function lYearDays(y) {
+    var i;
+    var sum = 348;
+    for (i = 0x8000; i > 0x8; i >>= 1) {
+      sum += this.lunarInfo[y - 1900] & i ? 1 : 0;
+    }
+    return sum + this.leapDays(y);
+  },
+  /**
+      * 返回农历y年闰月是哪个月；若y年没有闰月 则返回0
+      * @param lunar Year
+      * @return Number (0-12)
+      * @eg:var leapMonth = calendar.leapMonth(1987) ;//leapMonth=6
+      */
+  leapMonth: function leapMonth(y) {
+    // 闰字编码 \u95f0
+    return this.lunarInfo[y - 1900] & 0xf;
+  },
+  /**
+      * 返回农历y年闰月的天数 若该年没有闰月则返回0
+      * @param lunar Year
+      * @return Number (0、29、30)
+      * @eg:var leapMonthDay = calendar.leapDays(1987) ;//leapMonthDay=29
+      */
+  leapDays: function leapDays(y) {
+    if (this.leapMonth(y)) {
+      return this.lunarInfo[y - 1900] & 0x10000 ? 30 : 29;
+    }
+    return 0;
+  },
+  /**
+      * 返回农历y年m月（非闰月）的总天数，计算m为闰月时的天数请使用leapDays方法
+      * @param lunar Year
+      * @return Number (-1、29、30)
+      * @eg:var MonthDay = calendar.monthDays(1987,9) ;//MonthDay=29
+      */
+  monthDays: function monthDays(y, m) {
+    if (m > 12 || m < 1) {
+      return -1;
+    } // 月份参数从1至12，参数错误返回-1
+    return this.lunarInfo[y - 1900] & 0x10000 >> m ? 30 : 29;
+  },
+  /**
+      * 返回公历(!)y年m月的天数
+      * @param solar Year
+      * @return Number (-1、28、29、30、31)
+      * @eg:var solarMonthDay = calendar.leapDays(1987) ;//solarMonthDay=30
+      */
+  solarDays: function solarDays(y, m) {
+    if (m > 12 || m < 1) {
+      return -1;
+    } // 若参数错误 返回-1
+    var ms = m - 1;
+    if (ms == 1) {
+      // 2月份的闰平规律测算后确认返回28或29
+      return y % 4 == 0 && y % 100 != 0 || y % 400 == 0 ? 29 : 28;
+    } else {
+      return this.solarMonth[ms];
+    }
+  },
+  /**
+     * 农历年份转换为干支纪年
+     * @param  lYear 农历年的年份数
+     * @return Cn string
+     */
+  toGanZhiYear: function toGanZhiYear(lYear) {
+    var ganKey = (lYear - 3) % 10;
+    var zhiKey = (lYear - 3) % 12;
+    if (ganKey == 0) ganKey = 10; // 如果余数为0则为最后一个天干
+    if (zhiKey == 0) zhiKey = 12; // 如果余数为0则为最后一个地支
+    return this.Gan[ganKey - 1] + this.Zhi[zhiKey - 1];
+  },
+  /**
+     * 公历月、日判断所属星座
+     * @param  cMonth [description]
+     * @param  cDay [description]
+     * @return Cn string
+     */
+  toAstro: function toAstro(cMonth, cDay) {
+    var s = "\u9B54\u7FAF\u6C34\u74F6\u53CC\u9C7C\u767D\u7F8A\u91D1\u725B\u53CC\u5B50\u5DE8\u87F9\u72EE\u5B50\u5904\u5973\u5929\u79E4\u5929\u874E\u5C04\u624B\u9B54\u7FAF";
+    var arr = [20, 19, 21, 21, 21, 22, 23, 23, 23, 23, 22, 22];
+    return s.substr(cMonth * 2 - (cDay < arr[cMonth - 1] ? 2 : 0), 2) + "\u5EA7"; // 座
+  },
+
+  /**
+      * 传入offset偏移量返回干支
+      * @param offset 相对甲子的偏移量
+      * @return Cn string
+      */
+  toGanZhi: function toGanZhi(offset) {
+    return this.Gan[offset % 10] + this.Zhi[offset % 12];
+  },
+  /**
+      * 传入公历(!)y年获得该年第n个节气的公历日期
+      * @param y公历年(1900-2100)；n二十四节气中的第几个节气(1~24)；从n=1(小寒)算起
+      * @return day Number
+      * @eg:var _24 = calendar.getTerm(1987,3) ;//_24=4;意即1987年2月4日立春
+      */
+  getTerm: function getTerm(y, n) {
+    if (y < 1900 || y > 2100) {
+      return -1;
+    }
+    if (n < 1 || n > 24) {
+      return -1;
+    }
+    var _table = this.sTermInfo[y - 1900];
+    var _info = [parseInt('0x' + _table.substr(0, 5)).toString(), parseInt('0x' + _table.substr(5, 5)).toString(), parseInt('0x' + _table.substr(10, 5)).toString(), parseInt('0x' + _table.substr(15, 5)).toString(), parseInt('0x' + _table.substr(20, 5)).toString(), parseInt('0x' + _table.substr(25, 5)).toString()];
+    var _calday = [_info[0].substr(0, 1), _info[0].substr(1, 2), _info[0].substr(3, 1), _info[0].substr(4, 2), _info[1].substr(0, 1), _info[1].substr(1, 2), _info[1].substr(3, 1), _info[1].substr(4, 2), _info[2].substr(0, 1), _info[2].substr(1, 2), _info[2].substr(3, 1), _info[2].substr(4, 2), _info[3].substr(0, 1), _info[3].substr(1, 2), _info[3].substr(3, 1), _info[3].substr(4, 2), _info[4].substr(0, 1), _info[4].substr(1, 2), _info[4].substr(3, 1), _info[4].substr(4, 2), _info[5].substr(0, 1), _info[5].substr(1, 2), _info[5].substr(3, 1), _info[5].substr(4, 2)];
+    return parseInt(_calday[n - 1]);
+  },
+  /**
+      * 传入农历数字月份返回汉语通俗表示法
+      * @param lunar month
+      * @return Cn string
+      * @eg:var cnMonth = calendar.toChinaMonth(12) ;//cnMonth='腊月'
+      */
+  toChinaMonth: function toChinaMonth(m) {
+    // 月 => \u6708
+    if (m > 12 || m < 1) {
+      return -1;
+    } // 若参数错误 返回-1
+    var s = this.nStr3[m - 1];
+    s += "\u6708"; // 加上月字
+    return s;
+  },
+  /**
+      * 传入农历日期数字返回汉字表示法
+      * @param lunar day
+      * @return Cn string
+      * @eg:var cnDay = calendar.toChinaDay(21) ;//cnMonth='廿一'
+      */
+  toChinaDay: function toChinaDay(d) {
+    // 日 => \u65e5
+    var s;
+    switch (d) {
+      case 10:
+        s = "\u521D\u5341";
+        break;
+      case 20:
+        s = "\u4E8C\u5341";
+        break;
+        break;
+      case 30:
+        s = "\u4E09\u5341";
+        break;
+        break;
+      default:
+        s = this.nStr2[Math.floor(d / 10)];
+        s += this.nStr1[d % 10];
+    }
+    return s;
+  },
+  /**
+      * 年份转生肖[!仅能大致转换] => 精确划分生肖分界线是“立春”
+      * @param y year
+      * @return Cn string
+      * @eg:var animal = calendar.getAnimal(1987) ;//animal='兔'
+      */
+  getAnimal: function getAnimal(y) {
+    return this.Animals[(y - 4) % 12];
+  },
+  /**
+      * 传入阳历年月日获得详细的公历、农历object信息 <=>JSON
+      * @param y  solar year
+      * @param m  solar month
+      * @param d  solar day
+      * @return JSON object
+      * @eg:console.log(calendar.solar2lunar(1987,11,01));
+      */
+  solar2lunar: function solar2lunar(y, m, d) {
+    // 参数区间1900.1.31~2100.12.31
+    // 年份限定、上限
+    if (y < 1900 || y > 2100) {
+      return -1; // undefined转换为数字变为NaN
+    }
+    // 公历传参最下限
+    if (y == 1900 && m == 1 && d < 31) {
+      return -1;
+    }
+    // 未传参  获得当天
+    if (!y) {
+      var objDate = new Date();
+    } else {
+      var objDate = new Date(y, parseInt(m) - 1, d);
+    }
+    var i;
+    var leap = 0;
+    var temp = 0;
+    // 修正ymd参数
+    var y = objDate.getFullYear();
+    var m = objDate.getMonth() + 1;
+    var d = objDate.getDate();
+    var offset = (Date.UTC(objDate.getFullYear(), objDate.getMonth(), objDate.getDate()) - Date.UTC(1900, 0, 31)) / 86400000;
+    for (i = 1900; i < 2101 && offset > 0; i++) {
+      temp = this.lYearDays(i);
+      offset -= temp;
+    }
+    if (offset < 0) {
+      offset += temp;
+      i--;
+    }
+
+    // 是否今天
+    var isTodayObj = new Date();
+    var isToday = false;
+    if (isTodayObj.getFullYear() == y && isTodayObj.getMonth() + 1 == m && isTodayObj.getDate() == d) {
+      isToday = true;
+    }
+    // 星期几
+    var nWeek = objDate.getDay();
+    var cWeek = this.nStr1[nWeek];
+    // 数字表示周几顺应天朝周一开始的惯例
+    if (nWeek == 0) {
+      nWeek = 7;
+    }
+    // 农历年
+    var year = i;
+    var leap = this.leapMonth(i); // 闰哪个月
+    var isLeap = false;
+
+    // 效验闰月
+    for (i = 1; i < 13 && offset > 0; i++) {
+      // 闰月
+      if (leap > 0 && i == leap + 1 && isLeap == false) {
+        --i;
+        isLeap = true;
+        temp = this.leapDays(year); // 计算农历闰月天数
+      } else {
+        temp = this.monthDays(year, i); // 计算农历普通月天数
+      }
+      // 解除闰月
+      if (isLeap == true && i == leap + 1) {
+        isLeap = false;
+      }
+      offset -= temp;
+    }
+    // 闰月导致数组下标重叠取反
+    if (offset == 0 && leap > 0 && i == leap + 1) {
+      if (isLeap) {
+        isLeap = false;
+      } else {
+        isLeap = true;
+        --i;
+      }
+    }
+    if (offset < 0) {
+      offset += temp;
+      --i;
+    }
+    // 农历月
+    var month = i;
+    // 农历日
+    var day = offset + 1;
+    // 天干地支处理
+    var sm = m - 1;
+    var gzY = this.toGanZhiYear(year);
+
+    // 当月的两个节气
+    // bugfix-2017-7-24 11:03:38 use lunar Year Param `y` Not `year`
+    var firstNode = this.getTerm(y, m * 2 - 1); // 返回当月「节」为几日开始
+    var secondNode = this.getTerm(y, m * 2); // 返回当月「节」为几日开始
+
+    // 依据12节气修正干支月
+    var gzM = this.toGanZhi((y - 1900) * 12 + m + 11);
+    if (d >= firstNode) {
+      gzM = this.toGanZhi((y - 1900) * 12 + m + 12);
+    }
+
+    // 传入的日期的节气与否
+    var isTerm = false;
+    var Term = null;
+    if (firstNode == d) {
+      isTerm = true;
+      Term = this.solarTerm[m * 2 - 2];
+    }
+    if (secondNode == d) {
+      isTerm = true;
+      Term = this.solarTerm[m * 2 - 1];
+    }
+    // 日柱 当月一日与 1900/1/1 相差天数
+    var dayCyclical = Date.UTC(y, sm, 1, 0, 0, 0, 0) / 86400000 + 25567 + 10;
+    var gzD = this.toGanZhi(dayCyclical + d - 1);
+    // 该日期所属的星座
+    var astro = this.toAstro(m, d);
+    return {
+      'lYear': year,
+      'lMonth': month,
+      'lDay': day,
+      'Animal': this.getAnimal(year),
+      'IMonthCn': (isLeap ? "\u95F0" : '') + this.toChinaMonth(month),
+      'IDayCn': this.toChinaDay(day),
+      'cYear': y,
+      'cMonth': m,
+      'cDay': d,
+      'gzYear': gzY,
+      'gzMonth': gzM,
+      'gzDay': gzD,
+      'isToday': isToday,
+      'isLeap': isLeap,
+      'nWeek': nWeek,
+      'ncWeek': "\u661F\u671F" + cWeek,
+      'isTerm': isTerm,
+      'Term': Term,
+      'astro': astro
+    };
+  },
+  /**
+      * 传入农历年月日以及传入的月份是否闰月获得详细的公历、农历object信息 <=>JSON
+      * @param y  lunar year
+      * @param m  lunar month
+      * @param d  lunar day
+      * @param isLeapMonth  lunar month is leap or not.[如果是农历闰月第四个参数赋值true即可]
+      * @return JSON object
+      * @eg:console.log(calendar.lunar2solar(1987,9,10));
+      */
+  lunar2solar: function lunar2solar(y, m, d, isLeapMonth) {
+    // 参数区间1900.1.31~2100.12.1
+    var isLeapMonth = !!isLeapMonth;
+    var leapOffset = 0;
+    var leapMonth = this.leapMonth(y);
+    var leapDay = this.leapDays(y);
+    if (isLeapMonth && leapMonth != m) {
+      return -1;
+    } // 传参要求计算该闰月公历 但该年得出的闰月与传参的月份并不同
+    if (y == 2100 && m == 12 && d > 1 || y == 1900 && m == 1 && d < 31) {
+      return -1;
+    } // 超出了最大极限值
+    var day = this.monthDays(y, m);
+    var _day = day;
+    // bugFix 2016-9-25
+    // if month is leap, _day use leapDays method
+    if (isLeapMonth) {
+      _day = this.leapDays(y, m);
+    }
+    if (y < 1900 || y > 2100 || d > _day) {
+      return -1;
+    } // 参数合法性效验
+
+    // 计算农历的时间差
+    var offset = 0;
+    for (var i = 1900; i < y; i++) {
+      offset += this.lYearDays(i);
+    }
+    var leap = 0;
+    var isAdd = false;
+    for (var i = 1; i < m; i++) {
+      leap = this.leapMonth(y);
+      if (!isAdd) {
+        // 处理闰月
+        if (leap <= i && leap > 0) {
+          offset += this.leapDays(y);
+          isAdd = true;
+        }
+      }
+      offset += this.monthDays(y, i);
+    }
+    // 转换闰月农历 需补充该年闰月的前一个月的时差
+    if (isLeapMonth) {
+      offset += day;
+    }
+    // 1900年农历正月一日的公历时间为1900年1月30日0时0分0秒(该时间也是本农历的最开始起始点)
+    var stmap = Date.UTC(1900, 1, 30, 0, 0, 0);
+    var calObj = new Date((offset + d - 31) * 86400000 + stmap);
+    var cY = calObj.getUTCFullYear();
+    var cM = calObj.getUTCMonth() + 1;
+    var cD = calObj.getUTCDate();
+    return this.solar2lunar(cY, cM, cD);
+  }
+};
+var _default = calendar;
+exports.default = _default;
+
+/***/ }),
+/* 260 */,
+/* 261 */,
+/* 262 */,
+/* 263 */,
+/* 264 */,
+/* 265 */,
+/* 266 */,
+/* 267 */
+/*!*************************************************************!*\
+  !*** D:/cjindex/node_modules/uview-ui/libs/mixin/button.js ***!
+  \*************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+var _default = {
+  props: {
+    lang: String,
+    sessionFrom: String,
+    sendMessageTitle: String,
+    sendMessagePath: String,
+    sendMessageImg: String,
+    showMessageCard: Boolean,
+    appParameter: String,
+    formType: String,
+    openType: String
+  }
+};
+exports.default = _default;
+
+/***/ }),
+/* 268 */
+/*!***************************************************************!*\
+  !*** D:/cjindex/node_modules/uview-ui/libs/mixin/openType.js ***!
+  \***************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+var _default = {
+  props: {
+    openType: String
+  },
+  methods: {
+    onGetUserInfo: function onGetUserInfo(event) {
+      this.$emit('getuserinfo', event.detail);
+    },
+    onContact: function onContact(event) {
+      this.$emit('contact', event.detail);
+    },
+    onGetPhoneNumber: function onGetPhoneNumber(event) {
+      this.$emit('getphonenumber', event.detail);
+    },
+    onError: function onError(event) {
+      this.$emit('error', event.detail);
+    },
+    onLaunchApp: function onLaunchApp(event) {
+      this.$emit('launchapp', event.detail);
+    },
+    onOpenSetting: function onOpenSetting(event) {
+      this.$emit('opensetting', event.detail);
+    }
+  }
+};
+exports.default = _default;
+
+/***/ }),
+/* 269 */
+/*!*********************************************************************!*\
+  !*** D:/cjindex/node_modules/uview-ui/components/u-button/props.js ***!
+  \*********************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+/* WEBPACK VAR INJECTION */(function(uni) {
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+/*
+ * @Author       : LQ
+ * @Description  :
+ * @version      : 1.0
+ * @Date         : 2021-08-16 10:04:04
+ * @LastAuthor   : LQ
+ * @lastTime     : 2021-08-16 10:04:24
+ * @FilePath     : /u-view2.0/uview-ui/components/u-button/props.js
+ */
+var _default = {
+  props: {
+    // 是否细边框
+    hairline: {
+      type: Boolean,
+      default: uni.$u.props.button.hairline
+    },
+    // 按钮的预置样式，info，primary，error，warning，success
+    type: {
+      type: String,
+      default: uni.$u.props.button.type
+    },
+    // 按钮尺寸，large，normal，small，mini
+    size: {
+      type: String,
+      default: uni.$u.props.button.size
+    },
+    // 按钮形状，circle（两边为半圆），square（带圆角）
+    shape: {
+      type: String,
+      default: uni.$u.props.button.shape
+    },
+    // 按钮是否镂空
+    plain: {
+      type: Boolean,
+      default: uni.$u.props.button.plain
+    },
+    // 是否禁止状态
+    disabled: {
+      type: Boolean,
+      default: uni.$u.props.button.disabled
+    },
+    // 是否加载中
+    loading: {
+      type: Boolean,
+      default: uni.$u.props.button.loading
+    },
+    // 加载中提示文字
+    loadingText: {
+      type: [String, Number],
+      default: uni.$u.props.button.loadingText
+    },
+    // 加载状态图标类型
+    loadingMode: {
+      type: String,
+      default: uni.$u.props.button.loadingMode
+    },
+    // 加载图标大小
+    loadingSize: {
+      type: [String, Number],
+      default: uni.$u.props.button.loadingSize
+    },
+    // 开放能力，具体请看uniapp稳定关于button组件部分说明
+    // https://uniapp.dcloud.io/component/button
+    openType: {
+      type: String,
+      default: uni.$u.props.button.openType
+    },
+    // 用于 <form> 组件，点击分别会触发 <form> 组件的 submit/reset 事件
+    // 取值为submit（提交表单），reset（重置表单）
+    formType: {
+      type: String,
+      default: uni.$u.props.button.formType
+    },
+    // 打开 APP 时，向 APP 传递的参数，open-type=launchApp时有效
+    // 只微信小程序、QQ小程序有效
+    appParameter: {
+      type: String,
+      default: uni.$u.props.button.appParameter
+    },
+    // 指定是否阻止本节点的祖先节点出现点击态，微信小程序有效
+    hoverStopPropagation: {
+      type: Boolean,
+      default: uni.$u.props.button.hoverStopPropagation
+    },
+    // 指定返回用户信息的语言，zh_CN 简体中文，zh_TW 繁体中文，en 英文。只微信小程序有效
+    lang: {
+      type: String,
+      default: uni.$u.props.button.lang
+    },
+    // 会话来源，open-type="contact"时有效。只微信小程序有效
+    sessionFrom: {
+      type: String,
+      default: uni.$u.props.button.sessionFrom
+    },
+    // 会话内消息卡片标题，open-type="contact"时有效
+    // 默认当前标题，只微信小程序有效
+    sendMessageTitle: {
+      type: String,
+      default: uni.$u.props.button.sendMessageTitle
+    },
+    // 会话内消息卡片点击跳转小程序路径，open-type="contact"时有效
+    // 默认当前分享路径，只微信小程序有效
+    sendMessagePath: {
+      type: String,
+      default: uni.$u.props.button.sendMessagePath
+    },
+    // 会话内消息卡片图片，open-type="contact"时有效
+    // 默认当前页面截图，只微信小程序有效
+    sendMessageImg: {
+      type: String,
+      default: uni.$u.props.button.sendMessageImg
+    },
+    // 是否显示会话内消息卡片，设置此参数为 true，用户进入客服会话会在右下角显示"可能要发送的小程序"提示，
+    // 用户点击后可以快速发送小程序消息，open-type="contact"时有效
+    showMessageCard: {
+      type: Boolean,
+      default: uni.$u.props.button.showMessageCard
+    },
+    // 额外传参参数，用于小程序的data-xxx属性，通过target.dataset.name获取
+    dataName: {
+      type: String,
+      default: uni.$u.props.button.dataName
+    },
+    // 节流，一定时间内只能触发一次
+    throttleTime: {
+      type: [String, Number],
+      default: uni.$u.props.button.throttleTime
+    },
+    // 按住后多久出现点击态，单位毫秒
+    hoverStartTime: {
+      type: [String, Number],
+      default: uni.$u.props.button.hoverStartTime
+    },
+    // 手指松开后点击态保留时间，单位毫秒
+    hoverStayTime: {
+      type: [String, Number],
+      default: uni.$u.props.button.hoverStayTime
+    },
+    // 按钮文字，之所以通过props传入，是因为slot传入的话
+    // nvue中无法控制文字的样式
+    text: {
+      type: [String, Number],
+      default: uni.$u.props.button.text
+    },
+    // 按钮图标
+    icon: {
+      type: String,
+      default: uni.$u.props.button.icon
+    },
+    // 按钮图标
+    iconColor: {
+      type: String,
+      default: uni.$u.props.button.icon
+    },
+    // 按钮颜色，支持传入linear-gradient渐变色
+    color: {
+      type: String,
+      default: uni.$u.props.button.color
+    }
+  }
+};
+exports.default = _default;
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 2)["default"]))
+
+/***/ }),
+/* 270 */,
+/* 271 */,
+/* 272 */,
+/* 273 */,
+/* 274 */,
+/* 275 */,
+/* 276 */,
+/* 277 */
 /*!********************************************************************!*\
   !*** D:/cjindex/node_modules/uview-ui/components/u-popup/props.js ***!
   \********************************************************************/
@@ -20786,14 +22158,14 @@ exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 2)["default"]))
 
 /***/ }),
-/* 238 */,
-/* 239 */,
-/* 240 */,
-/* 241 */,
-/* 242 */,
-/* 243 */,
-/* 244 */,
-/* 245 */
+/* 278 */,
+/* 279 */,
+/* 280 */,
+/* 281 */,
+/* 282 */,
+/* 283 */,
+/* 284 */,
+/* 285 */
 /*!**********************************************************************!*\
   !*** D:/cjindex/node_modules/uview-ui/components/u-toolbar/props.js ***!
   \**********************************************************************/
@@ -20845,14 +22217,14 @@ exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 2)["default"]))
 
 /***/ }),
-/* 246 */,
-/* 247 */,
-/* 248 */,
-/* 249 */,
-/* 250 */,
-/* 251 */,
-/* 252 */,
-/* 253 */
+/* 286 */,
+/* 287 */,
+/* 288 */,
+/* 289 */,
+/* 290 */,
+/* 291 */,
+/* 292 */,
+/* 293 */
 /*!***************************************************************************!*\
   !*** D:/cjindex/node_modules/uview-ui/components/u-loading-icon/props.js ***!
   \***************************************************************************/
@@ -20929,447 +22301,28 @@ exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 2)["default"]))
 
 /***/ }),
-/* 254 */,
-/* 255 */,
-/* 256 */,
-/* 257 */,
-/* 258 */,
-/* 259 */,
-/* 260 */,
-/* 261 */
-/*!**********************************************************************!*\
-  !*** D:/cjindex/node_modules/uview-ui/components/u-overlay/props.js ***!
-  \**********************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-/* WEBPACK VAR INJECTION */(function(uni) {
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = void 0;
-var _default = {
-  props: {
-    // 是否显示遮罩
-    show: {
-      type: Boolean,
-      default: uni.$u.props.overlay.show
-    },
-    // 层级z-index
-    zIndex: {
-      type: [String, Number],
-      default: uni.$u.props.overlay.zIndex
-    },
-    // 遮罩的过渡时间，单位为ms
-    duration: {
-      type: [String, Number],
-      default: uni.$u.props.overlay.duration
-    },
-    // 不透明度值，当做rgba的第四个参数
-    opacity: {
-      type: [String, Number],
-      default: uni.$u.props.overlay.opacity
-    }
-  }
-};
-exports.default = _default;
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 2)["default"]))
-
-/***/ }),
-/* 262 */,
-/* 263 */,
-/* 264 */,
-/* 265 */,
-/* 266 */,
-/* 267 */,
-/* 268 */,
-/* 269 */
-/*!*************************************************************************!*\
-  !*** D:/cjindex/node_modules/uview-ui/components/u-transition/props.js ***!
-  \*************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-/* WEBPACK VAR INJECTION */(function(uni) {
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = void 0;
-var _default = {
-  props: {
-    // 是否展示组件
-    show: {
-      type: Boolean,
-      default: uni.$u.props.transition.show
-    },
-    // 使用的动画模式
-    mode: {
-      type: String,
-      default: uni.$u.props.transition.mode
-    },
-    // 动画的执行时间，单位ms
-    duration: {
-      type: [String, Number],
-      default: uni.$u.props.transition.duration
-    },
-    // 使用的动画过渡函数
-    timingFunction: {
-      type: String,
-      default: uni.$u.props.transition.timingFunction
-    }
-  }
-};
-exports.default = _default;
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 2)["default"]))
-
-/***/ }),
-/* 270 */
-/*!******************************************************************************!*\
-  !*** D:/cjindex/node_modules/uview-ui/components/u-transition/transition.js ***!
-  \******************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-var _interopRequireDefault = __webpack_require__(/*! @babel/runtime/helpers/interopRequireDefault */ 4);
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = void 0;
-var _regenerator = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/regenerator */ 55));
-var _asyncToGenerator2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/asyncToGenerator */ 57));
-var _nvueAniMap = _interopRequireDefault(__webpack_require__(/*! ./nvue.ani-map.js */ 271));
-// 定义一个一定时间后自动成功的promise，让调用nextTick方法处，进入下一个then方法
-var nextTick = function nextTick() {
-  return new Promise(function (resolve) {
-    return setTimeout(resolve, 1000 / 50);
-  });
-};
-// nvue动画模块实现细节抽离在外部文件
-
-// 定义类名，通过给元素动态切换类名，赋予元素一定的css动画样式
-var getClassNames = function getClassNames(name) {
-  return {
-    enter: "u-".concat(name, "-enter u-").concat(name, "-enter-active"),
-    'enter-to': "u-".concat(name, "-enter-to u-").concat(name, "-enter-active"),
-    leave: "u-".concat(name, "-leave u-").concat(name, "-leave-active"),
-    'leave-to': "u-".concat(name, "-leave-to u-").concat(name, "-leave-active")
-  };
-};
-var _default = {
-  methods: {
-    // 组件被点击发出事件
-    clickHandler: function clickHandler() {
-      this.$emit('click');
-    },
-    // vue版本的组件进场处理
-    vueEnter: function vueEnter() {
-      var _this = this;
-      // 动画进入时的类名
-      var classNames = getClassNames(this.mode);
-      // 定义状态和发出动画进入前事件
-      this.status = 'enter';
-      this.$emit('beforeEnter');
-      this.inited = true;
-      this.display = true;
-      this.classes = classNames.enter;
-      this.$nextTick( /*#__PURE__*/(0, _asyncToGenerator2.default)( /*#__PURE__*/_regenerator.default.mark(function _callee() {
-        return _regenerator.default.wrap(function _callee$(_context) {
-          while (1) {
-            switch (_context.prev = _context.next) {
-              case 0:
-                // 标识动画尚未结束
-                _this.$emit('enter');
-                _this.transitionEnded = false;
-                // 组件动画进入后触发的事件
-                _this.$emit('afterEnter');
-                // 赋予组件enter-to类名
-                _this.classes = classNames['enter-to'];
-              case 4:
-              case "end":
-                return _context.stop();
-            }
-          }
-        }, _callee);
-      })));
-    },
-    // 动画离场处理
-    vueLeave: function vueLeave() {
-      var _this2 = this;
-      // 如果不是展示状态，无需执行逻辑
-      if (!this.display) return;
-      var classNames = getClassNames(this.mode);
-      // 标记离开状态和发出事件
-      this.status = 'leave';
-      this.$emit('beforeLeave');
-      // 获得类名
-      this.classes = classNames.leave;
-      this.$nextTick(function () {
-        // 动画正在离场的状态
-        _this2.transitionEnded = false;
-        _this2.$emit('leave');
-        // 组件执行动画，到了执行的执行时间后，执行一些额外处理
-        setTimeout(_this2.onTransitionEnd, _this2.duration);
-        _this2.classes = classNames['leave-to'];
-      });
-    },
-    // 完成过渡后触发
-    onTransitionEnd: function onTransitionEnd() {
-      // 如果已经是结束的状态，无需再处理
-      if (this.transitionEnded) return;
-      this.transitionEnded = true;
-      // 发出组件动画执行后的事件
-      this.$emit(this.status === 'leave' ? 'afterLeave' : 'afterEnter');
-      if (!this.show && this.display) {
-        this.display = false;
-        this.inited = false;
-      }
-    }
-  }
-};
-exports.default = _default;
-
-/***/ }),
-/* 271 */
-/*!********************************************************************************!*\
-  !*** D:/cjindex/node_modules/uview-ui/components/u-transition/nvue.ani-map.js ***!
-  \********************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = void 0;
-var _default = {
-  fade: {
-    enter: {
-      opacity: 0
-    },
-    'enter-to': {
-      opacity: 1
-    },
-    leave: {
-      opacity: 1
-    },
-    'leave-to': {
-      opacity: 0
-    }
-  },
-  'fade-up': {
-    enter: {
-      opacity: 0,
-      transform: 'translateY(100%)'
-    },
-    'enter-to': {
-      opacity: 1,
-      transform: 'translateY(0)'
-    },
-    leave: {
-      opacity: 1,
-      transform: 'translateY(0)'
-    },
-    'leave-to': {
-      opacity: 0,
-      transform: 'translateY(100%)'
-    }
-  },
-  'fade-down': {
-    enter: {
-      opacity: 0,
-      transform: 'translateY(-100%)'
-    },
-    'enter-to': {
-      opacity: 1,
-      transform: 'translateY(0)'
-    },
-    leave: {
-      opacity: 1,
-      transform: 'translateY(0)'
-    },
-    'leave-to': {
-      opacity: 0,
-      transform: 'translateY(-100%)'
-    }
-  },
-  'fade-left': {
-    enter: {
-      opacity: 0,
-      transform: 'translateX(-100%)'
-    },
-    'enter-to': {
-      opacity: 1,
-      transform: 'translateY(0)'
-    },
-    leave: {
-      opacity: 1,
-      transform: 'translateY(0)'
-    },
-    'leave-to': {
-      opacity: 0,
-      transform: 'translateX(-100%)'
-    }
-  },
-  'fade-right': {
-    enter: {
-      opacity: 0,
-      transform: 'translateX(100%)'
-    },
-    'enter-to': {
-      opacity: 1,
-      transform: 'translateY(0)'
-    },
-    leave: {
-      opacity: 1,
-      transform: 'translateY(0)'
-    },
-    'leave-to': {
-      opacity: 0,
-      transform: 'translateX(100%)'
-    }
-  },
-  'slide-up': {
-    enter: {
-      transform: 'translateY(100%)'
-    },
-    'enter-to': {
-      transform: 'translateY(0)'
-    },
-    leave: {
-      transform: 'translateY(0)'
-    },
-    'leave-to': {
-      transform: 'translateY(100%)'
-    }
-  },
-  'slide-down': {
-    enter: {
-      transform: 'translateY(-100%)'
-    },
-    'enter-to': {
-      transform: 'translateY(0)'
-    },
-    leave: {
-      transform: 'translateY(0)'
-    },
-    'leave-to': {
-      transform: 'translateY(-100%)'
-    }
-  },
-  'slide-left': {
-    enter: {
-      transform: 'translateX(-100%)'
-    },
-    'enter-to': {
-      transform: 'translateY(0)'
-    },
-    leave: {
-      transform: 'translateY(0)'
-    },
-    'leave-to': {
-      transform: 'translateX(-100%)'
-    }
-  },
-  'slide-right': {
-    enter: {
-      transform: 'translateX(100%)'
-    },
-    'enter-to': {
-      transform: 'translateY(0)'
-    },
-    leave: {
-      transform: 'translateY(0)'
-    },
-    'leave-to': {
-      transform: 'translateX(100%)'
-    }
-  },
-  zoom: {
-    enter: {
-      transform: 'scale(0.95)'
-    },
-    'enter-to': {
-      transform: 'scale(1)'
-    },
-    leave: {
-      transform: 'scale(1)'
-    },
-    'leave-to': {
-      transform: 'scale(0.95)'
-    }
-  },
-  'fade-zoom': {
-    enter: {
-      opacity: 0,
-      transform: 'scale(0.95)'
-    },
-    'enter-to': {
-      opacity: 1,
-      transform: 'scale(1)'
-    },
-    leave: {
-      opacity: 1,
-      transform: 'scale(1)'
-    },
-    'leave-to': {
-      opacity: 0,
-      transform: 'scale(0.95)'
-    }
-  }
-};
-exports.default = _default;
-
-/***/ }),
-/* 272 */,
-/* 273 */,
-/* 274 */,
-/* 275 */,
-/* 276 */,
-/* 277 */,
-/* 278 */,
-/* 279 */
-/*!*************************************************************************!*\
-  !*** D:/cjindex/node_modules/uview-ui/components/u-status-bar/props.js ***!
-  \*************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-/* WEBPACK VAR INJECTION */(function(uni) {
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = void 0;
-var _default = {
-  props: {
-    bgColor: {
-      type: String,
-      default: uni.$u.props.statusBar.bgColor
-    }
-  }
-};
-exports.default = _default;
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 2)["default"]))
-
-/***/ }),
-/* 280 */,
-/* 281 */,
-/* 282 */,
-/* 283 */,
-/* 284 */,
-/* 285 */,
-/* 286 */,
-/* 287 */
+/* 294 */,
+/* 295 */,
+/* 296 */,
+/* 297 */,
+/* 298 */,
+/* 299 */,
+/* 300 */,
+/* 301 */,
+/* 302 */,
+/* 303 */,
+/* 304 */,
+/* 305 */,
+/* 306 */,
+/* 307 */,
+/* 308 */,
+/* 309 */,
+/* 310 */,
+/* 311 */,
+/* 312 */,
+/* 313 */,
+/* 314 */,
+/* 315 */
 /*!*******************************************************************!*\
   !*** D:/cjindex/node_modules/uview-ui/components/u-icon/icons.js ***!
   \*******************************************************************/
@@ -21600,7 +22553,7 @@ var _default = {
 exports.default = _default;
 
 /***/ }),
-/* 288 */
+/* 316 */
 /*!*******************************************************************!*\
   !*** D:/cjindex/node_modules/uview-ui/components/u-icon/props.js ***!
   \*******************************************************************/
@@ -21707,14 +22660,447 @@ exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 2)["default"]))
 
 /***/ }),
-/* 289 */,
-/* 290 */,
-/* 291 */,
-/* 292 */,
-/* 293 */,
-/* 294 */,
-/* 295 */,
-/* 296 */
+/* 317 */,
+/* 318 */,
+/* 319 */,
+/* 320 */,
+/* 321 */,
+/* 322 */,
+/* 323 */,
+/* 324 */
+/*!**********************************************************************!*\
+  !*** D:/cjindex/node_modules/uview-ui/components/u-overlay/props.js ***!
+  \**********************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+/* WEBPACK VAR INJECTION */(function(uni) {
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+var _default = {
+  props: {
+    // 是否显示遮罩
+    show: {
+      type: Boolean,
+      default: uni.$u.props.overlay.show
+    },
+    // 层级z-index
+    zIndex: {
+      type: [String, Number],
+      default: uni.$u.props.overlay.zIndex
+    },
+    // 遮罩的过渡时间，单位为ms
+    duration: {
+      type: [String, Number],
+      default: uni.$u.props.overlay.duration
+    },
+    // 不透明度值，当做rgba的第四个参数
+    opacity: {
+      type: [String, Number],
+      default: uni.$u.props.overlay.opacity
+    }
+  }
+};
+exports.default = _default;
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 2)["default"]))
+
+/***/ }),
+/* 325 */,
+/* 326 */,
+/* 327 */,
+/* 328 */,
+/* 329 */,
+/* 330 */,
+/* 331 */,
+/* 332 */
+/*!*************************************************************************!*\
+  !*** D:/cjindex/node_modules/uview-ui/components/u-transition/props.js ***!
+  \*************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+/* WEBPACK VAR INJECTION */(function(uni) {
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+var _default = {
+  props: {
+    // 是否展示组件
+    show: {
+      type: Boolean,
+      default: uni.$u.props.transition.show
+    },
+    // 使用的动画模式
+    mode: {
+      type: String,
+      default: uni.$u.props.transition.mode
+    },
+    // 动画的执行时间，单位ms
+    duration: {
+      type: [String, Number],
+      default: uni.$u.props.transition.duration
+    },
+    // 使用的动画过渡函数
+    timingFunction: {
+      type: String,
+      default: uni.$u.props.transition.timingFunction
+    }
+  }
+};
+exports.default = _default;
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 2)["default"]))
+
+/***/ }),
+/* 333 */
+/*!******************************************************************************!*\
+  !*** D:/cjindex/node_modules/uview-ui/components/u-transition/transition.js ***!
+  \******************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var _interopRequireDefault = __webpack_require__(/*! @babel/runtime/helpers/interopRequireDefault */ 4);
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+var _regenerator = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/regenerator */ 57));
+var _asyncToGenerator2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/asyncToGenerator */ 59));
+var _nvueAniMap = _interopRequireDefault(__webpack_require__(/*! ./nvue.ani-map.js */ 334));
+// 定义一个一定时间后自动成功的promise，让调用nextTick方法处，进入下一个then方法
+var nextTick = function nextTick() {
+  return new Promise(function (resolve) {
+    return setTimeout(resolve, 1000 / 50);
+  });
+};
+// nvue动画模块实现细节抽离在外部文件
+
+// 定义类名，通过给元素动态切换类名，赋予元素一定的css动画样式
+var getClassNames = function getClassNames(name) {
+  return {
+    enter: "u-".concat(name, "-enter u-").concat(name, "-enter-active"),
+    'enter-to': "u-".concat(name, "-enter-to u-").concat(name, "-enter-active"),
+    leave: "u-".concat(name, "-leave u-").concat(name, "-leave-active"),
+    'leave-to': "u-".concat(name, "-leave-to u-").concat(name, "-leave-active")
+  };
+};
+var _default = {
+  methods: {
+    // 组件被点击发出事件
+    clickHandler: function clickHandler() {
+      this.$emit('click');
+    },
+    // vue版本的组件进场处理
+    vueEnter: function vueEnter() {
+      var _this = this;
+      // 动画进入时的类名
+      var classNames = getClassNames(this.mode);
+      // 定义状态和发出动画进入前事件
+      this.status = 'enter';
+      this.$emit('beforeEnter');
+      this.inited = true;
+      this.display = true;
+      this.classes = classNames.enter;
+      this.$nextTick( /*#__PURE__*/(0, _asyncToGenerator2.default)( /*#__PURE__*/_regenerator.default.mark(function _callee() {
+        return _regenerator.default.wrap(function _callee$(_context) {
+          while (1) {
+            switch (_context.prev = _context.next) {
+              case 0:
+                // 标识动画尚未结束
+                _this.$emit('enter');
+                _this.transitionEnded = false;
+                // 组件动画进入后触发的事件
+                _this.$emit('afterEnter');
+                // 赋予组件enter-to类名
+                _this.classes = classNames['enter-to'];
+              case 4:
+              case "end":
+                return _context.stop();
+            }
+          }
+        }, _callee);
+      })));
+    },
+    // 动画离场处理
+    vueLeave: function vueLeave() {
+      var _this2 = this;
+      // 如果不是展示状态，无需执行逻辑
+      if (!this.display) return;
+      var classNames = getClassNames(this.mode);
+      // 标记离开状态和发出事件
+      this.status = 'leave';
+      this.$emit('beforeLeave');
+      // 获得类名
+      this.classes = classNames.leave;
+      this.$nextTick(function () {
+        // 动画正在离场的状态
+        _this2.transitionEnded = false;
+        _this2.$emit('leave');
+        // 组件执行动画，到了执行的执行时间后，执行一些额外处理
+        setTimeout(_this2.onTransitionEnd, _this2.duration);
+        _this2.classes = classNames['leave-to'];
+      });
+    },
+    // 完成过渡后触发
+    onTransitionEnd: function onTransitionEnd() {
+      // 如果已经是结束的状态，无需再处理
+      if (this.transitionEnded) return;
+      this.transitionEnded = true;
+      // 发出组件动画执行后的事件
+      this.$emit(this.status === 'leave' ? 'afterLeave' : 'afterEnter');
+      if (!this.show && this.display) {
+        this.display = false;
+        this.inited = false;
+      }
+    }
+  }
+};
+exports.default = _default;
+
+/***/ }),
+/* 334 */
+/*!********************************************************************************!*\
+  !*** D:/cjindex/node_modules/uview-ui/components/u-transition/nvue.ani-map.js ***!
+  \********************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+var _default = {
+  fade: {
+    enter: {
+      opacity: 0
+    },
+    'enter-to': {
+      opacity: 1
+    },
+    leave: {
+      opacity: 1
+    },
+    'leave-to': {
+      opacity: 0
+    }
+  },
+  'fade-up': {
+    enter: {
+      opacity: 0,
+      transform: 'translateY(100%)'
+    },
+    'enter-to': {
+      opacity: 1,
+      transform: 'translateY(0)'
+    },
+    leave: {
+      opacity: 1,
+      transform: 'translateY(0)'
+    },
+    'leave-to': {
+      opacity: 0,
+      transform: 'translateY(100%)'
+    }
+  },
+  'fade-down': {
+    enter: {
+      opacity: 0,
+      transform: 'translateY(-100%)'
+    },
+    'enter-to': {
+      opacity: 1,
+      transform: 'translateY(0)'
+    },
+    leave: {
+      opacity: 1,
+      transform: 'translateY(0)'
+    },
+    'leave-to': {
+      opacity: 0,
+      transform: 'translateY(-100%)'
+    }
+  },
+  'fade-left': {
+    enter: {
+      opacity: 0,
+      transform: 'translateX(-100%)'
+    },
+    'enter-to': {
+      opacity: 1,
+      transform: 'translateY(0)'
+    },
+    leave: {
+      opacity: 1,
+      transform: 'translateY(0)'
+    },
+    'leave-to': {
+      opacity: 0,
+      transform: 'translateX(-100%)'
+    }
+  },
+  'fade-right': {
+    enter: {
+      opacity: 0,
+      transform: 'translateX(100%)'
+    },
+    'enter-to': {
+      opacity: 1,
+      transform: 'translateY(0)'
+    },
+    leave: {
+      opacity: 1,
+      transform: 'translateY(0)'
+    },
+    'leave-to': {
+      opacity: 0,
+      transform: 'translateX(100%)'
+    }
+  },
+  'slide-up': {
+    enter: {
+      transform: 'translateY(100%)'
+    },
+    'enter-to': {
+      transform: 'translateY(0)'
+    },
+    leave: {
+      transform: 'translateY(0)'
+    },
+    'leave-to': {
+      transform: 'translateY(100%)'
+    }
+  },
+  'slide-down': {
+    enter: {
+      transform: 'translateY(-100%)'
+    },
+    'enter-to': {
+      transform: 'translateY(0)'
+    },
+    leave: {
+      transform: 'translateY(0)'
+    },
+    'leave-to': {
+      transform: 'translateY(-100%)'
+    }
+  },
+  'slide-left': {
+    enter: {
+      transform: 'translateX(-100%)'
+    },
+    'enter-to': {
+      transform: 'translateY(0)'
+    },
+    leave: {
+      transform: 'translateY(0)'
+    },
+    'leave-to': {
+      transform: 'translateX(-100%)'
+    }
+  },
+  'slide-right': {
+    enter: {
+      transform: 'translateX(100%)'
+    },
+    'enter-to': {
+      transform: 'translateY(0)'
+    },
+    leave: {
+      transform: 'translateY(0)'
+    },
+    'leave-to': {
+      transform: 'translateX(100%)'
+    }
+  },
+  zoom: {
+    enter: {
+      transform: 'scale(0.95)'
+    },
+    'enter-to': {
+      transform: 'scale(1)'
+    },
+    leave: {
+      transform: 'scale(1)'
+    },
+    'leave-to': {
+      transform: 'scale(0.95)'
+    }
+  },
+  'fade-zoom': {
+    enter: {
+      opacity: 0,
+      transform: 'scale(0.95)'
+    },
+    'enter-to': {
+      opacity: 1,
+      transform: 'scale(1)'
+    },
+    leave: {
+      opacity: 1,
+      transform: 'scale(1)'
+    },
+    'leave-to': {
+      opacity: 0,
+      transform: 'scale(0.95)'
+    }
+  }
+};
+exports.default = _default;
+
+/***/ }),
+/* 335 */,
+/* 336 */,
+/* 337 */,
+/* 338 */,
+/* 339 */,
+/* 340 */,
+/* 341 */,
+/* 342 */
+/*!*************************************************************************!*\
+  !*** D:/cjindex/node_modules/uview-ui/components/u-status-bar/props.js ***!
+  \*************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+/* WEBPACK VAR INJECTION */(function(uni) {
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+var _default = {
+  props: {
+    bgColor: {
+      type: String,
+      default: uni.$u.props.statusBar.bgColor
+    }
+  }
+};
+exports.default = _default;
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 2)["default"]))
+
+/***/ }),
+/* 343 */,
+/* 344 */,
+/* 345 */,
+/* 346 */,
+/* 347 */,
+/* 348 */,
+/* 349 */,
+/* 350 */
 /*!**************************************************************************!*\
   !*** D:/cjindex/node_modules/uview-ui/components/u-safe-bottom/props.js ***!
   \**************************************************************************/
@@ -21732,6 +23118,39 @@ var _default = {
   props: {}
 };
 exports.default = _default;
+
+/***/ }),
+/* 351 */,
+/* 352 */,
+/* 353 */,
+/* 354 */,
+/* 355 */,
+/* 356 */,
+/* 357 */,
+/* 358 */,
+/* 359 */,
+/* 360 */,
+/* 361 */,
+/* 362 */,
+/* 363 */,
+/* 364 */,
+/* 365 */,
+/* 366 */,
+/* 367 */,
+/* 368 */,
+/* 369 */,
+/* 370 */,
+/* 371 */,
+/* 372 */,
+/* 373 */,
+/* 374 */
+/*!********************************************!*\
+  !*** D:/cjindex/static/json/merchant.json ***!
+  \********************************************/
+/*! exports provided: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, default */
+/***/ (function(module) {
+
+module.exports = JSON.parse("[{\"name\":\"圣心源\",\"posi\":\"沈阳\",\"tel\":\"138xxxx2345\",\"status\":\"ture\",\"time\":\"2024-2-1\",\"URL\":\"沈阳市xx街道\",\"trade\":\"食品\"},{\"name\":\"梦妍店铺\",\"posi\":\"盘锦\",\"tel\":\"138xxxx2346\",\"status\":\"FALSE\",\"time\":\"2024-2-2\",\"URL\":\"盘锦市xx街道\",\"trade\":\"服装\"},{\"name\":\"丰雷店铺\",\"posi\":\"北京\",\"tel\":\"138xxxx2347\",\"status\":\"ture\",\"time\":\"2024-2-3\",\"URL\":\"北京市xx街道\",\"trade\":\"渔具\"},{\"name\":\"伊蓓诺\",\"posi\":\"铁岭\",\"tel\":\"138xxxx2348\",\"status\":\"FALSE\",\"time\":\"2024-2-4\",\"URL\":\"铁岭市xx街道\",\"trade\":\"婴幼\"},{\"name\":\"布衣坊\",\"posi\":\"大连\",\"tel\":\"138xxxx2349\",\"status\":\"ture\",\"time\":\"2024-2-5\",\"URL\":\"大连市xx街道\",\"trade\":\"服装\"},{\"name\":\"尚鑫源\",\"posi\":\"深圳\",\"tel\":\"138xxxx2350\",\"status\":\"FALSE\",\"time\":\"2024-2-6\",\"URL\":\"深圳市xx街道\",\"trade\":\"食品\"},{\"name\":\"丰烁店铺\",\"posi\":\"沈阳\",\"tel\":\"138xxxx2351\",\"status\":\"ture\",\"time\":\"2024-2-7\",\"URL\":\"沈阳市xx街道\",\"trade\":\"服装\"},{\"name\":\"永顺店铺\",\"posi\":\"盘锦\",\"tel\":\"138xxxx2352\",\"status\":\"FALSE\",\"time\":\"2024-2-8\",\"URL\":\"盘锦市xx街道\",\"trade\":\"渔具\"},{\"name\":\"爱丽丝\",\"posi\":\"北京\",\"tel\":\"138xxxx2353\",\"status\":\"ture\",\"time\":\"2024-2-9\",\"URL\":\"北京市xx街道\",\"trade\":\"婴幼\"},{\"name\":\"埃莉仕\",\"posi\":\"铁岭\",\"tel\":\"138xxxx2354\",\"status\":\"FALSE\",\"time\":\"2024-2-10\",\"URL\":\"铁岭市xx街道\",\"trade\":\"服装\"},{\"name\":\"德益堂\",\"posi\":\"大连\",\"tel\":\"138xxxx2355\",\"status\":\"ture\",\"time\":\"2024-2-11\",\"URL\":\"大连市xx街道\",\"trade\":\"食品\"},{\"name\":\"洁雅宾\",\"posi\":\"深圳\",\"tel\":\"138xxxx2356\",\"status\":\"FALSE\",\"time\":\"2024-2-12\",\"URL\":\"深圳市xx街道\",\"trade\":\"服装\"},{\"name\":\"华安店铺\",\"posi\":\"沈阳\",\"tel\":\"138xxxx2357\",\"status\":\"ture\",\"time\":\"2024-2-13\",\"URL\":\"沈阳市xx街道\",\"trade\":\"渔具\"},{\"name\":\"衣田园\",\"posi\":\"盘锦\",\"tel\":\"138xxxx2358\",\"status\":\"FALSE\",\"time\":\"2024-2-14\",\"URL\":\"盘锦市xx街道\",\"trade\":\"婴幼\"},{\"name\":\"辉丰店铺\",\"posi\":\"北京\",\"tel\":\"138xxxx2359\",\"status\":\"ture\",\"time\":\"2024-2-15\",\"URL\":\"北京市xx街道\",\"trade\":\"服装\"},{\"name\":\"元臻堂\",\"posi\":\"铁岭\",\"tel\":\"138xxxx2360\",\"status\":\"FALSE\",\"time\":\"2024-2-16\",\"URL\":\"铁岭市xx街道\",\"trade\":\"食品\"},{\"name\":\"特百乐\",\"posi\":\"大连\",\"tel\":\"138xxxx2361\",\"status\":\"ture\",\"time\":\"2024-2-17\",\"URL\":\"大连市xx街道\",\"trade\":\"服装\"},{\"name\":\"魅缘坊\",\"posi\":\"深圳\",\"tel\":\"138xxxx2362\",\"status\":\"FALSE\",\"time\":\"2024-2-18\",\"URL\":\"深圳市xx街道\",\"trade\":\"渔具\"},{\"name\":\"宏兴店铺\",\"posi\":\"沈阳\",\"tel\":\"138xxxx2363\",\"status\":\"ture\",\"time\":\"2024-2-19\",\"URL\":\"沈阳市xx街道\",\"trade\":\"婴幼\"},{\"name\":\"宝诚店铺\",\"posi\":\"盘锦\",\"tel\":\"138xxxx2364\",\"status\":\"FALSE\",\"time\":\"2024-2-20\",\"URL\":\"盘锦市xx街道\",\"trade\":\"服装\"},{\"name\":\"联顺店铺\",\"posi\":\"北京\",\"tel\":\"138xxxx2365\",\"status\":\"ture\",\"time\":\"2024-2-21\",\"URL\":\"北京市xx街道\",\"trade\":\"食品\"},{\"name\":\"瑞美嘉\",\"posi\":\"铁岭\",\"tel\":\"138xxxx2366\",\"status\":\"FALSE\",\"time\":\"2024-2-22\",\"URL\":\"铁岭市xx街道\",\"trade\":\"服装\"},{\"name\":\"天客来\",\"posi\":\"大连\",\"tel\":\"138xxxx2367\",\"status\":\"ture\",\"time\":\"2024-2-23\",\"URL\":\"大连市xx街道\",\"trade\":\"渔具\"},{\"name\":\"卡莱妃\",\"posi\":\"深圳\",\"tel\":\"138xxxx2368\",\"status\":\"FALSE\",\"time\":\"2024-2-24\",\"URL\":\"深圳市xx街道\",\"trade\":\"婴幼\"},{\"name\":\"华帝店铺\",\"posi\":\"沈阳\",\"tel\":\"138xxxx2369\",\"status\":\"ture\",\"time\":\"2024-2-25\",\"URL\":\"沈阳市xx街道\",\"trade\":\"服装\"},{\"name\":\"博爱店铺\",\"posi\":\"盘锦\",\"tel\":\"138xxxx2370\",\"status\":\"FALSE\",\"time\":\"2024-2-26\",\"URL\":\"盘锦市xx街道\",\"trade\":\"食品\"},{\"name\":\"燕之屋\",\"posi\":\"北京\",\"tel\":\"138xxxx2371\",\"status\":\"ture\",\"time\":\"2024-2-27\",\"URL\":\"北京市xx街道\",\"trade\":\"服装\"},{\"name\":\"汇欣源\",\"posi\":\"铁岭\",\"tel\":\"138xxxx2372\",\"status\":\"FALSE\",\"time\":\"2024-2-28\",\"URL\":\"铁岭市xx街道\",\"trade\":\"渔具\"},{\"name\":\"艾诺丝\",\"posi\":\"大连\",\"tel\":\"138xxxx2373\",\"status\":\"ture\",\"time\":\"2024-2-29\",\"URL\":\"大连市xx街道\",\"trade\":\"婴幼\"},{\"name\":\"世安堂\",\"posi\":\"深圳\",\"tel\":\"138xxxx2374\",\"status\":\"FALSE\",\"time\":\"2024-3-1\",\"URL\":\"深圳市xx街道\",\"trade\":\"服装\"},{\"name\":\"百升店铺\",\"posi\":\"沈阳\",\"tel\":\"138xxxx2375\",\"status\":\"ture\",\"time\":\"2024-3-2\",\"URL\":\"沈阳市xx街道\",\"trade\":\"食品\"},{\"name\":\"凯越店铺\",\"posi\":\"盘锦\",\"tel\":\"138xxxx2376\",\"status\":\"FALSE\",\"time\":\"2024-3-3\",\"URL\":\"盘锦市xx街道\",\"trade\":\"服装\"},{\"name\":\"水焦点\",\"posi\":\"北京\",\"tel\":\"138xxxx2377\",\"status\":\"ture\",\"time\":\"2024-3-4\",\"URL\":\"北京市xx街道\",\"trade\":\"渔具\"},{\"name\":\"比宜德\",\"posi\":\"铁岭\",\"tel\":\"138xxxx2378\",\"status\":\"FALSE\",\"time\":\"2024-3-5\",\"URL\":\"铁岭市xx街道\",\"trade\":\"婴幼\"},{\"name\":\"德胜店铺\",\"posi\":\"大连\",\"tel\":\"138xxxx2379\",\"status\":\"ture\",\"time\":\"2024-3-6\",\"URL\":\"大连市xx街道\",\"trade\":\"服装\"},{\"name\":\"益人康\",\"posi\":\"深圳\",\"tel\":\"138xxxx2380\",\"status\":\"FALSE\",\"time\":\"2024-3-7\",\"URL\":\"深圳市xx街道\",\"trade\":\"食品\"},{\"name\":\"佰思特\",\"posi\":\"沈阳\",\"tel\":\"138xxxx2381\",\"status\":\"ture\",\"time\":\"2024-3-8\",\"URL\":\"沈阳市xx街道\",\"trade\":\"服装\"},{\"name\":\"和顺堂\",\"posi\":\"盘锦\",\"tel\":\"138xxxx2382\",\"status\":\"FALSE\",\"time\":\"2024-3-9\",\"URL\":\"盘锦市xx街道\",\"trade\":\"渔具\"},{\"name\":\"原森态\",\"posi\":\"北京\",\"tel\":\"138xxxx2383\",\"status\":\"ture\",\"time\":\"2024-3-10\",\"URL\":\"北京市xx街道\",\"trade\":\"婴幼\"},{\"name\":\"利康店铺\",\"posi\":\"铁岭\",\"tel\":\"138xxxx2384\",\"status\":\"FALSE\",\"time\":\"2024-3-11\",\"URL\":\"铁岭市xx街道\",\"trade\":\"服装\"},{\"name\":\"华隆店铺\",\"posi\":\"大连\",\"tel\":\"138xxxx2385\",\"status\":\"ture\",\"time\":\"2024-3-12\",\"URL\":\"大连市xx街道\",\"trade\":\"食品\"},{\"name\":\"宝贝屋\",\"posi\":\"深圳\",\"tel\":\"138xxxx2386\",\"status\":\"FALSE\",\"time\":\"2024-3-13\",\"URL\":\"深圳市xx街道\",\"trade\":\"服装\"},{\"name\":\"华辰康\",\"posi\":\"沈阳\",\"tel\":\"138xxxx2387\",\"status\":\"ture\",\"time\":\"2024-3-14\",\"URL\":\"沈阳市xx街道\",\"trade\":\"渔具\"},{\"name\":\"博盛男装\",\"posi\":\"盘锦\",\"tel\":\"138xxxx2388\",\"status\":\"FALSE\",\"time\":\"2024-3-15\",\"URL\":\"盘锦市xx街道\",\"trade\":\"婴幼\"},{\"name\":\"晨磊店铺\",\"posi\":\"北京\",\"tel\":\"138xxxx2389\",\"status\":\"ture\",\"time\":\"2024-3-16\",\"URL\":\"北京市xx街道\",\"trade\":\"服装\"},{\"name\":\"嘉运店铺\",\"posi\":\"铁岭\",\"tel\":\"138xxxx2390\",\"status\":\"FALSE\",\"time\":\"2024-3-17\",\"URL\":\"铁岭市xx街道\",\"trade\":\"食品\"},{\"name\":\"蓓霓芬\",\"posi\":\"大连\",\"tel\":\"138xxxx2391\",\"status\":\"ture\",\"time\":\"2024-3-18\",\"URL\":\"大连市xx街道\",\"trade\":\"服装\"},{\"name\":\"天润康\",\"posi\":\"深圳\",\"tel\":\"138xxxx2392\",\"status\":\"FALSE\",\"time\":\"2024-3-19\",\"URL\":\"深圳市xx街道\",\"trade\":\"渔具\"},{\"name\":\"万嘉城\",\"posi\":\"沈阳\",\"tel\":\"138xxxx2393\",\"status\":\"ture\",\"time\":\"2024-3-20\",\"URL\":\"沈阳市xx街道\",\"trade\":\"婴幼\"},{\"name\":\"隆兴店铺\",\"posi\":\"盘锦\",\"tel\":\"138xxxx2394\",\"status\":\"FALSE\",\"time\":\"2024-3-21\",\"URL\":\"盘锦市xx街道\",\"trade\":\"服装\"},{\"name\":\"羽宏店铺\",\"posi\":\"北京\",\"tel\":\"138xxxx2395\",\"status\":\"ture\",\"time\":\"2024-3-22\",\"URL\":\"北京市xx街道\",\"trade\":\"食品\"},{\"name\":\"天朗店铺\",\"posi\":\"铁岭\",\"tel\":\"138xxxx2396\",\"status\":\"FALSE\",\"time\":\"2024-3-23\",\"URL\":\"铁岭市xx街道\",\"trade\":\"服装\"},{\"name\":\"飞宇店铺\",\"posi\":\"大连\",\"tel\":\"138xxxx2397\",\"status\":\"ture\",\"time\":\"2024-3-24\",\"URL\":\"大连市xx街道\",\"trade\":\"渔具\"},{\"name\":\"韩国馆\",\"posi\":\"深圳\",\"tel\":\"138xxxx2398\",\"status\":\"FALSE\",\"time\":\"2024-3-25\",\"URL\":\"深圳市xx街道\",\"trade\":\"婴幼\"},{\"name\":\"御方阁\",\"posi\":\"沈阳\",\"tel\":\"138xxxx2399\",\"status\":\"ture\",\"time\":\"2024-3-26\",\"URL\":\"沈阳市xx街道\",\"trade\":\"服装\"},{\"name\":\"思达城\",\"posi\":\"盘锦\",\"tel\":\"138xxxx2400\",\"status\":\"FALSE\",\"time\":\"2024-3-27\",\"URL\":\"盘锦市xx街道\",\"trade\":\"食品\"}]");
 
 /***/ })
 ]]);

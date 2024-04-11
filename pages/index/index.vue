@@ -49,12 +49,14 @@
 					uni.navigateTo({
 						url:'/pages/Lucky-Draw/Lucky-Draw ',
 					})
-				}else if(this.nickvalue=='丁丁'){
+				}else if(this.nickvalue=='set'){
 					uni.navigateTo({
 						url:'/pages/posindex/posindex?nickvalue='+nickvalue,
 					})
 				}else{
-					
+					uni.navigateTo({
+						url:'/pages/manager/manager?nickvalue='+nickvalue,
+					})
 				}
 			}
 		}

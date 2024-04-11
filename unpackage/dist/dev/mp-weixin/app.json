@@ -1,10 +1,12 @@
 {
   "pages": [
-    "pages/picker/picker",
-    "pages/set/set",
+    "pages/merchant_approval/merchant_approval",
     "pages/index/index",
+    "pages/set/set",
+    "pages/picker/picker",
     "pages/Lucky-Draw/Lucky-Draw ",
     "pages/log_pos/log_pos",
+    "pages/manager/manager",
     "pages/actend_alert/actend_alert",
     "pages/posindex/posindex",
     "pages/index_cy/index_cy"

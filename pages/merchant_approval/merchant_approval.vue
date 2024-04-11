@@ -10,14 +10,14 @@
 		<swiper  :style="{height:heights+'px'}" style="overflow: scroll; background-color: #f5f5f5;" :current="currenttab" @change="swiperchange">
 			<!-- <swiper-item v-for="(item,index) in tabtextP" :key="index" class="sinswiper">{{item}}</swiper-item> -->
 			<swiper-item>
-				<view style="height: 100%;width: 100%; ">
+				<view style="height: 98%;width: 100%; overflow: scroll;">
 					<view class="switsin"  v-for="(item,index) in fsta" :key="index">
 						<view class="titlename">
 							<text class="waitname">{{item.name}}<text style="color: #78c0e3; margin-left: 5px;">{{'( '+item.posi+' )'}}</text></text>
 							<text class="waittext"> 待审核</text>
 						</view>
 						<view class="switsincon">
-							<image src="../../static/logo.png" class="swimg"></image>
+							<image :src="item.image" class="swimg"></image>
 							<view class="swiurl">
 								<view>所属行业:<text class="switex">{{'( '+item.trade+' )'}}</text></view>
 								<view>商家地址:<text class="switex">{{item.URL}}</text></view>
@@ -36,14 +36,14 @@
 				</view>
 			</swiper-item>
 			<swiper-item>
-				<view style="height: 100%;width: 100%; ">
+				<view style="height: 98%;width: 100%; overflow: scroll;">
 					<view class="switsin"  v-for="(item,index) in tsta" :key="index">
 						<view class="titlename">
 							<text class="waitname">{{item.name}}<text style="color: #78c0e3; margin-left: 5px;">{{'( '+item.posi+' )'}}</text></text>
 							<text class="waittext_"> 审核通过</text>
 						</view>
 						<view class="switsincon">
-							<image src="../../static/logo.png" class="swimg"></image>
+							<image :src="item.image"  class="swimg"></image>
 							<view class="swiurl">
 								<view>所属行业:<text class="switex">{{'( '+item.trade+' )'}}</text></view>
 								<view>商家地址:<text class="switex">{{item.URL}}</text></view>
@@ -61,7 +61,33 @@
 					</view>
 				</view>
 			</swiper-item>
-			<swiper-item>3</swiper-item>
+			<swiper-item>
+				<view style="height: 98%;width: 100%; overflow: scroll;">
+					<view class="switsin"  v-for="(item,index) in jsonarr" :key="index">
+						<view class="titlename">
+							<text class="waitname">{{item.name}}<text style="color: #78c0e3; margin-left: 5px;">{{'( '+item.posi+' )'}}</text></text>
+							<text class="waittext_" v-if="item.status=='ture'"> 审核通过</text>
+							<text class="waittext" v-if="item.status=='FALSE'"> 待审核</text>
+						</view>
+						<view class="switsincon">
+							<image :src="item.image"  class="swimg"></image>
+							<view class="swiurl">
+								<view>所属行业:<text class="switex">{{'( '+item.trade+' )'}}</text></view>
+								<view>商家地址:<text class="switex">{{item.URL}}</text></view>
+							</view>
+						</view>
+						<view class="titlename_">
+							<view class="tboot">
+								<view>联系电话:<text class="switex">{{item.tel}}</text></view>
+							</view>
+							<view class="tbootline"></view>
+							<view class="tboot">
+								<view>注册时间:<text class="switex">{{item.time}}</text></view>
+							</view>
+						</view>
+					</view>
+				</view>
+			</swiper-item>
 		</swiper>
 	</view>
 </template>
@@ -97,7 +123,7 @@
 					// data中包含了元素的尺寸信息，如宽、高等
 					if (data) {
 						console.log('Div的高度:', data.height);
-						this.heights = data.height - 120
+						this.heights = data.height - 110
 						console.log(this.heights)
 					}
 				}).exec(); // 执行选择器查询

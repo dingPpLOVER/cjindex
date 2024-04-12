@@ -3,13 +3,7 @@
 		"^u-(.*)": "uview-ui/components/u-$1/u-$1.vue"
 	},
 	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
-		{
-			"path": "pages/merchant_approval/merchant_approval",
-			"style": {
-				"navigationBarTitleText": "uni-app",
-				"navigationStyle":"custom"//用户自定义（添加此处！！！！！）
-			}
-		},
+		
 		{
 			"path": "pages/index/index",
 			"style": {
@@ -17,42 +11,49 @@
 			}
 		},
 		{
-
+			"path": "pages/merchant_approval/merchant_approval",
+			"style": {
+				"navigationBarTitleText": "uni-app",
+				"navigationStyle": "custom" //用户自定义（添加此处！！！！！）
+			}
+		},
+		{
+			"path": "pages/mes/mes",
+			"style": {
+				"navigationBarTitleText": "消息"
+			}
+		},
+		{
 			"path": "pages/set/set",
 			"style": {
 				"navigationBarTitleText": "发起抽奖"
 			}
 		},
 		{
-		
 			"path": "pages/picker/picker",
 			"style": {
 				"navigationBarTitleText": "时间选择器"
 			}
 		},
-		
-		{
 
+		{
 			"path": "pages/Lucky-Draw/Lucky-Draw ",
 			"style": {
 				"navigationBarTitleText": "uni-app"
-				
 			}
 		},
 		{
-
 			"path": "pages/log_pos/log_pos",
 			"style": {
 				"navigationBarTitleText": "uni-app"
 			}
 		},
 		{
-		
 			"path": "pages/manager/manager",
 			"style": {
 				"navigationBarTitleText": "",
 				"navigationBarBackgroundColor": "#c0d3f3",
-				"navigationStyle":"custom"//用户自定义（添加此处！！！！！）
+				"navigationStyle": "custom" //用户自定义（添加此处！！！！！）
 			}
 		},
 		{
@@ -67,7 +68,7 @@
 				"navigationBarTitleText": "uni-app"
 			}
 		},
-		
+
 		{
 			"path": "pages/index_cy/index_cy",
 			"style": {

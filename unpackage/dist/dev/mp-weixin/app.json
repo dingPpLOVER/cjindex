@@ -1,7 +1,8 @@
 {
   "pages": [
-    "pages/merchant_approval/merchant_approval",
     "pages/index/index",
+    "pages/merchant_approval/merchant_approval",
+    "pages/mes/mes",
     "pages/set/set",
     "pages/picker/picker",
     "pages/Lucky-Draw/Lucky-Draw ",

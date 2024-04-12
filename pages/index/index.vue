@@ -53,6 +53,10 @@
 					uni.navigateTo({
 						url:'/pages/posindex/posindex?nickvalue='+nickvalue,
 					})
+				}else if(this.nickvalue=='re'){
+					uni.navigateTo({
+						url:'/pages/log_pos/log_pos?nickvalue='+nickvalue,
+					})
 				}else{
 					uni.navigateTo({
 						url:'/pages/manager/manager?nickvalue='+nickvalue,

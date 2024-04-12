@@ -1,5 +1,9 @@
 <template>
 	<div id="app">
+		<div class="register_mes" @click="mesclick">
+			<image src="https://232r34t825.zicp.fun/ftpData/tmp/dp/cj/cj/icon/register_mes.png" class="icon_"></image>
+			<view class="mescricle"  v-if="status!='FALSE'">1</view>
+		</div>
 		<div class="box">
 			<div class="titletext">注册成为商户</div>
 			<form class="formclass" @submit="onsubmit">
@@ -33,6 +37,16 @@
 					<input class="inpclass" placeholder="地址" type="text" placeholder-class="plac"
 						v-model="form.address" />
 				</div>
+				<div class="inpsin">
+					<image src="https://232r34t825.zicp.fun/ftpData/tmp/dp/cj/cj/icon/register_trade.png" class="icon"></image>
+					<input class="inpclass" placeholder="所属行业" type="text" placeholder-class="plac"
+						v-model="form.trade" />
+				</div>
+				<div class="inpsin">
+					<image src="https://232r34t825.zicp.fun/ftpData/tmp/dp/cj/cj/icon/register_city.png" class="icon"></image>
+					<input class="inpclass" placeholder="所在城市" type="text" placeholder-class="plac"
+						v-model="form.city" />
+				</div>
 				<button class="but" form-type="submit">注册TRAVELER</button>
 			</form>
 
@@ -52,7 +66,9 @@
 					post: '',
 					posname: '',
 					address: '',
-
+					trade:'',
+					city:'',
+					status:''
 				}
 			}
 		},
@@ -73,8 +89,10 @@
 				var posname = form.posname
 				var post = form.post
 				var address = form.address
-				var infarr = [name, tel, wxname, post, posname, address]
-				var infarrtext = ["代理人姓名", "代理人手机号", "微信昵称", "代理人职务", "商户全称", "地址"]
+				var trade = form.trade
+				var city = form.city
+				var infarr = [name, tel, wxname, post, posname, address,trade,city]
+				var infarrtext = ["代理人姓名", "代理人手机号", "微信昵称", "代理人职务", "商户全称", "地址","所属行业","所在城市"]
 				var onsarr = []
 				for (var i = 0; i < infarr.length; i++) {
 					if (infarr[i].length <= 0) {
@@ -84,7 +102,7 @@
 				if (onsarr.length == 0 && isMobile(tel)) {
 					uni.showModal({
 						title: '提示',
-						content: '提交成功,请等待审核',
+						content: '提交成功,请等待审核,结果会在24小时内发送到系统,请登录查看',
 						success: function(res) {
 							if (res.confirm) {
 
@@ -109,11 +127,19 @@
 					});
 				}
 
+			},
+			mesclick(){
+				var nickvalue = this.form.wxname
+				uni.navigateTo({
+					url:'/pages/mes/mes?nickvalue='+nickvalue
+				})
 			}
 		},
-		onLoad(point) {
-			console.log(point)
-			this.form.wxname = point.nickvalue
+		onLoad(options) {
+			console.log(options)
+			this.form.wxname = options.nickvalue
+			this.status = options.status
+			
 		},
 		mounted() {
 			onsubmit()

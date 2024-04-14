@@ -1,8 +1,6 @@
 <template>
 	<div class="box">
-		<u-picker v-model="show" mode="time">this is picker</u-picker>
-		<uni-datetime-picker @confirm="onConfirm" :show="show" v-model="valuel" mode="date"></uni-datetime-picker>
-		
+
 		<div class="box_s">
 			<div class="title">
 				<div class="titlet">请设置抽奖规则</div>
@@ -12,27 +10,50 @@
 					<div class="fontc">
 						<div class="fontcsin" v-for="(item,index) in sty" :key="index"
 							:style="{marginLeft:item.sty+'vw'}">
-							<input class="setfontinp" placeholder="请输入" placeholder-style="font-size:13px;"
-								v-model="form[item.val]" />
+							<input class="setfontinp" :placeholder="'集字'+item.num" placeholder-style="font-size:13px;"
+								v-model="form[item.val]" @input="onInput" maxlength="1" />
 						</div>
 					</div>
 					<div class="inputdiv">
 						<input class="setinput" placeholder="给活动起个名字" v-model="form.name" />
 					</div>
 					<div class="inputdiv">
-						<input class="setinput" placeholder="设置默认抽奖次数" v-model="form.number" />
+						<input class="setinput" placeholder="设置默认抽奖次数" v-model="form.number" type="number" />
 					</div>
 					<div class="inputdiv">
-						<input class="setinput" placeholder="设置最多中奖人数" v-model="form.per" />
+						<input class="setinput" placeholder="设置最多中奖人数" v-model="form.per" type="number" />
 					</div>
 					<div class="inputdiv">
 						<input class="setinput" placeholder="设置奖品" v-model="form.prize" />
 					</div>
+
+
 					<view class="inputdiv">
-						<u-picker title="选择器" :columns="columns" @change="onChange"></u-picker>
+						<u-form :model="formModel" ref="form">
+							<u-form-item @click="dateTimePicker = true" prop="maintenanceTime">
+								<u-input v-model="formModel.maintenanceTime" placeholder="选择开始时间"></u-input>
+
+							</u-form-item>
+						</u-form>
+
+						<u-datetime-picker @confirm="dateTimePickerConfirm" @cancel="dateTimePicker = false"
+							:show="dateTimePicker" v-model="timeValue" ref="datetimePicker" mode="datetime"
+							closeOnClickOverlay :defaultIndex="defaultTimeIndex" :style="{backgroundColor:'#ff0000'}">
+						</u-datetime-picker>
 					</view>
+
 					<div class="inputdiv">
-						<!-- <u-button>click me</u-button> -->
+						<u-form :model="formModel" ref="formEnd">
+							<u-form-item @click="dateTimePickerEnd = true" prop="maintenanceTime">
+								<u-input v-model="formModel.maintenanceTimeEnd" placeholder="选择结束时间">
+								</u-input>
+							</u-form-item>
+						</u-form>
+
+						<u-datetime-picker @confirm="dateTimePickerConfirmEnd" @cancel="dateTimePickerEnd = false"
+							:show="dateTimePickerEnd" v-model="timeValueEnd" ref="datetimePickerEnd" mode="datetime"
+							closeOnClickOverlay :defaultIndex="defaultTimeIndex" :style="{backgroundColor:'#ff0000'}">
+						</u-datetime-picker>
 					</div>
 					<button class="btn" form-type="submit">提交</button>
 				</form>
@@ -42,29 +63,29 @@
 
 			</div>
 		</div>
+
 	</div>
 </template>
 
 <script>
 	import sty from '@/static/json/set.json'
+	// import uPicker  from '@/uni_modules/uview-ui/components/u-picker/u-picker.vue'
 	export default {
 		data() {
 			return {
 				sty: sty,
-				strtime: '2000-01-01', // 默认选中的日期
-				valuel: Number(new Date()),
-				columns: [{
-					values: ['中国', '美国', '日本', '德国']
-				}],
+				dateTimePicker: false,
+				dateTimePickerEnd: false,
 				params: {
 					year: true,
 					month: true,
 					day: true,
-					hour: false,
-					minute: false,
-					second: false
+					hour: true,
+					minute: true,
+					second: true
 				},
-				show: false,
+				//用于动态获取选择的时间
+				time: '',
 				form: {
 					font1: '',
 					font2: '',
@@ -80,6 +101,10 @@
 					prize: '',
 					strtime: '',
 					endtime: ''
+				},
+				formModel: {
+					maintenanceTime: '',
+					maintenanceTimeEnd: ''
 				}
 			}
 		},
@@ -87,22 +112,80 @@
 			onsubmit(event) {
 				event.preventDefault(); // 阻止表单默认提交行为
 				console.log(this.form)
+				var form = this.form
+				var formarr = [form.font1, form.font2, form.font3, form.font4, form.font5, form.font6, form.font7, form
+					.font8, form.name, form.number, form.per, form.prize, form.strtime, form.endtime
+				]
+				var formtext = ['集字1', '集字2', '集字3', '集字4', '集字5', '集字6', '集字7', '集字8', '活动名称', '默认次数', '参与人数', '奖励',
+					'开始时间', '结束时间'
+				]
+				var arrnull = []
+				for (var i = 0; i < formarr.length; i++) {
+					if (formarr[i] == '') {
+						arrnull.push(formtext[i])
+					}
+				}
+				if (arrnull.length > 0) {
+					uni.showModal({
+						title: '提示',
+						content: '请完成' + arrnull + '部分的填写',
+						confirmText: '确定',
+						success: function(res) {
+
+						}
+					});
+				}
 			},
-			onTimeChange(e) {
-				this.strtime = e.detail.value;
-				console.log(111)
+			formatter(type, value) {
+				if (type === 'year') {
+					return `${value}年`
+				}
+				if (type === 'month') {
+					return `${value}月`
+				}
+				if (type === 'day') {
+					return `${value}日`
+				}
+				if (type === 'hour') {
+					return `${value}时`
+				}
+				if (type === 'minute') {
+					return `${value}分`
+				}
+				return value
 			},
-			onConfirm(e) {
-				console.log('选择的时间为：', e)
+			dateTimePickerConfirm(e) {
+				this.dateTimePicker = false
+				// console.log(e.value, e.mode)
+				this.formModel.maintenanceTime = this.$u.date(e.value, 'yyyy-mm-dd hh:MM:ss')
+				this.$refs.form.validateField('maintenanceTime')
+				// console.log(this.formModel.maintenanceTime)
+				this.form.strtime = this.formModel.maintenanceTime
 			},
-			onChange(e) {
-				console.log(e.detail.value);
-				// 处理选中的值
+			dateTimePickerConfirmEnd(e) {
+				this.dateTimePickerEnd = false
+				console.log(e.value, e.mode)
+				this.formModel.maintenanceTimeEnd = this.$u.date(e.value, 'yyyy-mm-dd hh:MM:ss')
+				this.$refs.formEnd.validateField('maintenanceTime')
+				console.log(this.formModel.maintenanceTimeEnd)
+				this.form.endtime = this.formModel.maintenanceTimeEnd
+			},
+			onInput(event) {
+				// 输入内容处理，可以在这里添加额外逻辑
+				console.log(event.target.value);
+				var test = event.target.value
+				if (event.target.value && event.target.value.length > 1) {
+					event.target.value = event.target.value.substring(0, 1);
+				}
 			}
 		},
+		onReady() {
+			// 微信小程序需要用此写法
+			this.$refs.datetimePicker.setFormatter(this.formatter)
+			this.$refs.datetimePickerEnd.setFormatter(this.formatter)
+		},
 		mounted() {
-			console.log(sty)
-			console.log('当前uniapp版本:', getApp().globalData.VUE_APP_VERSION);
+
 		}
 	}
 </script>

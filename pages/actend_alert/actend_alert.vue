@@ -6,6 +6,7 @@
 
 <script>
 	export default {
+		
 		onLoad(point) {
 			var text = ''
 			console.log(point.nickvalue)
@@ -14,6 +15,8 @@
 			}else{
 				text = '您未参与过任何活动，是否选择成为商户，发起抽奖'
 			}
+			var num = point.num-1
+			var nickvalue = point.nickvalue
 			uni.showModal({
 				title: '提示',
 				content: text,
@@ -22,7 +25,7 @@
 				success: function(res) {
 					if (res.confirm) {
 						uni.navigateTo({
-							url:'/pages/log_pos/log_pos'
+							url:'/pages/log_pos/log_pos?nickvalue='+nickvalue+'&num='+num
 						})
 					} else if (res.cancel) {
 						uni.navigateBack()

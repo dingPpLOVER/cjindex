@@ -1,5 +1,6 @@
 {
   "pages": [
+    "pages/merchant_shlist/merchant_shlist",
     "pages/index/index",
     "pages/merchant_approval/merchant_approval",
     "pages/mes/mes",

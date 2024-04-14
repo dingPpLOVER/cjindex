@@ -1,32 +1,40 @@
 [{
 	"sty":5,
-	"val":"font1"
+	"val":"font1",
+	"num":1
 },
 {
 	"sty":5,
-	"val":"font2"
+	"val":"font2",
+	"num":2
 },
 {
 	"sty":5,
-	"val":"font3"
+	"val":"font3",
+	"num":3
 },
 {
 	"sty":5,
-	"val":"font4"
+	"val":"font4",
+	"num":8
 },
 {
 	"sty":30,
-	"val":"font5"
+	"val":"font5",
+	"num":4
 },
 {
 	"sty":5,
-	"val":"font6"
+	"val":"font6",
+	"num":7
 },
 {
 	"sty":5,
-	"val":"font7"
+	"val":"font7",
+	"num":6
 },
 {
 	"sty":5,
-	"val":"font8"
+	"val":"font8",
+	"num":5
 }]

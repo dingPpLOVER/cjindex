@@ -1,0 +1,40 @@
+
+.box{
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	font-size: 13px;
+}
+.top{
+	height: 150px;
+	width: 100%;
+	background: linear-gradient(to right,#84f4f2,#abe4f6,#c9b9fd);
+}
+.top_b{
+	position: absolute;
+	height: 60px;
+	width: 100%;
+	margin-top: 100px;
+}
+.top_bcon{
+	width: 90%;
+	height: 50px;
+	margin: auto;
+	display: flex;
+	flex-direction: row;
+	text-align: center;
+	color: #7d739d;
+}
+.top_bconsin{
+	flex: 1;
+}
+.topvalue{
+	line-height: 25px;
+	color: #000000;
+	font-size: 15px;
+	font-weight: bold;
+}
+.toptext{
+	font-size: 13px;
+}
+

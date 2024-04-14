@@ -20,13 +20,15 @@
 		data() {
 			return{
 				status:'',
-				nickvalue:''
+				nickvalue:'',
+				num:0
 			}
 		},
 		methods: {
 			cread() {
 				var nickvalue = this.nickvalue
 				this.status = 'FALSE'
+				var num = this.num - 1
 				uni.showModal({
 					title: '提示',
 					content: '您的商户申请不合格,原因如下',
@@ -35,7 +37,7 @@
 					success: function(res) {
 						if (res.confirm) {
 							uni.navigateTo({
-								url: '/pages/log_pos/log_pos?nickvalue='+nickvalue
+								url: '/pages/log_pos/log_pos?nickvalue='+nickvalue+'&num='+num
 							})
 						} else if (res.cancel) {
 							uni.navigateBack()
@@ -47,6 +49,7 @@
 		},
 		onLoad(options) {
 			this.nickvalue = options.nickvalue
+			this.num = options.num
 		}
 	}
 </script>

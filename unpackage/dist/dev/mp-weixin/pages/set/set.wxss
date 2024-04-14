@@ -1,4 +1,4 @@
-.box{
+.box {
 	height: 100%;
 	width: 100%;
 	position: absolute;
@@ -6,36 +6,36 @@
 	background-size: 100% 100%;
 	font-size: 13px;
 }
-.box_s{
+.box_s {
 	height: 100%;
 	width: 100%;
 	padding-bottom: 8px;
 	overflow: scroll;
 }
-.title{
+.title {
 	width: 90%;
 	margin: auto;
 	margin-top: 10px;
 }
-.titlet{
+.titlet {
 	width: 70vw;
 	margin: auto;
 }
-.content{
+.content {
 	width: 90%;
-	margin:5px auto;
+	margin: 5px auto;
 	border-radius: 5px;
 	background-color: #ffffff;
 	padding-bottom: 8px;
 }
-.fontc{
+.fontc {
 	margin: auto;
 	height: 80vw;
 	width: 80vw;
 	/* background-color: #ffffff; */
 	border-radius: 8px;
 }
-.fontcsin{
+.fontcsin {
 	display: inline-block;
 	vertical-align: top;
 	height: 20vw;
@@ -46,13 +46,13 @@
 	margin-top: 5vw;
 	font-weight: bold;
 }
-.setfontinp{
+.setfontinp {
 	text-align: center;
 	line-height: 20vw;
 	height: 20vw;
 	width: 20vw;
 }
-.inputdiv{
+.inputdiv {
 	height: 40px;
 	width: 80%;
 	margin: auto;
@@ -60,18 +60,21 @@
 	background-size: 100% 100%;
 	margin-top: 10px;
 }
-.setinput{
+.setinput {
 	height: 100%;
 	width: 85%;
 	padding-left: 30px;
 }
-.btn{
+.btn {
 	width: 80%;
 	margin: auto;
 	margin-top: 15px;
 	height: 35px;
 	line-height: 35px;
 	font-size: 15px;
-	background: linear-gradient(to right ,#bcf0e1,#d9eee5,#bcf0e1);
+	background: linear-gradient(to right, #bcf0e1, #d9eee5, #bcf0e1);
+}
+.u-form-item {
+	padding: 0;
 }
 

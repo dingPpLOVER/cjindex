@@ -2,7 +2,7 @@
 	<div id="app">
 		<div class="register_mes" @click="mesclick">
 			<image src="https://232r34t825.zicp.fun/ftpData/tmp/dp/cj/cj/icon/register_mes.png" class="icon_"></image>
-			<view class="mescricle"  v-if="status!='FALSE'">1</view>
+			<view class="mescricle"  v-if="num>0">{{num}}</view>
 		</div>
 		<div class="box">
 			<div class="titletext">注册成为商户</div>
@@ -59,6 +59,8 @@
 	export default {
 		data() {
 			return {
+				num:1,
+				status:'',
 				form: {
 					name: '',
 					tel: '',
@@ -68,7 +70,8 @@
 					address: '',
 					trade:'',
 					city:'',
-					status:''
+					status:'',
+					
 				}
 			}
 		},
@@ -130,19 +133,23 @@
 			},
 			mesclick(){
 				var nickvalue = this.form.wxname
+				var num = this.num
 				uni.navigateTo({
-					url:'/pages/mes/mes?nickvalue='+nickvalue
+					url:'/pages/mes/mes?nickvalue='+nickvalue+'&num='+num
 				})
 			}
 		},
 		onLoad(options) {
 			console.log(options)
 			this.form.wxname = options.nickvalue
-			this.status = options.status
+			if(options.num){
+				this.num = options.num
+			}
 			
 		},
 		mounted() {
 			onsubmit()
+			
 		}
 	}
 </script>

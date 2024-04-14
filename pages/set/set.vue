@@ -134,6 +134,12 @@
 
 						}
 					});
+				}else{
+					uni.showToast({
+						title:'提交通过',
+						icon:'success',
+						duration:2000
+					})
 				}
 			},
 			formatter(type, value) {

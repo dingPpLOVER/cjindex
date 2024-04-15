@@ -4,10 +4,9 @@
 		},
 	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
 		{
-			"path": "pages/merchant_shlist/merchant_shlist",
+			"path": "pages/posindex_previous/posindex_previous",
 			"style": {
-				"navigationBarTitleText": "商户列表",
-				"navigationStyle": "custom"
+				"navigationBarTitleText": "uni-app"
 			}
 		},
 		{
@@ -35,13 +34,14 @@
 				"navigationBarTitleText": "发起抽奖"
 			}
 		},
+		
 		{
-			"path": "pages/picker/picker",
+			"path": "pages/merchant_shlist/merchant_shlist",
 			"style": {
-				"navigationBarTitleText": "时间选择器"
+				"navigationBarTitleText": "商户列表",
+				"navigationStyle": "custom"
 			}
 		},
-
 		{
 			"path": "pages/Lucky-Draw/Lucky-Draw ",
 			"style": {
@@ -74,7 +74,7 @@
 				"navigationBarTitleText": "uni-app"
 			}
 		},
-
+		
 		{
 			"path": "pages/index_cy/index_cy",
 			"style": {

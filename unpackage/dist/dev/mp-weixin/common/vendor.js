@@ -1557,7 +1557,7 @@ function initData(vueOptions, context) {
     try {
       data = data.call(context); // 支持 Vue.prototype 上挂的数据
     } catch (e) {
-      if (Object({"VUE_APP_DARK_MODE":"false","VUE_APP_NAME":"cj-index","VUE_APP_PLATFORM":"mp-weixin","NODE_ENV":"development","BASE_URL":"/"}).VUE_APP_DEBUG) {
+      if (Object({"NODE_ENV":"development","VUE_APP_DARK_MODE":"false","VUE_APP_NAME":"cj-index","VUE_APP_PLATFORM":"mp-weixin","BASE_URL":"/"}).VUE_APP_DEBUG) {
         console.warn('根据 Vue 的 data 函数初始化小程序 data 失败，请尽量确保 data 函数中不访问 vm 对象，否则可能影响首次数据渲染速度。', data);
       }
     }
@@ -8923,7 +8923,7 @@ function type(obj) {
 
 function flushCallbacks$1(vm) {
     if (vm.__next_tick_callbacks && vm.__next_tick_callbacks.length) {
-        if (Object({"VUE_APP_DARK_MODE":"false","VUE_APP_NAME":"cj-index","VUE_APP_PLATFORM":"mp-weixin","NODE_ENV":"development","BASE_URL":"/"}).VUE_APP_DEBUG) {
+        if (Object({"NODE_ENV":"development","VUE_APP_DARK_MODE":"false","VUE_APP_NAME":"cj-index","VUE_APP_PLATFORM":"mp-weixin","BASE_URL":"/"}).VUE_APP_DEBUG) {
             var mpInstance = vm.$scope;
             console.log('[' + (+new Date) + '][' + (mpInstance.is || mpInstance.route) + '][' + vm._uid +
                 ']:flushCallbacks[' + vm.__next_tick_callbacks.length + ']');
@@ -8944,14 +8944,14 @@ function nextTick$1(vm, cb) {
     //1.nextTick 之前 已 setData 且 setData 还未回调完成
     //2.nextTick 之前存在 render watcher
     if (!vm.__next_tick_pending && !hasRenderWatcher(vm)) {
-        if(Object({"VUE_APP_DARK_MODE":"false","VUE_APP_NAME":"cj-index","VUE_APP_PLATFORM":"mp-weixin","NODE_ENV":"development","BASE_URL":"/"}).VUE_APP_DEBUG){
+        if(Object({"NODE_ENV":"development","VUE_APP_DARK_MODE":"false","VUE_APP_NAME":"cj-index","VUE_APP_PLATFORM":"mp-weixin","BASE_URL":"/"}).VUE_APP_DEBUG){
             var mpInstance = vm.$scope;
             console.log('[' + (+new Date) + '][' + (mpInstance.is || mpInstance.route) + '][' + vm._uid +
                 ']:nextVueTick');
         }
         return nextTick(cb, vm)
     }else{
-        if(Object({"VUE_APP_DARK_MODE":"false","VUE_APP_NAME":"cj-index","VUE_APP_PLATFORM":"mp-weixin","NODE_ENV":"development","BASE_URL":"/"}).VUE_APP_DEBUG){
+        if(Object({"NODE_ENV":"development","VUE_APP_DARK_MODE":"false","VUE_APP_NAME":"cj-index","VUE_APP_PLATFORM":"mp-weixin","BASE_URL":"/"}).VUE_APP_DEBUG){
             var mpInstance$1 = vm.$scope;
             console.log('[' + (+new Date) + '][' + (mpInstance$1.is || mpInstance$1.route) + '][' + vm._uid +
                 ']:nextMPTick');
@@ -9047,7 +9047,7 @@ var patch = function(oldVnode, vnode) {
     });
     var diffData = this.$shouldDiffData === false ? data : diff(data, mpData);
     if (Object.keys(diffData).length) {
-      if (Object({"VUE_APP_DARK_MODE":"false","VUE_APP_NAME":"cj-index","VUE_APP_PLATFORM":"mp-weixin","NODE_ENV":"development","BASE_URL":"/"}).VUE_APP_DEBUG) {
+      if (Object({"NODE_ENV":"development","VUE_APP_DARK_MODE":"false","VUE_APP_NAME":"cj-index","VUE_APP_PLATFORM":"mp-weixin","BASE_URL":"/"}).VUE_APP_DEBUG) {
         console.log('[' + (+new Date) + '][' + (mpInstance.is || mpInstance.route) + '][' + this._uid +
           ']差量更新',
           JSON.stringify(diffData));
@@ -9466,9 +9466,9 @@ internalMixin(Vue);
 
 /***/ }),
 /* 26 */
-/*!********************************!*\
-  !*** D:/项目/cjindex/pages.json ***!
-  \********************************/
+/*!*****************************!*\
+  !*** D:/cjindex/pages.json ***!
+  \*****************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
@@ -9614,9 +9614,9 @@ function normalizeComponent (
 
 /***/ }),
 /* 35 */
-/*!***************************************************!*\
-  !*** D:/项目/cjindex/uni_modules/uview-ui/index.js ***!
-  \***************************************************/
+/*!************************************************!*\
+  !*** D:/cjindex/uni_modules/uview-ui/index.js ***!
+  \************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -9703,9 +9703,9 @@ exports.default = _default;
 
 /***/ }),
 /* 36 */
-/*!**************************************************************!*\
-  !*** D:/项目/cjindex/uni_modules/uview-ui/libs/mixin/mixin.js ***!
-  \**************************************************************/
+/*!***********************************************************!*\
+  !*** D:/cjindex/uni_modules/uview-ui/libs/mixin/mixin.js ***!
+  \***********************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -9871,9 +9871,9 @@ exports.default = _default;
 
 /***/ }),
 /* 37 */
-/*!****************************************************************!*\
-  !*** D:/项目/cjindex/uni_modules/uview-ui/libs/mixin/mpMixin.js ***!
-  \****************************************************************/
+/*!*************************************************************!*\
+  !*** D:/cjindex/uni_modules/uview-ui/libs/mixin/mpMixin.js ***!
+  \*************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -9894,9 +9894,9 @@ exports.default = _default;
 
 /***/ }),
 /* 38 */
-/*!*********************************************************************!*\
-  !*** D:/项目/cjindex/uni_modules/uview-ui/libs/luch-request/index.js ***!
-  \*********************************************************************/
+/*!******************************************************************!*\
+  !*** D:/cjindex/uni_modules/uview-ui/libs/luch-request/index.js ***!
+  \******************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -9914,9 +9914,9 @@ exports.default = _default;
 
 /***/ }),
 /* 39 */
-/*!****************************************************************************!*\
-  !*** D:/项目/cjindex/uni_modules/uview-ui/libs/luch-request/core/Request.js ***!
-  \****************************************************************************/
+/*!*************************************************************************!*\
+  !*** D:/cjindex/uni_modules/uview-ui/libs/luch-request/core/Request.js ***!
+  \*************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -10120,9 +10120,9 @@ exports.default = Request;
 
 /***/ }),
 /* 40 */
-/*!************************************************************************************!*\
-  !*** D:/项目/cjindex/uni_modules/uview-ui/libs/luch-request/core/dispatchRequest.js ***!
-  \************************************************************************************/
+/*!*********************************************************************************!*\
+  !*** D:/cjindex/uni_modules/uview-ui/libs/luch-request/core/dispatchRequest.js ***!
+  \*********************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -10142,9 +10142,9 @@ exports.default = _default;
 
 /***/ }),
 /* 41 */
-/*!******************************************************************************!*\
-  !*** D:/项目/cjindex/uni_modules/uview-ui/libs/luch-request/adapters/index.js ***!
-  \******************************************************************************/
+/*!***************************************************************************!*\
+  !*** D:/cjindex/uni_modules/uview-ui/libs/luch-request/adapters/index.js ***!
+  \***************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -10223,9 +10223,9 @@ exports.default = _default;
 
 /***/ }),
 /* 42 */
-/*!********************************************************************************!*\
-  !*** D:/项目/cjindex/uni_modules/uview-ui/libs/luch-request/helpers/buildURL.js ***!
-  \********************************************************************************/
+/*!*****************************************************************************!*\
+  !*** D:/cjindex/uni_modules/uview-ui/libs/luch-request/helpers/buildURL.js ***!
+  \*****************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -10293,9 +10293,9 @@ function buildURL(url, params) {
 
 /***/ }),
 /* 43 */
-/*!*********************************************************************!*\
-  !*** D:/项目/cjindex/uni_modules/uview-ui/libs/luch-request/utils.js ***!
-  \*********************************************************************/
+/*!******************************************************************!*\
+  !*** D:/cjindex/uni_modules/uview-ui/libs/luch-request/utils.js ***!
+  \******************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -10446,9 +10446,9 @@ function isUndefined(val) {
 
 /***/ }),
 /* 44 */
-/*!**********************************************************************************!*\
-  !*** D:/项目/cjindex/uni_modules/uview-ui/libs/luch-request/core/buildFullPath.js ***!
-  \**********************************************************************************/
+/*!*******************************************************************************!*\
+  !*** D:/cjindex/uni_modules/uview-ui/libs/luch-request/core/buildFullPath.js ***!
+  \*******************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -10480,9 +10480,9 @@ function buildFullPath(baseURL, requestedURL) {
 
 /***/ }),
 /* 45 */
-/*!*************************************************************************************!*\
-  !*** D:/项目/cjindex/uni_modules/uview-ui/libs/luch-request/helpers/isAbsoluteURL.js ***!
-  \*************************************************************************************/
+/*!**********************************************************************************!*\
+  !*** D:/cjindex/uni_modules/uview-ui/libs/luch-request/helpers/isAbsoluteURL.js ***!
+  \**********************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -10508,9 +10508,9 @@ function isAbsoluteURL(url) {
 
 /***/ }),
 /* 46 */
-/*!***********************************************************************************!*\
-  !*** D:/项目/cjindex/uni_modules/uview-ui/libs/luch-request/helpers/combineURLs.js ***!
-  \***********************************************************************************/
+/*!********************************************************************************!*\
+  !*** D:/cjindex/uni_modules/uview-ui/libs/luch-request/helpers/combineURLs.js ***!
+  \********************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -10534,9 +10534,9 @@ function combineURLs(baseURL, relativeURL) {
 
 /***/ }),
 /* 47 */
-/*!***************************************************************************!*\
-  !*** D:/项目/cjindex/uni_modules/uview-ui/libs/luch-request/core/settle.js ***!
-  \***************************************************************************/
+/*!************************************************************************!*\
+  !*** D:/cjindex/uni_modules/uview-ui/libs/luch-request/core/settle.js ***!
+  \************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -10566,9 +10566,9 @@ function settle(resolve, reject, response) {
 
 /***/ }),
 /* 48 */
-/*!***************************************************************************************!*\
-  !*** D:/项目/cjindex/uni_modules/uview-ui/libs/luch-request/core/InterceptorManager.js ***!
-  \***************************************************************************************/
+/*!************************************************************************************!*\
+  !*** D:/cjindex/uni_modules/uview-ui/libs/luch-request/core/InterceptorManager.js ***!
+  \************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -10630,9 +10630,9 @@ exports.default = _default;
 
 /***/ }),
 /* 49 */
-/*!********************************************************************************!*\
-  !*** D:/项目/cjindex/uni_modules/uview-ui/libs/luch-request/core/mergeConfig.js ***!
-  \********************************************************************************/
+/*!*****************************************************************************!*\
+  !*** D:/cjindex/uni_modules/uview-ui/libs/luch-request/core/mergeConfig.js ***!
+  \*****************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -10706,9 +10706,9 @@ exports.default = _default;
 
 /***/ }),
 /* 50 */
-/*!*****************************************************************************!*\
-  !*** D:/项目/cjindex/uni_modules/uview-ui/libs/luch-request/core/defaults.js ***!
-  \*****************************************************************************/
+/*!**************************************************************************!*\
+  !*** D:/cjindex/uni_modules/uview-ui/libs/luch-request/core/defaults.js ***!
+  \**************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -10738,9 +10738,9 @@ exports.default = _default;
 
 /***/ }),
 /* 51 */
-/*!***************************************************************************!*\
-  !*** D:/项目/cjindex/uni_modules/uview-ui/libs/luch-request/utils/clone.js ***!
-  \***************************************************************************/
+/*!************************************************************************!*\
+  !*** D:/cjindex/uni_modules/uview-ui/libs/luch-request/utils/clone.js ***!
+  \************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -10986,7 +10986,7 @@ var clone = function () {
 }();
 var _default = clone;
 exports.default = _default;
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../../../../../../../Hbuilder/HBuilderX/plugins/uniapp-cli/node_modules/buffer/index.js */ 52).Buffer))
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../../../../../../HBuilderX/HBuilderX/plugins/uniapp-cli/node_modules/buffer/index.js */ 52).Buffer))
 
 /***/ }),
 /* 52 */
@@ -13062,9 +13062,9 @@ module.exports = Array.isArray || function (arr) {
 
 /***/ }),
 /* 56 */
-/*!*************************************************************!*\
-  !*** D:/项目/cjindex/uni_modules/uview-ui/libs/util/route.js ***!
-  \*************************************************************/
+/*!**********************************************************!*\
+  !*** D:/cjindex/uni_modules/uview-ui/libs/util/route.js ***!
+  \**********************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -13624,9 +13624,9 @@ module.exports = _asyncToGenerator, module.exports.__esModule = true, module.exp
 
 /***/ }),
 /* 60 */
-/*!*************************************************************************!*\
-  !*** D:/项目/cjindex/uni_modules/uview-ui/libs/function/colorGradient.js ***!
-  \*************************************************************************/
+/*!**********************************************************************!*\
+  !*** D:/cjindex/uni_modules/uview-ui/libs/function/colorGradient.js ***!
+  \**********************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -13779,9 +13779,9 @@ exports.default = _default;
 
 /***/ }),
 /* 61 */
-/*!****************************************************************!*\
-  !*** D:/项目/cjindex/uni_modules/uview-ui/libs/function/test.js ***!
-  \****************************************************************/
+/*!*************************************************************!*\
+  !*** D:/cjindex/uni_modules/uview-ui/libs/function/test.js ***!
+  \*************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -14084,9 +14084,9 @@ exports.default = _default;
 
 /***/ }),
 /* 62 */
-/*!********************************************************************!*\
-  !*** D:/项目/cjindex/uni_modules/uview-ui/libs/function/debounce.js ***!
-  \********************************************************************/
+/*!*****************************************************************!*\
+  !*** D:/cjindex/uni_modules/uview-ui/libs/function/debounce.js ***!
+  \*****************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -14131,9 +14131,9 @@ exports.default = _default;
 
 /***/ }),
 /* 63 */
-/*!********************************************************************!*\
-  !*** D:/项目/cjindex/uni_modules/uview-ui/libs/function/throttle.js ***!
-  \********************************************************************/
+/*!*****************************************************************!*\
+  !*** D:/cjindex/uni_modules/uview-ui/libs/function/throttle.js ***!
+  \*****************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -14180,9 +14180,9 @@ exports.default = _default;
 
 /***/ }),
 /* 64 */
-/*!*****************************************************************!*\
-  !*** D:/项目/cjindex/uni_modules/uview-ui/libs/function/index.js ***!
-  \*****************************************************************/
+/*!**************************************************************!*\
+  !*** D:/cjindex/uni_modules/uview-ui/libs/function/index.js ***!
+  \**************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -14981,9 +14981,9 @@ exports.default = _default;
 
 /***/ }),
 /* 65 */
-/*!*****************************************************************!*\
-  !*** D:/项目/cjindex/uni_modules/uview-ui/libs/function/digit.js ***!
-  \*****************************************************************/
+/*!**************************************************************!*\
+  !*** D:/cjindex/uni_modules/uview-ui/libs/function/digit.js ***!
+  \**************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -15200,9 +15200,9 @@ module.exports = _toArray, module.exports.__esModule = true, module.exports["def
 
 /***/ }),
 /* 67 */
-/*!****************************************************************!*\
-  !*** D:/项目/cjindex/uni_modules/uview-ui/libs/config/config.js ***!
-  \****************************************************************/
+/*!*************************************************************!*\
+  !*** D:/cjindex/uni_modules/uview-ui/libs/config/config.js ***!
+  \*************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -15244,9 +15244,9 @@ exports.default = _default;
 
 /***/ }),
 /* 68 */
-/*!***************************************************************!*\
-  !*** D:/项目/cjindex/uni_modules/uview-ui/libs/config/props.js ***!
-  \***************************************************************/
+/*!************************************************************!*\
+  !*** D:/cjindex/uni_modules/uview-ui/libs/config/props.js ***!
+  \************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -15356,9 +15356,9 @@ exports.default = _default;
 
 /***/ }),
 /* 69 */
-/*!***************************************************************************!*\
-  !*** D:/项目/cjindex/uni_modules/uview-ui/libs/config/props/actionSheet.js ***!
-  \***************************************************************************/
+/*!************************************************************************!*\
+  !*** D:/cjindex/uni_modules/uview-ui/libs/config/props/actionSheet.js ***!
+  \************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -15400,9 +15400,9 @@ exports.default = _default;
 
 /***/ }),
 /* 70 */
-/*!*********************************************************************!*\
-  !*** D:/项目/cjindex/uni_modules/uview-ui/libs/config/props/album.js ***!
-  \*********************************************************************/
+/*!******************************************************************!*\
+  !*** D:/cjindex/uni_modules/uview-ui/libs/config/props/album.js ***!
+  \******************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -15444,9 +15444,9 @@ exports.default = _default;
 
 /***/ }),
 /* 71 */
-/*!*********************************************************************!*\
-  !*** D:/项目/cjindex/uni_modules/uview-ui/libs/config/props/alert.js ***!
-  \*********************************************************************/
+/*!******************************************************************!*\
+  !*** D:/cjindex/uni_modules/uview-ui/libs/config/props/alert.js ***!
+  \******************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -15483,9 +15483,9 @@ exports.default = _default;
 
 /***/ }),
 /* 72 */
-/*!**********************************************************************!*\
-  !*** D:/项目/cjindex/uni_modules/uview-ui/libs/config/props/avatar.js ***!
-  \**********************************************************************/
+/*!*******************************************************************!*\
+  !*** D:/cjindex/uni_modules/uview-ui/libs/config/props/avatar.js ***!
+  \*******************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -15528,9 +15528,9 @@ exports.default = _default;
 
 /***/ }),
 /* 73 */
-/*!***************************************************************************!*\
-  !*** D:/项目/cjindex/uni_modules/uview-ui/libs/config/props/avatarGroup.js ***!
-  \***************************************************************************/
+/*!************************************************************************!*\
+  !*** D:/cjindex/uni_modules/uview-ui/libs/config/props/avatarGroup.js ***!
+  \************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -15570,9 +15570,9 @@ exports.default = _default;
 
 /***/ }),
 /* 74 */
-/*!***********************************************************************!*\
-  !*** D:/项目/cjindex/uni_modules/uview-ui/libs/config/props/backtop.js ***!
-  \***********************************************************************/
+/*!********************************************************************!*\
+  !*** D:/cjindex/uni_modules/uview-ui/libs/config/props/backtop.js ***!
+  \********************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -15616,9 +15616,9 @@ exports.default = _default;
 
 /***/ }),
 /* 75 */
-/*!*********************************************************************!*\
-  !*** D:/项目/cjindex/uni_modules/uview-ui/libs/config/props/badge.js ***!
-  \*********************************************************************/
+/*!******************************************************************!*\
+  !*** D:/cjindex/uni_modules/uview-ui/libs/config/props/badge.js ***!
+  \******************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -15662,9 +15662,9 @@ exports.default = _default;
 
 /***/ }),
 /* 76 */
-/*!**********************************************************************!*\
-  !*** D:/项目/cjindex/uni_modules/uview-ui/libs/config/props/button.js ***!
-  \**********************************************************************/
+/*!*******************************************************************!*\
+  !*** D:/cjindex/uni_modules/uview-ui/libs/config/props/button.js ***!
+  \*******************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -15721,9 +15721,9 @@ exports.default = _default;
 
 /***/ }),
 /* 77 */
-/*!************************************************************************!*\
-  !*** D:/项目/cjindex/uni_modules/uview-ui/libs/config/props/calendar.js ***!
-  \************************************************************************/
+/*!*********************************************************************!*\
+  !*** D:/cjindex/uni_modules/uview-ui/libs/config/props/calendar.js ***!
+  \*********************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -15784,9 +15784,9 @@ exports.default = _default;
 
 /***/ }),
 /* 78 */
-/*!***************************************************************************!*\
-  !*** D:/项目/cjindex/uni_modules/uview-ui/libs/config/props/carKeyboard.js ***!
-  \***************************************************************************/
+/*!************************************************************************!*\
+  !*** D:/cjindex/uni_modules/uview-ui/libs/config/props/carKeyboard.js ***!
+  \************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -15816,9 +15816,9 @@ exports.default = _default;
 
 /***/ }),
 /* 79 */
-/*!********************************************************************!*\
-  !*** D:/项目/cjindex/uni_modules/uview-ui/libs/config/props/cell.js ***!
-  \********************************************************************/
+/*!*****************************************************************!*\
+  !*** D:/cjindex/uni_modules/uview-ui/libs/config/props/cell.js ***!
+  \*****************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -15868,9 +15868,9 @@ exports.default = _default;
 
 /***/ }),
 /* 80 */
-/*!*************************************************************************!*\
-  !*** D:/项目/cjindex/uni_modules/uview-ui/libs/config/props/cellGroup.js ***!
-  \*************************************************************************/
+/*!**********************************************************************!*\
+  !*** D:/cjindex/uni_modules/uview-ui/libs/config/props/cellGroup.js ***!
+  \**********************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -15902,9 +15902,9 @@ exports.default = _default;
 
 /***/ }),
 /* 81 */
-/*!************************************************************************!*\
-  !*** D:/项目/cjindex/uni_modules/uview-ui/libs/config/props/checkbox.js ***!
-  \************************************************************************/
+/*!*********************************************************************!*\
+  !*** D:/cjindex/uni_modules/uview-ui/libs/config/props/checkbox.js ***!
+  \*********************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -15946,9 +15946,9 @@ exports.default = _default;
 
 /***/ }),
 /* 82 */
-/*!*****************************************************************************!*\
-  !*** D:/项目/cjindex/uni_modules/uview-ui/libs/config/props/checkboxGroup.js ***!
-  \*****************************************************************************/
+/*!**************************************************************************!*\
+  !*** D:/cjindex/uni_modules/uview-ui/libs/config/props/checkboxGroup.js ***!
+  \**************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -15994,9 +15994,9 @@ exports.default = _default;
 
 /***/ }),
 /* 83 */
-/*!******************************************************************************!*\
-  !*** D:/项目/cjindex/uni_modules/uview-ui/libs/config/props/circleProgress.js ***!
-  \******************************************************************************/
+/*!***************************************************************************!*\
+  !*** D:/cjindex/uni_modules/uview-ui/libs/config/props/circleProgress.js ***!
+  \***************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -16026,9 +16026,9 @@ exports.default = _default;
 
 /***/ }),
 /* 84 */
-/*!********************************************************************!*\
-  !*** D:/项目/cjindex/uni_modules/uview-ui/libs/config/props/code.js ***!
-  \********************************************************************/
+/*!*****************************************************************!*\
+  !*** D:/cjindex/uni_modules/uview-ui/libs/config/props/code.js ***!
+  \*****************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -16063,9 +16063,9 @@ exports.default = _default;
 
 /***/ }),
 /* 85 */
-/*!*************************************************************************!*\
-  !*** D:/项目/cjindex/uni_modules/uview-ui/libs/config/props/codeInput.js ***!
-  \*************************************************************************/
+/*!**********************************************************************!*\
+  !*** D:/cjindex/uni_modules/uview-ui/libs/config/props/codeInput.js ***!
+  \**********************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -16109,9 +16109,9 @@ exports.default = _default;
 
 /***/ }),
 /* 86 */
-/*!*******************************************************************!*\
-  !*** D:/项目/cjindex/uni_modules/uview-ui/libs/config/props/col.js ***!
-  \*******************************************************************/
+/*!****************************************************************!*\
+  !*** D:/cjindex/uni_modules/uview-ui/libs/config/props/col.js ***!
+  \****************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -16145,9 +16145,9 @@ exports.default = _default;
 
 /***/ }),
 /* 87 */
-/*!************************************************************************!*\
-  !*** D:/项目/cjindex/uni_modules/uview-ui/libs/config/props/collapse.js ***!
-  \************************************************************************/
+/*!*********************************************************************!*\
+  !*** D:/cjindex/uni_modules/uview-ui/libs/config/props/collapse.js ***!
+  \*********************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -16179,9 +16179,9 @@ exports.default = _default;
 
 /***/ }),
 /* 88 */
-/*!****************************************************************************!*\
-  !*** D:/项目/cjindex/uni_modules/uview-ui/libs/config/props/collapseItem.js ***!
-  \****************************************************************************/
+/*!*************************************************************************!*\
+  !*** D:/cjindex/uni_modules/uview-ui/libs/config/props/collapseItem.js ***!
+  \*************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -16221,9 +16221,9 @@ exports.default = _default;
 
 /***/ }),
 /* 89 */
-/*!****************************************************************************!*\
-  !*** D:/项目/cjindex/uni_modules/uview-ui/libs/config/props/columnNotice.js ***!
-  \****************************************************************************/
+/*!*************************************************************************!*\
+  !*** D:/cjindex/uni_modules/uview-ui/libs/config/props/columnNotice.js ***!
+  \*************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -16262,9 +16262,9 @@ exports.default = _default;
 
 /***/ }),
 /* 90 */
-/*!*************************************************************************!*\
-  !*** D:/项目/cjindex/uni_modules/uview-ui/libs/config/props/countDown.js ***!
-  \*************************************************************************/
+/*!**********************************************************************!*\
+  !*** D:/cjindex/uni_modules/uview-ui/libs/config/props/countDown.js ***!
+  \**********************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -16297,9 +16297,9 @@ exports.default = _default;
 
 /***/ }),
 /* 91 */
-/*!***********************************************************************!*\
-  !*** D:/项目/cjindex/uni_modules/uview-ui/libs/config/props/countTo.js ***!
-  \***********************************************************************/
+/*!********************************************************************!*\
+  !*** D:/cjindex/uni_modules/uview-ui/libs/config/props/countTo.js ***!
+  \********************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -16339,9 +16339,9 @@ exports.default = _default;
 
 /***/ }),
 /* 92 */
-/*!******************************************************************************!*\
-  !*** D:/项目/cjindex/uni_modules/uview-ui/libs/config/props/datetimePicker.js ***!
-  \******************************************************************************/
+/*!***************************************************************************!*\
+  !*** D:/cjindex/uni_modules/uview-ui/libs/config/props/datetimePicker.js ***!
+  \***************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -16394,9 +16394,9 @@ exports.default = _default;
 
 /***/ }),
 /* 93 */
-/*!***********************************************************************!*\
-  !*** D:/项目/cjindex/uni_modules/uview-ui/libs/config/props/divider.js ***!
-  \***********************************************************************/
+/*!********************************************************************!*\
+  !*** D:/cjindex/uni_modules/uview-ui/libs/config/props/divider.js ***!
+  \********************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -16433,9 +16433,9 @@ exports.default = _default;
 
 /***/ }),
 /* 94 */
-/*!*********************************************************************!*\
-  !*** D:/项目/cjindex/uni_modules/uview-ui/libs/config/props/empty.js ***!
-  \*********************************************************************/
+/*!******************************************************************!*\
+  !*** D:/cjindex/uni_modules/uview-ui/libs/config/props/empty.js ***!
+  \******************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -16475,9 +16475,9 @@ exports.default = _default;
 
 /***/ }),
 /* 95 */
-/*!********************************************************************!*\
-  !*** D:/项目/cjindex/uni_modules/uview-ui/libs/config/props/form.js ***!
-  \********************************************************************/
+/*!*****************************************************************!*\
+  !*** D:/cjindex/uni_modules/uview-ui/libs/config/props/form.js ***!
+  \*****************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -16520,9 +16520,9 @@ exports.default = _default;
 
 /***/ }),
 /* 96 */
-/*!************************************************************************!*\
-  !*** D:/项目/cjindex/uni_modules/uview-ui/libs/config/props/formItem.js ***!
-  \************************************************************************/
+/*!*********************************************************************!*\
+  !*** D:/cjindex/uni_modules/uview-ui/libs/config/props/formItem.js ***!
+  \*********************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -16560,9 +16560,9 @@ exports.default = _default;
 
 /***/ }),
 /* 97 */
-/*!*******************************************************************!*\
-  !*** D:/项目/cjindex/uni_modules/uview-ui/libs/config/props/gap.js ***!
-  \*******************************************************************/
+/*!****************************************************************!*\
+  !*** D:/cjindex/uni_modules/uview-ui/libs/config/props/gap.js ***!
+  \****************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -16596,9 +16596,9 @@ exports.default = _default;
 
 /***/ }),
 /* 98 */
-/*!********************************************************************!*\
-  !*** D:/项目/cjindex/uni_modules/uview-ui/libs/config/props/grid.js ***!
-  \********************************************************************/
+/*!*****************************************************************!*\
+  !*** D:/cjindex/uni_modules/uview-ui/libs/config/props/grid.js ***!
+  \*****************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -16630,9 +16630,9 @@ exports.default = _default;
 
 /***/ }),
 /* 99 */
-/*!************************************************************************!*\
-  !*** D:/项目/cjindex/uni_modules/uview-ui/libs/config/props/gridItem.js ***!
-  \************************************************************************/
+/*!*********************************************************************!*\
+  !*** D:/cjindex/uni_modules/uview-ui/libs/config/props/gridItem.js ***!
+  \*********************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -16663,9 +16663,9 @@ exports.default = _default;
 
 /***/ }),
 /* 100 */
-/*!********************************************************************!*\
-  !*** D:/项目/cjindex/uni_modules/uview-ui/libs/config/props/icon.js ***!
-  \********************************************************************/
+/*!*****************************************************************!*\
+  !*** D:/cjindex/uni_modules/uview-ui/libs/config/props/icon.js ***!
+  \*****************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -16715,9 +16715,9 @@ exports.default = _default;
 
 /***/ }),
 /* 101 */
-/*!*********************************************************************!*\
-  !*** D:/项目/cjindex/uni_modules/uview-ui/libs/config/props/image.js ***!
-  \*********************************************************************/
+/*!******************************************************************!*\
+  !*** D:/cjindex/uni_modules/uview-ui/libs/config/props/image.js ***!
+  \******************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -16762,9 +16762,9 @@ exports.default = _default;
 
 /***/ }),
 /* 102 */
-/*!***************************************************************************!*\
-  !*** D:/项目/cjindex/uni_modules/uview-ui/libs/config/props/indexAnchor.js ***!
-  \***************************************************************************/
+/*!************************************************************************!*\
+  !*** D:/cjindex/uni_modules/uview-ui/libs/config/props/indexAnchor.js ***!
+  \************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -16798,9 +16798,9 @@ exports.default = _default;
 
 /***/ }),
 /* 103 */
-/*!*************************************************************************!*\
-  !*** D:/项目/cjindex/uni_modules/uview-ui/libs/config/props/indexList.js ***!
-  \*************************************************************************/
+/*!**********************************************************************!*\
+  !*** D:/cjindex/uni_modules/uview-ui/libs/config/props/indexList.js ***!
+  \**********************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -16836,9 +16836,9 @@ exports.default = _default;
 
 /***/ }),
 /* 104 */
-/*!*********************************************************************!*\
-  !*** D:/项目/cjindex/uni_modules/uview-ui/libs/config/props/input.js ***!
-  \*********************************************************************/
+/*!******************************************************************!*\
+  !*** D:/cjindex/uni_modules/uview-ui/libs/config/props/input.js ***!
+  \******************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -16901,9 +16901,9 @@ exports.default = _default;
 
 /***/ }),
 /* 105 */
-/*!************************************************************************!*\
-  !*** D:/项目/cjindex/uni_modules/uview-ui/libs/config/props/keyboard.js ***!
-  \************************************************************************/
+/*!*********************************************************************!*\
+  !*** D:/cjindex/uni_modules/uview-ui/libs/config/props/keyboard.js ***!
+  \*********************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -16948,9 +16948,9 @@ exports.default = _default;
 
 /***/ }),
 /* 106 */
-/*!********************************************************************!*\
-  !*** D:/项目/cjindex/uni_modules/uview-ui/libs/config/props/line.js ***!
-  \********************************************************************/
+/*!*****************************************************************!*\
+  !*** D:/cjindex/uni_modules/uview-ui/libs/config/props/line.js ***!
+  \*****************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -16985,9 +16985,9 @@ exports.default = _default;
 
 /***/ }),
 /* 107 */
-/*!****************************************************************************!*\
-  !*** D:/项目/cjindex/uni_modules/uview-ui/libs/config/props/lineProgress.js ***!
-  \****************************************************************************/
+/*!*************************************************************************!*\
+  !*** D:/cjindex/uni_modules/uview-ui/libs/config/props/lineProgress.js ***!
+  \*************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -17021,9 +17021,9 @@ exports.default = _default;
 
 /***/ }),
 /* 108 */
-/*!********************************************************************!*\
-  !*** D:/项目/cjindex/uni_modules/uview-ui/libs/config/props/link.js ***!
-  \********************************************************************/
+/*!*****************************************************************!*\
+  !*** D:/cjindex/uni_modules/uview-ui/libs/config/props/link.js ***!
+  \*****************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -17063,9 +17063,9 @@ exports.default = _default;
 
 /***/ }),
 /* 109 */
-/*!********************************************************************!*\
-  !*** D:/项目/cjindex/uni_modules/uview-ui/libs/config/props/list.js ***!
-  \********************************************************************/
+/*!*****************************************************************!*\
+  !*** D:/cjindex/uni_modules/uview-ui/libs/config/props/list.js ***!
+  \*****************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -17108,9 +17108,9 @@ exports.default = _default;
 
 /***/ }),
 /* 110 */
-/*!************************************************************************!*\
-  !*** D:/项目/cjindex/uni_modules/uview-ui/libs/config/props/listItem.js ***!
-  \************************************************************************/
+/*!*********************************************************************!*\
+  !*** D:/cjindex/uni_modules/uview-ui/libs/config/props/listItem.js ***!
+  \*********************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -17140,9 +17140,9 @@ exports.default = _default;
 
 /***/ }),
 /* 111 */
-/*!***************************************************************************!*\
-  !*** D:/项目/cjindex/uni_modules/uview-ui/libs/config/props/loadingIcon.js ***!
-  \***************************************************************************/
+/*!************************************************************************!*\
+  !*** D:/cjindex/uni_modules/uview-ui/libs/config/props/loadingIcon.js ***!
+  \************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -17186,9 +17186,9 @@ exports.default = _default;
 
 /***/ }),
 /* 112 */
-/*!***************************************************************************!*\
-  !*** D:/项目/cjindex/uni_modules/uview-ui/libs/config/props/loadingPage.js ***!
-  \***************************************************************************/
+/*!************************************************************************!*\
+  !*** D:/cjindex/uni_modules/uview-ui/libs/config/props/loadingPage.js ***!
+  \************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -17226,9 +17226,9 @@ exports.default = _default;
 
 /***/ }),
 /* 113 */
-/*!************************************************************************!*\
-  !*** D:/项目/cjindex/uni_modules/uview-ui/libs/config/props/loadmore.js ***!
-  \************************************************************************/
+/*!*********************************************************************!*\
+  !*** D:/cjindex/uni_modules/uview-ui/libs/config/props/loadmore.js ***!
+  \*********************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -17275,9 +17275,9 @@ exports.default = _default;
 
 /***/ }),
 /* 114 */
-/*!*********************************************************************!*\
-  !*** D:/项目/cjindex/uni_modules/uview-ui/libs/config/props/modal.js ***!
-  \*********************************************************************/
+/*!******************************************************************!*\
+  !*** D:/cjindex/uni_modules/uview-ui/libs/config/props/modal.js ***!
+  \******************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -17323,9 +17323,9 @@ exports.default = _default;
 
 /***/ }),
 /* 115 */
-/*!**********************************************************************!*\
-  !*** D:/项目/cjindex/uni_modules/uview-ui/libs/config/props/navbar.js ***!
-  \**********************************************************************/
+/*!*******************************************************************!*\
+  !*** D:/cjindex/uni_modules/uview-ui/libs/config/props/navbar.js ***!
+  \*******************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -17372,9 +17372,9 @@ exports.default = _default;
 
 /***/ }),
 /* 116 */
-/*!***************************************************************!*\
-  !*** D:/项目/cjindex/uni_modules/uview-ui/libs/config/color.js ***!
-  \***************************************************************/
+/*!************************************************************!*\
+  !*** D:/cjindex/uni_modules/uview-ui/libs/config/color.js ***!
+  \************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -17405,9 +17405,9 @@ exports.default = _default;
 
 /***/ }),
 /* 117 */
-/*!*************************************************************************!*\
-  !*** D:/项目/cjindex/uni_modules/uview-ui/libs/config/props/noNetwork.js ***!
-  \*************************************************************************/
+/*!**********************************************************************!*\
+  !*** D:/cjindex/uni_modules/uview-ui/libs/config/props/noNetwork.js ***!
+  \**********************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -17439,9 +17439,9 @@ exports.default = _default;
 
 /***/ }),
 /* 118 */
-/*!*************************************************************************!*\
-  !*** D:/项目/cjindex/uni_modules/uview-ui/libs/config/props/noticeBar.js ***!
-  \*************************************************************************/
+/*!**********************************************************************!*\
+  !*** D:/cjindex/uni_modules/uview-ui/libs/config/props/noticeBar.js ***!
+  \**********************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -17485,9 +17485,9 @@ exports.default = _default;
 
 /***/ }),
 /* 119 */
-/*!**********************************************************************!*\
-  !*** D:/项目/cjindex/uni_modules/uview-ui/libs/config/props/notify.js ***!
-  \**********************************************************************/
+/*!*******************************************************************!*\
+  !*** D:/cjindex/uni_modules/uview-ui/libs/config/props/notify.js ***!
+  \*******************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -17524,9 +17524,9 @@ exports.default = _default;
 
 /***/ }),
 /* 120 */
-/*!*************************************************************************!*\
-  !*** D:/项目/cjindex/uni_modules/uview-ui/libs/config/props/numberBox.js ***!
-  \*************************************************************************/
+/*!**********************************************************************!*\
+  !*** D:/cjindex/uni_modules/uview-ui/libs/config/props/numberBox.js ***!
+  \**********************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -17576,9 +17576,9 @@ exports.default = _default;
 
 /***/ }),
 /* 121 */
-/*!******************************************************************************!*\
-  !*** D:/项目/cjindex/uni_modules/uview-ui/libs/config/props/numberKeyboard.js ***!
-  \******************************************************************************/
+/*!***************************************************************************!*\
+  !*** D:/cjindex/uni_modules/uview-ui/libs/config/props/numberKeyboard.js ***!
+  \***************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -17610,9 +17610,9 @@ exports.default = _default;
 
 /***/ }),
 /* 122 */
-/*!***********************************************************************!*\
-  !*** D:/项目/cjindex/uni_modules/uview-ui/libs/config/props/overlay.js ***!
-  \***********************************************************************/
+/*!********************************************************************!*\
+  !*** D:/cjindex/uni_modules/uview-ui/libs/config/props/overlay.js ***!
+  \********************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -17645,9 +17645,9 @@ exports.default = _default;
 
 /***/ }),
 /* 123 */
-/*!*********************************************************************!*\
-  !*** D:/项目/cjindex/uni_modules/uview-ui/libs/config/props/parse.js ***!
-  \*********************************************************************/
+/*!******************************************************************!*\
+  !*** D:/cjindex/uni_modules/uview-ui/libs/config/props/parse.js ***!
+  \******************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -17684,9 +17684,9 @@ exports.default = _default;
 
 /***/ }),
 /* 124 */
-/*!**********************************************************************!*\
-  !*** D:/项目/cjindex/uni_modules/uview-ui/libs/config/props/picker.js ***!
-  \**********************************************************************/
+/*!*******************************************************************!*\
+  !*** D:/cjindex/uni_modules/uview-ui/libs/config/props/picker.js ***!
+  \*******************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -17734,9 +17734,9 @@ exports.default = _default;
 
 /***/ }),
 /* 125 */
-/*!*********************************************************************!*\
-  !*** D:/项目/cjindex/uni_modules/uview-ui/libs/config/props/popup.js ***!
-  \*********************************************************************/
+/*!******************************************************************!*\
+  !*** D:/cjindex/uni_modules/uview-ui/libs/config/props/popup.js ***!
+  \******************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -17780,9 +17780,9 @@ exports.default = _default;
 
 /***/ }),
 /* 126 */
-/*!*********************************************************************!*\
-  !*** D:/项目/cjindex/uni_modules/uview-ui/libs/config/props/radio.js ***!
-  \*********************************************************************/
+/*!******************************************************************!*\
+  !*** D:/cjindex/uni_modules/uview-ui/libs/config/props/radio.js ***!
+  \******************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -17824,9 +17824,9 @@ exports.default = _default;
 
 /***/ }),
 /* 127 */
-/*!**************************************************************************!*\
-  !*** D:/项目/cjindex/uni_modules/uview-ui/libs/config/props/radioGroup.js ***!
-  \**************************************************************************/
+/*!***********************************************************************!*\
+  !*** D:/cjindex/uni_modules/uview-ui/libs/config/props/radioGroup.js ***!
+  \***********************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -17871,9 +17871,9 @@ exports.default = _default;
 
 /***/ }),
 /* 128 */
-/*!********************************************************************!*\
-  !*** D:/项目/cjindex/uni_modules/uview-ui/libs/config/props/rate.js ***!
-  \********************************************************************/
+/*!*****************************************************************!*\
+  !*** D:/cjindex/uni_modules/uview-ui/libs/config/props/rate.js ***!
+  \*****************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -17914,9 +17914,9 @@ exports.default = _default;
 
 /***/ }),
 /* 129 */
-/*!************************************************************************!*\
-  !*** D:/项目/cjindex/uni_modules/uview-ui/libs/config/props/readMore.js ***!
-  \************************************************************************/
+/*!*********************************************************************!*\
+  !*** D:/cjindex/uni_modules/uview-ui/libs/config/props/readMore.js ***!
+  \*********************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -17953,9 +17953,9 @@ exports.default = _default;
 
 /***/ }),
 /* 130 */
-/*!*******************************************************************!*\
-  !*** D:/项目/cjindex/uni_modules/uview-ui/libs/config/props/row.js ***!
-  \*******************************************************************/
+/*!****************************************************************!*\
+  !*** D:/cjindex/uni_modules/uview-ui/libs/config/props/row.js ***!
+  \****************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -17987,9 +17987,9 @@ exports.default = _default;
 
 /***/ }),
 /* 131 */
-/*!*************************************************************************!*\
-  !*** D:/项目/cjindex/uni_modules/uview-ui/libs/config/props/rowNotice.js ***!
-  \*************************************************************************/
+/*!**********************************************************************!*\
+  !*** D:/cjindex/uni_modules/uview-ui/libs/config/props/rowNotice.js ***!
+  \**********************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -18025,9 +18025,9 @@ exports.default = _default;
 
 /***/ }),
 /* 132 */
-/*!**************************************************************************!*\
-  !*** D:/项目/cjindex/uni_modules/uview-ui/libs/config/props/scrollList.js ***!
-  \**************************************************************************/
+/*!***********************************************************************!*\
+  !*** D:/cjindex/uni_modules/uview-ui/libs/config/props/scrollList.js ***!
+  \***********************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -18062,9 +18062,9 @@ exports.default = _default;
 
 /***/ }),
 /* 133 */
-/*!**********************************************************************!*\
-  !*** D:/项目/cjindex/uni_modules/uview-ui/libs/config/props/search.js ***!
-  \**********************************************************************/
+/*!*******************************************************************!*\
+  !*** D:/cjindex/uni_modules/uview-ui/libs/config/props/search.js ***!
+  \*******************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -18120,9 +18120,9 @@ exports.default = _default;
 
 /***/ }),
 /* 134 */
-/*!***********************************************************************!*\
-  !*** D:/项目/cjindex/uni_modules/uview-ui/libs/config/props/section.js ***!
-  \***********************************************************************/
+/*!********************************************************************!*\
+  !*** D:/cjindex/uni_modules/uview-ui/libs/config/props/section.js ***!
+  \********************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -18161,9 +18161,9 @@ exports.default = _default;
 
 /***/ }),
 /* 135 */
-/*!************************************************************************!*\
-  !*** D:/项目/cjindex/uni_modules/uview-ui/libs/config/props/skeleton.js ***!
-  \************************************************************************/
+/*!*********************************************************************!*\
+  !*** D:/cjindex/uni_modules/uview-ui/libs/config/props/skeleton.js ***!
+  \*********************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -18203,9 +18203,9 @@ exports.default = _default;
 
 /***/ }),
 /* 136 */
-/*!**********************************************************************!*\
-  !*** D:/项目/cjindex/uni_modules/uview-ui/libs/config/props/slider.js ***!
-  \**********************************************************************/
+/*!*******************************************************************!*\
+  !*** D:/cjindex/uni_modules/uview-ui/libs/config/props/slider.js ***!
+  \*******************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -18245,9 +18245,9 @@ exports.default = _default;
 
 /***/ }),
 /* 137 */
-/*!*************************************************************************!*\
-  !*** D:/项目/cjindex/uni_modules/uview-ui/libs/config/props/statusBar.js ***!
-  \*************************************************************************/
+/*!**********************************************************************!*\
+  !*** D:/cjindex/uni_modules/uview-ui/libs/config/props/statusBar.js ***!
+  \**********************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -18277,9 +18277,9 @@ exports.default = _default;
 
 /***/ }),
 /* 138 */
-/*!*********************************************************************!*\
-  !*** D:/项目/cjindex/uni_modules/uview-ui/libs/config/props/steps.js ***!
-  \*********************************************************************/
+/*!******************************************************************!*\
+  !*** D:/cjindex/uni_modules/uview-ui/libs/config/props/steps.js ***!
+  \******************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -18315,9 +18315,9 @@ exports.default = _default;
 
 /***/ }),
 /* 139 */
-/*!*************************************************************************!*\
-  !*** D:/项目/cjindex/uni_modules/uview-ui/libs/config/props/stepsItem.js ***!
-  \*************************************************************************/
+/*!**********************************************************************!*\
+  !*** D:/cjindex/uni_modules/uview-ui/libs/config/props/stepsItem.js ***!
+  \**********************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -18350,9 +18350,9 @@ exports.default = _default;
 
 /***/ }),
 /* 140 */
-/*!**********************************************************************!*\
-  !*** D:/项目/cjindex/uni_modules/uview-ui/libs/config/props/sticky.js ***!
-  \**********************************************************************/
+/*!*******************************************************************!*\
+  !*** D:/cjindex/uni_modules/uview-ui/libs/config/props/sticky.js ***!
+  \*******************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -18387,9 +18387,9 @@ exports.default = _default;
 
 /***/ }),
 /* 141 */
-/*!**************************************************************************!*\
-  !*** D:/项目/cjindex/uni_modules/uview-ui/libs/config/props/subsection.js ***!
-  \**************************************************************************/
+/*!***********************************************************************!*\
+  !*** D:/cjindex/uni_modules/uview-ui/libs/config/props/subsection.js ***!
+  \***********************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -18427,9 +18427,9 @@ exports.default = _default;
 
 /***/ }),
 /* 142 */
-/*!***************************************************************************!*\
-  !*** D:/项目/cjindex/uni_modules/uview-ui/libs/config/props/swipeAction.js ***!
-  \***************************************************************************/
+/*!************************************************************************!*\
+  !*** D:/cjindex/uni_modules/uview-ui/libs/config/props/swipeAction.js ***!
+  \************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -18459,9 +18459,9 @@ exports.default = _default;
 
 /***/ }),
 /* 143 */
-/*!*******************************************************************************!*\
-  !*** D:/项目/cjindex/uni_modules/uview-ui/libs/config/props/swipeActionItem.js ***!
-  \*******************************************************************************/
+/*!****************************************************************************!*\
+  !*** D:/cjindex/uni_modules/uview-ui/libs/config/props/swipeActionItem.js ***!
+  \****************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -18497,9 +18497,9 @@ exports.default = _default;
 
 /***/ }),
 /* 144 */
-/*!**********************************************************************!*\
-  !*** D:/项目/cjindex/uni_modules/uview-ui/libs/config/props/swiper.js ***!
-  \**********************************************************************/
+/*!*******************************************************************!*\
+  !*** D:/cjindex/uni_modules/uview-ui/libs/config/props/swiper.js ***!
+  \*******************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -18554,9 +18554,9 @@ exports.default = _default;
 
 /***/ }),
 /* 145 */
-/*!********************************************************************************!*\
-  !*** D:/项目/cjindex/uni_modules/uview-ui/libs/config/props/swipterIndicator.js ***!
-  \********************************************************************************/
+/*!*****************************************************************************!*\
+  !*** D:/cjindex/uni_modules/uview-ui/libs/config/props/swipterIndicator.js ***!
+  \*****************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -18590,9 +18590,9 @@ exports.default = _default;
 
 /***/ }),
 /* 146 */
-/*!**********************************************************************!*\
-  !*** D:/项目/cjindex/uni_modules/uview-ui/libs/config/props/switch.js ***!
-  \**********************************************************************/
+/*!*******************************************************************!*\
+  !*** D:/cjindex/uni_modules/uview-ui/libs/config/props/switch.js ***!
+  \*******************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -18631,9 +18631,9 @@ exports.default = _default;
 
 /***/ }),
 /* 147 */
-/*!**********************************************************************!*\
-  !*** D:/项目/cjindex/uni_modules/uview-ui/libs/config/props/tabbar.js ***!
-  \**********************************************************************/
+/*!*******************************************************************!*\
+  !*** D:/cjindex/uni_modules/uview-ui/libs/config/props/tabbar.js ***!
+  \*******************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -18670,9 +18670,9 @@ exports.default = _default;
 
 /***/ }),
 /* 148 */
-/*!**************************************************************************!*\
-  !*** D:/项目/cjindex/uni_modules/uview-ui/libs/config/props/tabbarItem.js ***!
-  \**************************************************************************/
+/*!***********************************************************************!*\
+  !*** D:/cjindex/uni_modules/uview-ui/libs/config/props/tabbarItem.js ***!
+  \***********************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -18707,9 +18707,9 @@ exports.default = _default;
 
 /***/ }),
 /* 149 */
-/*!********************************************************************!*\
-  !*** D:/项目/cjindex/uni_modules/uview-ui/libs/config/props/tabs.js ***!
-  \********************************************************************/
+/*!*****************************************************************!*\
+  !*** D:/cjindex/uni_modules/uview-ui/libs/config/props/tabs.js ***!
+  \*****************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -18764,9 +18764,9 @@ exports.default = _default;
 
 /***/ }),
 /* 150 */
-/*!*******************************************************************!*\
-  !*** D:/项目/cjindex/uni_modules/uview-ui/libs/config/props/tag.js ***!
-  \*******************************************************************/
+/*!****************************************************************!*\
+  !*** D:/cjindex/uni_modules/uview-ui/libs/config/props/tag.js ***!
+  \****************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -18810,9 +18810,9 @@ exports.default = _default;
 
 /***/ }),
 /* 151 */
-/*!********************************************************************!*\
-  !*** D:/项目/cjindex/uni_modules/uview-ui/libs/config/props/text.js ***!
-  \********************************************************************/
+/*!*****************************************************************!*\
+  !*** D:/cjindex/uni_modules/uview-ui/libs/config/props/text.js ***!
+  \*****************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -18866,9 +18866,9 @@ exports.default = _default;
 
 /***/ }),
 /* 152 */
-/*!************************************************************************!*\
-  !*** D:/项目/cjindex/uni_modules/uview-ui/libs/config/props/textarea.js ***!
-  \************************************************************************/
+/*!*********************************************************************!*\
+  !*** D:/cjindex/uni_modules/uview-ui/libs/config/props/textarea.js ***!
+  \*********************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -18919,9 +18919,9 @@ exports.default = _default;
 
 /***/ }),
 /* 153 */
-/*!*********************************************************************!*\
-  !*** D:/项目/cjindex/uni_modules/uview-ui/libs/config/props/toast.js ***!
-  \*********************************************************************/
+/*!******************************************************************!*\
+  !*** D:/cjindex/uni_modules/uview-ui/libs/config/props/toast.js ***!
+  \******************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -18965,9 +18965,9 @@ exports.default = _default;
 
 /***/ }),
 /* 154 */
-/*!***********************************************************************!*\
-  !*** D:/项目/cjindex/uni_modules/uview-ui/libs/config/props/toolbar.js ***!
-  \***********************************************************************/
+/*!********************************************************************!*\
+  !*** D:/cjindex/uni_modules/uview-ui/libs/config/props/toolbar.js ***!
+  \********************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -19002,9 +19002,9 @@ exports.default = _default;
 
 /***/ }),
 /* 155 */
-/*!***********************************************************************!*\
-  !*** D:/项目/cjindex/uni_modules/uview-ui/libs/config/props/tooltip.js ***!
-  \***********************************************************************/
+/*!********************************************************************!*\
+  !*** D:/cjindex/uni_modules/uview-ui/libs/config/props/tooltip.js ***!
+  \********************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -19046,9 +19046,9 @@ exports.default = _default;
 
 /***/ }),
 /* 156 */
-/*!**************************************************************************!*\
-  !*** D:/项目/cjindex/uni_modules/uview-ui/libs/config/props/transition.js ***!
-  \**************************************************************************/
+/*!***********************************************************************!*\
+  !*** D:/cjindex/uni_modules/uview-ui/libs/config/props/transition.js ***!
+  \***********************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -19081,9 +19081,9 @@ exports.default = _default;
 
 /***/ }),
 /* 157 */
-/*!**********************************************************************!*\
-  !*** D:/项目/cjindex/uni_modules/uview-ui/libs/config/props/upload.js ***!
-  \**********************************************************************/
+/*!*******************************************************************!*\
+  !*** D:/cjindex/uni_modules/uview-ui/libs/config/props/upload.js ***!
+  \*******************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -19140,9 +19140,9 @@ exports.default = _default;
 
 /***/ }),
 /* 158 */
-/*!****************************************************************!*\
-  !*** D:/项目/cjindex/uni_modules/uview-ui/libs/config/zIndex.js ***!
-  \****************************************************************/
+/*!*************************************************************!*\
+  !*** D:/cjindex/uni_modules/uview-ui/libs/config/zIndex.js ***!
+  \*************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -19176,9 +19176,9 @@ exports.default = _default;
 
 /***/ }),
 /* 159 */
-/*!********************************************************************!*\
-  !*** D:/项目/cjindex/uni_modules/uview-ui/libs/function/platform.js ***!
-  \********************************************************************/
+/*!*****************************************************************!*\
+  !*** D:/cjindex/uni_modules/uview-ui/libs/function/platform.js ***!
+  \*****************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -19206,9 +19206,9 @@ exports.default = _default;
 
 /***/ }),
 /* 160 */
-/*!**********************************************!*\
-  !*** D:/项目/cjindex/uni.promisify.adaptor.js ***!
-  \**********************************************/
+/*!*******************************************!*\
+  !*** D:/cjindex/uni.promisify.adaptor.js ***!
+  \*******************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -19242,7 +19242,16 @@ uni.addInterceptor({
 /* 172 */,
 /* 173 */,
 /* 174 */,
-/* 175 */,
+/* 175 */
+/*!********************************************!*\
+  !*** D:/cjindex/static/json/merchant.json ***!
+  \********************************************/
+/*! exports provided: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, default */
+/***/ (function(module) {
+
+module.exports = JSON.parse("[{\"name\":\"圣心源\",\"posi\":\"沈阳\",\"tel\":\"138xxxx2345\",\"status\":\"ture\",\"time\":\"2024-2-1\",\"URL\":\"沈阳市xx街道\",\"trade\":\"食品\",\"image\":\"../../static/img/food.png\",\"id\":\"1\"},{\"name\":\"梦妍店铺\",\"posi\":\"盘锦\",\"tel\":\"138xxxx2346\",\"status\":\"FALSE\",\"time\":\"2024-2-2\",\"URL\":\"盘锦市xx街道\",\"trade\":\"服装\",\"image\":\"../../static/img/cloth.png\",\"id\":\"2\"},{\"name\":\"丰雷店铺\",\"posi\":\"北京\",\"tel\":\"138xxxx2347\",\"status\":\"ture\",\"time\":\"2024-2-3\",\"URL\":\"北京市xx街道\",\"trade\":\"渔具\",\"image\":\"../../static/img/fish.png\",\"id\":\"3\"},{\"name\":\"伊蓓诺\",\"posi\":\"铁岭\",\"tel\":\"138xxxx2348\",\"status\":\"FALSE\",\"time\":\"2024-2-4\",\"URL\":\"铁岭市xx街道\",\"trade\":\"婴幼\",\"image\":\"../../static/img/child.png\",\"id\":\"4\"},{\"name\":\"布衣坊\",\"posi\":\"大连\",\"tel\":\"138xxxx2349\",\"status\":\"ture\",\"time\":\"2024-2-5\",\"URL\":\"大连市xx街道\",\"trade\":\"服装\",\"image\":\"../../static/img/cloth.png\",\"id\":\"5\"},{\"name\":\"尚鑫源\",\"posi\":\"深圳\",\"tel\":\"138xxxx2350\",\"status\":\"FALSE\",\"time\":\"2024-2-6\",\"URL\":\"深圳市xx街道\",\"trade\":\"食品\",\"image\":\"../../static/img/food.png\",\"id\":\"6\"},{\"name\":\"丰烁店铺\",\"posi\":\"沈阳\",\"tel\":\"138xxxx2351\",\"status\":\"ture\",\"time\":\"2024-2-7\",\"URL\":\"沈阳市xx街道\",\"trade\":\"服装\",\"image\":\"../../static/img/cloth.png\",\"id\":\"7\"},{\"name\":\"永顺店铺\",\"posi\":\"盘锦\",\"tel\":\"138xxxx2352\",\"status\":\"FALSE\",\"time\":\"2024-2-8\",\"URL\":\"盘锦市xx街道\",\"trade\":\"渔具\",\"image\":\"../../static/img/fish.png\",\"id\":\"8\"},{\"name\":\"爱丽丝\",\"posi\":\"北京\",\"tel\":\"138xxxx2353\",\"status\":\"ture\",\"time\":\"2024-2-9\",\"URL\":\"北京市xx街道\",\"trade\":\"婴幼\",\"image\":\"../../static/img/child.png\",\"id\":\"9\"},{\"name\":\"埃莉仕\",\"posi\":\"铁岭\",\"tel\":\"138xxxx2354\",\"status\":\"FALSE\",\"time\":\"2024-2-10\",\"URL\":\"铁岭市xx街道\",\"trade\":\"服装\",\"image\":\"../../static/img/cloth.png\",\"id\":\"10\"},{\"name\":\"德益堂\",\"posi\":\"大连\",\"tel\":\"138xxxx2355\",\"status\":\"ture\",\"time\":\"2024-2-11\",\"URL\":\"大连市xx街道\",\"trade\":\"食品\",\"image\":\"../../static/img/food.png\",\"id\":\"11\"},{\"name\":\"洁雅宾\",\"posi\":\"深圳\",\"tel\":\"138xxxx2356\",\"status\":\"FALSE\",\"time\":\"2024-2-12\",\"URL\":\"深圳市xx街道\",\"trade\":\"服装\",\"image\":\"../../static/img/cloth.png\",\"id\":\"12\"},{\"name\":\"华安店铺\",\"posi\":\"沈阳\",\"tel\":\"138xxxx2357\",\"status\":\"ture\",\"time\":\"2024-2-13\",\"URL\":\"沈阳市xx街道\",\"trade\":\"渔具\",\"image\":\"../../static/img/fish.png\",\"id\":\"13\"},{\"name\":\"衣田园\",\"posi\":\"盘锦\",\"tel\":\"138xxxx2358\",\"status\":\"FALSE\",\"time\":\"2024-2-14\",\"URL\":\"盘锦市xx街道\",\"trade\":\"婴幼\",\"image\":\"../../static/img/child.png\",\"id\":\"14\"},{\"name\":\"辉丰店铺\",\"posi\":\"北京\",\"tel\":\"138xxxx2359\",\"status\":\"ture\",\"time\":\"2024-2-15\",\"URL\":\"北京市xx街道\",\"trade\":\"服装\",\"image\":\"../../static/img/cloth.png\",\"id\":\"15\"},{\"name\":\"元臻堂\",\"posi\":\"铁岭\",\"tel\":\"138xxxx2360\",\"status\":\"FALSE\",\"time\":\"2024-2-16\",\"URL\":\"铁岭市xx街道\",\"trade\":\"食品\",\"image\":\"../../static/img/food.png\",\"id\":\"16\"},{\"name\":\"特百乐\",\"posi\":\"大连\",\"tel\":\"138xxxx2361\",\"status\":\"ture\",\"time\":\"2024-2-17\",\"URL\":\"大连市xx街道\",\"trade\":\"服装\",\"image\":\"../../static/img/cloth.png\",\"id\":\"17\"},{\"name\":\"魅缘坊\",\"posi\":\"深圳\",\"tel\":\"138xxxx2362\",\"status\":\"FALSE\",\"time\":\"2024-2-18\",\"URL\":\"深圳市xx街道\",\"trade\":\"渔具\",\"image\":\"../../static/img/fish.png\",\"id\":\"18\"},{\"name\":\"宏兴店铺\",\"posi\":\"沈阳\",\"tel\":\"138xxxx2363\",\"status\":\"ture\",\"time\":\"2024-2-19\",\"URL\":\"沈阳市xx街道\",\"trade\":\"婴幼\",\"image\":\"../../static/img/child.png\",\"id\":\"19\"},{\"name\":\"宝诚店铺\",\"posi\":\"盘锦\",\"tel\":\"138xxxx2364\",\"status\":\"FALSE\",\"time\":\"2024-2-20\",\"URL\":\"盘锦市xx街道\",\"trade\":\"服装\",\"image\":\"../../static/img/cloth.png\",\"id\":\"20\"},{\"name\":\"联顺店铺\",\"posi\":\"北京\",\"tel\":\"138xxxx2365\",\"status\":\"ture\",\"time\":\"2024-2-21\",\"URL\":\"北京市xx街道\",\"trade\":\"食品\",\"image\":\"../../static/img/food.png\",\"id\":\"21\"},{\"name\":\"瑞美嘉\",\"posi\":\"铁岭\",\"tel\":\"138xxxx2366\",\"status\":\"FALSE\",\"time\":\"2024-2-22\",\"URL\":\"铁岭市xx街道\",\"trade\":\"服装\",\"image\":\"../../static/img/cloth.png\",\"id\":\"22\"},{\"name\":\"天客来\",\"posi\":\"大连\",\"tel\":\"138xxxx2367\",\"status\":\"ture\",\"time\":\"2024-2-23\",\"URL\":\"大连市xx街道\",\"trade\":\"渔具\",\"image\":\"../../static/img/fish.png\",\"id\":\"23\"},{\"name\":\"卡莱妃\",\"posi\":\"深圳\",\"tel\":\"138xxxx2368\",\"status\":\"FALSE\",\"time\":\"2024-2-24\",\"URL\":\"深圳市xx街道\",\"trade\":\"婴幼\",\"image\":\"../../static/img/child.png\",\"id\":\"24\"},{\"name\":\"华帝店铺\",\"posi\":\"沈阳\",\"tel\":\"138xxxx2369\",\"status\":\"ture\",\"time\":\"2024-2-25\",\"URL\":\"沈阳市xx街道\",\"trade\":\"服装\",\"image\":\"../../static/img/cloth.png\",\"id\":\"25\"},{\"name\":\"博爱店铺\",\"posi\":\"盘锦\",\"tel\":\"138xxxx2370\",\"status\":\"FALSE\",\"time\":\"2024-2-26\",\"URL\":\"盘锦市xx街道\",\"trade\":\"食品\",\"image\":\"../../static/img/food.png\",\"id\":\"26\"},{\"name\":\"燕之屋\",\"posi\":\"北京\",\"tel\":\"138xxxx2371\",\"status\":\"ture\",\"time\":\"2024-2-27\",\"URL\":\"北京市xx街道\",\"trade\":\"服装\",\"image\":\"../../static/img/cloth.png\",\"id\":\"27\"},{\"name\":\"汇欣源\",\"posi\":\"铁岭\",\"tel\":\"138xxxx2372\",\"status\":\"FALSE\",\"time\":\"2024-2-28\",\"URL\":\"铁岭市xx街道\",\"trade\":\"渔具\",\"image\":\"../../static/img/fish.png\",\"id\":\"28\"},{\"name\":\"艾诺丝\",\"posi\":\"大连\",\"tel\":\"138xxxx2373\",\"status\":\"ture\",\"time\":\"2024-2-29\",\"URL\":\"大连市xx街道\",\"trade\":\"婴幼\",\"image\":\"../../static/img/child.png\",\"id\":\"29\"},{\"name\":\"世安堂\",\"posi\":\"深圳\",\"tel\":\"138xxxx2374\",\"status\":\"FALSE\",\"time\":\"2024-3-1\",\"URL\":\"深圳市xx街道\",\"trade\":\"服装\",\"image\":\"../../static/img/cloth.png\",\"id\":\"30\"},{\"name\":\"百升店铺\",\"posi\":\"沈阳\",\"tel\":\"138xxxx2375\",\"status\":\"ture\",\"time\":\"2024-3-2\",\"URL\":\"沈阳市xx街道\",\"trade\":\"食品\",\"image\":\"../../static/img/food.png\",\"id\":\"31\"},{\"name\":\"凯越店铺\",\"posi\":\"盘锦\",\"tel\":\"138xxxx2376\",\"status\":\"FALSE\",\"time\":\"2024-3-3\",\"URL\":\"盘锦市xx街道\",\"trade\":\"服装\",\"image\":\"../../static/img/cloth.png\",\"id\":\"32\"},{\"name\":\"水焦点\",\"posi\":\"北京\",\"tel\":\"138xxxx2377\",\"status\":\"ture\",\"time\":\"2024-3-4\",\"URL\":\"北京市xx街道\",\"trade\":\"渔具\",\"image\":\"../../static/img/fish.png\",\"id\":\"33\"},{\"name\":\"比宜德\",\"posi\":\"铁岭\",\"tel\":\"138xxxx2378\",\"status\":\"FALSE\",\"time\":\"2024-3-5\",\"URL\":\"铁岭市xx街道\",\"trade\":\"婴幼\",\"image\":\"../../static/img/child.png\",\"id\":\"34\"},{\"name\":\"德胜店铺\",\"posi\":\"大连\",\"tel\":\"138xxxx2379\",\"status\":\"ture\",\"time\":\"2024-3-6\",\"URL\":\"大连市xx街道\",\"trade\":\"服装\",\"image\":\"../../static/img/cloth.png\",\"id\":\"35\"},{\"name\":\"益人康\",\"posi\":\"深圳\",\"tel\":\"138xxxx2380\",\"status\":\"FALSE\",\"time\":\"2024-3-7\",\"URL\":\"深圳市xx街道\",\"trade\":\"食品\",\"image\":\"../../static/img/food.png\",\"id\":\"36\"},{\"name\":\"佰思特\",\"posi\":\"沈阳\",\"tel\":\"138xxxx2381\",\"status\":\"ture\",\"time\":\"2024-3-8\",\"URL\":\"沈阳市xx街道\",\"trade\":\"服装\",\"image\":\"../../static/img/cloth.png\",\"id\":\"37\"},{\"name\":\"和顺堂\",\"posi\":\"盘锦\",\"tel\":\"138xxxx2382\",\"status\":\"FALSE\",\"time\":\"2024-3-9\",\"URL\":\"盘锦市xx街道\",\"trade\":\"渔具\",\"image\":\"../../static/img/fish.png\",\"id\":\"38\"},{\"name\":\"原森态\",\"posi\":\"北京\",\"tel\":\"138xxxx2383\",\"status\":\"ture\",\"time\":\"2024-3-10\",\"URL\":\"北京市xx街道\",\"trade\":\"婴幼\",\"image\":\"../../static/img/child.png\",\"id\":\"39\"},{\"name\":\"利康店铺\",\"posi\":\"铁岭\",\"tel\":\"138xxxx2384\",\"status\":\"FALSE\",\"time\":\"2024-3-11\",\"URL\":\"铁岭市xx街道\",\"trade\":\"服装\",\"image\":\"../../static/img/cloth.png\",\"id\":\"40\"},{\"name\":\"华隆店铺\",\"posi\":\"大连\",\"tel\":\"138xxxx2385\",\"status\":\"ture\",\"time\":\"2024-3-12\",\"URL\":\"大连市xx街道\",\"trade\":\"食品\",\"image\":\"../../static/img/food.png\",\"id\":\"41\"},{\"name\":\"宝贝屋\",\"posi\":\"深圳\",\"tel\":\"138xxxx2386\",\"status\":\"FALSE\",\"time\":\"2024-3-13\",\"URL\":\"深圳市xx街道\",\"trade\":\"服装\",\"image\":\"../../static/img/cloth.png\",\"id\":\"42\"},{\"name\":\"华辰康\",\"posi\":\"沈阳\",\"tel\":\"138xxxx2387\",\"status\":\"ture\",\"time\":\"2024-3-14\",\"URL\":\"沈阳市xx街道\",\"trade\":\"渔具\",\"image\":\"../../static/img/fish.png\",\"id\":\"43\"},{\"name\":\"博盛男装\",\"posi\":\"盘锦\",\"tel\":\"138xxxx2388\",\"status\":\"FALSE\",\"time\":\"2024-3-15\",\"URL\":\"盘锦市xx街道\",\"trade\":\"婴幼\",\"image\":\"../../static/img/child.png\",\"id\":\"44\"},{\"name\":\"晨磊店铺\",\"posi\":\"北京\",\"tel\":\"138xxxx2389\",\"status\":\"ture\",\"time\":\"2024-3-16\",\"URL\":\"北京市xx街道\",\"trade\":\"服装\",\"image\":\"../../static/img/cloth.png\",\"id\":\"45\"},{\"name\":\"嘉运店铺\",\"posi\":\"铁岭\",\"tel\":\"138xxxx2390\",\"status\":\"FALSE\",\"time\":\"2024-3-17\",\"URL\":\"铁岭市xx街道\",\"trade\":\"食品\",\"image\":\"../../static/img/food.png\",\"id\":\"46\"},{\"name\":\"蓓霓芬\",\"posi\":\"大连\",\"tel\":\"138xxxx2391\",\"status\":\"ture\",\"time\":\"2024-3-18\",\"URL\":\"大连市xx街道\",\"trade\":\"服装\",\"image\":\"../../static/img/cloth.png\",\"id\":\"47\"},{\"name\":\"天润康\",\"posi\":\"深圳\",\"tel\":\"138xxxx2392\",\"status\":\"FALSE\",\"time\":\"2024-3-19\",\"URL\":\"深圳市xx街道\",\"trade\":\"渔具\",\"image\":\"../../static/img/fish.png\",\"id\":\"48\"},{\"name\":\"万嘉城\",\"posi\":\"沈阳\",\"tel\":\"138xxxx2393\",\"status\":\"ture\",\"time\":\"2024-3-20\",\"URL\":\"沈阳市xx街道\",\"trade\":\"婴幼\",\"image\":\"../../static/img/child.png\",\"id\":\"49\"},{\"name\":\"隆兴店铺\",\"posi\":\"盘锦\",\"tel\":\"138xxxx2394\",\"status\":\"FALSE\",\"time\":\"2024-3-21\",\"URL\":\"盘锦市xx街道\",\"trade\":\"服装\",\"image\":\"../../static/img/cloth.png\",\"id\":\"50\"},{\"name\":\"羽宏店铺\",\"posi\":\"北京\",\"tel\":\"138xxxx2395\",\"status\":\"ture\",\"time\":\"2024-3-22\",\"URL\":\"北京市xx街道\",\"trade\":\"食品\",\"image\":\"../../static/img/food.png\",\"id\":\"51\"},{\"name\":\"天朗店铺\",\"posi\":\"铁岭\",\"tel\":\"138xxxx2396\",\"status\":\"FALSE\",\"time\":\"2024-3-23\",\"URL\":\"铁岭市xx街道\",\"trade\":\"服装\",\"image\":\"../../static/img/cloth.png\",\"id\":\"52\"},{\"name\":\"飞宇店铺\",\"posi\":\"大连\",\"tel\":\"138xxxx2397\",\"status\":\"ture\",\"time\":\"2024-3-24\",\"URL\":\"大连市xx街道\",\"trade\":\"渔具\",\"image\":\"../../static/img/fish.png\",\"id\":\"53\"},{\"name\":\"韩国馆\",\"posi\":\"深圳\",\"tel\":\"138xxxx2398\",\"status\":\"FALSE\",\"time\":\"2024-3-25\",\"URL\":\"深圳市xx街道\",\"trade\":\"婴幼\",\"image\":\"../../static/img/child.png\",\"id\":\"54\"},{\"name\":\"御方阁\",\"posi\":\"沈阳\",\"tel\":\"138xxxx2399\",\"status\":\"ture\",\"time\":\"2024-3-26\",\"URL\":\"沈阳市xx街道\",\"trade\":\"服装\",\"image\":\"../../static/img/cloth.png\",\"id\":\"55\"},{\"name\":\"思达城\",\"posi\":\"盘锦\",\"tel\":\"138xxxx2400\",\"status\":\"FALSE\",\"time\":\"2024-3-27\",\"URL\":\"盘锦市xx街道\",\"trade\":\"食品\",\"image\":\"../../static/img/food.png\",\"id\":\"56\"}]");
+
+/***/ }),
 /* 176 */,
 /* 177 */,
 /* 178 */,
@@ -19250,16 +19259,7 @@ uni.addInterceptor({
 /* 180 */,
 /* 181 */,
 /* 182 */,
-/* 183 */
-/*!***********************************************!*\
-  !*** D:/项目/cjindex/static/json/merchant.json ***!
-  \***********************************************/
-/*! exports provided: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, default */
-/***/ (function(module) {
-
-module.exports = JSON.parse("[{\"name\":\"圣心源\",\"posi\":\"沈阳\",\"tel\":\"138xxxx2345\",\"status\":\"ture\",\"time\":\"2024-2-1\",\"URL\":\"沈阳市xx街道\",\"trade\":\"食品\",\"image\":\"../../static/img/food.png\",\"id\":\"1\"},{\"name\":\"梦妍店铺\",\"posi\":\"盘锦\",\"tel\":\"138xxxx2346\",\"status\":\"FALSE\",\"time\":\"2024-2-2\",\"URL\":\"盘锦市xx街道\",\"trade\":\"服装\",\"image\":\"../../static/img/cloth.png\",\"id\":\"2\"},{\"name\":\"丰雷店铺\",\"posi\":\"北京\",\"tel\":\"138xxxx2347\",\"status\":\"ture\",\"time\":\"2024-2-3\",\"URL\":\"北京市xx街道\",\"trade\":\"渔具\",\"image\":\"../../static/img/fish.png\",\"id\":\"3\"},{\"name\":\"伊蓓诺\",\"posi\":\"铁岭\",\"tel\":\"138xxxx2348\",\"status\":\"FALSE\",\"time\":\"2024-2-4\",\"URL\":\"铁岭市xx街道\",\"trade\":\"婴幼\",\"image\":\"../../static/img/child.png\",\"id\":\"4\"},{\"name\":\"布衣坊\",\"posi\":\"大连\",\"tel\":\"138xxxx2349\",\"status\":\"ture\",\"time\":\"2024-2-5\",\"URL\":\"大连市xx街道\",\"trade\":\"服装\",\"image\":\"../../static/img/cloth.png\",\"id\":\"5\"},{\"name\":\"尚鑫源\",\"posi\":\"深圳\",\"tel\":\"138xxxx2350\",\"status\":\"FALSE\",\"time\":\"2024-2-6\",\"URL\":\"深圳市xx街道\",\"trade\":\"食品\",\"image\":\"../../static/img/food.png\",\"id\":\"6\"},{\"name\":\"丰烁店铺\",\"posi\":\"沈阳\",\"tel\":\"138xxxx2351\",\"status\":\"ture\",\"time\":\"2024-2-7\",\"URL\":\"沈阳市xx街道\",\"trade\":\"服装\",\"image\":\"../../static/img/cloth.png\",\"id\":\"7\"},{\"name\":\"永顺店铺\",\"posi\":\"盘锦\",\"tel\":\"138xxxx2352\",\"status\":\"FALSE\",\"time\":\"2024-2-8\",\"URL\":\"盘锦市xx街道\",\"trade\":\"渔具\",\"image\":\"../../static/img/fish.png\",\"id\":\"8\"},{\"name\":\"爱丽丝\",\"posi\":\"北京\",\"tel\":\"138xxxx2353\",\"status\":\"ture\",\"time\":\"2024-2-9\",\"URL\":\"北京市xx街道\",\"trade\":\"婴幼\",\"image\":\"../../static/img/child.png\",\"id\":\"9\"},{\"name\":\"埃莉仕\",\"posi\":\"铁岭\",\"tel\":\"138xxxx2354\",\"status\":\"FALSE\",\"time\":\"2024-2-10\",\"URL\":\"铁岭市xx街道\",\"trade\":\"服装\",\"image\":\"../../static/img/cloth.png\",\"id\":\"10\"},{\"name\":\"德益堂\",\"posi\":\"大连\",\"tel\":\"138xxxx2355\",\"status\":\"ture\",\"time\":\"2024-2-11\",\"URL\":\"大连市xx街道\",\"trade\":\"食品\",\"image\":\"../../static/img/food.png\",\"id\":\"11\"},{\"name\":\"洁雅宾\",\"posi\":\"深圳\",\"tel\":\"138xxxx2356\",\"status\":\"FALSE\",\"time\":\"2024-2-12\",\"URL\":\"深圳市xx街道\",\"trade\":\"服装\",\"image\":\"../../static/img/cloth.png\",\"id\":\"12\"},{\"name\":\"华安店铺\",\"posi\":\"沈阳\",\"tel\":\"138xxxx2357\",\"status\":\"ture\",\"time\":\"2024-2-13\",\"URL\":\"沈阳市xx街道\",\"trade\":\"渔具\",\"image\":\"../../static/img/fish.png\",\"id\":\"13\"},{\"name\":\"衣田园\",\"posi\":\"盘锦\",\"tel\":\"138xxxx2358\",\"status\":\"FALSE\",\"time\":\"2024-2-14\",\"URL\":\"盘锦市xx街道\",\"trade\":\"婴幼\",\"image\":\"../../static/img/child.png\",\"id\":\"14\"},{\"name\":\"辉丰店铺\",\"posi\":\"北京\",\"tel\":\"138xxxx2359\",\"status\":\"ture\",\"time\":\"2024-2-15\",\"URL\":\"北京市xx街道\",\"trade\":\"服装\",\"image\":\"../../static/img/cloth.png\",\"id\":\"15\"},{\"name\":\"元臻堂\",\"posi\":\"铁岭\",\"tel\":\"138xxxx2360\",\"status\":\"FALSE\",\"time\":\"2024-2-16\",\"URL\":\"铁岭市xx街道\",\"trade\":\"食品\",\"image\":\"../../static/img/food.png\",\"id\":\"16\"},{\"name\":\"特百乐\",\"posi\":\"大连\",\"tel\":\"138xxxx2361\",\"status\":\"ture\",\"time\":\"2024-2-17\",\"URL\":\"大连市xx街道\",\"trade\":\"服装\",\"image\":\"../../static/img/cloth.png\",\"id\":\"17\"},{\"name\":\"魅缘坊\",\"posi\":\"深圳\",\"tel\":\"138xxxx2362\",\"status\":\"FALSE\",\"time\":\"2024-2-18\",\"URL\":\"深圳市xx街道\",\"trade\":\"渔具\",\"image\":\"../../static/img/fish.png\",\"id\":\"18\"},{\"name\":\"宏兴店铺\",\"posi\":\"沈阳\",\"tel\":\"138xxxx2363\",\"status\":\"ture\",\"time\":\"2024-2-19\",\"URL\":\"沈阳市xx街道\",\"trade\":\"婴幼\",\"image\":\"../../static/img/child.png\",\"id\":\"19\"},{\"name\":\"宝诚店铺\",\"posi\":\"盘锦\",\"tel\":\"138xxxx2364\",\"status\":\"FALSE\",\"time\":\"2024-2-20\",\"URL\":\"盘锦市xx街道\",\"trade\":\"服装\",\"image\":\"../../static/img/cloth.png\",\"id\":\"20\"},{\"name\":\"联顺店铺\",\"posi\":\"北京\",\"tel\":\"138xxxx2365\",\"status\":\"ture\",\"time\":\"2024-2-21\",\"URL\":\"北京市xx街道\",\"trade\":\"食品\",\"image\":\"../../static/img/food.png\",\"id\":\"21\"},{\"name\":\"瑞美嘉\",\"posi\":\"铁岭\",\"tel\":\"138xxxx2366\",\"status\":\"FALSE\",\"time\":\"2024-2-22\",\"URL\":\"铁岭市xx街道\",\"trade\":\"服装\",\"image\":\"../../static/img/cloth.png\",\"id\":\"22\"},{\"name\":\"天客来\",\"posi\":\"大连\",\"tel\":\"138xxxx2367\",\"status\":\"ture\",\"time\":\"2024-2-23\",\"URL\":\"大连市xx街道\",\"trade\":\"渔具\",\"image\":\"../../static/img/fish.png\",\"id\":\"23\"},{\"name\":\"卡莱妃\",\"posi\":\"深圳\",\"tel\":\"138xxxx2368\",\"status\":\"FALSE\",\"time\":\"2024-2-24\",\"URL\":\"深圳市xx街道\",\"trade\":\"婴幼\",\"image\":\"../../static/img/child.png\",\"id\":\"24\"},{\"name\":\"华帝店铺\",\"posi\":\"沈阳\",\"tel\":\"138xxxx2369\",\"status\":\"ture\",\"time\":\"2024-2-25\",\"URL\":\"沈阳市xx街道\",\"trade\":\"服装\",\"image\":\"../../static/img/cloth.png\",\"id\":\"25\"},{\"name\":\"博爱店铺\",\"posi\":\"盘锦\",\"tel\":\"138xxxx2370\",\"status\":\"FALSE\",\"time\":\"2024-2-26\",\"URL\":\"盘锦市xx街道\",\"trade\":\"食品\",\"image\":\"../../static/img/food.png\",\"id\":\"26\"},{\"name\":\"燕之屋\",\"posi\":\"北京\",\"tel\":\"138xxxx2371\",\"status\":\"ture\",\"time\":\"2024-2-27\",\"URL\":\"北京市xx街道\",\"trade\":\"服装\",\"image\":\"../../static/img/cloth.png\",\"id\":\"27\"},{\"name\":\"汇欣源\",\"posi\":\"铁岭\",\"tel\":\"138xxxx2372\",\"status\":\"FALSE\",\"time\":\"2024-2-28\",\"URL\":\"铁岭市xx街道\",\"trade\":\"渔具\",\"image\":\"../../static/img/fish.png\",\"id\":\"28\"},{\"name\":\"艾诺丝\",\"posi\":\"大连\",\"tel\":\"138xxxx2373\",\"status\":\"ture\",\"time\":\"2024-2-29\",\"URL\":\"大连市xx街道\",\"trade\":\"婴幼\",\"image\":\"../../static/img/child.png\",\"id\":\"29\"},{\"name\":\"世安堂\",\"posi\":\"深圳\",\"tel\":\"138xxxx2374\",\"status\":\"FALSE\",\"time\":\"2024-3-1\",\"URL\":\"深圳市xx街道\",\"trade\":\"服装\",\"image\":\"../../static/img/cloth.png\",\"id\":\"30\"},{\"name\":\"百升店铺\",\"posi\":\"沈阳\",\"tel\":\"138xxxx2375\",\"status\":\"ture\",\"time\":\"2024-3-2\",\"URL\":\"沈阳市xx街道\",\"trade\":\"食品\",\"image\":\"../../static/img/food.png\",\"id\":\"31\"},{\"name\":\"凯越店铺\",\"posi\":\"盘锦\",\"tel\":\"138xxxx2376\",\"status\":\"FALSE\",\"time\":\"2024-3-3\",\"URL\":\"盘锦市xx街道\",\"trade\":\"服装\",\"image\":\"../../static/img/cloth.png\",\"id\":\"32\"},{\"name\":\"水焦点\",\"posi\":\"北京\",\"tel\":\"138xxxx2377\",\"status\":\"ture\",\"time\":\"2024-3-4\",\"URL\":\"北京市xx街道\",\"trade\":\"渔具\",\"image\":\"../../static/img/fish.png\",\"id\":\"33\"},{\"name\":\"比宜德\",\"posi\":\"铁岭\",\"tel\":\"138xxxx2378\",\"status\":\"FALSE\",\"time\":\"2024-3-5\",\"URL\":\"铁岭市xx街道\",\"trade\":\"婴幼\",\"image\":\"../../static/img/child.png\",\"id\":\"34\"},{\"name\":\"德胜店铺\",\"posi\":\"大连\",\"tel\":\"138xxxx2379\",\"status\":\"ture\",\"time\":\"2024-3-6\",\"URL\":\"大连市xx街道\",\"trade\":\"服装\",\"image\":\"../../static/img/cloth.png\",\"id\":\"35\"},{\"name\":\"益人康\",\"posi\":\"深圳\",\"tel\":\"138xxxx2380\",\"status\":\"FALSE\",\"time\":\"2024-3-7\",\"URL\":\"深圳市xx街道\",\"trade\":\"食品\",\"image\":\"../../static/img/food.png\",\"id\":\"36\"},{\"name\":\"佰思特\",\"posi\":\"沈阳\",\"tel\":\"138xxxx2381\",\"status\":\"ture\",\"time\":\"2024-3-8\",\"URL\":\"沈阳市xx街道\",\"trade\":\"服装\",\"image\":\"../../static/img/cloth.png\",\"id\":\"37\"},{\"name\":\"和顺堂\",\"posi\":\"盘锦\",\"tel\":\"138xxxx2382\",\"status\":\"FALSE\",\"time\":\"2024-3-9\",\"URL\":\"盘锦市xx街道\",\"trade\":\"渔具\",\"image\":\"../../static/img/fish.png\",\"id\":\"38\"},{\"name\":\"原森态\",\"posi\":\"北京\",\"tel\":\"138xxxx2383\",\"status\":\"ture\",\"time\":\"2024-3-10\",\"URL\":\"北京市xx街道\",\"trade\":\"婴幼\",\"image\":\"../../static/img/child.png\",\"id\":\"39\"},{\"name\":\"利康店铺\",\"posi\":\"铁岭\",\"tel\":\"138xxxx2384\",\"status\":\"FALSE\",\"time\":\"2024-3-11\",\"URL\":\"铁岭市xx街道\",\"trade\":\"服装\",\"image\":\"../../static/img/cloth.png\",\"id\":\"40\"},{\"name\":\"华隆店铺\",\"posi\":\"大连\",\"tel\":\"138xxxx2385\",\"status\":\"ture\",\"time\":\"2024-3-12\",\"URL\":\"大连市xx街道\",\"trade\":\"食品\",\"image\":\"../../static/img/food.png\",\"id\":\"41\"},{\"name\":\"宝贝屋\",\"posi\":\"深圳\",\"tel\":\"138xxxx2386\",\"status\":\"FALSE\",\"time\":\"2024-3-13\",\"URL\":\"深圳市xx街道\",\"trade\":\"服装\",\"image\":\"../../static/img/cloth.png\",\"id\":\"42\"},{\"name\":\"华辰康\",\"posi\":\"沈阳\",\"tel\":\"138xxxx2387\",\"status\":\"ture\",\"time\":\"2024-3-14\",\"URL\":\"沈阳市xx街道\",\"trade\":\"渔具\",\"image\":\"../../static/img/fish.png\",\"id\":\"43\"},{\"name\":\"博盛男装\",\"posi\":\"盘锦\",\"tel\":\"138xxxx2388\",\"status\":\"FALSE\",\"time\":\"2024-3-15\",\"URL\":\"盘锦市xx街道\",\"trade\":\"婴幼\",\"image\":\"../../static/img/child.png\",\"id\":\"44\"},{\"name\":\"晨磊店铺\",\"posi\":\"北京\",\"tel\":\"138xxxx2389\",\"status\":\"ture\",\"time\":\"2024-3-16\",\"URL\":\"北京市xx街道\",\"trade\":\"服装\",\"image\":\"../../static/img/cloth.png\",\"id\":\"45\"},{\"name\":\"嘉运店铺\",\"posi\":\"铁岭\",\"tel\":\"138xxxx2390\",\"status\":\"FALSE\",\"time\":\"2024-3-17\",\"URL\":\"铁岭市xx街道\",\"trade\":\"食品\",\"image\":\"../../static/img/food.png\",\"id\":\"46\"},{\"name\":\"蓓霓芬\",\"posi\":\"大连\",\"tel\":\"138xxxx2391\",\"status\":\"ture\",\"time\":\"2024-3-18\",\"URL\":\"大连市xx街道\",\"trade\":\"服装\",\"image\":\"../../static/img/cloth.png\",\"id\":\"47\"},{\"name\":\"天润康\",\"posi\":\"深圳\",\"tel\":\"138xxxx2392\",\"status\":\"FALSE\",\"time\":\"2024-3-19\",\"URL\":\"深圳市xx街道\",\"trade\":\"渔具\",\"image\":\"../../static/img/fish.png\",\"id\":\"48\"},{\"name\":\"万嘉城\",\"posi\":\"沈阳\",\"tel\":\"138xxxx2393\",\"status\":\"ture\",\"time\":\"2024-3-20\",\"URL\":\"沈阳市xx街道\",\"trade\":\"婴幼\",\"image\":\"../../static/img/child.png\",\"id\":\"49\"},{\"name\":\"隆兴店铺\",\"posi\":\"盘锦\",\"tel\":\"138xxxx2394\",\"status\":\"FALSE\",\"time\":\"2024-3-21\",\"URL\":\"盘锦市xx街道\",\"trade\":\"服装\",\"image\":\"../../static/img/cloth.png\",\"id\":\"50\"},{\"name\":\"羽宏店铺\",\"posi\":\"北京\",\"tel\":\"138xxxx2395\",\"status\":\"ture\",\"time\":\"2024-3-22\",\"URL\":\"北京市xx街道\",\"trade\":\"食品\",\"image\":\"../../static/img/food.png\",\"id\":\"51\"},{\"name\":\"天朗店铺\",\"posi\":\"铁岭\",\"tel\":\"138xxxx2396\",\"status\":\"FALSE\",\"time\":\"2024-3-23\",\"URL\":\"铁岭市xx街道\",\"trade\":\"服装\",\"image\":\"../../static/img/cloth.png\",\"id\":\"52\"},{\"name\":\"飞宇店铺\",\"posi\":\"大连\",\"tel\":\"138xxxx2397\",\"status\":\"ture\",\"time\":\"2024-3-24\",\"URL\":\"大连市xx街道\",\"trade\":\"渔具\",\"image\":\"../../static/img/fish.png\",\"id\":\"53\"},{\"name\":\"韩国馆\",\"posi\":\"深圳\",\"tel\":\"138xxxx2398\",\"status\":\"FALSE\",\"time\":\"2024-3-25\",\"URL\":\"深圳市xx街道\",\"trade\":\"婴幼\",\"image\":\"../../static/img/child.png\",\"id\":\"54\"},{\"name\":\"御方阁\",\"posi\":\"沈阳\",\"tel\":\"138xxxx2399\",\"status\":\"ture\",\"time\":\"2024-3-26\",\"URL\":\"沈阳市xx街道\",\"trade\":\"服装\",\"image\":\"../../static/img/cloth.png\",\"id\":\"55\"},{\"name\":\"思达城\",\"posi\":\"盘锦\",\"tel\":\"138xxxx2400\",\"status\":\"FALSE\",\"time\":\"2024-3-27\",\"URL\":\"盘锦市xx街道\",\"trade\":\"食品\",\"image\":\"../../static/img/food.png\",\"id\":\"56\"}]");
-
-/***/ }),
+/* 183 */,
 /* 184 */,
 /* 185 */,
 /* 186 */,
@@ -19268,7 +19268,16 @@ module.exports = JSON.parse("[{\"name\":\"圣心源\",\"posi\":\"沈阳\",\"tel\
 /* 189 */,
 /* 190 */,
 /* 191 */,
-/* 192 */,
+/* 192 */
+/*!***************************************!*\
+  !*** D:/cjindex/static/json/set.json ***!
+  \***************************************/
+/*! exports provided: 0, 1, 2, 3, 4, 5, 6, 7, default */
+/***/ (function(module) {
+
+module.exports = JSON.parse("[{\"sty\":5,\"val\":\"font1\",\"num\":1},{\"sty\":5,\"val\":\"font2\",\"num\":2},{\"sty\":5,\"val\":\"font3\",\"num\":3},{\"sty\":5,\"val\":\"font4\",\"num\":8},{\"sty\":30,\"val\":\"font5\",\"num\":4},{\"sty\":5,\"val\":\"font6\",\"num\":7},{\"sty\":5,\"val\":\"font7\",\"num\":6},{\"sty\":5,\"val\":\"font8\",\"num\":5}]");
+
+/***/ }),
 /* 193 */,
 /* 194 */,
 /* 195 */,
@@ -19276,17 +19285,17 @@ module.exports = JSON.parse("[{\"name\":\"圣心源\",\"posi\":\"沈阳\",\"tel\
 /* 197 */,
 /* 198 */,
 /* 199 */,
-/* 200 */
+/* 200 */,
+/* 201 */
 /*!******************************************!*\
-  !*** D:/项目/cjindex/static/json/set.json ***!
+  !*** D:/cjindex/static/json/shlist.json ***!
   \******************************************/
-/*! exports provided: 0, 1, 2, 3, 4, 5, 6, 7, default */
+/*! exports provided: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, default */
 /***/ (function(module) {
 
-module.exports = JSON.parse("[{\"sty\":5,\"val\":\"font1\",\"num\":1},{\"sty\":5,\"val\":\"font2\",\"num\":2},{\"sty\":5,\"val\":\"font3\",\"num\":3},{\"sty\":5,\"val\":\"font4\",\"num\":8},{\"sty\":30,\"val\":\"font5\",\"num\":4},{\"sty\":5,\"val\":\"font6\",\"num\":7},{\"sty\":5,\"val\":\"font7\",\"num\":6},{\"sty\":5,\"val\":\"font8\",\"num\":5}]");
+module.exports = JSON.parse("[{\"list\":\"1\",\"actnum\":\"8\",\"name\":\"圣心源\",\"trade\":\"食品\",\"image\":\"../../static/img/food.png\",\"url\":\"沈阳市\"},{\"list\":\"2\",\"actnum\":\"7\",\"name\":\"梦妍店铺\",\"trade\":\"服装\",\"image\":\"../../static/img/cloth.png\",\"url\":\"盘锦市\"},{\"list\":\"3\",\"actnum\":\"6\",\"name\":\"丰雷店铺\",\"trade\":\"渔具\",\"image\":\"../../static/img/fish.png\",\"url\":\"北京市\"},{\"list\":\"4\",\"actnum\":\"15\",\"name\":\"伊蓓诺\",\"trade\":\"婴幼\",\"image\":\"../../static/img/child.png\",\"url\":\"铁岭市\"},{\"list\":\"5\",\"actnum\":\"4\",\"name\":\"布衣坊\",\"trade\":\"服装\",\"image\":\"../../static/img/cloth.png\",\"url\":\"大连市\"},{\"list\":\"6\",\"actnum\":\"3\",\"name\":\"尚鑫源\",\"trade\":\"食品\",\"image\":\"../../static/img/food.png\",\"url\":\"深圳市\"},{\"list\":\"7\",\"actnum\":\"2\",\"name\":\"丰烁店铺\",\"trade\":\"服装\",\"image\":\"../../static/img/cloth.png\",\"url\":\"沈阳市\"},{\"list\":\"8\",\"actnum\":\"1\",\"name\":\"永顺店铺\",\"trade\":\"渔具\",\"image\":\"../../static/img/fish.png\",\"url\":\"盘锦市\"},{\"list\":\"9\",\"actnum\":\"0\",\"name\":\"爱丽丝\",\"trade\":\"婴幼\",\"image\":\"../../static/img/child.png\",\"url\":\"北京市\"},{\"list\":\"10\",\"actnum\":\"0\",\"name\":\"埃莉仕\",\"trade\":\"服装\",\"image\":\"../../static/img/cloth.png\",\"url\":\"铁岭市\"},{\"list\":\"11\",\"actnum\":\"0\",\"name\":\"德益堂\",\"trade\":\"食品\",\"image\":\"../../static/img/food.png\",\"url\":\"大连市\"},{\"list\":\"12\",\"actnum\":\"0\",\"name\":\"洁雅宾\",\"trade\":\"服装\",\"image\":\"../../static/img/cloth.png\",\"url\":\"深圳市\"},{\"list\":\"13\",\"actnum\":\"0\",\"name\":\"华安店铺\",\"trade\":\"渔具\",\"image\":\"../../static/img/fish.png\",\"url\":\"沈阳市\"},{\"list\":\"14\",\"actnum\":\"0\",\"name\":\"衣田园\",\"trade\":\"婴幼\",\"image\":\"../../static/img/child.png\",\"url\":\"盘锦市\"},{\"list\":\"15\",\"actnum\":\"0\",\"name\":\"辉丰店铺\",\"trade\":\"服装\",\"image\":\"../../static/img/cloth.png\",\"url\":\"北京市\"},{\"list\":\"16\",\"actnum\":\"0\",\"name\":\"元臻堂\",\"trade\":\"食品\",\"image\":\"../../static/img/food.png\",\"url\":\"铁岭市\"},{\"list\":\"17\",\"actnum\":\"0\",\"name\":\"特百乐\",\"trade\":\"服装\",\"image\":\"../../static/img/cloth.png\",\"url\":\"大连市\"},{\"list\":\"18\",\"actnum\":\"0\",\"name\":\"魅缘坊\",\"trade\":\"渔具\",\"image\":\"../../static/img/fish.png\",\"url\":\"深圳市\"},{\"list\":\"19\",\"actnum\":\"0\",\"name\":\"宏兴店铺\",\"trade\":\"婴幼\",\"image\":\"../../static/img/child.png\",\"url\":\"沈阳市\"}]");
 
 /***/ }),
-/* 201 */,
 /* 202 */,
 /* 203 */,
 /* 204 */,
@@ -19303,9 +19312,9 @@ module.exports = JSON.parse("[{\"sty\":5,\"val\":\"font1\",\"num\":1},{\"sty\":5
 /* 215 */,
 /* 216 */,
 /* 217 */
-/*!*********************************************!*\
-  !*** D:/项目/cjindex/static/json/jptext.json ***!
-  \*********************************************/
+/*!******************************************!*\
+  !*** D:/cjindex/static/json/jptext.json ***!
+  \******************************************/
 /*! exports provided: 0, 1, 2, 3, 4, 5, 6, 7, default */
 /***/ (function(module) {
 
@@ -19321,9 +19330,9 @@ module.exports = JSON.parse("[{\"name\":\"龙\",\"class\":\"zpsin\"},{\"name\":\
 /* 224 */,
 /* 225 */,
 /* 226 */
-/*!******************************************!*\
-  !*** D:/项目/cjindex/static/js/log_pos.js ***!
-  \******************************************/
+/*!***************************************!*\
+  !*** D:/cjindex/static/js/log_pos.js ***!
+  \***************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -19364,9 +19373,9 @@ function onsubmit(event) {
 /* 249 */,
 /* 250 */,
 /* 251 */
-/*!***********************************************!*\
-  !*** D:/项目/cjindex/static/json/posindex.json ***!
-  \***********************************************/
+/*!********************************************!*\
+  !*** D:/cjindex/static/json/posindex.json ***!
+  \********************************************/
 /*! exports provided: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, default */
 /***/ (function(module) {
 
@@ -19382,9 +19391,9 @@ module.exports = JSON.parse("[{\"number\":\"1\",\"name\":\"豪佳香\",\"awards\
 /* 258 */,
 /* 259 */,
 /* 260 */
-/*!*******************************************************!*\
-  !*** D:/项目/cjindex/node_modules/uqrcodejs/uqrcode.js ***!
-  \*******************************************************/
+/*!****************************************************!*\
+  !*** D:/cjindex/node_modules/uqrcodejs/uqrcode.js ***!
+  \****************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -20623,7 +20632,7 @@ function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { va
     o && o(b, this, !0);
   }, b;
 });
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../../../../Hbuilder/HBuilderX/plugins/uniapp-cli/node_modules/webpack/buildin/global.js */ 3)))
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../../../HBuilderX/HBuilderX/plugins/uniapp-cli/node_modules/webpack/buildin/global.js */ 3)))
 
 /***/ }),
 /* 261 */,
@@ -20631,17 +20640,10 @@ function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { va
 /* 263 */,
 /* 264 */,
 /* 265 */,
-/* 266 */,
-/* 267 */,
-/* 268 */,
-/* 269 */,
-/* 270 */,
-/* 271 */,
-/* 272 */,
-/* 273 */
-/*!*********************************************************************!*\
-  !*** D:/项目/cjindex/uni_modules/uview-ui/components/u-form/props.js ***!
-  \*********************************************************************/
+/* 266 */
+/*!******************************************************************!*\
+  !*** D:/cjindex/uni_modules/uview-ui/components/u-form/props.js ***!
+  \******************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -20701,10 +20703,10 @@ exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 2)["default"]))
 
 /***/ }),
-/* 274 */
-/*!***********************************************************************!*\
-  !*** D:/项目/cjindex/uni_modules/uview-ui/libs/util/async-validator.js ***!
-  \***********************************************************************/
+/* 267 */
+/*!********************************************************************!*\
+  !*** D:/cjindex/uni_modules/uview-ui/libs/util/async-validator.js ***!
+  \********************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -20739,7 +20741,7 @@ function _extends() {
 var formatRegExp = /%[sdj%]/g;
 var warning = function warning() {}; // don't print warning message when in production env or node runtime
 
-if (typeof process !== 'undefined' && Object({"VUE_APP_DARK_MODE":"false","VUE_APP_NAME":"cj-index","VUE_APP_PLATFORM":"mp-weixin","NODE_ENV":"development","BASE_URL":"/"}) && "development" !== 'production' && typeof window !== 'undefined' && typeof document !== 'undefined') {
+if (typeof process !== 'undefined' && Object({"NODE_ENV":"development","VUE_APP_DARK_MODE":"false","VUE_APP_NAME":"cj-index","VUE_APP_PLATFORM":"mp-weixin","BASE_URL":"/"}) && "development" !== 'production' && typeof window !== 'undefined' && typeof document !== 'undefined') {
   warning = function warning(type, errors) {
     if (typeof console !== 'undefined' && console.warn) {
       if (errors.every(function (e) {
@@ -21882,10 +21884,10 @@ Schema.warning = warning;
 Schema.messages = messages;
 var _default = Schema; // # sourceMappingURL=index.js.map
 exports.default = _default;
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../../../../../../Hbuilder/HBuilderX/plugins/uniapp-cli/node_modules/node-libs-browser/mock/process.js */ 275)))
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../../../../../HBuilderX/HBuilderX/plugins/uniapp-cli/node_modules/node-libs-browser/mock/process.js */ 268)))
 
 /***/ }),
-/* 275 */
+/* 268 */
 /*!********************************************************!*\
   !*** ./node_modules/node-libs-browser/mock/process.js ***!
   \********************************************************/
@@ -21916,7 +21918,7 @@ exports.binding = function (name) {
     var path;
     exports.cwd = function () { return cwd };
     exports.chdir = function (dir) {
-        if (!path) path = __webpack_require__(/*! path */ 276);
+        if (!path) path = __webpack_require__(/*! path */ 269);
         cwd = path.resolve(dir, cwd);
     };
 })();
@@ -21929,7 +21931,7 @@ exports.features = {};
 
 
 /***/ }),
-/* 276 */
+/* 269 */
 /*!***********************************************!*\
   !*** ./node_modules/path-browserify/index.js ***!
   \***********************************************/
@@ -22239,18 +22241,18 @@ var substr = 'ab'.substr(-1) === 'b'
     }
 ;
 
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../node-libs-browser/mock/process.js */ 275)))
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../node-libs-browser/mock/process.js */ 268)))
 
 /***/ }),
-/* 277 */,
-/* 278 */,
-/* 279 */,
-/* 280 */,
-/* 281 */,
-/* 282 */
-/*!**************************************************************************!*\
-  !*** D:/项目/cjindex/uni_modules/uview-ui/components/u-form-item/props.js ***!
-  \**************************************************************************/
+/* 270 */,
+/* 271 */,
+/* 272 */,
+/* 273 */,
+/* 274 */,
+/* 275 */
+/*!***********************************************************************!*\
+  !*** D:/cjindex/uni_modules/uview-ui/components/u-form-item/props.js ***!
+  \***********************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -22313,17 +22315,17 @@ exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 2)["default"]))
 
 /***/ }),
-/* 283 */,
-/* 284 */,
-/* 285 */,
-/* 286 */,
-/* 287 */,
-/* 288 */,
-/* 289 */,
-/* 290 */
-/*!**********************************************************************!*\
-  !*** D:/项目/cjindex/uni_modules/uview-ui/components/u-input/props.js ***!
-  \**********************************************************************/
+/* 276 */,
+/* 277 */,
+/* 278 */,
+/* 279 */,
+/* 280 */,
+/* 281 */,
+/* 282 */,
+/* 283 */
+/*!*******************************************************************!*\
+  !*** D:/cjindex/uni_modules/uview-ui/components/u-input/props.js ***!
+  \*******************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -22525,17 +22527,17 @@ exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 2)["default"]))
 
 /***/ }),
-/* 291 */,
-/* 292 */,
-/* 293 */,
-/* 294 */,
-/* 295 */,
-/* 296 */,
-/* 297 */,
-/* 298 */
-/*!********************************************************************************!*\
-  !*** D:/项目/cjindex/uni_modules/uview-ui/components/u-datetime-picker/props.js ***!
-  \********************************************************************************/
+/* 284 */,
+/* 285 */,
+/* 286 */,
+/* 287 */,
+/* 288 */,
+/* 289 */,
+/* 290 */,
+/* 291 */
+/*!*****************************************************************************!*\
+  !*** D:/cjindex/uni_modules/uview-ui/components/u-datetime-picker/props.js ***!
+  \*****************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -22666,10 +22668,10 @@ exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 2)["default"]))
 
 /***/ }),
-/* 299 */
-/*!*************************************************************!*\
-  !*** D:/项目/cjindex/uni_modules/uview-ui/libs/util/dayjs.js ***!
-  \*************************************************************/
+/* 292 */
+/*!**********************************************************!*\
+  !*** D:/cjindex/uni_modules/uview-ui/libs/util/dayjs.js ***!
+  \**********************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -22978,155 +22980,17 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_RESULT__;var _typeof = 
 });
 
 /***/ }),
-/* 300 */,
-/* 301 */,
-/* 302 */,
-/* 303 */,
-/* 304 */,
-/* 305 */,
-/* 306 */,
-/* 307 */
-/*!*************************************************************************!*\
-  !*** D:/项目/cjindex/uni_modules/uview-ui/components/u-collapse/props.js ***!
-  \*************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-/* WEBPACK VAR INJECTION */(function(uni) {
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = void 0;
-var _default = {
-  props: {
-    // 当前展开面板的name，非手风琴模式：[<string | number>]，手风琴模式：string | number
-    value: {
-      type: [String, Number, Array, null],
-      default: uni.$u.props.collapse.value
-    },
-    // 是否手风琴模式
-    accordion: {
-      type: Boolean,
-      default: uni.$u.props.collapse.accordion
-    },
-    // 是否显示外边框
-    border: {
-      type: Boolean,
-      default: uni.$u.props.collapse.border
-    }
-  }
-};
-exports.default = _default;
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 2)["default"]))
-
-/***/ }),
-/* 308 */,
-/* 309 */,
-/* 310 */,
-/* 311 */,
-/* 312 */,
-/* 313 */,
-/* 314 */,
-/* 315 */
-/*!******************************************************************************!*\
-  !*** D:/项目/cjindex/uni_modules/uview-ui/components/u-collapse-item/props.js ***!
-  \******************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-/* WEBPACK VAR INJECTION */(function(uni) {
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = void 0;
-var _default = {
-  props: {
-    // 标题
-    title: {
-      type: String,
-      default: uni.$u.props.collapseItem.title
-    },
-    // 标题右侧内容
-    value: {
-      type: String,
-      default: uni.$u.props.collapseItem.value
-    },
-    // 标题下方的描述信息
-    label: {
-      type: String,
-      default: uni.$u.props.collapseItem.label
-    },
-    // 是否禁用折叠面板
-    disabled: {
-      type: Boolean,
-      default: uni.$u.props.collapseItem.disabled
-    },
-    // 是否展示右侧箭头并开启点击反馈
-    isLink: {
-      type: Boolean,
-      default: uni.$u.props.collapseItem.isLink
-    },
-    // 是否开启点击反馈
-    clickable: {
-      type: Boolean,
-      default: uni.$u.props.collapseItem.clickable
-    },
-    // 是否显示内边框
-    border: {
-      type: Boolean,
-      default: uni.$u.props.collapseItem.border
-    },
-    // 标题的对齐方式
-    align: {
-      type: String,
-      default: uni.$u.props.collapseItem.align
-    },
-    // 唯一标识符
-    name: {
-      type: [String, Number],
-      default: uni.$u.props.collapseItem.name
-    },
-    // 标题左侧图片，可为绝对路径的图片或内置图标
-    icon: {
-      type: String,
-      default: uni.$u.props.collapseItem.icon
-    },
-    // 面板展开收起的过渡时间，单位ms
-    duration: {
-      type: Number,
-      default: uni.$u.props.collapseItem.duration
-    }
-  }
-};
-exports.default = _default;
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 2)["default"]))
-
-/***/ }),
-/* 316 */,
-/* 317 */,
-/* 318 */,
-/* 319 */,
-/* 320 */,
-/* 321 */,
-/* 322 */,
-/* 323 */,
-/* 324 */,
-/* 325 */,
-/* 326 */,
-/* 327 */,
-/* 328 */,
-/* 329 */,
-/* 330 */,
-/* 331 */,
-/* 332 */,
-/* 333 */
-/*!*********************************************************************************************!*\
-  !*** D:/项目/cjindex/uni_modules/uni-transition/components/uni-transition/createAnimation.js ***!
-  \*********************************************************************************************/
+/* 293 */,
+/* 294 */,
+/* 295 */,
+/* 296 */,
+/* 297 */,
+/* 298 */,
+/* 299 */,
+/* 300 */
+/*!******************************************************************************************!*\
+  !*** D:/cjindex/uni_modules/uni-transition/components/uni-transition/createAnimation.js ***!
+  \******************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -23257,15 +23121,15 @@ function createAnimation(option, _this) {
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 2)["default"]))
 
 /***/ }),
-/* 334 */,
-/* 335 */,
-/* 336 */,
-/* 337 */,
-/* 338 */,
-/* 339 */
-/*!*********************************************************************!*\
-  !*** D:/项目/cjindex/uni_modules/uview-ui/components/u-icon/icons.js ***!
-  \*********************************************************************/
+/* 301 */,
+/* 302 */,
+/* 303 */,
+/* 304 */,
+/* 305 */,
+/* 306 */
+/*!******************************************************************!*\
+  !*** D:/cjindex/uni_modules/uview-ui/components/u-icon/icons.js ***!
+  \******************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -23493,10 +23357,10 @@ var _default = {
 exports.default = _default;
 
 /***/ }),
-/* 340 */
-/*!*********************************************************************!*\
-  !*** D:/项目/cjindex/uni_modules/uview-ui/components/u-icon/props.js ***!
-  \*********************************************************************/
+/* 307 */
+/*!******************************************************************!*\
+  !*** D:/cjindex/uni_modules/uview-ui/components/u-icon/props.js ***!
+  \******************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -23600,17 +23464,17 @@ exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 2)["default"]))
 
 /***/ }),
-/* 341 */,
-/* 342 */,
-/* 343 */,
-/* 344 */,
-/* 345 */,
-/* 346 */,
-/* 347 */,
-/* 348 */
-/*!*********************************************************************!*\
-  !*** D:/项目/cjindex/uni_modules/uview-ui/components/u-line/props.js ***!
-  \*********************************************************************/
+/* 308 */,
+/* 309 */,
+/* 310 */,
+/* 311 */,
+/* 312 */,
+/* 313 */,
+/* 314 */,
+/* 315 */
+/*!******************************************************************!*\
+  !*** D:/cjindex/uni_modules/uview-ui/components/u-line/props.js ***!
+  \******************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -23658,17 +23522,17 @@ exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 2)["default"]))
 
 /***/ }),
-/* 349 */,
-/* 350 */,
-/* 351 */,
-/* 352 */,
-/* 353 */,
-/* 354 */,
-/* 355 */,
-/* 356 */
-/*!***********************************************************************!*\
-  !*** D:/项目/cjindex/uni_modules/uview-ui/components/u-picker/props.js ***!
-  \***********************************************************************/
+/* 316 */,
+/* 317 */,
+/* 318 */,
+/* 319 */,
+/* 320 */,
+/* 321 */,
+/* 322 */,
+/* 323 */
+/*!********************************************************************!*\
+  !*** D:/cjindex/uni_modules/uview-ui/components/u-picker/props.js ***!
+  \********************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -23762,152 +23626,17 @@ exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 2)["default"]))
 
 /***/ }),
-/* 357 */,
-/* 358 */,
-/* 359 */,
-/* 360 */,
-/* 361 */,
-/* 362 */,
-/* 363 */,
-/* 364 */
-/*!*********************************************************************!*\
-  !*** D:/项目/cjindex/uni_modules/uview-ui/components/u-cell/props.js ***!
-  \*********************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-/* WEBPACK VAR INJECTION */(function(uni) {
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = void 0;
-var _default2 = {
-  props: {
-    // 标题
-    title: {
-      type: [String, Number],
-      default: uni.$u.props.cell.title
-    },
-    // 标题下方的描述信息
-    label: {
-      type: [String, Number],
-      default: uni.$u.props.cell.label
-    },
-    // 右侧的内容
-    value: {
-      type: [String, Number],
-      default: uni.$u.props.cell.value
-    },
-    // 左侧图标名称，或者图片链接(本地文件建议使用绝对地址)
-    icon: {
-      type: String,
-      default: uni.$u.props.cell.icon
-    },
-    // 是否禁用cell
-    disabled: {
-      type: Boolean,
-      default: uni.$u.props.cell.disabled
-    },
-    // 是否显示下边框
-    border: {
-      type: Boolean,
-      default: uni.$u.props.cell.border
-    },
-    // 内容是否垂直居中(主要是针对右侧的value部分)
-    center: {
-      type: Boolean,
-      default: uni.$u.props.cell.center
-    },
-    // 点击后跳转的URL地址
-    url: {
-      type: String,
-      default: uni.$u.props.cell.url
-    },
-    // 链接跳转的方式，内部使用的是uView封装的route方法，可能会进行拦截操作
-    linkType: {
-      type: String,
-      default: uni.$u.props.cell.linkType
-    },
-    // 是否开启点击反馈(表现为点击时加上灰色背景)
-    clickable: {
-      type: Boolean,
-      default: uni.$u.props.cell.clickable
-    },
-    // 是否展示右侧箭头并开启点击反馈
-    isLink: {
-      type: Boolean,
-      default: uni.$u.props.cell.isLink
-    },
-    // 是否显示表单状态下的必填星号(此组件可能会内嵌入input组件)
-    required: {
-      type: Boolean,
-      default: uni.$u.props.cell.required
-    },
-    // 右侧的图标箭头
-    rightIcon: {
-      type: String,
-      default: uni.$u.props.cell.rightIcon
-    },
-    // 右侧箭头的方向，可选值为：left，up，down
-    arrowDirection: {
-      type: String,
-      default: uni.$u.props.cell.arrowDirection
-    },
-    // 左侧图标样式
-    iconStyle: {
-      type: [Object, String],
-      default: function _default() {
-        return uni.$u.props.cell.iconStyle;
-      }
-    },
-    // 右侧箭头图标的样式
-    rightIconStyle: {
-      type: [Object, String],
-      default: function _default() {
-        return uni.$u.props.cell.rightIconStyle;
-      }
-    },
-    // 标题的样式
-    titleStyle: {
-      type: [Object, String],
-      default: function _default() {
-        return uni.$u.props.cell.titleStyle;
-      }
-    },
-    // 单位元的大小，可选值为large
-    size: {
-      type: String,
-      default: uni.$u.props.cell.size
-    },
-    // 点击cell是否阻止事件传播
-    stop: {
-      type: Boolean,
-      default: uni.$u.props.cell.stop
-    },
-    // 标识符，cell被点击时返回
-    name: {
-      type: [Number, String],
-      default: uni.$u.props.cell.name
-    }
-  }
-};
-exports.default = _default2;
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 2)["default"]))
-
-/***/ }),
-/* 365 */,
-/* 366 */,
-/* 367 */,
-/* 368 */,
-/* 369 */,
-/* 370 */,
-/* 371 */,
-/* 372 */
-/*!**********************************************************************!*\
-  !*** D:/项目/cjindex/uni_modules/uview-ui/components/u-popup/props.js ***!
-  \**********************************************************************/
+/* 324 */,
+/* 325 */,
+/* 326 */,
+/* 327 */,
+/* 328 */,
+/* 329 */,
+/* 330 */,
+/* 331 */
+/*!*******************************************************************!*\
+  !*** D:/cjindex/uni_modules/uview-ui/components/u-popup/props.js ***!
+  \*******************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -24001,17 +23730,17 @@ exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 2)["default"]))
 
 /***/ }),
-/* 373 */,
-/* 374 */,
-/* 375 */,
-/* 376 */,
-/* 377 */,
-/* 378 */,
-/* 379 */,
-/* 380 */
-/*!************************************************************************!*\
-  !*** D:/项目/cjindex/uni_modules/uview-ui/components/u-toolbar/props.js ***!
-  \************************************************************************/
+/* 332 */,
+/* 333 */,
+/* 334 */,
+/* 335 */,
+/* 336 */,
+/* 337 */,
+/* 338 */,
+/* 339 */
+/*!*********************************************************************!*\
+  !*** D:/cjindex/uni_modules/uview-ui/components/u-toolbar/props.js ***!
+  \*********************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -24060,17 +23789,17 @@ exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 2)["default"]))
 
 /***/ }),
-/* 381 */,
-/* 382 */,
-/* 383 */,
-/* 384 */,
-/* 385 */,
-/* 386 */,
-/* 387 */,
-/* 388 */
-/*!*****************************************************************************!*\
-  !*** D:/项目/cjindex/uni_modules/uview-ui/components/u-loading-icon/props.js ***!
-  \*****************************************************************************/
+/* 340 */,
+/* 341 */,
+/* 342 */,
+/* 343 */,
+/* 344 */,
+/* 345 */,
+/* 346 */,
+/* 347 */
+/*!**************************************************************************!*\
+  !*** D:/cjindex/uni_modules/uview-ui/components/u-loading-icon/props.js ***!
+  \**************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -24144,17 +23873,17 @@ exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 2)["default"]))
 
 /***/ }),
-/* 389 */,
-/* 390 */,
-/* 391 */,
-/* 392 */,
-/* 393 */,
-/* 394 */,
-/* 395 */,
-/* 396 */
-/*!************************************************************************!*\
-  !*** D:/项目/cjindex/uni_modules/uview-ui/components/u-overlay/props.js ***!
-  \************************************************************************/
+/* 348 */,
+/* 349 */,
+/* 350 */,
+/* 351 */,
+/* 352 */,
+/* 353 */,
+/* 354 */,
+/* 355 */
+/*!*********************************************************************!*\
+  !*** D:/cjindex/uni_modules/uview-ui/components/u-overlay/props.js ***!
+  \*********************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -24193,17 +23922,17 @@ exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 2)["default"]))
 
 /***/ }),
-/* 397 */,
-/* 398 */,
-/* 399 */,
-/* 400 */,
-/* 401 */,
-/* 402 */,
-/* 403 */,
-/* 404 */
-/*!***************************************************************************!*\
-  !*** D:/项目/cjindex/uni_modules/uview-ui/components/u-transition/props.js ***!
-  \***************************************************************************/
+/* 356 */,
+/* 357 */,
+/* 358 */,
+/* 359 */,
+/* 360 */,
+/* 361 */,
+/* 362 */,
+/* 363 */
+/*!************************************************************************!*\
+  !*** D:/cjindex/uni_modules/uview-ui/components/u-transition/props.js ***!
+  \************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -24242,10 +23971,10 @@ exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 2)["default"]))
 
 /***/ }),
-/* 405 */
-/*!********************************************************************************!*\
-  !*** D:/项目/cjindex/uni_modules/uview-ui/components/u-transition/transition.js ***!
-  \********************************************************************************/
+/* 364 */
+/*!*****************************************************************************!*\
+  !*** D:/cjindex/uni_modules/uview-ui/components/u-transition/transition.js ***!
+  \*****************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -24259,7 +23988,7 @@ Object.defineProperty(exports, "__esModule", {
 exports.default = void 0;
 var _regenerator = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/regenerator */ 57));
 var _asyncToGenerator2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/asyncToGenerator */ 59));
-var _nvueAniMap = _interopRequireDefault(__webpack_require__(/*! ./nvue.ani-map.js */ 406));
+var _nvueAniMap = _interopRequireDefault(__webpack_require__(/*! ./nvue.ani-map.js */ 365));
 // 定义一个一定时间后自动成功的promise，让调用nextTick方法处，进入下一个then方法
 var nextTick = function nextTick() {
   return new Promise(function (resolve) {
@@ -24351,10 +24080,10 @@ var _default = {
 exports.default = _default;
 
 /***/ }),
-/* 406 */
-/*!**********************************************************************************!*\
-  !*** D:/项目/cjindex/uni_modules/uview-ui/components/u-transition/nvue.ani-map.js ***!
-  \**********************************************************************************/
+/* 365 */
+/*!*******************************************************************************!*\
+  !*** D:/cjindex/uni_modules/uview-ui/components/u-transition/nvue.ani-map.js ***!
+  \*******************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -24544,17 +24273,17 @@ var _default = {
 exports.default = _default;
 
 /***/ }),
-/* 407 */,
-/* 408 */,
-/* 409 */,
-/* 410 */,
-/* 411 */,
-/* 412 */,
-/* 413 */,
-/* 414 */
-/*!***************************************************************************!*\
-  !*** D:/项目/cjindex/uni_modules/uview-ui/components/u-status-bar/props.js ***!
-  \***************************************************************************/
+/* 366 */,
+/* 367 */,
+/* 368 */,
+/* 369 */,
+/* 370 */,
+/* 371 */,
+/* 372 */,
+/* 373 */
+/*!************************************************************************!*\
+  !*** D:/cjindex/uni_modules/uview-ui/components/u-status-bar/props.js ***!
+  \************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -24577,17 +24306,17 @@ exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 2)["default"]))
 
 /***/ }),
-/* 415 */,
-/* 416 */,
-/* 417 */,
-/* 418 */,
-/* 419 */,
-/* 420 */,
-/* 421 */,
-/* 422 */
-/*!****************************************************************************!*\
-  !*** D:/项目/cjindex/uni_modules/uview-ui/components/u-safe-bottom/props.js ***!
-  \****************************************************************************/
+/* 374 */,
+/* 375 */,
+/* 376 */,
+/* 377 */,
+/* 378 */,
+/* 379 */,
+/* 380 */,
+/* 381 */
+/*!*************************************************************************!*\
+  !*** D:/cjindex/uni_modules/uview-ui/components/u-safe-bottom/props.js ***!
+  \*************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 

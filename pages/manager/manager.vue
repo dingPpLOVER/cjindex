@@ -35,7 +35,7 @@
 		<view class="checkesin">
 			<view class="title">商户管理</view>
 			<view class="checont">
-				<view class="checontsin">
+				<view class="checontsin" @click="tolist">
 					<image src="https://232r34t825.zicp.fun/ftpData/tmp/dp/cj/cj/icon/managericon_shlist.png" class="ima"></image>
 					<view>商户列表</view>
 				</view>
@@ -67,8 +67,12 @@
 				uni.navigateTo({
 					url:'/pages/merchant_approval/merchant_approval'
 				})
+			},
+			tolist(){
+				uni.navigateTo({
+					url:'/pages/merchant_shlist/merchant_shlist'
+				})
 			}
-			
 		},
 		onLoad(option) {
 			this.nickname = option.nickvalue

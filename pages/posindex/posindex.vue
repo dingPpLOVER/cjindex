@@ -6,14 +6,15 @@
 		<div class="start_act" @click="toset"></div>
 		<div class="act_detail" :style="{height:act_detail+'px'}">
 			<div class="act_text">活动详情</div>
-			<div class="act_list" :style="{height:act_detail-50+'px'}" >
+			<div class="act_name">勇敢冲冲冲！活动进行中....</div>
+			<div class="act_list" :style="{height:act_detail-60+'px'}" >
 				<div v-if="jsonlist.length>0">
 					<div class="titpage">
 						<div class="titsin">序号</div>
 						<div class="titsin">用户名称</div>
 						<div class="titsin1">奖品</div>
 					</div>
-					<div class="act_listta" :style="{height:act_detail-80+'px'}">
+					<div class="act_listta" :style="{height:act_detail-100+'px'}">
 						<div class="titpage_" v-for="(item,index) in jsonlist" :key="index">
 							<div class="titsin_">{{item.number}}</div>
 							<div class="titsin_">{{item.name}}</div>
@@ -24,6 +25,7 @@
 				</div>
 			</div>
 		</div>
+		<div class="pos" @click="previous">往期回顾</div>
 	</div>
 </template>
 
@@ -54,6 +56,11 @@
 				console.log(111)
 				uni.navigateTo({
 					url:'/pages/set/set'
+				})
+			},
+			previous(){
+				uni.navigateTo({
+					url:'/pages/posindex_previous/posindex_previous'
 				})
 			}
 		},

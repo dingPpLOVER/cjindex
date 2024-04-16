@@ -31,12 +31,12 @@
 	color: #ffffff;
 }
 .act_text.data-v-5e4b1774{
-	height: 40px;
+	height: 30px;
 	width: 40%;
 	margin: auto;
 	background: linear-gradient(130deg ,#87b5ff,#5994de,#87b5ff);
 	border-radius: 8px;
-	line-height: 40px;
+	line-height: 30px;
 	font-weight: bold;
 	font-size: 15px;
 	box-shadow:4px 4px 4px #6099e3;

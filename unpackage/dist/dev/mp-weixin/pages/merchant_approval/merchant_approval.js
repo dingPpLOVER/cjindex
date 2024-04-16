@@ -101,7 +101,7 @@ var components
 try {
   components = {
     uniPopup: function () {
-      return __webpack_require__.e(/*! import() | uni_modules/uni-popup/components/uni-popup/uni-popup */ "uni_modules/uni-popup/components/uni-popup/uni-popup").then(__webpack_require__.bind(null, /*! @/uni_modules/uni-popup/components/uni-popup/uni-popup.vue */ 202))
+      return __webpack_require__.e(/*! import() | uni_modules/uni-popup/components/uni-popup/uni-popup */ "uni_modules/uni-popup/components/uni-popup/uni-popup").then(__webpack_require__.bind(null, /*! @/uni_modules/uni-popup/components/uni-popup/uni-popup.vue */ 211))
     },
   }
 } catch (e) {
@@ -302,7 +302,7 @@ var _merchant = _interopRequireDefault(__webpack_require__(/*! @/static/json/mer
 //
 var uniPopup = function uniPopup() {
   __webpack_require__.e(/*! require.ensure | uni_modules/uni-popup/components/uni-popup/uni-popup */ "uni_modules/uni-popup/components/uni-popup/uni-popup").then((function () {
-    return resolve(__webpack_require__(/*! @/uni_modules/uni-popup/components/uni-popup/uni-popup.vue */ 202));
+    return resolve(__webpack_require__(/*! @/uni_modules/uni-popup/components/uni-popup/uni-popup.vue */ 211));
   }).bind(null, __webpack_require__)).catch(__webpack_require__.oe);
 };
 var _default = {
@@ -366,10 +366,10 @@ var _default = {
       this.posi = posi;
       this.$refs.popup.open('center'); //中间弹出
       if (index == 'FALSE') {
-        this.poupbj = '../../static/img/sh_wait.png';
+        this.poupbj = 'https://232r34t825.zicp.fun/ftpData/tmp/dp/cj/cj/sh_wait.png';
         this.none = 'normal';
       } else {
-        this.poupbj = '../../static/img/sh_pass.png';
+        this.poupbj = 'https://232r34t825.zicp.fun/ftpData/tmp/dp/cj/cj/sh_pass.png';
         this.none = 'none';
       }
     },

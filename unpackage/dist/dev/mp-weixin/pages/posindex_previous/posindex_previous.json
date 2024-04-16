@@ -1,4 +1,6 @@
 {
-  "navigationBarTitleText": "uni-app",
+  "navigationBarTitleText": "活动列表",
+  "navigationBarTextStyle": "white",
+  "navigationBarBackgroundColor": "#3f7bff",
   "usingComponents": {}
 }

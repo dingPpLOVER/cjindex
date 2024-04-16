@@ -194,10 +194,10 @@
 				this.posi = posi
 				this.$refs.popup.open('center') //中间弹出
 				if(index=='FALSE'){
-					this.poupbj = '../../static/img/sh_wait.png'
+					this.poupbj = 'https://232r34t825.zicp.fun/ftpData/tmp/dp/cj/cj/sh_wait.png'
 					this.none = 'normal'
 				}else{
-					this.poupbj = '../../static/img/sh_pass.png'
+					this.poupbj = 'https://232r34t825.zicp.fun/ftpData/tmp/dp/cj/cj/sh_pass.png'
 					this.none = 'none'
 				}
 			},

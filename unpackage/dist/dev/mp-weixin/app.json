@@ -1,16 +1,18 @@
 {
   "pages": [
-    "pages/posindex_previous/posindex_previous",
     "pages/index/index",
     "pages/merchant_approval/merchant_approval",
     "pages/mes/mes",
     "pages/set/set",
+    "pages/posindex_previous/posindex_previous",
     "pages/merchant_shlist/merchant_shlist",
+    "pages/merchant_act/merchant_act",
     "pages/Lucky-Draw/Lucky-Draw ",
     "pages/log_pos/log_pos",
     "pages/manager/manager",
     "pages/actend_alert/actend_alert",
     "pages/posindex/posindex",
+    "pages/pos_wqact/pos_wqact",
     "pages/index_cy/index_cy"
   ],
   "subPackages": [],

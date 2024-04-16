@@ -3,12 +3,7 @@
 			"^u-(.*)": "@/uni_modules/uview-ui/components/u-$1/u-$1.vue"
 		},
 	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
-		{
-			"path": "pages/posindex_previous/posindex_previous",
-			"style": {
-				"navigationBarTitleText": "uni-app"
-			}
-		},
+		
 		{
 			"path": "pages/index/index",
 			"style": {
@@ -34,11 +29,24 @@
 				"navigationBarTitleText": "发起抽奖"
 			}
 		},
-		
+		{
+			"path": "pages/posindex_previous/posindex_previous",
+			"style": {
+				"navigationBarTitleText": "活动列表",
+				"navigationBarTextStyle": "white",
+				"navigationBarBackgroundColor":"#3f7bff"
+			}
+		},
 		{
 			"path": "pages/merchant_shlist/merchant_shlist",
 			"style": {
 				"navigationBarTitleText": "商户列表",
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/merchant_act/merchant_act",
+			"style": {
 				"navigationStyle": "custom"
 			}
 		},
@@ -65,7 +73,7 @@
 		{
 			"path": "pages/actend_alert/actend_alert",
 			"style": {
-				"navigationBarTitleText": "uni-app"
+				"navigationBarTitleText": "历史活动"
 			}
 		},
 		{
@@ -74,7 +82,12 @@
 				"navigationBarTitleText": "uni-app"
 			}
 		},
-		
+		{
+			"path": "pages/pos_wqact/pos_wqact",
+			"style": {
+				"navigationBarTitleText": "uni-app"
+			}
+		},
 		{
 			"path": "pages/index_cy/index_cy",
 			"style": {

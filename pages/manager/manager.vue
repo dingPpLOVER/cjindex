@@ -26,7 +26,7 @@
 					<view>商户审批</view>
 				</view>
 				<view class="line"></view>
-				<view class="checontsin">
+				<view class="checontsin" @click="merchant_actf">
 					<image src="https://232r34t825.zicp.fun/ftpData/tmp/dp/cj/cj/icon/managericon_actsp.png" class="ima"></image>
 					<view>活动审批</view>
 				</view>
@@ -71,6 +71,11 @@
 			tolist(){
 				uni.navigateTo({
 					url:'/pages/merchant_shlist/merchant_shlist'
+				})
+			},
+			merchant_actf(){
+				uni.navigateTo({
+					url:'/pages/merchant_act/merchant_act'
 				})
 			}
 		},

@@ -28,32 +28,12 @@
 					</div>
 
 
-					<view class="inputdiv">
-						<u-form :model="formModel" ref="form">
-							<u-form-item @click="dateTimePicker = true" prop="maintenanceTime">
-								<u-input v-model="formModel.maintenanceTime" placeholder="选择开始时间"></u-input>
-
-							</u-form-item>
-						</u-form>
-
-						<u-datetime-picker @confirm="dateTimePickerConfirm" @cancel="dateTimePicker = false"
-							:show="dateTimePicker" v-model="timeValue" ref="datetimePicker" mode="datetime"
-							closeOnClickOverlay :defaultIndex="defaultTimeIndex" :style="{backgroundColor:'#ff0000'}">
-						</u-datetime-picker>
+					<view class="inputdiv" @click="show = true">
+						<u-datetime-picker :show="show" v-model="value1" mode="datetime"></u-datetime-picker>
 					</view>
 
-					<div class="inputdiv">
-						<u-form :model="formModel" ref="formEnd">
-							<u-form-item @click="dateTimePickerEnd = true" prop="maintenanceTime">
-								<u-input v-model="formModel.maintenanceTimeEnd" placeholder="选择结束时间">
-								</u-input>
-							</u-form-item>
-						</u-form>
-
-						<u-datetime-picker @confirm="dateTimePickerConfirmEnd" @cancel="dateTimePickerEnd = false"
-							:show="dateTimePickerEnd" v-model="timeValueEnd" ref="datetimePickerEnd" mode="datetime"
-							closeOnClickOverlay :defaultIndex="defaultTimeIndex" :style="{backgroundColor:'#ff0000'}">
-						</u-datetime-picker>
+					<div class="inputdiv" @click="show = true">
+						<u-datetime-picker :show="show" v-model="value1" mode="datetime"></u-datetime-picker>
 					</div>
 					<button class="btn" form-type="submit">提交</button>
 				</form>
@@ -69,13 +49,12 @@
 
 <script>
 	import sty from '@/static/json/set.json'
-	// import uPicker  from '@/uni_modules/uview-ui/components/u-picker/u-picker.vue'
 	export default {
 		data() {
 			return {
+				show: false,
+				value1: Number(new Date()),
 				sty: sty,
-				dateTimePicker: false,
-				dateTimePickerEnd: false,
 				params: {
 					year: true,
 					month: true,
@@ -101,11 +80,8 @@
 					prize: '',
 					strtime: '',
 					endtime: ''
-				},
-				formModel: {
-					maintenanceTime: '',
-					maintenanceTimeEnd: ''
 				}
+				
 			}
 		},
 		methods: {
@@ -134,11 +110,11 @@
 
 						}
 					});
-				}else{
+				} else {
 					uni.showToast({
-						title:'提交通过',
-						icon:'success',
-						duration:2000
+						title: '提交通过',
+						icon: 'success',
+						duration: 2000
 					})
 				}
 			},
@@ -160,22 +136,7 @@
 				}
 				return value
 			},
-			dateTimePickerConfirm(e) {
-				this.dateTimePicker = false
-				// console.log(e.value, e.mode)
-				this.formModel.maintenanceTime = this.$u.date(e.value, 'yyyy-mm-dd hh:MM:ss')
-				this.$refs.form.validateField('maintenanceTime')
-				// console.log(this.formModel.maintenanceTime)
-				this.form.strtime = this.formModel.maintenanceTime
-			},
-			dateTimePickerConfirmEnd(e) {
-				this.dateTimePickerEnd = false
-				console.log(e.value, e.mode)
-				this.formModel.maintenanceTimeEnd = this.$u.date(e.value, 'yyyy-mm-dd hh:MM:ss')
-				this.$refs.formEnd.validateField('maintenanceTime')
-				console.log(this.formModel.maintenanceTimeEnd)
-				this.form.endtime = this.formModel.maintenanceTimeEnd
-			},
+			
 			onInput(event) {
 				// 输入内容处理，可以在这里添加额外逻辑
 				console.log(event.target.value);
@@ -196,6 +157,6 @@
 	}
 </script>
 
-<style>
+<style lang="scss" scoped>
 	@import url("../../static/css/set.css");
 </style>

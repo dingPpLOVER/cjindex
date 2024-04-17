@@ -90,3 +90,11 @@
 	padding: 0;
 
 }
+
+.u-popup-slot {
+	width: 200px;
+	height: 80px;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 10rpx;
+}

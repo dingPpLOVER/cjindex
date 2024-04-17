@@ -132,9 +132,10 @@
 	border-radius: 5px; //设置弧度的大小
 	height: 350px;
 	width: 280px;
-	box-shadow:inset 0 0 8px #77791c;
+	box-shadow: inset 0 0 8px #77791c;
 }
-.popup_title{
+
+.popup_title {
 	width: 100%;
 	height: 30px;
 	text-align: center;
@@ -144,18 +145,21 @@
 	font-weight: bold;
 	font-size: 15px;
 }
+
 .poupbj {
 	height: 80%;
 	width: 90%;
 	position: absolute;
 	margin-left: 5%;
 }
-.popupimage{
+
+.popupimage {
 	height: 100px;
 	width: 100px;
 	position: absolute;
 	margin-left: 65%;
 }
+
 .poupsin {
 	width: 80%;
 	height: 25px;
@@ -163,13 +167,16 @@
 	margin-top: 5px;
 	border-bottom: 1px solid #cccccc66;
 }
-.poup_l{
+
+.poup_l {
 	width: 100px;
 }
-.poup_r{
+
+.poup_r {
 	margin-left: 8px;
 }
-.btn{
+
+.btn {
 	width: 80px;
 	height: 32px;
 	border-radius: 5px;
@@ -181,24 +188,68 @@
 	vertical-align: top;
 	margin-left: 13.9px;
 }
-.poupbut{
+
+.poupbut {
 	width: 80%;
 	margin: auto;
 	margin-top: 10px;
 }
 
 
-.no_passview{
+.no_passview {
 	background: #fff9e9;
 	border-radius: 5px; //设置弧度的大小
 	height: 240px;
 	width: 280px;
-	box-shadow:inset 0 0 8px #77791c;
+	box-shadow: inset 0 0 8px #77791c;
 }
-.textarea{
+
+.textarea {
 	border: 1px solid #cccccc66;
 	width: 240px;
 	margin: auto;
 	border-radius: 5px;
 	padding: 8px;
+}
+
+
+
+
+.switsin_act {
+	height: 70px;
+	width: 100%;
+	margin-top: 10px;
+	background-color: #ffffff;
+	display: flex;
+	flex-direction: row;
+}
+
+.act_left {
+	width: 70px;
+	height: 70px;
+}
+
+.act_right {
+	flex: 1;
+}
+
+.act_img {
+	height: 50px;
+	width: 50px;
+	border-radius: 8px;
+	margin-top: 10px;
+	margin-left: 10px;
+}
+
+.act_name{
+	font-size: 15px;
+	font-weight: bold;
+	margin-top: 15px;
+}
+.test-popup_act {
+	background: #fff9e9;
+	border-radius: 5px; //设置弧度的大小
+	height: 380px;
+	width: 280px;
+	box-shadow: inset 0 0 8px #77791c;
 }

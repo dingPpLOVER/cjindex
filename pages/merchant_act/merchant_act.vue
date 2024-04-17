@@ -13,103 +13,84 @@
 			<!-- <swiper-item v-for="(item,index) in tabtextP" :key="index" class="sinswiper">{{item}}</swiper-item> -->
 			<swiper-item>
 				<view style="height: 98%;width: 100%; overflow: scroll;">
-					<view class="switsin" v-for="(item,index) in fsta" :key="index" @click="openpoup(item.status,item.tel,item.name,item.URL,item.trade,item.posi,item.id)">
-						<view class="titlename">
-							<text class="waitname">{{item.name}}<text
-									style="color: #78c0e3; margin-left: 5px;">{{'( '+item.posi+' )'}}</text></text>
-							<text class="waittext"> 待审核</text>
+					<view class="switsin_act" v-for="(item,index) in fsta" :key="index"
+						@click="openpoup(item.status,item.name,item.startime,item.endtime,item.win_num,item.cont,item.cj_num,item.prize,item.id)">
+						<view class="act_left">
+							<image :src="item.image" class="act_img"></image>
 						</view>
-						<view class="switsincon">
-							<image :src="item.image" class="swimg"></image>
-							<view class="swiurl">
-								<view>所属行业:<text class="switex">{{'( '+item.trade+' )'}}</text></view>
-								<view>商家地址:<text class="switex">{{item.URL}}</text></view>
-							</view>
-						</view>
-						<view class="titlename_">
-							<view class="tboot">
-								<view>联系电话:<text class="switex">{{item.tel}}</text></view>
-							</view>
-							<view class="tbootline"></view>
-							<view class="tboot">
-								<view>注册时间:<text class="switex">{{item.time}}</text></view>
-							</view>
+						<view class="act_right"
+							style="background: url(https://232r34t825.zicp.fun/ftpData/tmp/dp/cj/cj/sh_no.png) no-repeat center right; background-size: 30%;">
+							<view class="act_name">{{item.name}}</view>
+							<view>时间：{{item.startime}} 至 {{item.endtime}}</view>
 						</view>
 					</view>
 				</view>
 			</swiper-item>
 			<swiper-item>
 				<view style="height: 98%;width: 100%; overflow: scroll;">
-					<view class="switsin" v-for="(item,index) in tsta" :key="index" @click="openpoup(item.status,item.tel,item.name,item.URL,item.trade,item.posi,item.id)">
-						<view class="titlename">
-							<text class="waitname">{{item.name}}<text
-									style="color: #78c0e3; margin-left: 5px;">{{'( '+item.posi+' )'}}</text></text>
-							<text class="waittext_"> 审核通过</text>
+					<view class="switsin_act" v-for="(item,index) in tsta" :key="index"
+						@click="openpoup(item.status,item.name,item.startime,item.endtime,item.win_num,item.cont,item.cj_num,item.prize,item.id)">
+						<view class="act_left">
+							<image :src="item.image" class="act_img"></image>
 						</view>
-						<view class="switsincon">
-							<image :src="item.image" class="swimg"></image>
-							<view class="swiurl">
-								<view>所属行业:<text class="switex">{{'( '+item.trade+' )'}}</text></view>
-								<view>商家地址:<text class="switex">{{item.URL}}</text></view>
-							</view>
-						</view>
-						<view class="titlename_">
-							<view class="tboot">
-								<view>联系电话:<text class="switex">{{item.tel}}</text></view>
-							</view>
-							<view class="tbootline"></view>
-							<view class="tboot">
-								<view>注册时间:<text class="switex">{{item.time}}</text></view>
-							</view>
+						<view class="act_right" style="">
+							<view class="act_name">{{item.name}}</view>
+							<view>时间：{{item.startime}} 至 {{item.endtime}}</view>
 						</view>
 					</view>
 				</view>
 			</swiper-item>
 			<swiper-item>
 				<view style="height: 98%;width: 100%; overflow: scroll;">
-					<view class="switsin" v-for="(item,index) in jsonarr" :key="index" @click="openpoup(item.status,item.tel,item.name,item.URL,item.trade,item.posi,item.id)">
-						<view class="titlename">
-							<text class="waitname">{{item.name}}<text
-									style="color: #78c0e3; margin-left: 5px;">{{'( '+item.posi+' )'}}</text></text>
-							<text class="waittext_" v-if="item.status=='ture'"> 审核通过</text>
-							<text class="waittext" v-if="item.status=='FALSE'"> 待审核</text>
+					<view class="switsin_act" v-for="(item,index) in jsonarr" :key="index"
+						@click="openpoup(item.status,item.name,item.startime,item.endtime,item.win_num,item.cont,item.cj_num,item.prize,item.id)">
+						<view class="act_left">
+							<image :src="item.image" class="act_img"></image>
 						</view>
-						<view class="switsincon">
-							<image :src="item.image" class="swimg"></image>
-							<view class="swiurl">
-								<view>所属行业:<text class="switex">{{'( '+item.trade+' )'}}</text></view>
-								<view>商家地址:<text class="switex">{{item.URL}}</text></view>
-							</view>
-						</view>
-						<view class="titlename_">
-							<view class="tboot">
-								<view>联系电话:<text class="switex">{{item.tel}}</text></view>
-							</view>
-							<view class="tbootline"></view>
-							<view class="tboot">
-								<view>注册时间:<text class="switex">{{item.time}}</text></view>
-							</view>
+						<view class="act_right" :style="item.status=='FALSE'?back_n:back_y">
+							<view class="act_name">{{item.name}}</view>
+							<view>时间：{{item.startime}} 至 {{item.endtime}}</view>
 						</view>
 					</view>
 				</view>
 			</swiper-item>
 		</swiper>
 		<uni-popup ref="popup" type="center">
-			<view class="test-popup">
+			<view class="test-popup_act">
 				<view class="popup_title">申请信息单</view>
 				<image :src="poupbj" class="popupimage"></image>
-				<view class="poupbj" >
-					<view class="poupsin"><text class="poup_l">商户全称:</text><tex class="poup_r">{{name}}</tex></view>
-					<view class="poupsin"><text class="poup_l">申请人姓名:</text><tex class="poup_r">张三</tex></view>
-					<view class="poupsin"><text class="poup_l">手机号:</text><tex class="poup_r">{{tel}}</tex></view>
-					<view class="poupsin"><text class="poup_l">微信昵称:</text><tex class="poup_r">丁丁</tex></view>
-					<view class="poupsin"><text class="poup_l">代理人职务:</text><tex class="poup_r">总经理</tex></view>
-					<view class="poupsin"><text class="poup_l">商户地址:</text><tex class="poup_r">{{posi}}</tex></view>
-					<view class="poupsin"><text class="poup_l">所属行业:</text><tex class="poup_r">{{trade}}</tex></view>
-					<view class="poupsin"><text class="poup_l">所在城市:</text><tex class="poup_r">{{url}}</tex></view>
+				<view class="poupbj">
+					<view class="poupsin"><text class="poup_l">活动名称:</text>
+						<tex class="poup_r">{{name}}</tex>
+					</view>
+					<view class="poupsin"><text class="poup_l">集字内容:</text>
+						<tex class="poup_r">{{cont}}</tex>
+					</view>
+					<view class="poupsin"><text class="poup_l">申请人姓名:</text>
+						<tex class="poup_r">张三</tex>
+					</view>
+					<view class="poupsin"><text class="poup_l">开始时间:</text>
+						<tex class="poup_r">{{startime}}</tex>
+					</view>
+					<view class="poupsin"><text class="poup_l">结束时间:</text>
+						<tex class="poup_r">{{endtime}}</tex>
+					</view>
+					<view class="poupsin"><text class="poup_l">微信昵称:</text>
+						<tex class="poup_r">丁丁</tex>
+					</view>
+					<view class="poupsin"><text class="poup_l">最高中奖人数:</text>
+						<tex class="poup_r">{{winnum}}</tex>
+					</view>
+					<view class="poupsin"><text class="poup_l">奖励:</text>
+						<tex class="poup_r">{{prize}}</tex>
+					</view>
+					<view class="poupsin"><text class="poup_l">商家全称:</text>
+						<tex class="poup_r">全聚德</tex>
+					</view>
+
 					<view class="poupbut" v-if="none=='normal'">
 						<button @click="noconfirm" class="btn" style="background-color: #cccccc;">不通过</button>
-						 <button @click="confirm" class="btn">通过</button>
+						<button @click="confirm" class="btn">通过</button>
 					</view>
 					<view class="poupbut" v-if="none=='none'">
 						<button @click="close_confirm" class="btn" style="margin-left:60px;">关闭</button>
@@ -123,9 +104,9 @@
 					<view class="popup_title">原因</view>
 					<form @submit="submit">
 						<textarea class="textarea" placeholder="请输入不通过原因..." v-model="textareaval"></textarea>
-						<button  form-type="submit" class="btn" style="margin-top: 5px;margin-left: 100px;">提交</button>
+						<button form-type="submit" class="btn" style="margin-top: 5px;margin-left: 100px;">提交</button>
 					</form>
-					
+
 				</view>
 			</view>
 		</uni-popup>
@@ -133,10 +114,11 @@
 </template>
 
 <script>
-	import jsonarr from '@/static/json/merchant.json'
+	// import jsonarr from '@/static/json/merchant.json'
+	import jsonarr from '@/static/json/sh_act.json'
 	import uniPopup from '@/uni_modules/uni-popup/components/uni-popup/uni-popup.vue'
 	export default {
-		components: {//vue2需要注册一下
+		components: { //vue2需要注册一下
 			uniPopup
 		},
 		data() {
@@ -147,16 +129,20 @@
 				jsonarr: jsonarr,
 				fsta: [],
 				tsta: [],
-				status_m:'',
-				poupbj:'',
-				textareaval:'',
-				none:'',
-				tel:'',
-				name:'',
-				url:'',
-				trade:'',
-				posi:'',
-				id:''
+				status_m: '',
+				poupbj: '',
+				textareaval: '',
+				none: '',
+				startime: '',
+				name: '',
+				endtime: '',
+				cont: '',
+				prize: '',
+				cjnum: '',
+				winnum: '',
+				id: '',
+				back_y: 'background: url(https://232r34t825.zicp.fun/ftpData/tmp/dp/cj/cj/sh_yes.png) no-repeat center right; background-size: 30%;',
+				back_n: 'background: url(https://232r34t825.zicp.fun/ftpData/tmp/dp/cj/cj/sh_no.png) no-repeat center right; background-size: 30%;'
 			}
 		},
 		methods: {
@@ -182,32 +168,35 @@
 					}
 				}).exec(); // 执行选择器查询
 			},
-			openpoup(index,tel,name,url,trade,posi,id) {
+			openpoup(index, name, startime, endtime, winnum, cont, cjnum, prize, id) {
 				// 通过组件定义的ref调用uni-popup方法 ,如果传入参数 ，type 属性将失效 ，仅支持         
 				//['top','left','bottom','right','center']
-				console.log(index,tel,name,url,trade,posi,id)
+				//item.status,item.name,item.startime,item.endtime,item.win_num,item.cont,item.cj_num,item.prize,item.id
+				console.log(index, name, startime, endtime, winnum, cont, cjnum, prize, id)
 				this.id = id
-				this.tel = tel
+				this.startime = startime
 				this.name = name
-				this.url = url
-				this.trade = trade
-				this.posi = posi
+				this.endtime = endtime
+				this.winnum = winnum
+				this.cont = cont
+				this.cjnum = cjnum
+				this.prize = prize
 				this.$refs.popup.open('center') //中间弹出
-				if(index=='FALSE'){
-					this.poupbj = '../../static/img/sh_wait.png'
+				if (index == 'FALSE') {
+					this.poupbj = 'https://232r34t830.zicp.fun/ftpData/tmp/dp/cj/cj/sh_no.png'
 					this.none = 'normal'
-				}else{
-					this.poupbj = '../../static/img/sh_pass.png'
+				} else {
+					this.poupbj = 'https://232r34t830.zicp.fun/ftpData/tmp/dp/cj/cj/sh_yes.png'
 					this.none = 'none'
 				}
 			},
-			confirm(){
+			confirm() {
 				this.$refs.popup.close()
-				console.log('标签绑定的ID：'+this.id)
+				console.log('标签绑定的ID：' + this.id)
 				var newjsonarr = []
 				var jsonarr = this.jsonarr;
-				for(var i = 0 ; i < jsonarr.length ; i ++ ){
-					if(jsonarr[i].id == this.id){
+				for (var i = 0; i < jsonarr.length; i++) {
+					if (jsonarr[i].id == this.id) {
 						jsonarr[i].status = "ture"
 					}
 				}
@@ -215,34 +204,34 @@
 				console.log(jsonarr)
 				this.jsonarrfun()
 				uni.showToast({
-					title:'提交通过',
-					icon:'success',
-					duration:2000
+					title: '提交通过',
+					icon: 'success',
+					duration: 2000
 				})
 			},
-			noconfirm(){
+			noconfirm() {
 				this.$refs.nopopup.open('center')
 			},
-			close_confirm(){
+			close_confirm() {
 				this.$refs.popup.close()
 			},
-			submit(event){
+			submit(event) {
 				event.preventDefault(); // 阻止表单默认提交行为
 				console.log(this.textareaval)
 				uni.showToast({
-					title:'原因已发送',
-					icon:'success',
-					duration:2000
+					title: '原因已发送',
+					icon: 'success',
+					duration: 2000
 				})
 				this.$refs.nopopup.close()
 				this.$refs.popup.close()
 			},
-			jsonarrfun(){
+			jsonarrfun() {
 				const tsta = [];
 				const fsta = [];
 				var jsonarr = this.jsonarr;
 				for (var i = 0; i < jsonarr.length; i++) {
-				
+
 					if (jsonarr[i].status == 'FALSE') {
 						fsta.push(jsonarr[i])
 					} else {
@@ -251,6 +240,11 @@
 				}
 				this.fsta = fsta
 				this.tsta = tsta
+				jsonarr.sort((a, b) => {
+					let categoryOrder = ['FALSE', 'ture'];
+					return categoryOrder.indexOf(a.status) - categoryOrder.indexOf(b.status);
+				});
+				this.jsonarr = jsonarr
 			}
 		},
 		mounted() {
@@ -262,5 +256,4 @@
 
 <style scoped lang="scss">
 	@import "../../static/css/manager_.css";
-
 </style>

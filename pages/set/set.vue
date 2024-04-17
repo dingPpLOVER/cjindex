@@ -29,7 +29,7 @@
 
 
 					<view class="inputdiv" @click="show = true">
-						<u-datetime-picker :show="show" v-model="value1" mode="datetime"></u-datetime-picker>
+						<u-datetime-picker :show="show" v-model="value" mode="datetime" @confirm="handleConfirm" ref="picker" @cancel="handcancel"></u-datetime-picker>
 					</view>
 
 					<div class="inputdiv" @click="show = true">
@@ -136,7 +136,10 @@
 				}
 				return value
 			},
-			
+			handleConfirm(date){
+				console.log('选择的时间为:'+date)
+				this.show = false
+			},
 			onInput(event) {
 				// 输入内容处理，可以在这里添加额外逻辑
 				console.log(event.target.value);
@@ -144,15 +147,14 @@
 				if (event.target.value && event.target.value.length > 1) {
 					event.target.value = event.target.value.substring(0, 1);
 				}
+			},
+			handcancel(){
+				this.show = false;
 			}
 		},
-		onReady() {
-			// 微信小程序需要用此写法
-			this.$refs.datetimePicker.setFormatter(this.formatter)
-			this.$refs.datetimePickerEnd.setFormatter(this.formatter)
-		},
+		
 		mounted() {
-
+			// this.$refs.datetimePicker.innerValue=Number(new Date(item.offShelfDate))
 		}
 	}
 </script>

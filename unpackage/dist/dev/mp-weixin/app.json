@@ -1,9 +1,9 @@
 {
   "pages": [
     "pages/index/index",
+    "pages/set/set",
     "pages/merchant_approval/merchant_approval",
     "pages/mes/mes",
-    "pages/set/set",
     "pages/posindex_previous/posindex_previous",
     "pages/merchant_shlist/merchant_shlist",
     "pages/merchant_act/merchant_act",
@@ -13,6 +13,7 @@
     "pages/actend_alert/actend_alert",
     "pages/posindex/posindex",
     "pages/pos_wqact/pos_wqact",
+    "pages/pos_mes/pos_mes",
     "pages/index_cy/index_cy"
   ],
   "subPackages": [],

@@ -11,6 +11,12 @@
 			}
 		},
 		{
+			"path": "pages/set/set",
+			"style": {
+				"navigationBarTitleText": "发起抽奖"
+			}
+		},
+		{
 			"path": "pages/merchant_approval/merchant_approval",
 			"style": {
 				"navigationBarTitleText": "uni-app",
@@ -23,12 +29,7 @@
 				"navigationBarTitleText": "消息"
 			}
 		},
-		{
-			"path": "pages/set/set",
-			"style": {
-				"navigationBarTitleText": "发起抽奖"
-			}
-		},
+		
 		{
 			"path": "pages/posindex_previous/posindex_previous",
 			"style": {
@@ -84,6 +85,12 @@
 		},
 		{
 			"path": "pages/pos_wqact/pos_wqact",
+			"style": {
+				"navigationBarTitleText": "uni-app"
+			}
+		},
+		{
+			"path": "pages/pos_mes/pos_mes",
 			"style": {
 				"navigationBarTitleText": "uni-app"
 			}

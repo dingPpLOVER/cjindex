@@ -1,6 +1,6 @@
 <template>
 	<div class="box">
-
+		
 		<div class="box_s">
 			<div class="title">
 				<div class="titlet">请设置抽奖规则</div>
@@ -29,13 +29,17 @@
 
 
 					<view class="inputdiv" @click="show = true">
-						<u-datetime-picker :show="show" v-model="value" mode="datetime" @confirm="handleConfirm" ref="picker" @cancel="handcancel"></u-datetime-picker>
+						<input class="setinput" placeholder="请选择开始时间" v-model="form.strtime" />
+						<u-datetime-picker :show="show" v-model="value1" mode="datetime" @confirm="handleConfirm"
+							ref="datetimePicker" @cancel="handcancel"></u-datetime-picker>
 					</view>
 
-					<div class="inputdiv" @click="show = true">
-						<u-datetime-picker :show="show" v-model="value1" mode="datetime"></u-datetime-picker>
+					<div class="inputdiv" @click="show_ = true">
+						<input class="setinput" placeholder="请选择结束时间" v-model="form.endtime" />
+						<u-datetime-picker :show="show_" v-model="valuend" mode="datetime" ref="datetimePickerend"
+							@confirm="handleConfirmend" @cancel="handcancelend"></u-datetime-picker>
 					</div>
-					<button class="btn" form-type="submit">提交</button>
+					<button class="btnset" form-type="submit">提交</button>
 				</form>
 				<view>
 
@@ -43,17 +47,59 @@
 
 			</div>
 		</div>
-
+		<uni-popup ref="popup" type="center">
+			<view class="checkview">
+				<view class="checkcon">
+					<image src="https://232r34t825.zicp.fun/ftpData/tmp/dp/cj/cj/icon/takenote.png" class="icon_p"></image>
+					<view class="poptitle">请核对提交信息内容，确认无误后，点击确定提交。</view>
+					<view class="detailview">
+						<view class="de_text">集字内容：</view>
+						<view class="de_value">{{form.count}}</view>
+					</view>
+					<view class="detailview">
+						<view class="de_text">活动名称：</view>
+						<view class="de_value">{{form.name}}</view>
+					</view>
+					<view class="detailview">
+						<view class="de_text">活动抽奖次数：</view>
+						<view class="de_value">{{form.number}}</view>
+					</view>
+					<view class="detailview">
+						<view class="de_text">最多中奖人数：</view>
+						<view class="de_value">{{form.per}}</view>
+					</view>
+					<view class="detailview">
+						<view class="de_text">活动奖品：</view>
+						<view class="de_value">{{form.prize}}</view>
+					</view>
+					<view class="detailview">
+						<view class="de_text">活动开始时间：</view>
+						<view class="de_value">{{form.strtime}}</view>
+					</view>
+					<view class="detailview">
+						<view class="de_text">活动结束时间：</view>
+						<view class="de_value">{{form.endtime}}</view>
+					</view>
+					<view class="btn">
+						<view class="btnsin" style="background-color: #cccccc;" @click="re_reg"> 重置</view>
+						<view class="btnsin" style="background-color: #28c445;" @click="sualert"> 确认</view>
+					</view>
+				</view>
+			</view>
+		</uni-popup>
 	</div>
 </template>
 
 <script>
 	import sty from '@/static/json/set.json'
+	import uniPopup from '@/uni_modules/uni-popup/components/uni-popup/uni-popup.vue'
 	export default {
 		data() {
 			return {
 				show: false,
+				show_: false,
 				value1: Number(new Date()),
+				valuend:Number(new Date())+24*60*60*1000,
 				sty: sty,
 				params: {
 					year: true,
@@ -79,9 +125,10 @@
 					per: '',
 					prize: '',
 					strtime: '',
-					endtime: ''
+					endtime: '',
+					count:[]
 				}
-				
+
 			}
 		},
 		methods: {
@@ -111,12 +158,31 @@
 						}
 					});
 				} else {
-					uni.showToast({
-						title: '提交通过',
-						icon: 'success',
-						duration: 2000
-					})
+					this.$refs.popup.open('center') //中间弹出
+					this.form.count = form.font1+form.font2+ form.font3+form.font4+ form.font5+form.font6+ form.font7+ form
+					.font8
 				}
+			},
+			sualert(){
+				var this_ = this
+				uni.showModal({
+					title: '提示',
+					content: '提交成功,请等待审核,结果会在24小时内发送到系统,请登录查看',
+					success: function(res) {
+						if (res.confirm) {
+							this_.$refs.popup.close()
+							uni.navigateTo({
+								url:'/pages/index/index'
+							})
+				
+						} else if (res.cancel) {
+				
+						}
+					}
+				});
+			},
+			re_reg(){
+				this.$refs.popup.close()
 			},
 			formatter(type, value) {
 				if (type === 'year') {
@@ -136,10 +202,48 @@
 				}
 				return value
 			},
-			handleConfirm(date){
-				console.log('选择的时间为:'+date)
+			handleConfirm(value) {
+				// console.log(new Date(value.value) )
+				this.form.strtime = this.timef(value.value)
 				this.show = false
 			},
+			handleConfirmend(value) {
+				// console.log(value.value)
+				this.form.endtime = this.timef(value.value)
+				this.show_ = false
+			},
+			handcancel() {
+				this.show = false;
+			},
+			handcancelend() {
+				this.show_ = false
+			},
+			timef(value){
+				var time = new Date(value)
+				Date.prototype.format2nd = function (fmt) {
+				  var o = {
+				      "M+": this.getMonth() + 1, //月份
+				      "d+": this.getDate(), //日
+				      "h+": this.getHours(), //小时
+				      "m+": this.getMinutes(), //分
+				      "s+": this.getSeconds(), //秒
+				      "q+": Math.floor((this.getMonth() + 3) / 3), //季度
+				      "S": this.getMilliseconds() //毫秒
+				  };
+				  if (/(y+)/.test(fmt)) {
+				    fmt = fmt.replace(RegExp.$1, (this.getFullYear() + "").substr(4 - RegExp.$1.length));
+				  }
+				  for (var k in o) {
+				    if (new RegExp("(" + k + ")").test(fmt)) {
+				      fmt = fmt.replace(RegExp.$1, (RegExp.$1.length == 1) ?
+				        (o[k]) : (("00" + o[k]).substr(("" + o[k]).length)));
+				    }
+				  }
+				  return fmt;
+				}
+				return time.format2nd("yyyy-MM-dd hh:mm")
+			},
+			
 			onInput(event) {
 				// 输入内容处理，可以在这里添加额外逻辑
 				console.log(event.target.value);
@@ -148,14 +252,17 @@
 					event.target.value = event.target.value.substring(0, 1);
 				}
 			},
-			handcancel(){
-				this.show = false;
-			}
+
 		},
-		
+		onReady() {
+			// 微信小程序需要用此写法
+			this.$refs.datetimePicker.setFormatter(this.formatter)
+			this.$refs.datetimePickerend.setFormatter(this.formatter)
+		},
 		mounted() {
-			// this.$refs.datetimePicker.innerValue=Number(new Date(item.offShelfDate))
+			console.log(Number(new Date()))//返回毫秒数
 		}
+		
 	}
 </script>
 

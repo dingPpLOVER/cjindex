@@ -98,3 +98,29 @@
 	line-height: 30px;
 }
 
+
+
+
+.register_mes{
+	position: absolute;
+	right: 10px;
+	top: 15px;
+	height: 30px;
+	width: 30px;
+}
+.icon_{
+	height: 100%;
+	width: 100%;
+}
+.mescricle{
+	position: absolute;
+	right: 0px;
+	top: 0px;
+	border-radius: 50%;
+	height: 15px;
+	line-height: 15px;
+	text-align: center;
+	width: 15px;
+	background-color: #ff0000;
+	color: #ffffff;
+}

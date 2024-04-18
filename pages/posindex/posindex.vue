@@ -1,5 +1,9 @@
 <template>
 	<div id="box">
+		<div class="register_mes" @click="mesclick">
+			<image src="https://232r34t825.zicp.fun/ftpData/tmp/dp/cj/cj/icon/register_mes.png" class="icon_"></image>
+			<view class="mescricle"  v-if="num>0">{{num}}</view>
+		</div>
 		<div class="introduce">
 			<text class="inttext">尊敬的商户</text><text class="intvalue">{{nickvalue}} 你好！</text>
 		</div>
@@ -36,7 +40,8 @@
 			return {
 				nickvalue: '',
 				act_detail: '',
-				jsonlist:jsonlistarr
+				jsonlist:jsonlistarr,
+				num:1
 			}
 		},
 		methods: {
@@ -53,16 +58,24 @@
 				}).exec(); // 执行选择器查询
 			},
 			toset(){
-				console.log(111)
+				// console.log(111)
+				var nickvalue = this.nickvalue
 				uni.navigateTo({
-					url:'/pages/set/set'
+					url:'/pages/set/set?nickvalue='+nickvalue
 				})
 			},
 			previous(){
 				uni.navigateTo({
 					url:'/pages/posindex_previous/posindex_previous'
 				})
-			}
+			},
+			mesclick(){
+				var nickvalue = this.nickvalue
+				this.num = 0
+				uni.navigateTo({
+					url:'/pages/pos_mes/pos_mes?nickvalue='+nickvalue
+				})
+			},
 		},
 		mounted() {
 			this.getDivHeight()
@@ -70,7 +83,6 @@
 		},
 		onLoad(option) {
 			this.nickvalue = option.nickvalue
-			console.log(this.nickvalue)
 		}
 	}
 </script>

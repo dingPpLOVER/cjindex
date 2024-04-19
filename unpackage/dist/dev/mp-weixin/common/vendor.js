@@ -19243,13 +19243,13 @@ uni.addInterceptor({
 /* 173 */,
 /* 174 */,
 /* 175 */
-/*!********************************************!*\
-  !*** D:/cjindex/static/json/merchant.json ***!
-  \********************************************/
-/*! exports provided: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, default */
+/*!***************************************!*\
+  !*** D:/cjindex/static/json/set.json ***!
+  \***************************************/
+/*! exports provided: 0, 1, 2, 3, 4, 5, 6, 7, default */
 /***/ (function(module) {
 
-module.exports = JSON.parse("[{\"id\":\"1\",\"actnum\":\"8\",\"name\":\"圣心源\",\"trade\":\"食品\",\"image\":\"https://232r34t825.zicp.fun/ftpData/tmp/dp/cj/cj/food.png\",\"posi\":\"沈阳市\",\"tel\":\"13804276666\",\"status\":\"ture\",\"URL\":\"沈阳市xx区xx街道\",\"time\":\"2024-04-17\"},{\"id\":\"2\",\"actnum\":\"7\",\"name\":\"梦妍店铺\",\"trade\":\"服装\",\"image\":\"https://232r34t825.zicp.fun/ftpData/tmp/dp/cj/cj/cloth.png\",\"posi\":\"盘锦市\",\"tel\":\"13804276667\",\"status\":\"FALSE\",\"URL\":\"盘锦市xx区xx街道\",\"time\":\"2024-04-18\"},{\"id\":\"3\",\"actnum\":\"6\",\"name\":\"丰雷店铺\",\"trade\":\"渔具\",\"image\":\"https://232r34t825.zicp.fun/ftpData/tmp/dp/cj/cj/fish.png\",\"posi\":\"北京市\",\"tel\":\"13804276668\",\"status\":\"ture\",\"URL\":\"北京市xx区xx街道\",\"time\":\"2024-04-19\"},{\"id\":\"4\",\"actnum\":\"5\",\"name\":\"伊蓓诺\",\"trade\":\"婴幼\",\"image\":\"https://232r34t825.zicp.fun/ftpData/tmp/dp/cj/cj/child.png\",\"posi\":\"铁岭市\",\"tel\":\"13804276669\",\"status\":\"FALSE\",\"URL\":\"铁岭市xx区xx街道\",\"time\":\"2024-04-20\"},{\"id\":\"5\",\"actnum\":\"4\",\"name\":\"布衣坊\",\"trade\":\"服装\",\"image\":\"https://232r34t825.zicp.fun/ftpData/tmp/dp/cj/cj/cloth.png\",\"posi\":\"大连市\",\"tel\":\"13804276670\",\"status\":\"ture\",\"URL\":\"大连市xx区xx街道\",\"time\":\"2024-04-21\"},{\"id\":\"6\",\"actnum\":\"3\",\"name\":\"尚鑫源\",\"trade\":\"食品\",\"image\":\"https://232r34t825.zicp.fun/ftpData/tmp/dp/cj/cj/food.png\",\"posi\":\"深圳市\",\"tel\":\"13804276671\",\"status\":\"FALSE\",\"URL\":\"深圳市xx区xx街道\",\"time\":\"2024-04-22\"},{\"id\":\"7\",\"actnum\":\"2\",\"name\":\"丰烁店铺\",\"trade\":\"服装\",\"image\":\"https://232r34t825.zicp.fun/ftpData/tmp/dp/cj/cj/cloth.png\",\"posi\":\"沈阳市\",\"tel\":\"13804276672\",\"status\":\"ture\",\"URL\":\"沈阳市xx区xx街道\",\"time\":\"2024-04-23\"},{\"id\":\"8\",\"actnum\":\"1\",\"name\":\"永顺店铺\",\"trade\":\"渔具\",\"image\":\"https://232r34t825.zicp.fun/ftpData/tmp/dp/cj/cj/fish.png\",\"posi\":\"盘锦市\",\"tel\":\"13804276673\",\"status\":\"FALSE\",\"URL\":\"盘锦市xx区xx街道\",\"time\":\"2024-04-24\"},{\"id\":\"9\",\"actnum\":\"0\",\"name\":\"爱丽丝\",\"trade\":\"婴幼\",\"image\":\"https://232r34t825.zicp.fun/ftpData/tmp/dp/cj/cj/child.png\",\"posi\":\"北京市\",\"tel\":\"13804276674\",\"status\":\"ture\",\"URL\":\"北京市xx区xx街道\",\"time\":\"2024-04-25\"},{\"id\":\"10\",\"actnum\":\"0\",\"name\":\"埃莉仕\",\"trade\":\"服装\",\"image\":\"https://232r34t825.zicp.fun/ftpData/tmp/dp/cj/cj/cloth.png\",\"posi\":\"铁岭市\",\"tel\":\"13804276675\",\"status\":\"FALSE\",\"URL\":\"铁岭市xx区xx街道\",\"time\":\"2024-04-26\"},{\"id\":\"11\",\"actnum\":\"0\",\"name\":\"德益堂\",\"trade\":\"食品\",\"image\":\"https://232r34t825.zicp.fun/ftpData/tmp/dp/cj/cj/food.png\",\"posi\":\"大连市\",\"tel\":\"13804276676\",\"status\":\"ture\",\"URL\":\"大连市xx区xx街道\",\"time\":\"2024-04-27\"},{\"id\":\"12\",\"actnum\":\"0\",\"name\":\"洁雅宾\",\"trade\":\"服装\",\"image\":\"https://232r34t825.zicp.fun/ftpData/tmp/dp/cj/cj/cloth.png\",\"posi\":\"深圳市\",\"tel\":\"13804276677\",\"status\":\"FALSE\",\"URL\":\"深圳市xx区xx街道\",\"time\":\"2024-04-28\"},{\"id\":\"13\",\"actnum\":\"0\",\"name\":\"华安店铺\",\"trade\":\"渔具\",\"image\":\"https://232r34t825.zicp.fun/ftpData/tmp/dp/cj/cj/fish.png\",\"posi\":\"沈阳市\",\"tel\":\"13804276678\",\"status\":\"ture\",\"URL\":\"沈阳市xx区xx街道\",\"time\":\"2024-04-29\"},{\"id\":\"14\",\"actnum\":\"0\",\"name\":\"衣田园\",\"trade\":\"婴幼\",\"image\":\"https://232r34t825.zicp.fun/ftpData/tmp/dp/cj/cj/child.png\",\"posi\":\"盘锦市\",\"tel\":\"13804276679\",\"status\":\"FALSE\",\"URL\":\"盘锦市xx区xx街道\",\"time\":\"2024-04-30\"},{\"id\":\"15\",\"actnum\":\"0\",\"name\":\"辉丰店铺\",\"trade\":\"服装\",\"image\":\"https://232r34t825.zicp.fun/ftpData/tmp/dp/cj/cj/cloth.png\",\"url\":\"北京市\",\"tel\":\"13804276680\",\"status\":\"ture\",\"URL\":\"北京市xx区xx街道\",\"time\":\"2024-05-01\"},{\"id\":\"16\",\"actnum\":\"0\",\"name\":\"元臻堂\",\"trade\":\"食品\",\"image\":\"https://232r34t825.zicp.fun/ftpData/tmp/dp/cj/cj/food.png\",\"posi\":\"铁岭市\",\"tel\":\"13804276681\",\"status\":\"FALSE\",\"URL\":\"铁岭市xx区xx街道\",\"time\":\"2024-05-02\"},{\"id\":\"17\",\"actnum\":\"0\",\"name\":\"特百乐\",\"trade\":\"服装\",\"image\":\"https://232r34t825.zicp.fun/ftpData/tmp/dp/cj/cj/cloth.png\",\"posi\":\"大连市\",\"tel\":\"13804276682\",\"status\":\"ture\",\"URL\":\"大连市xx区xx街道\",\"time\":\"2024-05-03\"},{\"id\":\"18\",\"actnum\":\"0\",\"name\":\"魅缘坊\",\"trade\":\"渔具\",\"image\":\"https://232r34t825.zicp.fun/ftpData/tmp/dp/cj/cj/fish.png\",\"posi\":\"深圳市\",\"tel\":\"13804276683\",\"status\":\"FALSE\",\"URL\":\"深圳市xx区xx街道\",\"time\":\"2024-05-04\"},{\"id\":\"19\",\"actnum\":\"0\",\"name\":\"宏兴店铺\",\"trade\":\"婴幼\",\"image\":\"https://232r34t825.zicp.fun/ftpData/tmp/dp/cj/cj/child.png\",\"posi\":\"沈阳市\",\"tel\":\"13804276684\",\"status\":\"ture\",\"URL\":\"沈阳市xx区xx街道\",\"time\":\"2024-05-05\"}]");
+module.exports = JSON.parse("[{\"sty\":5,\"val\":\"font1\",\"num\":1},{\"sty\":5,\"val\":\"font2\",\"num\":2},{\"sty\":5,\"val\":\"font3\",\"num\":3},{\"sty\":5,\"val\":\"font4\",\"num\":8},{\"sty\":30,\"val\":\"font5\",\"num\":4},{\"sty\":5,\"val\":\"font6\",\"num\":7},{\"sty\":5,\"val\":\"font7\",\"num\":6},{\"sty\":5,\"val\":\"font8\",\"num\":5}]");
 
 /***/ }),
 /* 176 */,
@@ -19268,21 +19268,21 @@ module.exports = JSON.parse("[{\"id\":\"1\",\"actnum\":\"8\",\"name\":\"圣心�
 /* 189 */,
 /* 190 */,
 /* 191 */,
-/* 192 */
-/*!***************************************!*\
-  !*** D:/cjindex/static/json/set.json ***!
-  \***************************************/
-/*! exports provided: 0, 1, 2, 3, 4, 5, 6, 7, default */
-/***/ (function(module) {
-
-module.exports = JSON.parse("[{\"sty\":5,\"val\":\"font1\",\"num\":1},{\"sty\":5,\"val\":\"font2\",\"num\":2},{\"sty\":5,\"val\":\"font3\",\"num\":3},{\"sty\":5,\"val\":\"font4\",\"num\":8},{\"sty\":30,\"val\":\"font5\",\"num\":4},{\"sty\":5,\"val\":\"font6\",\"num\":7},{\"sty\":5,\"val\":\"font7\",\"num\":6},{\"sty\":5,\"val\":\"font8\",\"num\":5}]");
-
-/***/ }),
+/* 192 */,
 /* 193 */,
 /* 194 */,
 /* 195 */,
 /* 196 */,
-/* 197 */,
+/* 197 */
+/*!********************************************!*\
+  !*** D:/cjindex/static/json/merchant.json ***!
+  \********************************************/
+/*! exports provided: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, default */
+/***/ (function(module) {
+
+module.exports = JSON.parse("[{\"id\":\"1\",\"actnum\":\"8\",\"name\":\"圣心源\",\"trade\":\"食品\",\"image\":\"https://232r34t825.zicp.fun/ftpData/tmp/dp/cj/cj/food.png\",\"posi\":\"沈阳市\",\"tel\":\"13804276666\",\"status\":\"ture\",\"URL\":\"沈阳市xx区xx街道\",\"time\":\"2024-04-17\"},{\"id\":\"2\",\"actnum\":\"7\",\"name\":\"梦妍店铺\",\"trade\":\"服装\",\"image\":\"https://232r34t825.zicp.fun/ftpData/tmp/dp/cj/cj/cloth.png\",\"posi\":\"盘锦市\",\"tel\":\"13804276667\",\"status\":\"FALSE\",\"URL\":\"盘锦市xx区xx街道\",\"time\":\"2024-04-18\"},{\"id\":\"3\",\"actnum\":\"6\",\"name\":\"丰雷店铺\",\"trade\":\"渔具\",\"image\":\"https://232r34t825.zicp.fun/ftpData/tmp/dp/cj/cj/fish.png\",\"posi\":\"北京市\",\"tel\":\"13804276668\",\"status\":\"ture\",\"URL\":\"北京市xx区xx街道\",\"time\":\"2024-04-19\"},{\"id\":\"4\",\"actnum\":\"5\",\"name\":\"伊蓓诺\",\"trade\":\"婴幼\",\"image\":\"https://232r34t825.zicp.fun/ftpData/tmp/dp/cj/cj/child.png\",\"posi\":\"铁岭市\",\"tel\":\"13804276669\",\"status\":\"FALSE\",\"URL\":\"铁岭市xx区xx街道\",\"time\":\"2024-04-20\"},{\"id\":\"5\",\"actnum\":\"4\",\"name\":\"布衣坊\",\"trade\":\"服装\",\"image\":\"https://232r34t825.zicp.fun/ftpData/tmp/dp/cj/cj/cloth.png\",\"posi\":\"大连市\",\"tel\":\"13804276670\",\"status\":\"ture\",\"URL\":\"大连市xx区xx街道\",\"time\":\"2024-04-21\"},{\"id\":\"6\",\"actnum\":\"3\",\"name\":\"尚鑫源\",\"trade\":\"食品\",\"image\":\"https://232r34t825.zicp.fun/ftpData/tmp/dp/cj/cj/food.png\",\"posi\":\"深圳市\",\"tel\":\"13804276671\",\"status\":\"FALSE\",\"URL\":\"深圳市xx区xx街道\",\"time\":\"2024-04-22\"},{\"id\":\"7\",\"actnum\":\"2\",\"name\":\"丰烁店铺\",\"trade\":\"服装\",\"image\":\"https://232r34t825.zicp.fun/ftpData/tmp/dp/cj/cj/cloth.png\",\"posi\":\"沈阳市\",\"tel\":\"13804276672\",\"status\":\"ture\",\"URL\":\"沈阳市xx区xx街道\",\"time\":\"2024-04-23\"},{\"id\":\"8\",\"actnum\":\"1\",\"name\":\"永顺店铺\",\"trade\":\"渔具\",\"image\":\"https://232r34t825.zicp.fun/ftpData/tmp/dp/cj/cj/fish.png\",\"posi\":\"盘锦市\",\"tel\":\"13804276673\",\"status\":\"FALSE\",\"URL\":\"盘锦市xx区xx街道\",\"time\":\"2024-04-24\"},{\"id\":\"9\",\"actnum\":\"0\",\"name\":\"爱丽丝\",\"trade\":\"婴幼\",\"image\":\"https://232r34t825.zicp.fun/ftpData/tmp/dp/cj/cj/child.png\",\"posi\":\"北京市\",\"tel\":\"13804276674\",\"status\":\"ture\",\"URL\":\"北京市xx区xx街道\",\"time\":\"2024-04-25\"},{\"id\":\"10\",\"actnum\":\"0\",\"name\":\"埃莉仕\",\"trade\":\"服装\",\"image\":\"https://232r34t825.zicp.fun/ftpData/tmp/dp/cj/cj/cloth.png\",\"posi\":\"铁岭市\",\"tel\":\"13804276675\",\"status\":\"FALSE\",\"URL\":\"铁岭市xx区xx街道\",\"time\":\"2024-04-26\"},{\"id\":\"11\",\"actnum\":\"0\",\"name\":\"德益堂\",\"trade\":\"食品\",\"image\":\"https://232r34t825.zicp.fun/ftpData/tmp/dp/cj/cj/food.png\",\"posi\":\"大连市\",\"tel\":\"13804276676\",\"status\":\"ture\",\"URL\":\"大连市xx区xx街道\",\"time\":\"2024-04-27\"},{\"id\":\"12\",\"actnum\":\"0\",\"name\":\"洁雅宾\",\"trade\":\"服装\",\"image\":\"https://232r34t825.zicp.fun/ftpData/tmp/dp/cj/cj/cloth.png\",\"posi\":\"深圳市\",\"tel\":\"13804276677\",\"status\":\"FALSE\",\"URL\":\"深圳市xx区xx街道\",\"time\":\"2024-04-28\"},{\"id\":\"13\",\"actnum\":\"0\",\"name\":\"华安店铺\",\"trade\":\"渔具\",\"image\":\"https://232r34t825.zicp.fun/ftpData/tmp/dp/cj/cj/fish.png\",\"posi\":\"沈阳市\",\"tel\":\"13804276678\",\"status\":\"ture\",\"URL\":\"沈阳市xx区xx街道\",\"time\":\"2024-04-29\"},{\"id\":\"14\",\"actnum\":\"0\",\"name\":\"衣田园\",\"trade\":\"婴幼\",\"image\":\"https://232r34t825.zicp.fun/ftpData/tmp/dp/cj/cj/child.png\",\"posi\":\"盘锦市\",\"tel\":\"13804276679\",\"status\":\"FALSE\",\"URL\":\"盘锦市xx区xx街道\",\"time\":\"2024-04-30\"},{\"id\":\"15\",\"actnum\":\"0\",\"name\":\"辉丰店铺\",\"trade\":\"服装\",\"image\":\"https://232r34t825.zicp.fun/ftpData/tmp/dp/cj/cj/cloth.png\",\"url\":\"北京市\",\"tel\":\"13804276680\",\"status\":\"ture\",\"URL\":\"北京市xx区xx街道\",\"time\":\"2024-05-01\"},{\"id\":\"16\",\"actnum\":\"0\",\"name\":\"元臻堂\",\"trade\":\"食品\",\"image\":\"https://232r34t825.zicp.fun/ftpData/tmp/dp/cj/cj/food.png\",\"posi\":\"铁岭市\",\"tel\":\"13804276681\",\"status\":\"FALSE\",\"URL\":\"铁岭市xx区xx街道\",\"time\":\"2024-05-02\"},{\"id\":\"17\",\"actnum\":\"0\",\"name\":\"特百乐\",\"trade\":\"服装\",\"image\":\"https://232r34t825.zicp.fun/ftpData/tmp/dp/cj/cj/cloth.png\",\"posi\":\"大连市\",\"tel\":\"13804276682\",\"status\":\"ture\",\"URL\":\"大连市xx区xx街道\",\"time\":\"2024-05-03\"},{\"id\":\"18\",\"actnum\":\"0\",\"name\":\"魅缘坊\",\"trade\":\"渔具\",\"image\":\"https://232r34t825.zicp.fun/ftpData/tmp/dp/cj/cj/fish.png\",\"posi\":\"深圳市\",\"tel\":\"13804276683\",\"status\":\"FALSE\",\"URL\":\"深圳市xx区xx街道\",\"time\":\"2024-05-04\"},{\"id\":\"19\",\"actnum\":\"0\",\"name\":\"宏兴店铺\",\"trade\":\"婴幼\",\"image\":\"https://232r34t825.zicp.fun/ftpData/tmp/dp/cj/cj/child.png\",\"posi\":\"沈阳市\",\"tel\":\"13804276684\",\"status\":\"ture\",\"URL\":\"沈阳市xx区xx街道\",\"time\":\"2024-05-05\"}]");
+
+/***/ }),
 /* 198 */,
 /* 199 */,
 /* 200 */,
@@ -19293,7 +19293,13 @@ module.exports = JSON.parse("[{\"sty\":5,\"val\":\"font1\",\"num\":1},{\"sty\":5
 /* 205 */,
 /* 206 */,
 /* 207 */,
-/* 208 */
+/* 208 */,
+/* 209 */,
+/* 210 */,
+/* 211 */,
+/* 212 */,
+/* 213 */,
+/* 214 */
 /*!******************************************!*\
   !*** D:/cjindex/static/json/oddmes.json ***!
   \******************************************/
@@ -19303,15 +19309,15 @@ module.exports = JSON.parse("[{\"sty\":5,\"val\":\"font1\",\"num\":1},{\"sty\":5
 module.exports = JSON.parse("[{\"name\":\"梦想起航\",\"startime\":\"2024-04-16\",\"endtime\":\"2024-04-17\",\"cy_num\":\"466\",\"win_num\":\"200\"},{\"name\":\"星光闪耀\",\"startime\":\"2024-04-17\",\"endtime\":\"2024-04-18\",\"cy_num\":\"322\",\"win_num\":\"201\"},{\"name\":\"创意无限\",\"startime\":\"2024-04-18\",\"endtime\":\"2024-04-19\",\"cy_num\":\"1368\",\"win_num\":\"202\"},{\"name\":\"心灵之旅\",\"startime\":\"2024-04-19\",\"endtime\":\"2024-04-20\",\"cy_num\":\"999\",\"win_num\":\"203\"},{\"name\":\"智慧之光\",\"startime\":\"2024-04-20\",\"endtime\":\"2024-04-21\",\"cy_num\":\"635\",\"win_num\":\"204\"},{\"name\":\"快乐行动\",\"startime\":\"2024-04-21\",\"endtime\":\"2024-04-22\",\"cy_num\":\"588\",\"win_num\":\"205\"}]");
 
 /***/ }),
-/* 209 */,
-/* 210 */,
-/* 211 */,
-/* 212 */,
-/* 213 */,
-/* 214 */,
 /* 215 */,
 /* 216 */,
-/* 217 */
+/* 217 */,
+/* 218 */,
+/* 219 */,
+/* 220 */,
+/* 221 */,
+/* 222 */,
+/* 223 */
 /*!******************************************!*\
   !*** D:/cjindex/static/json/shlist.json ***!
   \******************************************/
@@ -19321,33 +19327,33 @@ module.exports = JSON.parse("[{\"name\":\"梦想起航\",\"startime\":\"2024-04-
 module.exports = JSON.parse("[{\"list\":\"1\",\"actnum\":\"8\",\"name\":\"圣心源\",\"trade\":\"食品\",\"image\":\"https://232r34t825.zicp.fun/ftpData/tmp/dp/cj/cj/food.png\",\"urli\":\"沈阳市\"},{\"list\":\"2\",\"actnum\":\"7\",\"name\":\"梦妍店铺\",\"trade\":\"服装\",\"image\":\"https://232r34t825.zicp.fun/ftpData/tmp/dp/cj/cj/cloth.png\",\"urli\":\"盘锦市\"},{\"list\":\"3\",\"actnum\":\"6\",\"name\":\"丰雷店铺\",\"trade\":\"渔具\",\"image\":\"https://232r34t825.zicp.fun/ftpData/tmp/dp/cj/cj/fish.png\",\"urli\":\"北京市\"},{\"list\":\"4\",\"actnum\":\"15\",\"name\":\"伊蓓诺\",\"trade\":\"婴幼\",\"image\":\"https://232r34t825.zicp.fun/ftpData/tmp/dp/cj/cj/child.png\",\"urli\":\"铁岭市\"},{\"list\":\"5\",\"actnum\":\"4\",\"name\":\"布衣坊\",\"trade\":\"服装\",\"image\":\"https://232r34t825.zicp.fun/ftpData/tmp/dp/cj/cj/cloth.png\",\"urli\":\"大连市\"},{\"list\":\"6\",\"actnum\":\"3\",\"name\":\"尚鑫源\",\"trade\":\"食品\",\"image\":\"https://232r34t825.zicp.fun/ftpData/tmp/dp/cj/cj/food.png\",\"urli\":\"深圳市\"},{\"list\":\"7\",\"actnum\":\"2\",\"name\":\"丰烁店铺\",\"trade\":\"服装\",\"image\":\"https://232r34t825.zicp.fun/ftpData/tmp/dp/cj/cj/cloth.png\",\"urli\":\"沈阳市\"},{\"list\":\"8\",\"actnum\":\"1\",\"name\":\"永顺店铺\",\"trade\":\"渔具\",\"image\":\"https://232r34t825.zicp.fun/ftpData/tmp/dp/cj/cj/fish.png\",\"urli\":\"盘锦市\"},{\"list\":\"9\",\"actnum\":\"0\",\"name\":\"爱丽丝\",\"trade\":\"婴幼\",\"image\":\"https://232r34t825.zicp.fun/ftpData/tmp/dp/cj/cj/child.png\",\"urli\":\"北京市\"},{\"list\":\"10\",\"actnum\":\"0\",\"name\":\"埃莉仕\",\"trade\":\"服装\",\"image\":\"https://232r34t825.zicp.fun/ftpData/tmp/dp/cj/cj/cloth.png\",\"urli\":\"铁岭市\"},{\"list\":\"11\",\"actnum\":\"0\",\"name\":\"德益堂\",\"trade\":\"食品\",\"image\":\"https://232r34t825.zicp.fun/ftpData/tmp/dp/cj/cj/food.png\",\"urli\":\"大连市\"},{\"list\":\"12\",\"actnum\":\"0\",\"name\":\"洁雅宾\",\"trade\":\"服装\",\"image\":\"https://232r34t825.zicp.fun/ftpData/tmp/dp/cj/cj/cloth.png\",\"urli\":\"深圳市\"},{\"list\":\"13\",\"actnum\":\"0\",\"name\":\"华安店铺\",\"trade\":\"渔具\",\"image\":\"https://232r34t825.zicp.fun/ftpData/tmp/dp/cj/cj/fish.png\",\"urli\":\"沈阳市\"},{\"list\":\"14\",\"actnum\":\"0\",\"name\":\"衣田园\",\"trade\":\"婴幼\",\"image\":\"https://232r34t825.zicp.fun/ftpData/tmp/dp/cj/cj/child.png\",\"urli\":\"盘锦市\"},{\"list\":\"15\",\"actnum\":\"0\",\"name\":\"辉丰店铺\",\"trade\":\"服装\",\"image\":\"https://232r34t825.zicp.fun/ftpData/tmp/dp/cj/cj/cloth.png\",\"urli\":\"北京市\"},{\"list\":\"16\",\"actnum\":\"0\",\"name\":\"元臻堂\",\"trade\":\"食品\",\"image\":\"https://232r34t825.zicp.fun/ftpData/tmp/dp/cj/cj/food.png\",\"urli\":\"铁岭市\"},{\"list\":\"17\",\"actnum\":\"0\",\"name\":\"特百乐\",\"trade\":\"服装\",\"image\":\"https://232r34t825.zicp.fun/ftpData/tmp/dp/cj/cj/cloth.png\",\"urli\":\"大连市\"},{\"list\":\"18\",\"actnum\":\"0\",\"name\":\"魅缘坊\",\"trade\":\"渔具\",\"image\":\"https://232r34t825.zicp.fun/ftpData/tmp/dp/cj/cj/fish.png\",\"urli\":\"深圳市\"},{\"list\":\"19\",\"actnum\":\"0\",\"name\":\"宏兴店铺\",\"trade\":\"婴幼\",\"image\":\"https://232r34t825.zicp.fun/ftpData/tmp/dp/cj/cj/child.png\",\"urli\":\"沈阳市\"}]");
 
 /***/ }),
-/* 218 */,
-/* 219 */,
-/* 220 */,
-/* 221 */,
-/* 222 */,
-/* 223 */,
 /* 224 */,
 /* 225 */,
-/* 226 */
+/* 226 */,
+/* 227 */,
+/* 228 */,
+/* 229 */,
+/* 230 */,
+/* 231 */,
+/* 232 */
 /*!******************************************!*\
   !*** D:/cjindex/static/json/sh_act.json ***!
   \******************************************/
 /*! exports provided: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, default */
 /***/ (function(module) {
 
-module.exports = JSON.parse("[{\"name\":\"梦想起航\",\"startime\":\"2024-04-16\",\"endtime\":\"2024-04-17\",\"win_num\":\"200\",\"status\":\"ture\",\"cont\":\"生活幸福四时如意\",\"cj_num\":\"8\",\"prize\":\"现金200\",\"id\":\"1\",\"image\":\"https://232r34t825.zicp.fun/ftpData/tmp/dp/cj/cj/food.png\"},{\"name\":\"星光闪耀\",\"startime\":\"2024-04-17\",\"endtime\":\"2024-04-18\",\"win_num\":\"201\",\"status\":\"FALSE\",\"cont\":\"长命百岁鼎新革日\",\"cj_num\":\"9\",\"prize\":\"现金201\",\"id\":\"2\",\"image\":\"https://232r34t825.zicp.fun/ftpData/tmp/dp/cj/cj/child.png\"},{\"name\":\"创意无限\",\"startime\":\"2024-04-18\",\"endtime\":\"2024-04-19\",\"win_num\":\"202\",\"status\":\"ture\",\"cont\":\"恭贺新禧吉星高照\",\"cj_num\":\"10\",\"prize\":\"现金202\",\"id\":\"3\",\"image\":\"https://232r34t825.zicp.fun/ftpData/tmp/dp/cj/cj/fish.png\"},{\"name\":\"心灵之旅\",\"startime\":\"2024-04-19\",\"endtime\":\"2024-04-20\",\"win_num\":\"203\",\"status\":\"FALSE\",\"cont\":\"政策归心恭喜发财\",\"cj_num\":\"11\",\"prize\":\"现金203\",\"id\":\"4\",\"image\":\"https://232r34t826.zicp.fun/ftpData/tmp/dp/cj/cj/food.png\"},{\"name\":\"智慧之光\",\"startime\":\"2024-04-20\",\"endtime\":\"2024-04-21\",\"win_num\":\"204\",\"status\":\"ture\",\"cont\":\"天缘巧合龙兴华夏\",\"cj_num\":\"12\",\"prize\":\"现金204\",\"id\":\"5\",\"image\":\"https://232r34t826.zicp.fun/ftpData/tmp/dp/cj/cj/child.png\"},{\"name\":\"快乐行动\",\"startime\":\"2024-04-21\",\"endtime\":\"2024-04-22\",\"win_num\":\"205\",\"status\":\"FALSE\",\"cont\":\"财运亨通健康长寿\",\"cj_num\":\"13\",\"prize\":\"现金205\",\"id\":\"6\",\"image\":\"https://232r34t826.zicp.fun/ftpData/tmp/dp/cj/cj/fish.png\"},{\"name\":\"童趣游园\",\"startime\":\"2024-04-22\",\"endtime\":\"2024-04-23\",\"win_num\":\"206\",\"status\":\"ture\",\"cont\":\"白首成约开春大吉\",\"cj_num\":\"14\",\"prize\":\"现金206\",\"id\":\"7\",\"image\":\"https://232r34t827.zicp.fun/ftpData/tmp/dp/cj/cj/food.png\"},{\"name\":\"相聚是缘\",\"startime\":\"2024-04-23\",\"endtime\":\"2024-04-24\",\"win_num\":\"207\",\"status\":\"FALSE\",\"cont\":\"白头偕老花迎春光\",\"cj_num\":\"15\",\"prize\":\"现金207\",\"id\":\"8\",\"image\":\"https://232r34t827.zicp.fun/ftpData/tmp/dp/cj/cj/child.png\"},{\"name\":\"团聚一堂\",\"startime\":\"2024-04-24\",\"endtime\":\"2024-04-25\",\"win_num\":\"208\",\"status\":\"ture\",\"cont\":\"永浴爱河万事胜意\",\"cj_num\":\"8\",\"prize\":\"现金208\",\"id\":\"9\",\"image\":\"https://232r34t827.zicp.fun/ftpData/tmp/dp/cj/cj/fish.png\"},{\"name\":\"喜气洋洋\",\"startime\":\"2024-04-25\",\"endtime\":\"2024-04-26\",\"win_num\":\"209\",\"status\":\"FALSE\",\"cont\":\"恭贺春节财源广进\",\"cj_num\":\"9\",\"prize\":\"现金209\",\"id\":\"10\",\"image\":\"https://232r34t828.zicp.fun/ftpData/tmp/dp/cj/cj/food.png\"},{\"name\":\"同乐盛宴\",\"startime\":\"2024-04-26\",\"endtime\":\"2024-04-27\",\"win_num\":\"210\",\"status\":\"ture\",\"cont\":\"十全十美敛福生财\",\"cj_num\":\"10\",\"prize\":\"现金210\",\"id\":\"11\",\"image\":\"https://232r34t828.zicp.fun/ftpData/tmp/dp/cj/cj/child.png\"},{\"name\":\"七彩光年\",\"startime\":\"2024-04-27\",\"endtime\":\"2024-04-28\",\"win_num\":\"211\",\"status\":\"FALSE\",\"cont\":\"美梦连连吉祥如意\",\"cj_num\":\"11\",\"prize\":\"现金211\",\"id\":\"12\",\"image\":\"https://232r34t828.zicp.fun/ftpData/tmp/dp/cj/cj/fish.png\"},{\"name\":\"南国风情\",\"startime\":\"2024-04-28\",\"endtime\":\"2024-04-29\",\"win_num\":\"212\",\"status\":\"ture\",\"cont\":\"一帆风顺全金玉满堂\",\"cj_num\":\"12\",\"prize\":\"现金212\",\"id\":\"13\",\"image\":\"https://232r34t829.zicp.fun/ftpData/tmp/dp/cj/cj/food.png\"},{\"name\":\"星球大战\",\"startime\":\"2024-04-29\",\"endtime\":\"2024-04-30\",\"win_num\":\"213\",\"status\":\"FALSE\",\"cont\":\"算衍春龄一本万利\",\"cj_num\":\"13\",\"prize\":\"现金213\",\"id\":\"14\",\"image\":\"https://232r34t829.zicp.fun/ftpData/tmp/dp/cj/cj/child.png\"},{\"name\":\"非凡派对\",\"startime\":\"2024-04-30\",\"endtime\":\"2024-05-01\",\"win_num\":\"214\",\"status\":\"ture\",\"cont\":\"龙凤呈祥恭喜发财\",\"cj_num\":\"14\",\"prize\":\"现金214\",\"id\":\"15\",\"image\":\"https://232r34t829.zicp.fun/ftpData/tmp/dp/cj/cj/fish.png\"},{\"name\":\"海盗冒险\",\"startime\":\"2024-05-01\",\"endtime\":\"2024-05-02\",\"win_num\":\"215\",\"status\":\"FALSE\",\"cont\":\"学业有成福星高照\",\"cj_num\":\"15\",\"prize\":\"现金215\",\"id\":\"16\",\"image\":\"https://232r34t830.zicp.fun/ftpData/tmp/dp/cj/cj/food.png\"},{\"name\":\"天使光环\",\"startime\":\"2024-05-02\",\"endtime\":\"2024-05-03\",\"win_num\":\"216\",\"status\":\"ture\",\"cont\":\"乐乐陶陶富贵茉华\",\"cj_num\":\"8\",\"prize\":\"现金216\",\"id\":\"17\",\"image\":\"https://232r34t830.zicp.fun/ftpData/tmp/dp/cj/cj/child.png\"}]");
+module.exports = JSON.parse("[{\"name\":\"梦想起航\",\"startime\":\"2024-04-16\",\"endtime\":\"2024-04-17\",\"win_num\":\"200\",\"status\":\"ture\",\"cont\":\"生活幸福四时如意\",\"cj_num\":\"8\",\"prize\":\"现金200\",\"id\":\"1\",\"image\":\"https://232r34t825.zicp.fun/ftpData/tmp/dp/cj/cj/food1.png\"},{\"name\":\"星光闪耀\",\"startime\":\"2024-04-17\",\"endtime\":\"2024-04-18\",\"win_num\":\"201\",\"status\":\"FALSE\",\"cont\":\"长命百岁鼎新革日\",\"cj_num\":\"9\",\"prize\":\"现金201\",\"id\":\"2\",\"image\":\"https://232r34t825.zicp.fun/ftpData/tmp/dp/cj/cj/child1.png\"},{\"name\":\"创意无限\",\"startime\":\"2024-04-18\",\"endtime\":\"2024-04-19\",\"win_num\":\"202\",\"status\":\"ture\",\"cont\":\"恭贺新禧吉星高照\",\"cj_num\":\"10\",\"prize\":\"现金202\",\"id\":\"3\",\"image\":\"https://232r34t825.zicp.fun/ftpData/tmp/dp/cj/cj/fish1.png\"},{\"name\":\"心灵之旅\",\"startime\":\"2024-04-19\",\"endtime\":\"2024-04-20\",\"win_num\":\"203\",\"status\":\"FALSE\",\"cont\":\"政策归心恭喜发财\",\"cj_num\":\"11\",\"prize\":\"现金203\",\"id\":\"4\",\"image\":\"https://232r34t826.zicp.fun/ftpData/tmp/dp/cj/cj/food1.png\"},{\"name\":\"智慧之光\",\"startime\":\"2024-04-20\",\"endtime\":\"2024-04-21\",\"win_num\":\"204\",\"status\":\"ture\",\"cont\":\"天缘巧合龙兴华夏\",\"cj_num\":\"12\",\"prize\":\"现金204\",\"id\":\"5\",\"image\":\"https://232r34t826.zicp.fun/ftpData/tmp/dp/cj/cj/child1.png\"},{\"name\":\"快乐行动\",\"startime\":\"2024-04-21\",\"endtime\":\"2024-04-22\",\"win_num\":\"205\",\"status\":\"FALSE\",\"cont\":\"财运亨通健康长寿\",\"cj_num\":\"13\",\"prize\":\"现金205\",\"id\":\"6\",\"image\":\"https://232r34t826.zicp.fun/ftpData/tmp/dp/cj/cj/fish1.png\"},{\"name\":\"童趣游园\",\"startime\":\"2024-04-22\",\"endtime\":\"2024-04-23\",\"win_num\":\"206\",\"status\":\"ture\",\"cont\":\"白首成约开春大吉\",\"cj_num\":\"14\",\"prize\":\"现金206\",\"id\":\"7\",\"image\":\"https://232r34t827.zicp.fun/ftpData/tmp/dp/cj/cj/food1.png\"},{\"name\":\"相聚是缘\",\"startime\":\"2024-04-23\",\"endtime\":\"2024-04-24\",\"win_num\":\"207\",\"status\":\"FALSE\",\"cont\":\"白头偕老花迎春光\",\"cj_num\":\"15\",\"prize\":\"现金207\",\"id\":\"8\",\"image\":\"https://232r34t827.zicp.fun/ftpData/tmp/dp/cj/cj/child1.png\"},{\"name\":\"团聚一堂\",\"startime\":\"2024-04-24\",\"endtime\":\"2024-04-25\",\"win_num\":\"208\",\"status\":\"ture\",\"cont\":\"永浴爱河万事胜意\",\"cj_num\":\"8\",\"prize\":\"现金208\",\"id\":\"9\",\"image\":\"https://232r34t827.zicp.fun/ftpData/tmp/dp/cj/cj/fish1.png\"},{\"name\":\"喜气洋洋\",\"startime\":\"2024-04-25\",\"endtime\":\"2024-04-26\",\"win_num\":\"209\",\"status\":\"FALSE\",\"cont\":\"恭贺春节财源广进\",\"cj_num\":\"9\",\"prize\":\"现金209\",\"id\":\"10\",\"image\":\"https://232r34t828.zicp.fun/ftpData/tmp/dp/cj/cj/food1.png\"},{\"name\":\"同乐盛宴\",\"startime\":\"2024-04-26\",\"endtime\":\"2024-04-27\",\"win_num\":\"210\",\"status\":\"ture\",\"cont\":\"十全十美敛福生财\",\"cj_num\":\"10\",\"prize\":\"现金210\",\"id\":\"11\",\"image\":\"https://232r34t828.zicp.fun/ftpData/tmp/dp/cj/cj/child1.png\"},{\"name\":\"七彩光年\",\"startime\":\"2024-04-27\",\"endtime\":\"2024-04-28\",\"win_num\":\"211\",\"status\":\"FALSE\",\"cont\":\"美梦连连吉祥如意\",\"cj_num\":\"11\",\"prize\":\"现金211\",\"id\":\"12\",\"image\":\"https://232r34t828.zicp.fun/ftpData/tmp/dp/cj/cj/fish1.png\"},{\"name\":\"南国风情\",\"startime\":\"2024-04-28\",\"endtime\":\"2024-04-29\",\"win_num\":\"212\",\"status\":\"ture\",\"cont\":\"一帆风顺全金玉满堂\",\"cj_num\":\"12\",\"prize\":\"现金212\",\"id\":\"13\",\"image\":\"https://232r34t829.zicp.fun/ftpData/tmp/dp/cj/cj/food1.png\"},{\"name\":\"星球大战\",\"startime\":\"2024-04-29\",\"endtime\":\"2024-04-30\",\"win_num\":\"213\",\"status\":\"FALSE\",\"cont\":\"算衍春龄一本万利\",\"cj_num\":\"13\",\"prize\":\"现金213\",\"id\":\"14\",\"image\":\"https://232r34t829.zicp.fun/ftpData/tmp/dp/cj/cj/child1.png\"},{\"name\":\"非凡派对\",\"startime\":\"2024-04-30\",\"endtime\":\"2024-05-01\",\"win_num\":\"214\",\"status\":\"ture\",\"cont\":\"龙凤呈祥恭喜发财\",\"cj_num\":\"14\",\"prize\":\"现金214\",\"id\":\"15\",\"image\":\"https://232r34t829.zicp.fun/ftpData/tmp/dp/cj/cj/fish1.png\"},{\"name\":\"海盗冒险\",\"startime\":\"2024-05-01\",\"endtime\":\"2024-05-02\",\"win_num\":\"215\",\"status\":\"FALSE\",\"cont\":\"学业有成福星高照\",\"cj_num\":\"15\",\"prize\":\"现金215\",\"id\":\"16\",\"image\":\"https://232r34t830.zicp.fun/ftpData/tmp/dp/cj/cj/food1.png\"},{\"name\":\"天使光环\",\"startime\":\"2024-05-02\",\"endtime\":\"2024-05-03\",\"win_num\":\"216\",\"status\":\"ture\",\"cont\":\"乐乐陶陶富贵茉华\",\"cj_num\":\"8\",\"prize\":\"现金216\",\"id\":\"17\",\"image\":\"https://232r34t830.zicp.fun/ftpData/tmp/dp/cj/cj/child1.png\"}]");
 
 /***/ }),
-/* 227 */,
-/* 228 */,
-/* 229 */,
-/* 230 */,
-/* 231 */,
-/* 232 */,
 /* 233 */,
 /* 234 */,
-/* 235 */
+/* 235 */,
+/* 236 */,
+/* 237 */,
+/* 238 */,
+/* 239 */,
+/* 240 */,
+/* 241 */
 /*!******************************************!*\
   !*** D:/cjindex/static/json/jptext.json ***!
   \******************************************/
@@ -19357,15 +19363,15 @@ module.exports = JSON.parse("[{\"name\":\"梦想起航\",\"startime\":\"2024-04-
 module.exports = JSON.parse("[{\"name\":\"龙\",\"class\":\"zpsin\"},{\"name\":\"年\",\"class\":\"zpsin2\"},{\"name\":\"大\",\"class\":\"zpsin3\"},{\"name\":\"吉\",\"class\":\"zpsin4\"},{\"name\":\"抬\",\"class\":\"zpsin5\"},{\"name\":\"头\",\"class\":\"zpsin6\"},{\"name\":\"见\",\"class\":\"zpsin7\"},{\"name\":\"喜\",\"class\":\"zpsin8\"}]");
 
 /***/ }),
-/* 236 */,
-/* 237 */,
-/* 238 */,
-/* 239 */,
-/* 240 */,
-/* 241 */,
 /* 242 */,
 /* 243 */,
-/* 244 */
+/* 244 */,
+/* 245 */,
+/* 246 */,
+/* 247 */,
+/* 248 */,
+/* 249 */,
+/* 250 */
 /*!***************************************!*\
   !*** D:/cjindex/static/js/log_pos.js ***!
   \***************************************/
@@ -19384,12 +19390,6 @@ function onsubmit(event) {
 }
 
 /***/ }),
-/* 245 */,
-/* 246 */,
-/* 247 */,
-/* 248 */,
-/* 249 */,
-/* 250 */,
 /* 251 */,
 /* 252 */,
 /* 253 */,
@@ -19406,9 +19406,25 @@ function onsubmit(event) {
 /* 264 */,
 /* 265 */,
 /* 266 */,
-/* 267 */,
+/* 267 */
+/*!************************************************!*\
+  !*** D:/cjindex/static/json/actend_alert.json ***!
+  \************************************************/
+/*! exports provided: 0, 1, 2, 3, 4, 5, 6, 7, 8, default */
+/***/ (function(module) {
+
+module.exports = JSON.parse("[{\"name\":\"梦想起航\",\"startime\":\"2024-04-16\",\"endtime\":\"2024-04-17\",\"sh_name\":\"圣心源\",\"completion_status\":\"已完成\"},{\"name\":\"星光闪耀\",\"startime\":\"2024-04-17\",\"endtime\":\"2024-04-18\",\"sh_name\":\"梦妍店铺\",\"completion_status\":\"80%\"},{\"name\":\"创意无限\",\"startime\":\"2024-04-18\",\"endtime\":\"2024-04-19\",\"sh_name\":\"丰雷店铺\",\"completion_status\":\"已完成\"},{\"name\":\"心灵之旅\",\"startime\":\"2024-04-19\",\"endtime\":\"2024-04-20\",\"sh_name\":\"伊蓓诺\",\"completion_status\":\"已完成\"},{\"name\":\"智慧之光\",\"startime\":\"2024-04-20\",\"endtime\":\"2024-04-21\",\"sh_name\":\"布衣坊\",\"completion_status\":\"90%\"},{\"name\":\"快乐行动\",\"startime\":\"2024-04-21\",\"endtime\":\"2024-04-22\",\"sh_name\":\"尚鑫源\",\"completion_status\":\"已完成\"},{\"name\":\"童趣游园\",\"startime\":\"2024-04-22\",\"endtime\":\"2024-04-23\",\"sh_name\":\"丰烁店铺\",\"completion_status\":\"已完成\"},{\"name\":\"相聚是缘\",\"startime\":\"2024-04-23\",\"endtime\":\"2024-04-24\",\"sh_name\":\"永顺店铺\",\"completion_status\":\"65%\"},{\"name\":\"团聚一堂\",\"startime\":\"2024-04-24\",\"endtime\":\"2024-04-25\",\"sh_name\":\"爱丽丝\",\"completion_status\":\"已完成\"}]");
+
+/***/ }),
 /* 268 */,
-/* 269 */
+/* 269 */,
+/* 270 */,
+/* 271 */,
+/* 272 */,
+/* 273 */,
+/* 274 */,
+/* 275 */,
+/* 276 */
 /*!********************************************!*\
   !*** D:/cjindex/static/json/posindex.json ***!
   \********************************************/
@@ -19418,13 +19434,6 @@ function onsubmit(event) {
 module.exports = JSON.parse("[{\"number\":\"1\",\"name\":\"豪佳香\",\"awards\":\"现金红包666元\"},{\"number\":\"2\",\"name\":\"楚山孤\",\"awards\":\"现金红包667元\"},{\"number\":\"3\",\"name\":\"月亮\",\"awards\":\"现金红包668元\"},{\"number\":\"4\",\"name\":\"茶茶\",\"awards\":\"现金红包669元\"},{\"number\":\"5\",\"name\":\"大桔\",\"awards\":\"现金红包670元\"},{\"number\":\"6\",\"name\":\"一条酸菜鱼\",\"awards\":\"现金红包671元\"},{\"number\":\"7\",\"name\":\"你好\",\"awards\":\"现金红包672元\"},{\"number\":\"8\",\"name\":\"外号em\",\"awards\":\"现金红包673元\"},{\"number\":\"9\",\"name\":\"kkk\",\"awards\":\"现金红包674元\"},{\"number\":\"10\",\"name\":\",,,\",\"awards\":\"现金红包675元\"},{\"number\":\"11\",\"name\":\"好香\",\"awards\":\"现金红包676元\"},{\"number\":\"12\",\"name\":\"豪佳香\",\"awards\":\"现金红包677元\"},{\"number\":\"13\",\"name\":\"楚山孤\",\"awards\":\"现金红包678元\"},{\"number\":\"14\",\"name\":\"月亮\",\"awards\":\"现金红包679元\"},{\"number\":\"15\",\"name\":\"茶茶\",\"awards\":\"现金红包680元\"},{\"number\":\"16\",\"name\":\"大桔\",\"awards\":\"现金红包681元\"},{\"number\":\"17\",\"name\":\"一条酸菜鱼\",\"awards\":\"现金红包682元\"},{\"number\":\"18\",\"name\":\"你好\",\"awards\":\"现金红包683元\"}]");
 
 /***/ }),
-/* 270 */,
-/* 271 */,
-/* 272 */,
-/* 273 */,
-/* 274 */,
-/* 275 */,
-/* 276 */,
 /* 277 */,
 /* 278 */,
 /* 279 */,
@@ -19442,7 +19451,14 @@ module.exports = JSON.parse("[{\"number\":\"1\",\"name\":\"豪佳香\",\"awards\
 /* 291 */,
 /* 292 */,
 /* 293 */,
-/* 294 */
+/* 294 */,
+/* 295 */,
+/* 296 */,
+/* 297 */,
+/* 298 */,
+/* 299 */,
+/* 300 */,
+/* 301 */
 /*!****************************************************!*\
   !*** D:/cjindex/node_modules/uqrcodejs/uqrcode.js ***!
   \****************************************************/
@@ -20687,12 +20703,12 @@ function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { va
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../../../HBuilderX/HBuilderX/plugins/uniapp-cli/node_modules/webpack/buildin/global.js */ 3)))
 
 /***/ }),
-/* 295 */,
-/* 296 */,
-/* 297 */,
-/* 298 */,
-/* 299 */,
-/* 300 */
+/* 302 */,
+/* 303 */,
+/* 304 */,
+/* 305 */,
+/* 306 */,
+/* 307 */
 /*!*****************************************************************************!*\
   !*** D:/cjindex/uni_modules/uview-ui/components/u-datetime-picker/props.js ***!
   \*****************************************************************************/
@@ -20826,7 +20842,7 @@ exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 2)["default"]))
 
 /***/ }),
-/* 301 */
+/* 308 */
 /*!**********************************************************!*\
   !*** D:/cjindex/uni_modules/uview-ui/libs/util/dayjs.js ***!
   \**********************************************************/
@@ -21138,14 +21154,14 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_RESULT__;var _typeof = 
 });
 
 /***/ }),
-/* 302 */,
-/* 303 */,
-/* 304 */,
-/* 305 */,
-/* 306 */,
-/* 307 */,
-/* 308 */,
-/* 309 */
+/* 309 */,
+/* 310 */,
+/* 311 */,
+/* 312 */,
+/* 313 */,
+/* 314 */,
+/* 315 */,
+/* 316 */
 /*!******************************************************************************************!*\
   !*** D:/cjindex/uni_modules/uni-transition/components/uni-transition/createAnimation.js ***!
   \******************************************************************************************/
@@ -21279,12 +21295,12 @@ function createAnimation(option, _this) {
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 2)["default"]))
 
 /***/ }),
-/* 310 */,
-/* 311 */,
-/* 312 */,
-/* 313 */,
-/* 314 */,
-/* 315 */
+/* 317 */,
+/* 318 */,
+/* 319 */,
+/* 320 */,
+/* 321 */,
+/* 322 */
 /*!********************************************************************!*\
   !*** D:/cjindex/uni_modules/uview-ui/components/u-picker/props.js ***!
   \********************************************************************/
@@ -21381,14 +21397,14 @@ exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 2)["default"]))
 
 /***/ }),
-/* 316 */,
-/* 317 */,
-/* 318 */,
-/* 319 */,
-/* 320 */,
-/* 321 */,
-/* 322 */,
-/* 323 */
+/* 323 */,
+/* 324 */,
+/* 325 */,
+/* 326 */,
+/* 327 */,
+/* 328 */,
+/* 329 */,
+/* 330 */
 /*!*******************************************************************!*\
   !*** D:/cjindex/uni_modules/uview-ui/components/u-popup/props.js ***!
   \*******************************************************************/
@@ -21485,14 +21501,14 @@ exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 2)["default"]))
 
 /***/ }),
-/* 324 */,
-/* 325 */,
-/* 326 */,
-/* 327 */,
-/* 328 */,
-/* 329 */,
-/* 330 */,
-/* 331 */
+/* 331 */,
+/* 332 */,
+/* 333 */,
+/* 334 */,
+/* 335 */,
+/* 336 */,
+/* 337 */,
+/* 338 */
 /*!*********************************************************************!*\
   !*** D:/cjindex/uni_modules/uview-ui/components/u-toolbar/props.js ***!
   \*********************************************************************/
@@ -21544,14 +21560,14 @@ exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 2)["default"]))
 
 /***/ }),
-/* 332 */,
-/* 333 */,
-/* 334 */,
-/* 335 */,
-/* 336 */,
-/* 337 */,
-/* 338 */,
-/* 339 */
+/* 339 */,
+/* 340 */,
+/* 341 */,
+/* 342 */,
+/* 343 */,
+/* 344 */,
+/* 345 */,
+/* 346 */
 /*!**************************************************************************!*\
   !*** D:/cjindex/uni_modules/uview-ui/components/u-loading-icon/props.js ***!
   \**************************************************************************/
@@ -21628,14 +21644,14 @@ exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 2)["default"]))
 
 /***/ }),
-/* 340 */,
-/* 341 */,
-/* 342 */,
-/* 343 */,
-/* 344 */,
-/* 345 */,
-/* 346 */,
-/* 347 */
+/* 347 */,
+/* 348 */,
+/* 349 */,
+/* 350 */,
+/* 351 */,
+/* 352 */,
+/* 353 */,
+/* 354 */
 /*!*********************************************************************!*\
   !*** D:/cjindex/uni_modules/uview-ui/components/u-overlay/props.js ***!
   \*********************************************************************/
@@ -21677,14 +21693,14 @@ exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 2)["default"]))
 
 /***/ }),
-/* 348 */,
-/* 349 */,
-/* 350 */,
-/* 351 */,
-/* 352 */,
-/* 353 */,
-/* 354 */,
-/* 355 */
+/* 355 */,
+/* 356 */,
+/* 357 */,
+/* 358 */,
+/* 359 */,
+/* 360 */,
+/* 361 */,
+/* 362 */
 /*!************************************************************************!*\
   !*** D:/cjindex/uni_modules/uview-ui/components/u-transition/props.js ***!
   \************************************************************************/
@@ -21726,7 +21742,7 @@ exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 2)["default"]))
 
 /***/ }),
-/* 356 */
+/* 363 */
 /*!*****************************************************************************!*\
   !*** D:/cjindex/uni_modules/uview-ui/components/u-transition/transition.js ***!
   \*****************************************************************************/
@@ -21743,7 +21759,7 @@ Object.defineProperty(exports, "__esModule", {
 exports.default = void 0;
 var _regenerator = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/regenerator */ 57));
 var _asyncToGenerator2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/asyncToGenerator */ 59));
-var _nvueAniMap = _interopRequireDefault(__webpack_require__(/*! ./nvue.ani-map.js */ 357));
+var _nvueAniMap = _interopRequireDefault(__webpack_require__(/*! ./nvue.ani-map.js */ 364));
 // 定义一个一定时间后自动成功的promise，让调用nextTick方法处，进入下一个then方法
 var nextTick = function nextTick() {
   return new Promise(function (resolve) {
@@ -21835,7 +21851,7 @@ var _default = {
 exports.default = _default;
 
 /***/ }),
-/* 357 */
+/* 364 */
 /*!*******************************************************************************!*\
   !*** D:/cjindex/uni_modules/uview-ui/components/u-transition/nvue.ani-map.js ***!
   \*******************************************************************************/
@@ -22028,14 +22044,14 @@ var _default = {
 exports.default = _default;
 
 /***/ }),
-/* 358 */,
-/* 359 */,
-/* 360 */,
-/* 361 */,
-/* 362 */,
-/* 363 */,
-/* 364 */,
-/* 365 */
+/* 365 */,
+/* 366 */,
+/* 367 */,
+/* 368 */,
+/* 369 */,
+/* 370 */,
+/* 371 */,
+/* 372 */
 /*!************************************************************************!*\
   !*** D:/cjindex/uni_modules/uview-ui/components/u-status-bar/props.js ***!
   \************************************************************************/
@@ -22061,14 +22077,14 @@ exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 2)["default"]))
 
 /***/ }),
-/* 366 */,
-/* 367 */,
-/* 368 */,
-/* 369 */,
-/* 370 */,
-/* 371 */,
-/* 372 */,
-/* 373 */
+/* 373 */,
+/* 374 */,
+/* 375 */,
+/* 376 */,
+/* 377 */,
+/* 378 */,
+/* 379 */,
+/* 380 */
 /*!******************************************************************!*\
   !*** D:/cjindex/uni_modules/uview-ui/components/u-icon/icons.js ***!
   \******************************************************************/
@@ -22299,7 +22315,7 @@ var _default = {
 exports.default = _default;
 
 /***/ }),
-/* 374 */
+/* 381 */
 /*!******************************************************************!*\
   !*** D:/cjindex/uni_modules/uview-ui/components/u-icon/props.js ***!
   \******************************************************************/
@@ -22406,14 +22422,14 @@ exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 2)["default"]))
 
 /***/ }),
-/* 375 */,
-/* 376 */,
-/* 377 */,
-/* 378 */,
-/* 379 */,
-/* 380 */,
-/* 381 */,
-/* 382 */
+/* 382 */,
+/* 383 */,
+/* 384 */,
+/* 385 */,
+/* 386 */,
+/* 387 */,
+/* 388 */,
+/* 389 */
 /*!*************************************************************************!*\
   !*** D:/cjindex/uni_modules/uview-ui/components/u-safe-bottom/props.js ***!
   \*************************************************************************/

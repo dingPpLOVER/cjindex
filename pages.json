@@ -7,13 +7,20 @@
 		{
 			"path": "pages/index/index",
 			"style": {
-				"navigationBarTitleText": "uni-app"
+				"navigationBarTitleText": "uni-app",
+				"navigationStyle": "custom" //用户自定义（添加此处！！！！！）
 			}
 		},
 		{
 			"path": "pages/set/set",
 			"style": {
 				"navigationBarTitleText": "发起抽奖"
+			}
+		},
+		{
+			"path": "pages/actend_history/actend_history",
+			"style": {
+				"navigationBarTitleText": "我参与过的活动"
 			}
 		},
 		{

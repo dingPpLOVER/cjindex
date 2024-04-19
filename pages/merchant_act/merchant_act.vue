@@ -18,8 +18,7 @@
 						<view class="act_left">
 							<image :src="item.image" class="act_img"></image>
 						</view>
-						<view class="act_right"
-							style="background: url(https://232r34t825.zicp.fun/ftpData/tmp/dp/cj/cj/sh_no.png) no-repeat center right; background-size: 30%;">
+						<view class="act_right" :style="back_n">
 							<view class="act_name">{{item.name}}</view>
 							<view>时间：{{item.startime}} 至 {{item.endtime}}</view>
 						</view>
@@ -33,7 +32,7 @@
 						<view class="act_left">
 							<image :src="item.image" class="act_img"></image>
 						</view>
-						<view class="act_right" style="">
+						<view class="act_right" :style="back_y">
 							<view class="act_name">{{item.name}}</view>
 							<view>时间：{{item.startime}} 至 {{item.endtime}}</view>
 						</view>

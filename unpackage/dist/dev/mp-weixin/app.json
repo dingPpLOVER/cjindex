@@ -2,6 +2,7 @@
   "pages": [
     "pages/index/index",
     "pages/set/set",
+    "pages/actend_history/actend_history",
     "pages/merchant_approval/merchant_approval",
     "pages/mes/mes",
     "pages/posindex_previous/posindex_previous",

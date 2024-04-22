@@ -30,7 +30,7 @@
 				this.status = 'FALSE'
 				uni.showModal({
 					title: '提示',
-					content: '您的商户申请不合格,原因如下',
+					content: '您的活动申请不合格,原因如下',
 					confirmText: '重新申请',
 					cancelText: '返回',
 					success: function(res) {

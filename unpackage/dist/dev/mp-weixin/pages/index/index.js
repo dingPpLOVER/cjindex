@@ -189,7 +189,7 @@ var _default = {
         });
       } else if (this.nickvalue == 'di') {
         uni.navigateTo({
-          url: '/pages/Lucky-Draw/Lucky-Draw '
+          url: '/pages/Lucky_Draw/Lucky_Draw'
         });
       } else if (this.nickvalue == 'set') {
         uni.navigateTo({

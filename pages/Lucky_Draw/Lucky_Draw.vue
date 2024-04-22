@@ -7,7 +7,7 @@
 			</div>
 			<div class="actname">集字抽奖送福利</div>
 			<div class="timese">
-				<span>2024年4月1日</span>-<span>2024年4月11日</span>
+				<span>2024-04-01 08:00</span>至<span>2024-04-03 08:00</span>
 			</div>
 			<div class="scrollpage">
 				<div>恭喜徐*完成集字</div>
@@ -198,5 +198,5 @@
 </script>
 
 <style scoped>
-	@import '../../static/css/luck-draw.css';
+	@import '../../static/css/Lucky_Draw.css';
 </style>

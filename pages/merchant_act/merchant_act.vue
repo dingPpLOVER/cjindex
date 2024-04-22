@@ -20,7 +20,7 @@
 						</view>
 						<view class="act_right" :style="back_n">
 							<view class="act_name">{{item.name}}</view>
-							<view>时间：{{item.startime}} 至 {{item.endtime}}</view>
+							<view class="act_time">时间：{{item.startime}} 至 {{item.endtime}}</view>
 						</view>
 					</view>
 				</view>
@@ -34,7 +34,7 @@
 						</view>
 						<view class="act_right" :style="back_y">
 							<view class="act_name">{{item.name}}</view>
-							<view>时间：{{item.startime}} 至 {{item.endtime}}</view>
+							<view class="act_time">时间：{{item.startime}} 至 {{item.endtime}}</view>
 						</view>
 					</view>
 				</view>
@@ -48,7 +48,7 @@
 						</view>
 						<view class="act_right" :style="item.status=='FALSE'?back_n:back_y">
 							<view class="act_name">{{item.name}}</view>
-							<view>时间：{{item.startime}} 至 {{item.endtime}}</view>
+							<view class="act_time">时间：{{item.startime}} 至 {{item.endtime}}</view>
 						</view>
 					</view>
 				</view>

@@ -227,13 +227,16 @@
 	height: 50px;
 	width: 50px;
 	border-radius: 8px;
-	margin-top: 10px;
-	margin-left: 10px;
+	margin: 10px;
 }
 .act_name.data-v-b11fd108{
-	font-size: 15px;
+	font-size: 14px;
 	font-weight: bold;
 	margin-top: 15px;
+}
+.act_time.data-v-b11fd108{
+	font-size: 13px;
+	color: #7e7e7e;
 }
 .test-popup_act.data-v-b11fd108 {
 	background: #fff9e9;

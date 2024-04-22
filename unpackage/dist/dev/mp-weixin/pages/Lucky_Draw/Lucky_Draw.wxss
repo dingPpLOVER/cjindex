@@ -1,10 +1,9 @@
-.larbox{
+.larbox.data-v-679e5466{
 	height: 100%;
 	width: 100%;
 	position: absolute;
-	
 }
-#box {
+#box.data-v-679e5466 {
 	/* background-color: #e4f4ff; */
 	/* background-color: #2c97fc; */
 	background: url(https://232r34t825.zicp.fun/ftpData/tmp/dp/cj/cj/cjbj.png) no-repeat;
@@ -12,8 +11,7 @@
 	font-size: 13px;
 	padding-bottom: 15px;
 }
-
-.actname {
+.actname.data-v-679e5466 {
 	font-size: 20px;
 	font-weight: bold;
 	color: #efefef;
@@ -21,14 +19,12 @@
 	text-align: center;
 	letter-spacing: 3px;
 }
-
-.timese {
+.timese.data-v-679e5466 {
 	color: #efefef;
 	margin-top: 15px;
 	text-align: center;
 }
-
-.scrollpage {
+.scrollpage.data-v-679e5466 {
 	height: 40px;
 	width: 60%;
 	margin: auto;
@@ -37,8 +33,7 @@
 	line-height: 40px;
 	margin-top: 8px;
 }
-
-.bot {
+.bot.data-v-679e5466 {
 	width: 90vw;
 	height: 117vw;
 	margin: auto;
@@ -46,7 +41,7 @@
 	background-size: 100% 100%;
 	margin-top: 20px;
 }
-.horselamp {
+.horselamp.data-v-679e5466 {
 	position: absolute;
 	height: 80vw;
 	width: 80vw;
@@ -54,7 +49,7 @@
 	margin-top: 4vw;
 	margin-left:4vw;
 }
-.lamptf {
+.lamptf.data-v-679e5466 {
 	height: 8px;
 	width: 8px;
 	border-radius: 50%;
@@ -62,59 +57,53 @@
 	box-shadow: 0 0 2px #000;
 	position: absolute
 }
-.lamptf1{
+.lamptf1.data-v-679e5466{
 	margin-left: 26vw;
 }
-.lamptf2{
+.lamptf2.data-v-679e5466{
 	margin-left: 52vw;
 }
-.lamptf3{
+.lamptf3.data-v-679e5466{
 	margin-left: 79vw;
 }
-.lamptf4{
+.lamptf4.data-v-679e5466{
 	margin-left: 79vw;
 	margin-top: 26vw;
 }
-.lamptf5{
+.lamptf5.data-v-679e5466{
 	margin-top: 52vw;
 	margin-left: 79vw;
 }
-.lamptf6{
+.lamptf6.data-v-679e5466{
 	margin-top: 79vw;
 	margin-left: 79vw;
 }
-.lamptf7{
+.lamptf7.data-v-679e5466{
 	margin-top: 79vw;
 	margin-left: 52vw;
 }
-.lamptf8{
+.lamptf8.data-v-679e5466{
 	margin-top: 79vw;
 	margin-left: 26vw;
 }
-.lamptf9{
+.lamptf9.data-v-679e5466{
 	margin-top: 79vw;
 }
-.lamptf10{
+.lamptf10.data-v-679e5466{
 	margin-top: 52vw;
 }
-.lamptf11{
+.lamptf11.data-v-679e5466{
 	margin-top: 26vw;
 }
-
-
-
-
-.zptext {
+.zptext.data-v-679e5466 {
 	position: absolute;
 	height: 75vw;
 	width: 75vw;
 	margin-left: 7vw;
 	margin-top: 7vw;
 	/* border: 1px solid #ffffff; */
-	
 }
-
-.zpsin {
+.zpsin.data-v-679e5466 {
 	position: absolute;
 	height: 20vw;
 	width: 20vw;
@@ -125,48 +114,40 @@
 	font-size: 20px;
 	font-weight: bold;
 }
-
-.zpsin2 {
+.zpsin2.data-v-679e5466 {
 
 	margin-left: 27.8vw;
 }
-
-.zpsin3 {
+.zpsin3.data-v-679e5466 {
 
 	margin-left: 53vw;
 }
-
-.zpsin4 {
+.zpsin4.data-v-679e5466 {
 
 	margin-left: 53vw;
 	margin-top: 27.8vw;
 }
-
-.zpsin5 {
+.zpsin5.data-v-679e5466 {
 
 	margin-left: 53vw;
 	margin-top: 53vw;
 }
-
-.zpsin6 {
+.zpsin6.data-v-679e5466 {
 
 	margin-left: 27.8vw;
 	margin-top: 53vw;
 }
-
-.zpsin7 {
+.zpsin7.data-v-679e5466 {
 
 	margin-left: 2.6vw;
 	margin-top: 53vw;
 }
-
-.zpsin8 {
+.zpsin8.data-v-679e5466 {
 
 	margin-left: 2.6vw;
 	margin-top: 27.8vw;
 }
-
-.zpbut {
+.zpbut.data-v-679e5466 {
 	position: absolute;
 	height: 20vw;
 	width: 20vw;
@@ -179,7 +160,7 @@
 	color: #ffffff;
 	font-weight: bold;
 }
-.sydiv{
+.sydiv.data-v-679e5466{
 	position: absolute;
 	height: 30px;
 	width: 50vw;
@@ -193,7 +174,7 @@
 	font-weight: 700;
 	letter-spacing: 1px;
 }
-.com_pro{
+.com_pro.data-v-679e5466{
 	height: 200px;
 	width: 90%;
 	margin: auto;
@@ -201,7 +182,7 @@
 	border-radius: 30px;
 	margin-top: 5px;
 }
-.com_pro_text{
+.com_pro_text.data-v-679e5466{
 	height: 30px;
 	width: 40%;
 	margin: auto;
@@ -209,9 +190,8 @@
 	border-radius: 10px;
 	line-height: 30px;
 	text-align: center;
-	
 }
-.com_prosin{
+.com_prosin.data-v-679e5466{
 	width: 20%;
 	height: 70px;
 	margin: 20px 2.5% 0 2.5%;
@@ -220,7 +200,7 @@
 	border-radius: 8px;
 	display: inline-block;
 }
-.com_prosincon{
+.com_prosincon.data-v-679e5466{
 	position: absolute;
 	height: 70px;
 	width: 20%;
@@ -230,10 +210,10 @@
 	color: #eee8cd;
 	font-weight: bold;
 }
-.com_prosincon_{
+.com_prosincon_.data-v-679e5466{
 	color: #000000;
 }
-.com_prospan{
+.com_prospan.data-v-679e5466{
 	background-color: #ff0000;
 	height: 15px;
 	width: 20px;
@@ -247,12 +227,12 @@
 	font-size: 13px;
 	line-height: 15px;
 }
-.pos{
+.pos.data-v-679e5466{
 	height: 40px;
 	width: 60px;
 	position: absolute;
 	right: 0;
-	top: 60px;
+	top: 40px;
 	background: url(https://232r34t825.zicp.fun/ftpData/tmp/dp/cj/cj/pos.png) no-repeat center;
 	background-size: 100% 100%;
 	line-height: 40px;
@@ -260,10 +240,7 @@
 	color: #ffffff;
 	font-size: 12px;
 }
-
-
-
-.inp{
+.inp.data-v-679e5466{
 	width: 50px;
 	height: 25px;
 	display: inline-block;
@@ -272,16 +249,17 @@
 	color:#00ffff ;
 	margin-left: 15px;
 }
-.wel{
+.wel.data-v-679e5466{
 	display: inline-block;
 	vertical-align: top;
 }
-.nickname{
+.nickname.data-v-679e5466{
 	line-height: 25px;
 }
-.tel{
+.tel.data-v-679e5466{
 	line-height: 25px;
 	color: #cccccc;
 	width: 100%;
 	text-align: center;
 }
+

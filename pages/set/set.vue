@@ -1,6 +1,6 @@
 <template>
 	<div class="box">
-		
+
 		<div class="box_s">
 			<div class="title">
 				<div class="titlet">请设置抽奖规则</div>
@@ -50,7 +50,8 @@
 		<uni-popup ref="popup" type="center">
 			<view class="checkview">
 				<view class="checkcon">
-					<image src="https://232r34t825.zicp.fun/ftpData/tmp/dp/cj/cj/icon/takenote.png" class="icon_p"></image>
+					<image src="https://232r34t825.zicp.fun/ftpData/tmp/dp/cj/cj/icon/takenote.png" class="icon_p">
+					</image>
 					<view class="poptitle">请核对提交信息内容，确认无误后，点击确定提交。</view>
 					<view class="detailview">
 						<view class="de_text">集字内容：</view>
@@ -99,7 +100,7 @@
 				show: false,
 				show_: false,
 				value1: Number(new Date()),
-				valuend:Number(new Date())+24*60*60*1000,
+				valuend: Number(new Date()) + 24 * 60 * 60 * 1000,
 				sty: sty,
 				params: {
 					year: true,
@@ -126,7 +127,7 @@
 					prize: '',
 					strtime: '',
 					endtime: '',
-					count:[]
+					count: []
 				}
 
 			}
@@ -158,12 +159,24 @@
 						}
 					});
 				} else {
-					this.$refs.popup.open('center') //中间弹出
-					this.form.count = form.font1+form.font2+ form.font3+form.font4+ form.font5+form.font6+ form.font7+ form
-					.font8
+					// this.$refs.popup.open('center') //中间弹出所填预览
+					// this.form.count = form.font1+form.font2+ form.font3+form.font4+ form.font5+form.font6+ form.font7+ form
+					// .font8
+					var count =form.font1+form.font2 +form.font3 +form.font5 + form.font8+form.font7+ form.font6+form.font4
+					console.log(count)
+					var act_name = this.form.name
+					var number = this.form.number
+					var prize = this.form.prize
+					var strtime = this.form.strtime
+					var endtime = this.form.endtime
+					uni.navigateTo({
+						url: '/pages/set_preview/set_preview?conut=' + count + '&act_name=' + act_name +
+							'&number=' + number + '&prize=' + prize + '&strtime=' + strtime + '&endtime=' + endtime
+					})
+
 				}
 			},
-			sualert(){
+			sualert() {
 				var this_ = this
 				uni.showModal({
 					title: '提示',
@@ -172,16 +185,16 @@
 						if (res.confirm) {
 							this_.$refs.popup.close()
 							uni.navigateTo({
-								url:'/pages/index/index'
+								url: '/pages/index/index'
 							})
-				
+
 						} else if (res.cancel) {
-				
+
 						}
 					}
 				});
 			},
-			re_reg(){
+			re_reg() {
 				this.$refs.popup.close()
 			},
 			formatter(type, value) {
@@ -218,32 +231,32 @@
 			handcancelend() {
 				this.show_ = false
 			},
-			timef(value){
+			timef(value) {
 				var time = new Date(value)
-				Date.prototype.format2nd = function (fmt) {
-				  var o = {
-				      "M+": this.getMonth() + 1, //月份
-				      "d+": this.getDate(), //日
-				      "h+": this.getHours(), //小时
-				      "m+": this.getMinutes(), //分
-				      "s+": this.getSeconds(), //秒
-				      "q+": Math.floor((this.getMonth() + 3) / 3), //季度
-				      "S": this.getMilliseconds() //毫秒
-				  };
-				  if (/(y+)/.test(fmt)) {
-				    fmt = fmt.replace(RegExp.$1, (this.getFullYear() + "").substr(4 - RegExp.$1.length));
-				  }
-				  for (var k in o) {
-				    if (new RegExp("(" + k + ")").test(fmt)) {
-				      fmt = fmt.replace(RegExp.$1, (RegExp.$1.length == 1) ?
-				        (o[k]) : (("00" + o[k]).substr(("" + o[k]).length)));
-				    }
-				  }
-				  return fmt;
+				Date.prototype.format2nd = function(fmt) {
+					var o = {
+						"M+": this.getMonth() + 1, //月份
+						"d+": this.getDate(), //日
+						"h+": this.getHours(), //小时
+						"m+": this.getMinutes(), //分
+						"s+": this.getSeconds(), //秒
+						"q+": Math.floor((this.getMonth() + 3) / 3), //季度
+						"S": this.getMilliseconds() //毫秒
+					};
+					if (/(y+)/.test(fmt)) {
+						fmt = fmt.replace(RegExp.$1, (this.getFullYear() + "").substr(4 - RegExp.$1.length));
+					}
+					for (var k in o) {
+						if (new RegExp("(" + k + ")").test(fmt)) {
+							fmt = fmt.replace(RegExp.$1, (RegExp.$1.length == 1) ?
+								(o[k]) : (("00" + o[k]).substr(("" + o[k]).length)));
+						}
+					}
+					return fmt;
 				}
 				return time.format2nd("yyyy-MM-dd hh:mm")
 			},
-			
+
 			onInput(event) {
 				// 输入内容处理，可以在这里添加额外逻辑
 				console.log(event.target.value);
@@ -260,9 +273,9 @@
 			this.$refs.datetimePickerend.setFormatter(this.formatter)
 		},
 		mounted() {
-			console.log(Number(new Date()))//返回毫秒数
+			console.log(Number(new Date())) //返回毫秒数
 		}
-		
+
 	}
 </script>
 

@@ -18,9 +18,9 @@
 			}
 		},
 		{
-			"path": "pages/actend_history/actend_history",
+			"path": "pages/set_preview/set_preview",
 			"style": {
-				"navigationBarTitleText": "我参与过的活动"
+				"navigationBarTitleText": "抽奖预览"
 			}
 		},
 		{
@@ -59,7 +59,7 @@
 			}
 		},
 		{
-			"path": "pages/Lucky-Draw/Lucky-Draw ",
+			"path": "pages/Lucky_Draw/Lucky_Draw",
 			"style": {
 				"navigationBarTitleText": "uni-app"
 			}

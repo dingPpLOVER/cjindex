@@ -1,0 +1,287 @@
+.larbox{
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	
+}
+#box {
+	/* background-color: #e4f4ff; */
+	/* background-color: #2c97fc; */
+	background: url(https://232r34t825.zicp.fun/ftpData/tmp/dp/cj/cj/cjbj.png) no-repeat;
+	background-size: 100% 100%;
+	font-size: 13px;
+	padding-bottom: 15px;
+}
+
+.actname {
+	font-size: 20px;
+	font-weight: bold;
+	color: #efefef;
+	margin-top: 20px;
+	text-align: center;
+	letter-spacing: 3px;
+}
+
+.timese {
+	color: #efefef;
+	margin-top: 15px;
+	text-align: center;
+}
+
+.scrollpage {
+	height: 40px;
+	width: 60%;
+	margin: auto;
+	text-align: center;
+	background: linear-gradient(to right, #2d86e200, #1adfe2, #2d86e200);
+	line-height: 40px;
+	margin-top: 8px;
+}
+
+.bot {
+	width: 90vw;
+	height: 117vw;
+	margin: auto;
+	background: url(https://232r34t825.zicp.fun/ftpData/tmp/dp/cj/cj/cjk.png) no-repeat center;
+	background-size: 100% 100%;
+	margin-top: 20px;
+}
+.horselamp {
+	position: absolute;
+	height: 80vw;
+	width: 80vw;
+	/* border: 1px solid #ffffff; */
+	margin-top: 4vw;
+	margin-left:4vw;
+}
+.lamptf {
+	height: 8px;
+	width: 8px;
+	border-radius: 50%;
+	background-color: #0774c1;
+	box-shadow: 0 0 2px #000;
+	position: absolute
+}
+.lamptf1{
+	margin-left: 26vw;
+}
+.lamptf2{
+	margin-left: 52vw;
+}
+.lamptf3{
+	margin-left: 79vw;
+}
+.lamptf4{
+	margin-left: 79vw;
+	margin-top: 26vw;
+}
+.lamptf5{
+	margin-top: 52vw;
+	margin-left: 79vw;
+}
+.lamptf6{
+	margin-top: 79vw;
+	margin-left: 79vw;
+}
+.lamptf7{
+	margin-top: 79vw;
+	margin-left: 52vw;
+}
+.lamptf8{
+	margin-top: 79vw;
+	margin-left: 26vw;
+}
+.lamptf9{
+	margin-top: 79vw;
+}
+.lamptf10{
+	margin-top: 52vw;
+}
+.lamptf11{
+	margin-top: 26vw;
+}
+
+
+
+
+.zptext {
+	position: absolute;
+	height: 75vw;
+	width: 75vw;
+	margin-left: 7vw;
+	margin-top: 7vw;
+	/* border: 1px solid #ffffff; */
+	
+}
+
+.zpsin {
+	position: absolute;
+	height: 20vw;
+	width: 20vw;
+	margin: 2.6vw;
+	border-radius: 8px;
+	text-align: center;
+	line-height: 20vw;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.zpsin2 {
+
+	margin-left: 27.8vw;
+}
+
+.zpsin3 {
+
+	margin-left: 53vw;
+}
+
+.zpsin4 {
+
+	margin-left: 53vw;
+	margin-top: 27.8vw;
+}
+
+.zpsin5 {
+
+	margin-left: 53vw;
+	margin-top: 53vw;
+}
+
+.zpsin6 {
+
+	margin-left: 27.8vw;
+	margin-top: 53vw;
+}
+
+.zpsin7 {
+
+	margin-left: 2.6vw;
+	margin-top: 53vw;
+}
+
+.zpsin8 {
+
+	margin-left: 2.6vw;
+	margin-top: 27.8vw;
+}
+
+.zpbut {
+	position: absolute;
+	height: 20vw;
+	width: 20vw;
+	margin-top: 27.8vw;
+	margin-left: 27.8vw;
+	line-height: 20vw;
+	text-align: center;
+	border-radius: 8px;
+	background-color: #ef3353;
+	color: #ffffff;
+	font-weight: bold;
+}
+.sydiv{
+	position: absolute;
+	height: 30px;
+	width: 50vw;
+	background-color: #d7efff;
+	margin-top:100vw ;
+	margin-left: 20vw;
+	border-radius: 30px;
+	text-align: center;
+	line-height: 30px;
+	color: #174878;
+	font-weight: 700;
+	letter-spacing: 1px;
+}
+.com_pro{
+	height: 200px;
+	width: 90%;
+	margin: auto;
+	background-color: #0983db;
+	border-radius: 30px;
+	margin-top: 5px;
+}
+.com_pro_text{
+	height: 30px;
+	width: 40%;
+	margin: auto;
+	background-color: #ffffff;
+	border-radius: 10px;
+	line-height: 30px;
+	text-align: center;
+	
+}
+.com_prosin{
+	width: 20%;
+	height: 70px;
+	margin: 20px 2.5% 0 2.5%;
+	background-color: #fff8db;
+	box-shadow: 0 5px 3px #bcbc85;
+	border-radius: 8px;
+	display: inline-block;
+}
+.com_prosincon{
+	position: absolute;
+	height: 70px;
+	width: 20%;
+	line-height: 70px;
+	text-align: center;
+	font-size: 24px;
+	color: #eee8cd;
+	font-weight: bold;
+}
+.com_prosincon_{
+	color: #000000;
+}
+.com_prospan{
+	background-color: #ff0000;
+	height: 15px;
+	width: 20px;
+	border-radius: 8px;
+	text-align: center;
+	color: #ffffff;
+	position: absolute;
+	margin-left: 75%;
+	margin-top: -8px;
+	border: 1px solid #ffffff;
+	font-size: 13px;
+	line-height: 15px;
+}
+.pos{
+	height: 40px;
+	width: 60px;
+	position: absolute;
+	right: 0;
+	top: 40px;
+	background: url(https://232r34t825.zicp.fun/ftpData/tmp/dp/cj/cj/pos.png) no-repeat center;
+	background-size: 100% 100%;
+	line-height: 40px;
+	text-align: right;
+	color: #ffffff;
+	font-size: 12px;
+}
+
+
+
+.inp{
+	width: 50px;
+	height: 25px;
+	display: inline-block;
+	vertical-align: top;
+	text-align: center;
+	color:#00ffff ;
+	margin-left: 15px;
+}
+.wel{
+	display: inline-block;
+	vertical-align: top;
+}
+.nickname{
+	line-height: 25px;
+}
+.tel{
+	line-height: 25px;
+	color: #cccccc;
+	width: 100%;
+	text-align: center;
+}

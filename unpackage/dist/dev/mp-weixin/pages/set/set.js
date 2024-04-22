@@ -101,7 +101,7 @@ var components
 try {
   components = {
     uDatetimePicker: function () {
-      return Promise.all(/*! import() | uni_modules/uview-ui/components/u-datetime-picker/u-datetime-picker */[__webpack_require__.e("common/vendor"), __webpack_require__.e("uni_modules/uview-ui/components/u-datetime-picker/u-datetime-picker")]).then(__webpack_require__.bind(null, /*! @/uni_modules/uview-ui/components/u-datetime-picker/u-datetime-picker.vue */ 302))
+      return Promise.all(/*! import() | uni_modules/uview-ui/components/u-datetime-picker/u-datetime-picker */[__webpack_require__.e("common/vendor"), __webpack_require__.e("uni_modules/uview-ui/components/u-datetime-picker/u-datetime-picker")]).then(__webpack_require__.bind(null, /*! @/uni_modules/uview-ui/components/u-datetime-picker/u-datetime-picker.vue */ 304))
     },
     uniPopup: function () {
       return Promise.resolve(/*! import() */).then(__webpack_require__.bind(null, /*! @/uni_modules/uni-popup/components/uni-popup/uni-popup.vue */ 176))
@@ -270,6 +270,7 @@ var _uniPopup = _interopRequireDefault(__webpack_require__(/*! @/uni_modules/uni
 //
 //
 //
+//
 var _default = {
   data: function data() {
     return {
@@ -328,8 +329,19 @@ var _default = {
           success: function success(res) {}
         });
       } else {
-        this.$refs.popup.open('center'); //中间弹出
-        this.form.count = form.font1 + form.font2 + form.font3 + form.font4 + form.font5 + form.font6 + form.font7 + form.font8;
+        // this.$refs.popup.open('center') //中间弹出所填预览
+        // this.form.count = form.font1+form.font2+ form.font3+form.font4+ form.font5+form.font6+ form.font7+ form
+        // .font8
+        var count = form.font1 + form.font2 + form.font3 + form.font5 + form.font8 + form.font7 + form.font6 + form.font4;
+        console.log(count);
+        var act_name = this.form.name;
+        var number = this.form.number;
+        var prize = this.form.prize;
+        var strtime = this.form.strtime;
+        var endtime = this.form.endtime;
+        uni.navigateTo({
+          url: '/pages/set_preview/set_preview?conut=' + count + '&act_name=' + act_name + '&number=' + number + '&prize=' + prize + '&strtime=' + strtime + '&endtime=' + endtime
+        });
       }
     },
     sualert: function sualert() {
@@ -518,7 +530,7 @@ var components
 try {
   components = {
     uniTransition: function () {
-      return Promise.all(/*! import() | uni_modules/uni-transition/components/uni-transition/uni-transition */[__webpack_require__.e("common/vendor"), __webpack_require__.e("uni_modules/uni-transition/components/uni-transition/uni-transition")]).then(__webpack_require__.bind(null, /*! @/uni_modules/uni-transition/components/uni-transition/uni-transition.vue */ 311))
+      return Promise.all(/*! import() | uni_modules/uni-transition/components/uni-transition/uni-transition */[__webpack_require__.e("common/vendor"), __webpack_require__.e("uni_modules/uni-transition/components/uni-transition/uni-transition")]).then(__webpack_require__.bind(null, /*! @/uni_modules/uni-transition/components/uni-transition/uni-transition.vue */ 313))
     },
   }
 } catch (e) {
